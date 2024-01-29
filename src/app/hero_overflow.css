@@ -1,0 +1,10 @@
+.overflow-mask {
+  --mask-height: 32px;
+
+  mask-image: linear-gradient(
+        to right,
+        transparent,
+        black var(--mask-height),
+        black calc(100% - var(--mask-height)),
+        transparent)
+}

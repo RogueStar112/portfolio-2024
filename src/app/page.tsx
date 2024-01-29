@@ -8,7 +8,7 @@ import { Montserrat } from 'next/font/google'
 
 export default function Home() {
   return (
-    <div className='p-4 dark:bg-onyx h-screen dark:text-mint-cream text-current max-w-2xl mx-auto'>
+    <div className='p-4 dark:bg-onyx h-screen dark:text-mint-cream text-current max-w-4xl'>
 
         <header className='flex justify-between'>
           
@@ -36,23 +36,32 @@ export default function Home() {
 
           <div className='flex flex-col justify-between text-center py-4'>
             
-            <article className='h-[512px] overflow-hidden relative'>
+            <article className='/overflow-hidden relative'>
+
+              <article className='overflow-hidden relative'>
+                
+                <section className='overflow-mask'>
+                <Image className='object-cover object-center h-inherit' src={imageHero} style={{objectFit: 'cover'}} width={1024} height={512} alt='My portrait'></Image>
+                    <section className='absolute right-0 mr-4 top-[45%] text-white'>
+                      <p className='text-4xl font-extrabold'>GREETINGS.</p>
+                      <p className={`${eb_garamond.className} font-initial`}>Full Stack Web Developer</p>
+                    </section>
+                </section>
+
+
+                
+              </article>
+
+            </article>
             
-              <Image className='object-cover object-left scale-[1.35]' src={imageHero} width={1920} height={512} alt='My portrait'></Image>
-              
-              <section className='absolute right-0 mr-4 top-[45%] text-white'>
-                <p className='text-4xl font-extrabold'>WELCOME</p>
-                <p className={`${eb_garamond.className} font-initial`}>Full Stack Web Developer</p>
-              </section>
-            </article>
-
+            {/*  
             <article>
-            <p className={`${montserrat.className} font-extrabold`}>Welcome to my domain.</p>
-            <p className={`${eb_garamond.className} font-initial`}>I am a firm believer that the best life is a frugal one.</p>
-            <p>I embark on this web developer journey with an open mind and canvas, ready to unleash full-on creativity.</p>
-            {/* <p>I make websites which allow productivity to be the star of the show.</p> */}
+              <p className={`${montserrat.className} font-extrabold`}>Welcome to my domain.</p>
+              <p className={`${eb_garamond.className} font-initial`}>I am a firm believer that the best life is a frugal one.</p>
+              <p>I embark on this web developer journey with an open mind and canvas, ready to unleash full-on creativity.</p>
+             <p>I make websites which allow productivity to be the star of the show.</p> 
             </article>
-
+            */}
             
 
           </div>

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter, Teko, Montserrat, Merriweather, EB_Garamond } from 'next/font/google'
 import './globals.css'
+import './hero_overflow.css'
 
 export const inter = Inter({ subsets: ['latin'] })
 export const montserrat = Montserrat({ weight: ['300', '500', '700', '800', '900'], style: ['normal', 'italic'], subsets: ['latin'] })

@@ -10,6 +10,15 @@ const config: Config = {
   theme: {
 
     extend: {
+         height: {
+            'inherit': 'inherit',
+          },
+
+
+         maxHeight: {
+        'inherit': 'inherit',
+         },
+
           colors: {
       'sky-blue': '#93b7be',
       'mint-cream': '#f1fffa',
