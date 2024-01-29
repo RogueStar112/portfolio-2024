@@ -8,3 +8,13 @@
         black calc(100% - var(--mask-height)),
         transparent)
 }
+
+.overflow-mask-vert {
+    --mask-height: 32px;
+
+  mask-image: linear-gradient(
+        to bottom,
+        black var(--mask-height),
+        black calc(100% - var(--mask-height)),
+        transparent)
+}

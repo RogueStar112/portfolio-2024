@@ -1,12 +1,19 @@
+import { promises as fs } from 'fs';
 import Image from 'next/image'
 import { eb_garamond, montserrat } from './layout'
 
 import imageHero from './assets/images/me_wlocationv2.png'
 import { Montserrat } from 'next/font/google'
 
+// import { blog_sample } from './blog_sample.json';
 
 
-export default function Home() {
+
+export default async function Home() {
+
+  const blog_file = await fs.readFile(process.cwd() + '/src/app/blog_sample.json', 'utf8');
+  const blog_JSON = JSON.parse(blog_file);
+
   return (
     <div className='p-4 dark:bg-onyx h-screen dark:text-mint-cream mx-auto text-current max-w-4xl'>
 
@@ -52,7 +59,7 @@ export default function Home() {
                 
               </article>
               
-              <h2 className='m-4'>BLOG</h2>
+              
             </article>
             
             {/*  
@@ -64,8 +71,39 @@ export default function Home() {
             </article>
             */}
             
+            <h2 className='m-4 text-right text-4xl font-extrabold'>BLOG.</h2>
+
+            <div className='grid grid-cols-3 gap-3'>
+            {blog_JSON.map((blog) => {
+                return (
+                  <article id={blog.id} className='/max-w-[100%] /md:max-w-[33.3%]'>
+                    <Image className="rounded-t-lg overflow-mask-vert max-h-[200px] object-cover" src={blog.images[0].file_path} width={500} height={300} alt={"Test"}/>
+                    
+                    <section className='flex justify-center gap-3' aria-label='post-tags'>
+                        {blog.tags.map((tag) => {
+                          
+                            return (
+                                <p className='rounded-full bg-blue-400 p-2 text-white text-sm'>{tag}</p>
+                            )
+
+                        })}
+                    </section>
+
+                    <section className='rounded-b-lg p-4 relative' aria-label='blog-text'>
+                      <h2 className='text-blue-500 font-extrabold text-left' style={{fontVariant: "small-caps"}}>{blog.title}</h2>
+
+                      <p className='text-justify'>{blog.teaser_content}</p>
+
+                      <p className='text-stone-500 text-right'>{blog.dateTime_created}</p>
+                    </section>
+                  </article>
+                )
+            })}
+            </div>
 
           </div>
+
+          
         </main>
 
         <footer></footer>
