@@ -32,6 +32,7 @@ export default async function Home() {
               <p style={{fontVariant: "small-caps"}}>Home</p>
               <p style={{fontVariant: "small-caps"}}>Blog</p>
               <p style={{fontVariant: "small-caps"}}>Projects</p>
+              <p style={{fontVariant: "small-caps"}}>DarkMode</p>
           </nav>
 
         </header>
@@ -79,11 +80,11 @@ export default async function Home() {
                   <article id={blog.id} className='/max-w-[100%] /md:max-w-[33.3%]'>
                     <Image className="rounded-t-lg overflow-mask-vert max-h-[200px] object-cover" src={blog.images[0].file_path} width={500} height={300} alt={"Test"}/>
                     
-                    <section className='flex justify-center gap-3' aria-label='post-tags'>
+                    <section className='p-4 flex justify-around gap-3' aria-label='post-tags'>
                         {blog.tags.map((tag) => {
                           
                             return (
-                                <p className='rounded-full bg-blue-400 p-2 text-white text-sm'>{tag}</p>
+                                <p className='bg-blue-400 p-2 text-white text-sm'>{tag}</p>
                             )
 
                         })}
