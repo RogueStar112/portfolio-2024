@@ -19,6 +19,10 @@ const config: Config = {
         'inherit': 'inherit',
          },
 
+        fontVariant: {
+          'small-caps': 'small-caps'
+        },
+
           colors: {
       'sky-blue': '#93b7be',
       'mint-cream': '#f1fffa',

@@ -1,14 +1,14 @@
 import Image from 'next/image'
 import { eb_garamond, montserrat } from './layout'
 
-import imageHero from './assets/images/me_zoomedout.jpg'
+import imageHero from './assets/images/me_wlocationv2.png'
 import { Montserrat } from 'next/font/google'
 
 
 
 export default function Home() {
   return (
-    <div className='p-4 dark:bg-onyx h-screen dark:text-mint-cream text-current max-w-4xl'>
+    <div className='p-4 dark:bg-onyx h-screen dark:text-mint-cream mx-auto text-current max-w-4xl'>
 
         <header className='flex justify-between'>
           
@@ -40,18 +40,19 @@ export default function Home() {
 
               <article className='overflow-hidden relative'>
                 
-                <section className='overflow-mask'>
-                <Image className='object-cover object-center h-inherit' src={imageHero} style={{objectFit: 'cover'}} width={1024} height={512} alt='My portrait'></Image>
+                <section className='overflow-mask h-[448px]'>
+                <Image className='object-cover object-center h-inherit' src={imageHero} fill={true} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" style={{objectFit: 'cover'}} alt='My portrait'></Image>
                     <section className='absolute right-0 mr-4 top-[45%] text-white'>
                       <p className='text-4xl font-extrabold'>GREETINGS.</p>
-                      <p className={`${eb_garamond.className} font-initial`}>Full Stack Web Developer</p>
+                      <p className={`${eb_garamond.className} font-initial`}>I am a full stack Web Developer.</p>
                     </section>
                 </section>
 
 
                 
               </article>
-
+              
+              <h2 className='m-4'>BLOG</h2>
             </article>
             
             {/*  
