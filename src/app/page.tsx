@@ -1,4 +1,5 @@
 import { promises as fs } from 'fs';
+import Link from 'next/link'
 import Image from 'next/image'
 import { eb_garamond, montserrat } from './layout'
 
@@ -30,10 +31,10 @@ export default async function Home() {
           {/* <h1 className='font-montserrat p-logo'>DEMIE<br></br>MISTICA</h1> */}
 
           <nav id='navbar' className={`${montserrat.className} [&>*]:font-bold flex justify-around gap-3`}>
-              <p style={{fontVariant: "small-caps"}}>Home</p>
-              <p style={{fontVariant: "small-caps"}}>Blog</p>
-              <p style={{fontVariant: "small-caps"}}>Projects</p>
-              <p style={{fontVariant: "small-caps"}}>DarkMode</p>
+              <Link href="/" style={{fontVariant: "small-caps"}}>Home</Link>
+              <Link href="/" style={{fontVariant: "small-caps"}}>Blog</Link>
+              <Link href="/" style={{fontVariant: "small-caps"}}>Projects</Link>
+              <Link href="/" style={{fontVariant: "small-caps"}}>DarkMode</Link>
           </nav>
 
         </header>
@@ -72,6 +73,19 @@ export default async function Home() {
              <p>I make websites which allow productivity to be the star of the show.</p> 
             </article>
             */}
+
+
+            {/* <h2 className='m-4 text-right text-4xl font-extrabold'>ABOUT.</h2>
+
+            <article>
+              <p className={`${eb_garamond.className} text-2xl`}>Most of life's challenges become stepping stones in the face of courage.</p>
+              
+              <section aria-label='About-'>
+                  <p>When it comes to neurodivergence, </p>
+              </section>
+            </article>
+            
+            <h2 className='m-4 text-right text-4xl font-extrabold'>PROJECTS.</h2> */}
             
             <h2 className='m-4 text-right text-4xl font-extrabold'>BLOG.</h2>
 
@@ -80,9 +94,9 @@ export default async function Home() {
                   
                   let isLastElement = (blog_JSON[blog_JSON.length - 1].title === blog.title);
                   return (
-                  <article id={blog.id} className={`/max-w-[100%] /md:max-w-[33.3%] flex flex-col justify-start  ${isLastElement ? "col-span-full" : ""}`}>
+                  <article id={blog.id} className={`/max-w-[100%] /md:max-w-[33.3%] flex flex-col justify-start content-end ${isLastElement ? "col-span-full" : ""}`}>
 
-                    <Image className="rounded-t-lg overflow-mask-vert h-[250px] object-cover" src={blog.images[0].file_path} width={864} height={300} alt={"Test"}/>
+                    <Image className="rounded-t-lg overflow-mask-vert h-[250px] object-cover " src={blog.images[0].file_path} width={864} height={300} alt={"Test"}/>
                     
           
 
@@ -98,7 +112,7 @@ export default async function Home() {
 
 
 
-                             <section className='p-4 flex justify-center gap-3 flex-1 justify-self-end' aria-label='post-tags'>
+                             <section className='p-4 flex justify-center gap-1 flex-1 justify-self-end' aria-label='post-tags'>
                         {blog.tags.map((tag) => {
                           
                             return (
