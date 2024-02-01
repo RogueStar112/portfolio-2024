@@ -58,14 +58,28 @@ export default async function Home({ params }: { params: { id: number } }) {
                         return (
                           <article key={blog.id} id={blog.id} className={`/max-w-[100%] /md:max-w-[33.3%] py-4 flex flex-col justify-start content-end`}>
                             
+
+
                             <Image className="rounded-t-lg overflow-mask-vert h-[400px] object-cover " src={blog.images[0].file_path} width={864} height={400} alt={"Test"}/>
                             
-                            <p aria-label='image-caption' className='p-2 italic'>{[blog.images[0].caption ? blog.images[0].caption  : ""]}</p>
+                            {/* <p aria-label='image-caption' className='p-2 italic'>{[blog.images[0].caption ? blog.images[0].caption  : ""]}</p> */}
 
-                            
+                            <section className='grid grid-cols-4 gap-2'>
+                              {blog.images.map((image, index) => {
+                                
+                                if(image.is_main_image != 1) {
+                                  return (
+                                    
+                                    <Image key={`img_${blog.id}_${index}`} className='rounded-lg overflow-mask-vert' src={image.file_path} width={864} height={400} alt={"Test"}/>
+
+                                  )
+                                }
+                              })}
+                            </section>
+
                             <section className='flex justify-between'>
                     
-                              <section className='rounded-b-lg p-2 relative grow' aria-label='blog-text'>
+                              <section className='rounded-b-lg p-2 relative ' aria-label='blog-text'>
                             
                                 <h2 className='text-blue-500 text-4xl font-extrabold text-left break-all' style={{fontVariant: "small-caps"}}>{blog.title}</h2>
 
@@ -93,18 +107,7 @@ export default async function Home({ params }: { params: { id: number } }) {
                               {blog.full_content}
                             </section>
                             
-                            <section className='grid grid-cols-4 gap-2 p-2'>
-                              {blog.images.map((image, index) => {
-                                
-                                if(image.is_main_image != 1) {
-                                  return (
-                                    
-                                    <Image key={`img_${blog.id}_${index}`} className='rounded-lg' src={image.file_path} width={864} height={400} alt={"Test"}/>
-
-                                  )
-                                }
-                              })}
-                            </section>
+                            
                           </article>
 
 
