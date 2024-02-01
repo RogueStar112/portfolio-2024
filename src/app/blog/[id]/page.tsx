@@ -50,7 +50,7 @@ export default async function Home({ params }: { params: { id: number } }) {
             {/* <h2 className='text-blue-500 font-extrabold text-left' style={{fontVariant: "small-caps"}}>{params.id}</h2> */}
 
 
-            {blog_JSON.map((blog) => {
+            {blog_JSON.map((blog: any) => {
                   
                   
                   if (blog.id == params.id) {
@@ -64,7 +64,7 @@ export default async function Home({ params }: { params: { id: number } }) {
                             {/* <p aria-label='image-caption' className='p-2 italic'>{[blog.images[0].caption ? blog.images[0].caption  : ""]}</p> */}
 
                             <section className='grid grid-cols-4 gap-2'>
-                              {blog.images.map((image, index) => {
+                              {blog.images.map((image: any, index: any) => {
                                 
                                 if(image.is_main_image != 1) {
                                   return (

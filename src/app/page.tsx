@@ -93,7 +93,7 @@ export default async function Home() {
             <h2 className='m-4 text-right text-4xl font-extrabold'>BLOG.</h2>
 
             <div className='grid grid-cols-3 gap-3'>
-            {blog_JSON.map((blog) => {
+            {blog_JSON.map((blog: any) => {
                   
                   let isLastElement = (blog_JSON[blog_JSON.length - 1].title === blog.title);
                   return (
@@ -116,7 +116,7 @@ export default async function Home() {
 
 
                              <section className='p-4 flex justify-center gap-1 flex-1 justify-self-end' aria-label='post-tags'>
-                        {blog.tags.map((tag) => {
+                        {blog.tags.map((tag: any) => {
                           
                             return (
                                 <p key={tag} className='collapse md:visible bg-blue-400 p-2 text-white text-sm max-h-[36px]'>{tag}</p>
