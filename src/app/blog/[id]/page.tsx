@@ -12,15 +12,14 @@ import { url } from 'inspector';
 
 // import { blog_sample } from './blog_sample.json';
 
-
+const montserrat = Montserrat({ weight: ['300', '500', '700', '800', '900'], style: ['normal', 'italic'], subsets: ['latin'] });
+const eb_garamond = EB_Garamond({weight: ['500', '600'], style: ['normal'], subsets: ['latin']});
 
 export default async function Home({ params }: { params: { id: number } }) {
 
   const blog_file = await fs.readFile(process.cwd() + '/src/app/blog_sample.json', 'utf8');
   const blog_JSON = JSON.parse(blog_file);
 
-  const montserrat = Montserrat({ weight: ['300', '500', '700', '800', '900'], style: ['normal', 'italic'], subsets: ['latin'] });
-  const eb_garamond = EB_Garamond({weight: ['500', '600'], style: ['normal'], subsets: ['latin']});
 
 
   return (

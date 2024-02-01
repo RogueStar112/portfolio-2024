@@ -4,7 +4,6 @@ import Image from 'next/image'
 import { Inter, Teko, Montserrat, Merriweather, EB_Garamond } from 'next/font/google'
 
 import imageHero from './assets/images/me_wlocationv2.png'
-import { Montserrat } from 'next/font/google'
 import { url } from 'inspector';
 
 // import { blog_sample } from './blog_sample.json';
