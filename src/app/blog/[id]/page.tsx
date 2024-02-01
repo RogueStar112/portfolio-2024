@@ -52,46 +52,52 @@ export default async function Home({ params }: { params: { id: number } }) {
             {blog_JSON.map((blog) => {
                   
                   
-                  if (blog === params.id) {
+                  if (blog.id == params.id) {
                         return (
-                          <article id={blog.id} className={`/max-w-[100%] /md:max-w-[33.3%] flex flex-col justify-start content-end`}>
+                          <article key={blog.id} id={blog.id} className={`/max-w-[100%] /md:max-w-[33.3%] py-4 flex flex-col justify-start content-end`}>
 
-                            <Image className="rounded-t-lg overflow-mask-vert h-[250px] object-cover " src={blog.images[0].file_path} width={864} height={300} alt={"Test"}/>
+                            <Image className="rounded-t-lg overflow-mask-vert h-[400px] object-cover " src={blog.images[0].file_path} width={864} height={400} alt={"Test"}/>
                             
                             
-                  
+                            <section className='flex justify-between'>
+                    
+                              <section className='rounded-b-lg p-4 relative' aria-label='blog-text'>
+                            
+                                <h2 className='text-blue-500 text-4xl font-extrabold text-left' style={{fontVariant: "small-caps"}}>{blog.title}</h2>
 
-                            <section className='rounded-b-lg p-4 relative' aria-label='blog-text'>
-                          
-                              <h2 className='text-blue-500 font-extrabold text-left' style={{fontVariant: "small-caps"}}>{blog.title}</h2>
-
-                                <p className='text-stone-500 text-left'>{blog.dateTime_created}</p>
+                                  <p className='text-stone-500 text-left'>{blog.dateTime_created}</p>
 
 
-                              <p className='text-justify'>{blog.teaser_content}</p>
+                                <p className='text-justify'>{blog.teaser_content}</p>
+                              </section>
+
+
+
+                                      <section className='p-4 flex justify-center gap-1 flex-1 justify-self-end' aria-label='post-tags'>
+                                  {blog.tags.map((tag) => {
+                                    
+                                      return (
+                                          <p key={tag} className='bg-blue-400 p-2 text-white text-sm max-h-[36px]'>{tag}</p>
+                                      )
+
+                                  })}
+                              </section>
+
                             </section>
 
-
-
-                                    <section className='p-4 flex justify-center gap-1 flex-1 justify-self-end' aria-label='post-tags'>
-                                {blog.tags.map((tag) => {
-                                  
-                                    return (
-                                        <p className='bg-blue-400 p-2 text-white text-sm max-h-[36px]'>{tag}</p>
-                                    )
-
-                                })}
+                            <section className='p-4' aria-label='article-text'>
+                              {blog.full_content}
                             </section>
                           </article>
 
 
                         )
                   } else {
-                    return (
+                    // return (
 
-                      <article>404: Blog Article not found.</article>
+                    //   <article key="NaN">404: Blog Article not found.</article>
 
-                    )
+                    // )
                   }
 
 

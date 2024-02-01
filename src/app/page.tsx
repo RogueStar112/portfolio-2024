@@ -94,7 +94,7 @@ export default async function Home() {
                   
                   let isLastElement = (blog_JSON[blog_JSON.length - 1].title === blog.title);
                   return (
-                  <article id={blog.id} className={`/max-w-[100%] /md:max-w-[33.3%] flex flex-col justify-start content-end ${isLastElement ? "col-span-full" : ""}`}>
+                  <article key={blog.id} id={blog.id} className={`/max-w-[100%] /md:max-w-[33.3%] flex flex-col justify-start content-end ${isLastElement ? "col-span-full" : ""}`}>
 
                     <Image className="rounded-t-lg overflow-mask-vert h-[250px] object-cover " src={blog.images[0].file_path} width={864} height={300} alt={"Test"}/>
                     
@@ -102,9 +102,9 @@ export default async function Home() {
 
                     <section className='rounded-b-lg p-4 relative' aria-label='blog-text'>
                    
-                      <h2 className='text-blue-500 font-extrabold text-left' style={{fontVariant: "small-caps"}}>{blog.title}</h2>
+                      <Link href={`blog/${blog.id}`} className='text-blue-500 font-extrabold text-left' style={{fontVariant: "small-caps"}}>{blog.title}</Link>
 
-                         <p className='text-stone-500 text-left'>{blog.dateTime_created}</p>
+                         {/* <p className='text-stone-500 text-left'>{blog.dateTime_created}</p> */}
 
 
                       <p className='text-justify'>{blog.teaser_content}</p>
