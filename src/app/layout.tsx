@@ -4,11 +4,8 @@ import './globals.css'
 import './hero_overflow.css'
 
 // export const inter = Inter({ subsets: ['latin'] })
-export const montserrat = Montserrat({ weight: ['300', '500', '700', '800', '900'], style: ['normal', 'italic'], subsets: ['latin'] })
-export const merriweather = Merriweather({ weight: ['300', '400', '700'], style: ['normal', 'italic'], subsets: ['latin'] })
-export const teko = Teko({ weight: ['300', '400', '700'], style: ['normal'], subsets: ['latin'] })
-export const eb_garamond = EB_Garamond({weight: ['500', '600'], style: ['normal'], subsets: ['latin']});
-
+const montserrat = Montserrat({ weight: ['300', '500', '700', '800', '900'], style: ['normal', 'italic'], subsets: ['latin'] })
+  
 
 
 export const metadata: Metadata = {
