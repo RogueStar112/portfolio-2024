@@ -4,18 +4,35 @@
 "title": "My love for nature reserves",
 "tags": ["personal", "nature", "walk", "lifestyle"],
 "teaser_content": "I have been to a variety of nature reserves in Cambridge throughout the years. Here are some highlights.",
-"full_content": "I have been to a variety of nature reserves in Cambridge throughout the years. here are some highlights.",
+"full_content": "My Go-To Nature Reserve: Byron's Pool. Best Looking Nature Reserve: Cherry Hinton Chalk Pits. Most Versatile Nature Reserve: Milton Country Park.",
 "created_by": "Demie Mistica",
-"dateTime_created": "29/01/2024 19:33",
-"dateTime_updated": "29/01/2024 19:33",
+"dateTime_created": "29/01/2024, 19:33",
+"dateTime_updated": "29/01/2024, 19:33",
 "grid_format_id": "1",
 "images": [{
 
-"file_path": "/images/NatureReserve.jpg",
+"file_path": "/images/NatureReserve2.jpg",
+"caption": "Trumpington Meadows and Byron's Pool Local Nature Reserve. ⭐⭐⭐⭐⭐",
 "is_main_image": 1
 
 
-}]
+},
+
+{
+    "file_path": "/images/NatureReserve3.jpg",
+    "caption": "",
+    "is_main_image": 0
+},
+
+
+{
+    "file_path": "/images/NatureReserve.jpg",
+    "caption": "",
+    "is_main_image": 0
+}
+
+
+]
 
 },
 
@@ -26,10 +43,10 @@
 "title": "Visit to Campfire",
 "tags": ["personal", "social", "lifestyle"],
 "teaser_content": "I've gone to a campfire near a local nature reserve. It was nice getting to meet new people!",
-"full_content": "I have been to a variety of nature reserves in Cambridge throughout the years. here are some highlights.",
+"full_content": "Socialization hasn't been one of my strongest traits, but I always welcome a warm, friendly chat.",
 "created_by": "Demie Mistica",
-"dateTime_created": "29/01/2024 21:07",
-"dateTime_updated": "29/01/2024 21:07",
+"dateTime_created": "29/01/2024, 21:07",
+"dateTime_updated": "29/01/2024, 21:07",
 "grid_format_id": "1",
 "images": [{
 
@@ -49,8 +66,8 @@
 "teaser_content": "I embarked on a 1.5hr journey, encountering muddy terrain along the way.",
 "full_content": "I have been to a variety of nature reserves in Cambridge throughout the years. here are some highlights.",
 "created_by": "Demie Mistica",
-"dateTime_created": "29/01/2024 21:15",
-"dateTime_updated": "29/01/2024 21:15",
+"dateTime_created": "29/01/2024, 21:15",
+"dateTime_updated": "29/01/2024, 21:15",
 "grid_format_id": "1",
 "images": [{
 
@@ -70,8 +87,8 @@
 "teaser_content": "Here are my hardships I faced in 2023, that I will conquer in 2024.",
 "full_content": "2023 was a constant battle between me and my mind. I consistently ordered takeout, with weight fluctuations and everything in-between. Things could almost certainly be worse though, though I won't wish that upon myself.",
 "created_by": "Demie Mistica",
-"dateTime_created": "30/01/2024 01:38",
-"dateTime_updated": "30/01/2024 01:38",
+"dateTime_created": "30/01/2024, 01:38",
+"dateTime_updated": "30/01/2024, 01:38",
 "grid_format_id": "1",
 "images": [{
 

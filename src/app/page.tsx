@@ -116,7 +116,7 @@ export default async function Home() {
                         {blog.tags.map((tag) => {
                           
                             return (
-                                <p className='bg-blue-400 p-2 text-white text-sm max-h-[36px]'>{tag}</p>
+                                <p key={tag} className='collapse md:visible bg-blue-400 p-2 text-white text-sm max-h-[36px]'>{tag}</p>
                             )
 
                         })}

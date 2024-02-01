@@ -20,6 +20,8 @@ export default async function Home({ params }: { params: { id: number } }) {
   const blog_file = await fs.readFile(process.cwd() + '/src/app/blog_sample.json', 'utf8');
   const blog_JSON = JSON.parse(blog_file);
 
+  
+
 
   return (
     <div className='p-4 dark:bg-onyx h-screen dark:text-mint-cream mx-auto text-current max-w-4xl'>
@@ -55,15 +57,17 @@ export default async function Home({ params }: { params: { id: number } }) {
                   if (blog.id == params.id) {
                         return (
                           <article key={blog.id} id={blog.id} className={`/max-w-[100%] /md:max-w-[33.3%] py-4 flex flex-col justify-start content-end`}>
-
+                            
                             <Image className="rounded-t-lg overflow-mask-vert h-[400px] object-cover " src={blog.images[0].file_path} width={864} height={400} alt={"Test"}/>
                             
+                            <p aria-label='image-caption' className='p-2 italic'>{[blog.images[0].caption ? blog.images[0].caption  : ""]}</p>
+
                             
                             <section className='flex justify-between'>
                     
-                              <section className='rounded-b-lg p-4 relative' aria-label='blog-text'>
+                              <section className='rounded-b-lg p-2 relative grow' aria-label='blog-text'>
                             
-                                <h2 className='text-blue-500 text-4xl font-extrabold text-left' style={{fontVariant: "small-caps"}}>{blog.title}</h2>
+                                <h2 className='text-blue-500 text-4xl font-extrabold text-left break-all' style={{fontVariant: "small-caps"}}>{blog.title}</h2>
 
                                   <p className='text-stone-500 text-left'>{blog.dateTime_created}</p>
 
@@ -73,7 +77,7 @@ export default async function Home({ params }: { params: { id: number } }) {
 
 
 
-                                      <section className='p-4 flex justify-center gap-1 flex-1 justify-self-end' aria-label='post-tags'>
+                                      <section className='p-2 flex justify-center gap-1 flex-1 justify-self-end' aria-label='post-tags'>
                                   {blog.tags.map((tag) => {
                                     
                                       return (
@@ -85,8 +89,21 @@ export default async function Home({ params }: { params: { id: number } }) {
 
                             </section>
 
-                            <section className='p-4' aria-label='article-text'>
+                            <section className='p-2' aria-label='article-text'>
                               {blog.full_content}
+                            </section>
+                            
+                            <section className='grid grid-cols-4 gap-2 p-2'>
+                              {blog.images.map((image, index) => {
+                                
+                                if(image.is_main_image != 1) {
+                                  return (
+                                    
+                                    <Image key={`img_${blog.id}_${index}`} className='rounded-lg' src={image.file_path} width={864} height={400} alt={"Test"}/>
+
+                                  )
+                                }
+                              })}
                             </section>
                           </article>
 
