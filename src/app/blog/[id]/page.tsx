@@ -2,6 +2,9 @@ import { promises as fs } from 'fs';
 
 import { useRouter } from 'next/router'
 
+import { readFileSync } from 'fs';
+
+
 import Link from 'next/link'
 import Image from 'next/image'
 
@@ -10,6 +13,7 @@ import { Inter, Teko, Montserrat, Merriweather, EB_Garamond } from 'next/font/go
 import imageHero from '../../assets/images/me_wlocationv2.png'
 import { url } from 'inspector';
 
+let path = require('path');
 // import { blog_sample } from './blog_sample.json';
 
 const montserrat = Montserrat({ weight: ['300', '500', '700', '800', '900'], style: ['normal', 'italic'], subsets: ['latin'] });
@@ -17,8 +21,11 @@ const eb_garamond = EB_Garamond({weight: ['500', '600'], style: ['normal'], subs
 
 export default async function Home({ params }: { params: { id: number } }) {
 
-  const blog_file = await fs.readFile(process.cwd() + '/src/app/blog_sample.json', 'utf8');
-  const blog_JSON = JSON.parse(blog_file);
+  const blog_file = path.join(process.cwd(), 'src/app', 'blog_sample.json');
+  // const blog_JSON = JSON.parse(blog_file);
+  const blog_JSON = JSON.parse(readFileSync(blog_file, 'utf-8'));
+
+
 
 
 

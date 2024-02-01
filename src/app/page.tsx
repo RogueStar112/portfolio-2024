@@ -6,6 +6,8 @@ import { Inter, Teko, Montserrat, Merriweather, EB_Garamond } from 'next/font/go
 import imageHero from './assets/images/me_wlocationv2.png'
 import { url } from 'inspector';
 
+import { readFileSync } from 'fs';
+
 // import { blog_sample } from './blog_sample.json';
 
 let path = require('path');
@@ -17,9 +19,9 @@ const eb_garamond = EB_Garamond({weight: ['500', '600'], style: ['normal'], subs
 
 export default async function Home() {
 
-  const blog_file = await fs.readFile(process.cwd() + '/src/app/blog_sample.json', 'utf8');
-  const blog_JSON = JSON.parse(blog_file);
-
+  const blog_file = path.join(process.cwd(), 'src/app', 'blog_sample.json');
+  // const blog_JSON = JSON.parse(blog_file);
+  const blog_JSON = JSON.parse(readFileSync(blog_file, 'utf-8'));
 
   return (
     <div className='p-4 dark:bg-onyx h-screen dark:text-mint-cream mx-auto text-current max-w-4xl'>

@@ -15,7 +15,40 @@
 "is_main_image": 1
 
 
-}]
+},
+
+{
+
+"file_path": "/images/NatureReserve2.jpg",
+"is_main_image": 0
+
+
+},
+
+{
+
+"file_path": "/images/NatureReserve3.jpg",
+"is_main_image": 0
+
+
+},
+
+{
+
+"file_path": "/images/NatureReserve4.jpg",
+"is_main_image": 0
+
+
+},
+
+{
+
+"file_path": "/images/NatureReserve5.jpg",
+"is_main_image": 0
+
+
+}
+]
 
 },
 
@@ -71,7 +104,7 @@
 "full_content": "I have been to a variety of nature reserves in Cambridge throughout the years. here are some highlights.",
 "created_by": "Demie Mistica",
 "dateTime_created": "30/01/2024, 01:38",
-"dateTime_updated": "30/01/2024, 01:38",
+"dateTime_updated": "30/01/2024 01:38",
 "grid_format_id": "1",
 "images": [{
 
