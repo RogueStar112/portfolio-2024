@@ -17,7 +17,7 @@ const eb_garamond = EB_Garamond({weight: ['500', '600'], style: ['normal'], subs
 
 export default async function Home() {
 
-  const blog_file = await fs.readFile(path.join(process.cwd() + '/blog_sample.json'), 'utf8');
+  const blog_file = await fs.readFile(process.cwd() + '/src/app/blog_sample.json', 'utf8');
   const blog_JSON = JSON.parse(blog_file);
 
 
