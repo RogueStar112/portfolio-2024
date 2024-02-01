@@ -95,7 +95,7 @@ export default async function Home({ params }: { params: { id: number } }) {
                                   {blog.tags.map((tag) => {
                                     
                                       return (
-                                          <p key={tag} className='bg-blue-400 p-2 text-white text-sm max-h-[36px]'>{tag}</p>
+                                          <p key={tag} className='bg-blue-400 p-2 text-white text-sm max-h-[40px]'>{tag}</p>
                                       )
 
                                   })}
