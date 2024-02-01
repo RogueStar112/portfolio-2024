@@ -20,7 +20,6 @@ const eb_garamond = EB_Garamond({weight: ['500', '600'], style: ['normal'], subs
 export default async function Home() {
 
   const blog_file = path.join(process.cwd(), 'src/app', 'blog_sample.json');
-  // const blog_JSON = JSON.parse(blog_file);
   const blog_JSON = JSON.parse(readFileSync(blog_file, 'utf-8'));
 
   return (
@@ -93,8 +92,18 @@ export default async function Home() {
             </article>
             
             <h2 className='m-4 text-right text-4xl font-extrabold'>PROJECTS.</h2> */}
+
+            <h2 className='overflow-mask text-white p-4 my-2 text-right text-4xl font-extrabold bg-gradient-to-r from-transparent to-orange-500'>SKILLSET.</h2>
+
+            {/* <div aria-label="section-skillset"  className='grid grid-cols-3 [&>*]:grow'>
+                  
+                <Image className="p-4" src={`/images/Laravel_logo.png`} width={288} height={256} alt='Laravel'></Image>
+
+            </div> */}
             
-            <h2 className='m-4 text-right text-4xl font-extrabold'>BLOG.</h2>
+            <h2 className='overflow-mask p-4 my-2 text-white text-right text-4xl font-extrabold bg-gradient-to-r from-transparent to-green-500'>PROJECTS.</h2>
+
+            <h2 className='overflow-mask p-4 my-2 text-white text-right text-4xl font-extrabold bg-gradient-to-r from-transparent to-blue-500'>BLOG.</h2>
 
             <div className='grid grid-cols-3 gap-3'>
             {blog_JSON.map((blog: any) => {
@@ -123,7 +132,7 @@ export default async function Home() {
                         {blog.tags.map((tag: any) => {
                           
                             return (
-                                <p key={tag} className='collapse md:visible bg-blue-400 p-2 text-white text-sm max-h-[36px]'>{tag}</p>
+                                <Link key={tag} href={`/blog/tag/${tag}`} className='bg-blue-400 p-2 text-white text-sm max-h-[40px]'>{tag}</Link>
                             )
 
                         })}
