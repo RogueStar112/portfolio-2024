@@ -8,6 +8,8 @@ import { url } from 'inspector';
 
 // import { blog_sample } from './blog_sample.json';
 
+let path = require('path');
+
 const montserrat = Montserrat({ weight: ['300', '500', '700', '800', '900'], style: ['normal', 'italic'], subsets: ['latin'] })
 const merriweather = Merriweather({ weight: ['300', '400', '700'], style: ['normal', 'italic'], subsets: ['latin'] })
 const teko = Teko({ weight: ['300', '400', '700'], style: ['normal'], subsets: ['latin'] })
@@ -15,7 +17,7 @@ const eb_garamond = EB_Garamond({weight: ['500', '600'], style: ['normal'], subs
 
 export default async function Home() {
 
-  const blog_file = await fs.readFile(process.cwd() + '/blog_sample.json', 'utf8');
+  const blog_file = await fs.readFile(path.join(process.cwd() + '/blog_sample.json'), 'utf8');
   const blog_JSON = JSON.parse(blog_file);
 
 
