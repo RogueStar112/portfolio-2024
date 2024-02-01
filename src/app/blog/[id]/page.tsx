@@ -91,7 +91,7 @@ export default async function Home({ params }: { params: { id: number } }) {
 
 
                                       <section className='p-2 flex justify-center gap-1 flex-1 justify-self-end' aria-label='post-tags'>
-                                  {blog.tags.map((tag) => {
+                                  {blog.tags.map((tag: any) => {
                                     
                                       return (
                                           <p key={tag} className='bg-blue-400 p-2 text-white text-sm max-h-[40px]'>{tag}</p>
