@@ -32,7 +32,7 @@ export default async function Home() {
           <div className='flex flex-col flex-start [&>*]:leading-[1.1rem]'>
 
             <p className='text-2xl font-extrabold'>DEMIE</p> 
-            <p className='text-2xl font-bold text-stone-500'>MISTICA</p>
+            <p className='text-2xl font-bold text-stone-500 dark:text-stone-400'>MISTICA</p>
           
           </div>
           

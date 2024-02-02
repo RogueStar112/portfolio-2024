@@ -38,7 +38,7 @@ export default async function Home({ params }: { params: { tag: string } }) {
           
           {/* <h1 className='font-montserrat p-logo'>DEMIE<br></br>MISTICA</h1> */}
 
-          <nav id='navbar' className={`${montserrat.className} [&>*]:font-bold flex justify-around gap-3`}>
+          <nav id='navbar' className={`${montserrat.className} [&>*]:font-bold [&>*]:self-center flex justify-around gap-3`}>
               <Link href="/" style={{fontVariant: "small-caps"}}>Home</Link>
               <Link href="/" style={{fontVariant: "small-caps"}}>Blog</Link>
               <Link href="/" style={{fontVariant: "small-caps"}}>Projects</Link>
