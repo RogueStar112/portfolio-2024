@@ -63,6 +63,10 @@ export default async function Home({ params }: { params: { id: number } }) {
                   
                   
                   if (blog.id == params.id) {
+
+                        // credit to: https://stackoverflow.com/questions/42068/how-do-i-handle-newlines-in-json.
+                        // This replaces \n with newline.
+                        // blog.full_content = blog.full_content.replace(/\n/g, "\\\\n").replace(/\r/g, "\\\\r").replace(/\t/g, "\\\\t");
                         return (
                           <article key={blog.id} id={blog.id} className={`/max-w-[100%] /md:max-w-[33.3%] py-4 flex flex-col justify-start content-end`}>
                             
@@ -85,37 +89,42 @@ export default async function Home({ params }: { params: { id: number } }) {
                               })}
                             </section>
 
-                            <section className='grid grid-cols-1 /md:grid-cols-2 md:grid-cols-[4fr_1fr]'>
+                            <section className='grid grid-cols-1 /md:grid-cols-2 md:grid-cols-[2fr_1fr]'>
                     
                               <section className='rounded-b-lg p-2 relative' aria-label='blog-text'>
                             
-                                <h2 className='text-blue-500 dark:text-orange-500 text-4xl font-extrabold text-left break-all' style={{fontVariant: "small-caps"}}>{blog.title}</h2>
+                                <h2 className='text-blue-500 dark:text-orange-500 text-4xl font-extrabold text-center md:text-left whitespace-normal' style={{fontVariant: "small-caps"}}>{blog.title}</h2>
 
-                                  <p className='text-stone-500 text-left'>{blog.dateTime_created}</p>
+                                  <p className='text-stone-500 text-center md:text-left'>Published on {blog.dateTime_created}</p>
 
 
-                                <p className='text-justify'>{blog.teaser_content}</p>
+                      
                               </section>
 
 
 
-                              <section className='md:order-last /order-first p-2 flex justify-around w-full md:w-initial md:justify-center gap-1 flex-1 justify-self-end' aria-label='post-tags'>
+                              <section className='md:order-last /order-first py-2 pl-2 flex justify-around w-full md:w-initial md:justify-center gap-1 flex-1 justify-self-end' aria-label='post-tags'>
                                   {blog.tags.map((tag: any) => {
                                     
                                       return (
-                                          <Link key={tag} href={`/blog/tag/${tag}`} className='bg-blue-400 dark:bg-orange-700 grow md:grow-0 text-center p-2 text-white text-sm max-h-[40px]'>{tag}</Link>
+                                          <Link key={tag} href={`/blog/tag/${tag}`} className='bg-blue-400 dark:bg-orange-700 grow /md:grow-0 text-center p-2 text-white text-sm max-h-[40px]'>{tag}</Link>
                                       )
 
                                   })}
                               </section>
 
-                              
+
+                            
 
                             </section>
+
+                            <p className='p-2 text-justify text-xl col-span-2'>{blog.teaser_content}</p>
 
                             <section className='p-2' aria-label='article-text'>
                               {blog.full_content}
                             </section>
+
+                            
                             
                             
                           </article>

@@ -83,29 +83,37 @@ export default async function Home({ params }: { params: { tag: string } }) {
                               })}
                             </section>
 
-                            <section className='grid grid-cols-1 /md:grid-cols-2 md:grid-cols-[4fr_1fr]'>
+                            <section className='grid grid-cols-1 /md:grid-cols-2 /md:grid-cols-[2fr_1fr]'>
                     
                               <section className='rounded-b-lg p-2 relative' aria-label='blog-text'>
                             
-                                <h2 className='text-blue-500 dark:text-orange-500 text-4xl font-extrabold text-left break-all' style={{fontVariant: "small-caps"}}>{blog.title}</h2>
+                                <Link href={`/blog/${blog.id}`} className='text-blue-500 dark:text-orange-500 text-center md:text-left text-2xl md:text-4xl font-extrabold text-left whitespace-normal' style={{fontVariant: "small-caps"}}>{blog.title}</Link>
 
-                                  <p className='text-stone-500 text-left'>{blog.dateTime_created}</p>
+                                  <p className='w-full md:w-fit text-stone-500 text-md md:text-xl text-left'>Published on {blog.dateTime_created}</p>
 
 
-                                <p className='text-justify'>{blog.teaser_content}</p>
+                                  <section className='flex justify-between'>
+                                              <p className='text-justify text-md md:text-xl col-span-2'>{blog.teaser_content}</p>
+                                  </section>
+
                               </section>
 
-
-
-                              <section className='md:order-last /order-first p-2 flex justify-around w-full md:w-initial md:justify-center gap-1 flex-1 justify-self-end' aria-label='post-tags'>
+                              
+                              <section className=' py-2 pl-2 flex justify-around w-full md:w-initial md:justify-center gap-1 flex-1 justify-self-end' aria-label='post-tags'>
                                   {blog.tags.map((tag: any) => {
                                     
                                       return (
-                                          <Link key={tag} href={`/blog/tag/${tag}`} className='bg-blue-400 dark:bg-orange-700 grow md:grow-0 text-center p-2 text-white text-sm max-h-[40px]'>{tag}</Link>
+                                          <Link key={tag} href={`/blog/tag/${tag}`} className='bg-blue-400 dark:bg-orange-700 grow /md:grow-0 text-center py-2 pl-2 text-white text-sm max-h-[40px]'>{tag}</Link>
                                       )
 
                                   })}
                               </section>
+
+                              {/* <section className='col-span-2'>
+                    
+                              </section> */}
+
+
 
                             </section>
 
