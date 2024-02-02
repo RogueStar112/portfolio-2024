@@ -82,7 +82,7 @@ export default async function Home({ params }: { params: { id: number } }) {
                                 if(image.is_main_image != 1) {
                                   return (
                                     
-                                    <Image key={`img_${blog.id}_${index}`} className='rounded-lg overflow-mask-vert' src={image.file_path} width={864} height={400} alt={"Test"}/>
+                                    <Image key={`img_${blog.id}_${index}`} className='rounded-lg md:overflow-mask-vert object-cover max-h-[60px] md:max-h-[156px]' src={image.file_path} width={864} height={400} alt={"Test"}/>
 
                                   )
                                 }

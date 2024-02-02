@@ -80,18 +80,47 @@
 "title": "6km Walking Workout",
 "tags": ["personal", "nature", "walk", "lifestyle"],
 "teaser_content": "I embarked on a 1.5hr journey, encountering muddy terrain along the way.",
-"full_content": "I have been to a variety of nature reserves in Cambridge throughout the years. here are some highlights.",
+"full_content": "This is one of the longest walks I've done in 2024 so far, and I am pretty proud of that. Any progress is progress and I believe firmly that putting any effort is better than none.",
 "created_by": "Demie Mistica",
 "dateTime_created": "29/01/2024, 21:15",
 "dateTime_updated": "29/01/2024, 21:15",
 "grid_format_id": "1",
 "images": [{
 
-"file_path": "/images/Workout.png",
+"file_path": "/images/6KM_3.jpg",
 "is_main_image": 1
 
+},
 
-}]
+{
+
+"file_path": "/images/6KM_Selfie.jpg",
+"is_main_image": 0
+
+},
+
+{
+
+"file_path": "/images/6KM_2.jpg",
+"is_main_image": 0
+
+},
+
+{
+
+"file_path": "/images/6KM_4.jpg",
+"is_main_image": 0
+
+},
+
+{
+
+"file_path": "/images/6KM_Workout.png",
+"is_main_image": 0
+
+
+}
+]
 
 },
 
@@ -104,12 +133,42 @@
 "full_content": "Firstly, my spending habits were dominant. Money became a double-edged sword for my mental health, that I am going to put it to the side. Society and media filled my head with so many choices that it made me feel wealthier than I actually am. To me, pointing this out feels liberating, as it shows the potential I have to control my finances. \n Secondly, I overrelied on others. I became too dependent on people's positive feedback.",
 "created_by": "Demie Mistica",
 "dateTime_created": "30/01/2024, 01:38",
-"dateTime_updated": "30/01/2024 01:38",
+"dateTime_updated": "30/01/2024, 01:38",
 "grid_format_id": "1",
 "images": [{
 
 "file_path": "/images/LookingAtDesktop.jpg",
 "is_main_image": 1
+
+
+}]
+
+},
+
+
+{
+
+"id": 5,
+"title": "My Favourite Food",
+"tags": ["personal", "food"],
+"teaser_content": "Food that I love to cook/eat from time to time, including a tropical ice cream!",
+"full_content": "Firstly, my spending habits were dominant. Money became a double-edged sword for my mental health, that I am going to put it to the side. Society and media filled my head with so many choices that it made me feel wealthier than I actually am. To me, pointing this out feels liberating, as it shows the potential I have to control my finances. \n Secondly, I overrelied on others. I became too dependent on people's positive feedback.",
+"created_by": "Demie Mistica",
+"dateTime_created": "02/02/2024, 20:08",
+"dateTime_updated": "02/02/2024, 20:08",
+"grid_format_id": "1",
+"images": [{
+
+"file_path": "/images/Food_1.JPG",
+"is_main_image": 1
+
+
+},
+
+{
+
+"file_path": "/images/FoodHero.png",
+"is_main_image": 0
 
 
 }]

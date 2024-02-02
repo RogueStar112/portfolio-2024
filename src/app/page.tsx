@@ -135,7 +135,7 @@ export default async function Home() {
                         {blog.tags.map((tag: any) => {
                           
                             return (
-                                <Link key={tag} href={`/blog/tag/${tag}`} className='bg-blue-400  dark:bg-orange-700 p-2 text-white text-sm max-h-[40px]'>{tag}</Link>
+                                <Link key={tag} href={`/blog/tag/${tag}`} className='bg-blue-400 grow dark:bg-orange-700 p-2 text-white text-sm max-h-[40px]'>{tag}</Link>
                             )
 
                         })}
