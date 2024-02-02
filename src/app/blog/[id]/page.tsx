@@ -13,6 +13,8 @@ import { Inter, Teko, Montserrat, Merriweather, EB_Garamond } from 'next/font/go
 import imageHero from '../../assets/images/me_wlocationv2.png'
 import { url } from 'inspector';
 
+import ThemeSwitch from '../../components/ThemeSwitch';
+
 let path = require('path');
 // import { blog_sample } from './blog_sample.json';
 
@@ -83,9 +85,9 @@ export default async function Home({ params }: { params: { id: number } }) {
                               })}
                             </section>
 
-                            <section className='flex justify-between'>
+                            <section className='grid grid-cols-1 md:grid-cols-2'>
                     
-                              <section className='rounded-b-lg p-2 relative ' aria-label='blog-text'>
+                              <section className='rounded-b-lg p-2 relative' aria-label='blog-text'>
                             
                                 <h2 className='text-blue-500 dark:text-orange-500 text-4xl font-extrabold text-left break-all' style={{fontVariant: "small-caps"}}>{blog.title}</h2>
 
@@ -97,11 +99,11 @@ export default async function Home({ params }: { params: { id: number } }) {
 
 
 
-                                      <section className='p-2 flex justify-center gap-1 flex-1 justify-self-end' aria-label='post-tags'>
+                              <section className='md:order-last /order-first p-2 flex justify-around w-full md:w-initial md:justify-center gap-1 flex-1 justify-self-end' aria-label='post-tags'>
                                   {blog.tags.map((tag: any) => {
                                     
                                       return (
-                                          <Link key={tag} href={`/blog/tag/${tag}`} className='bg-blue-400 dark:bg-orange-700 p-2 text-white text-sm max-h-[40px]'>{tag}</Link>
+                                          <Link key={tag} href={`/blog/tag/${tag}`} className='bg-blue-400 dark:bg-orange-700 grow md:grow-0 text-center p-2 text-white text-sm max-h-[40px]'>{tag}</Link>
                                       )
 
                                   })}

@@ -25,11 +25,11 @@ export default function ThemeSwitch() {
   )
 
   if (resolvedTheme === 'dark') {
-    return <button className="" onClick={() => setTheme('light')}>LIGHT</button>
+    return <button className="" onClick={() => setTheme('light')}>DARK</button>
   }
 
   if (resolvedTheme === 'light') {
-    return <button className="" onClick={() => setTheme('dark')}>DARK</button>
+    return <button className="" onClick={() => setTheme('dark')}>LIGHT</button>
   }
 
 }

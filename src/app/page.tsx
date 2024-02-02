@@ -38,7 +38,7 @@ export default async function Home() {
           
           {/* <h1 className='font-montserrat p-logo'>DEMIE<br></br>MISTICA</h1> */}
 
-          <nav id='navbar' className={`${montserrat.className} [&>*]:font-bold flex justify-around gap-3`}>
+          <nav id='navbar' className={`${montserrat.className} [&>*]:font-bold [&>*]:self-center flex justify-around gap-3`}>
               <Link href="/" style={{fontVariant: "small-caps"}}>Home</Link>
               <Link href="/" style={{fontVariant: "small-caps"}}>Blog</Link>
               <Link href="/" style={{fontVariant: "small-caps"}}>Projects</Link>
@@ -61,8 +61,8 @@ export default async function Home() {
                 <section className='overflow-mask h-[448px]'>
                 <Image className='object-cover object-center h-inherit' src={imageHero} fill={true} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" style={{objectFit: 'cover'}} alt='My portrait'></Image>
                     <section className='absolute right-0 mr-4 top-[45%] text-white'>
-                      <p className='text-4xl font-extrabold'>GREETINGS.</p>
-                      <p className={`${eb_garamond.className} font-initial`}>I am a full stack Web Developer.</p>
+                      <p className='text-xl text-right md:text-4xl font-extrabold'>GREETINGS.</p>
+                      <p className={`${eb_garamond.className} font-initial`}>Full Stack Web Developer</p>
                     </section>
                 </section>
 
@@ -107,12 +107,13 @@ export default async function Home() {
 
             <h2 className='overflow-mask p-4 my-2 text-black dark:text-white text-right text-4xl font-extrabold border-b-4 border-blue-500'>BLOG.</h2>
 
-            <div className='grid grid-cols-3 gap-3'>
+            <div className='grid grid-cols-1 md:grid-cols-3 gap-3'>
             {blog_JSON.map((blog: any) => {
                   
-                  let isLastElement = (blog_JSON[blog_JSON.length - 1].title === blog.title);
+                  // let isLastElement = (blog_JSON[blog_JSON.length - 1].title === blog.title);
+                  // ${isLastElement ? "col-span-full" : ""}
                   return (
-                  <article key={blog.id} id={blog.id} className={`/max-w-[100%] /md:max-w-[33.3%] flex flex-col justify-start content-end ${isLastElement ? "col-span-full" : ""}`}>
+                  <article key={blog.id} id={blog.id} className={`/max-w-[100%] /md:max-w-[33.3%] flex flex-col justify-start content-end`}>
 
                     <Image className="rounded-t-lg overflow-mask-vert h-[250px] object-cover " src={blog.images[0].file_path} width={864} height={300} alt={"Test"}/>
                     
