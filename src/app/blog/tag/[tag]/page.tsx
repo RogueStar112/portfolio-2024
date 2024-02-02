@@ -83,7 +83,7 @@ export default async function Home({ params }: { params: { tag: string } }) {
                               })}
                             </section>
 
-                            <section className='grid grid-cols-1 md:grid-cols-2'>
+                            <section className='grid grid-cols-1 /md:grid-cols-2 md:grid-cols-[4fr_1fr]'>
                     
                               <section className='rounded-b-lg p-2 relative' aria-label='blog-text'>
                             
