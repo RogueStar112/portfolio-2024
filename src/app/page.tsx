@@ -8,6 +8,8 @@ import { url } from 'inspector';
 
 import { readFileSync } from 'fs';
 
+import ThemeSwitch from './components/ThemeSwitch';
+
 // import { blog_sample } from './blog_sample.json';
 
 let path = require('path');
@@ -40,7 +42,7 @@ export default async function Home() {
               <Link href="/" style={{fontVariant: "small-caps"}}>Home</Link>
               <Link href="/" style={{fontVariant: "small-caps"}}>Blog</Link>
               <Link href="/" style={{fontVariant: "small-caps"}}>Projects</Link>
-              <Link href="/" style={{fontVariant: "small-caps"}}>DarkMode</Link>
+              <ThemeSwitch />
           </nav>
 
         </header>
@@ -93,7 +95,7 @@ export default async function Home() {
             
             <h2 className='m-4 text-right text-4xl font-extrabold'>PROJECTS.</h2> */}
 
-            <h2 className='overflow-mask text-white p-4 my-2 text-right text-4xl font-extrabold bg-gradient-to-r from-transparent to-orange-500'>SKILLSET.</h2>
+            <h2 className='overflow-mask text-black dark:text-white /dark:text-black p-4 my-2 text-right text-4xl font-extrabold border-b-4 border-orange-500'>SKILLSET.</h2>
 
             {/* <div aria-label="section-skillset"  className='grid grid-cols-3 [&>*]:grow'>
                   
@@ -101,9 +103,9 @@ export default async function Home() {
 
             </div> */}
             
-            <h2 className='overflow-mask p-4 my-2 text-white text-right text-4xl font-extrabold bg-gradient-to-r from-transparent to-green-500'>PROJECTS.</h2>
+            <h2 className='overflow-mask p-4 my-2 text-black dark:text-white text-right text-4xl font-extrabold border-b-4 border-green-500'>PROJECTS.</h2>
 
-            <h2 className='overflow-mask p-4 my-2 text-white text-right text-4xl font-extrabold bg-gradient-to-r from-transparent to-blue-500'>BLOG.</h2>
+            <h2 className='overflow-mask p-4 my-2 text-black dark:text-white text-right text-4xl font-extrabold border-b-4 border-blue-500'>BLOG.</h2>
 
             <div className='grid grid-cols-3 gap-3'>
             {blog_JSON.map((blog: any) => {
@@ -118,7 +120,7 @@ export default async function Home() {
 
                     <section className='rounded-b-lg p-4 relative' aria-label='blog-text'>
                    
-                      <Link href={`blog/${blog.id}`} className='text-blue-500 font-extrabold text-left' style={{fontVariant: "small-caps"}}>{blog.title}</Link>
+                      <Link href={`blog/${blog.id}`} className='text-blue-500 dark:text-orange-500 font-extrabold text-left' style={{fontVariant: "small-caps"}}>{blog.title}</Link>
 
                          {/* <p className='text-stone-500 text-left'>{blog.dateTime_created}</p> */}
 
@@ -132,7 +134,7 @@ export default async function Home() {
                         {blog.tags.map((tag: any) => {
                           
                             return (
-                                <Link key={tag} href={`/blog/tag/${tag}`} className='bg-blue-400 p-2 text-white text-sm max-h-[40px]'>{tag}</Link>
+                                <Link key={tag} href={`/blog/tag/${tag}`} className='bg-blue-400  dark:bg-orange-700 p-2 text-white text-sm max-h-[40px]'>{tag}</Link>
                             )
 
                         })}

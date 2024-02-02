@@ -40,7 +40,7 @@ export default async function Home({ params }: { params: { tag: string } }) {
               <Link href="/" style={{fontVariant: "small-caps"}}>Home</Link>
               <Link href="/" style={{fontVariant: "small-caps"}}>Blog</Link>
               <Link href="/" style={{fontVariant: "small-caps"}}>Projects</Link>
-              <Link href="/" style={{fontVariant: "small-caps"}}>DarkMode</Link>
+              <ThemeSwitch />
           </nav>
 
         </header>
@@ -85,7 +85,7 @@ export default async function Home({ params }: { params: { tag: string } }) {
                     
                               <section className='rounded-b-lg p-2 relative ' aria-label='blog-text'>
                             
-                                <h2 className='text-blue-500 text-4xl font-extrabold text-left break-all' style={{fontVariant: "small-caps"}}>{blog.title}</h2>
+                                <h2 className='text-blue-500 dark:text-orange-500 text-4xl font-extrabold text-left break-all' style={{fontVariant: "small-caps"}}>{blog.title}</h2>
 
                                   <p className='text-stone-500 text-left'>{blog.dateTime_created}</p>
 
@@ -99,7 +99,7 @@ export default async function Home({ params }: { params: { tag: string } }) {
                                   {blog.tags.map((tag: any) => {
                                     
                                       return (
-                                          <Link key={tag} href={`/blog/tag/${tag}`} className='bg-blue-400 p-2 text-white text-sm max-h-[40px]'>{tag}</Link>
+                                          <Link key={tag} href={`/blog/tag/${tag}`} className='bg-blue-400 dark:bg-orange-700  p-2 text-white text-sm max-h-[40px]'>{tag}</Link>
                                       )
 
                                   })}

@@ -3,6 +3,9 @@ import { Inter, Teko, Montserrat, Merriweather, EB_Garamond } from 'next/font/go
 import './globals.css'
 import './hero_overflow.css'
 
+import { Providers } from './providers'
+
+
 // export const inter = Inter({ subsets: ['latin'] })
 const montserrat = Montserrat({ weight: ['300', '500', '700', '800', '900'], style: ['normal', 'italic'], subsets: ['latin'] })
   
@@ -20,7 +23,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${montserrat.className} max-w-5xl mx-auto blur-none`}>{children}</body>
+      <body className={`${montserrat.className} max-w-5xl mx-auto blur-none dark:bg-onyx`}>
+        <Providers>
+          {children}
+        </Providers>
+      </body>
     </html>
   )
 }
