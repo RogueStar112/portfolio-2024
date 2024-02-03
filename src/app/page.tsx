@@ -144,7 +144,31 @@ export default async function Home() {
             
             <h2 className='overflow-mask p-4 my-2 text-black dark:text-white text-right text-4xl font-extrabold border-b-4 border-green-500'>PROJECTS.</h2>
 
-            
+            <article className='grid grid-cols-3 auto-rows-[192px] gap-4'>
+              {[...Array(7)].map((_, i) => {
+                    return (
+                        <div key={`bento-${i}`} className={`rounded-xl border-2 border-green-400/10 bg-neutral-100 place-items-center ${i === 0 ? "col-span-2 grid grid-cols-3 grid-rows-3" : ""} ${i === 0 || i === 4 || i === 5 ? "grid grid-rows-2 row-span-2 secondary-project" : ""}`}>
+                              
+                              <h2 className={`${i === 0 ? "col-span-2 row-span-2 text-4xl" : ""}`}>
+                                  {i}
+                                  {i === 0 ? "MyBudget" : ""}
+                                  {i === 1 ? "Drag n' Drop Pizza Game" : ""}
+                                  {i === 2 ? "TuneMasher" : ""}
+                                  {i === 3 ? "MoodCanvas" : ""}
+                                  {i === 4 ? "MyNutrition" : ""}
+                                  {i === 5 ? "Todo App" : ""}
+                                  {i === 6 ? "Route Rater" : ""}
+                                  {/* {i === 5 ? "Todo App" : ""} 
+                                  {i === 5 ? "Todo App" : ""} */}
+                              </h2>
+
+                        </div>
+                    )  
+                })}
+              {/* <div>
+
+              </div> */}
+            </article>
 
 
 
