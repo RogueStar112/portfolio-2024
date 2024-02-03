@@ -120,7 +120,7 @@ export default async function Home({ params }: { params: { id: number } }) {
 
                             <p className='p-2 text-justify text-xl col-span-2'>{blog.teaser_content}</p>
 
-                            <section className='p-2' aria-label='article-text'>
+                            <section className='p-2 first-letter:font-bold first-letter:text-2xl' aria-label='article-text'>
                               {blog.full_content}
                             </section>
 

@@ -173,4 +173,58 @@
 
 }]
 
+},
+
+{
+
+"id": 6,
+"title": "My time at coding bootcamp",
+"tags": ["education", "web-dev"],
+"teaser_content": "What I've done and learnt during my time here.",
+"full_content": "Starting from August, I booked my taster session with the folks at Tech Educators. First impressions were in, and I knew this course was going to change my life for the better. One month later, the course jumpstarted with a lesson on Markdown. My nerves were kicking in, but managed to keep my cool on the first day back. Meeting people from different kinds of backgrounds and skill levels, it was refreshing to see everyone thrive in a fully positive and non-toxic environment.",
+"created_by": "Demie Mistica",
+"dateTime_created": "03/02/2024, 00:45",
+"dateTime_updated": "03/02/2024, 00:45",
+"grid_format_id": "1",
+"images": [{
+
+"file_path": "/images/Bootcamp_Campus.jpg",
+"is_main_image": 1
+
+
+},
+
+{
+
+"file_path": "/images/Bootcamp_Campus2.JPG",
+"is_main_image": 0
+
+
+},
+
+{
+
+"file_path": "/images/Bootcamp_Bridge.JPG",
+"is_main_image": 0
+
+
+},
+
+{
+
+"file_path": "/images/Bootcamp_Campus3.JPG",
+"is_main_image": 0
+
+
+},
+
+{
+
+"file_path": "/images/Bootcamp_Graduation.JPG",
+"is_main_image": 0
+
+
 }]
+
+}
+]

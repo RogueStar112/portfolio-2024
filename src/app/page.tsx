@@ -95,7 +95,33 @@ export default async function Home() {
             
             <h2 className='m-4 text-right text-4xl font-extrabold'>PROJECTS.</h2> */}
 
-            <h2 className='overflow-mask text-black dark:text-white /dark:text-black p-4 my-2 text-right text-4xl font-extrabold border-b-4 border-orange-500'>SKILLSET.</h2>
+            <h2 className='overflow-mask text-black dark:text-white /dark:text-black p-4 mt-2 text-right text-4xl font-extrabold border-b-4 border-orange-500'>SKILLSET.</h2>
+
+            <article className='flex flex-col md:flex-row justify-around px-4 [&>*]:grow overflow-mask border-b-4 border-orange-500'>
+                <section className='text-2xl md:border-r-4 md:border-orange-500 p-4' style={{fontVariant: "small-caps"}} aria-label="skills-frontend">
+                    <h2 className='font-extrabold text-3xl'>Frontend</h2>
+
+                    <section className='md:grid md:grid-cols-6 md:grid-rows-2'>
+                        <p className='col-span-2'>HTML</p>
+                        <p className='col-span-2'>CSS</p>
+                        <p className='col-span-2'>JS</p>
+                        <p className='col-span-3'>React</p>
+                        <p className='col-span-3'>Next.JS</p>  
+                    </section>                    
+                </section>
+
+                <section className='text-2xl p-4' style={{fontVariant: "small-caps"}} aria-label="skills-backend">
+                    <h2 className='font-extrabold text-3xl'>Backend</h2>
+
+                    <section className='md:grid md:grid-cols-6 md:grid-rows-2'>
+                        <p className='col-span-2'>PHP</p>
+                        <p className='col-span-2'>Laravel</p>
+                        <p className='col-span-2'>JS</p>
+                        <p className='col-span-3'>Next.JS</p>
+                        <p className='col-span-3'>SQL</p>
+                    </section> 
+                </section>
+            </article>
 
             {/* <div aria-label="section-skillset"  className='grid grid-cols-3 [&>*]:grow'>
                   
@@ -119,7 +145,7 @@ export default async function Home() {
                     
           
 
-                    <section className='rounded-b-lg p-4 relative' aria-label='blog-text'>
+                    <section className='rounded-b-lg p-4 relative grow' aria-label='blog-text'>
                    
                       <Link href={`blog/${blog.id}`} className='text-blue-500 dark:text-orange-500 font-extrabold text-left' style={{fontVariant: "small-caps"}}>{blog.title}</Link>
 
