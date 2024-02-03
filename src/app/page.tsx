@@ -147,9 +147,9 @@ export default async function Home() {
             <article className='grid grid-cols-3 auto-rows-[192px] gap-4'>
               {[...Array(7)].map((_, i) => {
                     return (
-                        <div key={`bento-${i}`} className={`rounded-xl border-2 border-green-400/10 bg-neutral-100 place-items-center ${i === 0 ? "col-span-2 grid grid-cols-3 grid-rows-3" : ""} ${i === 0 || i === 4 || i === 5 ? "grid grid-rows-2 row-span-2 secondary-project" : ""}`}>
+                        <div key={`bento-${i}`} className={`rounded-xl border-2 border-green-400/10 dark:bg-onyx bg-neutral-100 place-items-center ${i === 0 ? "col-span-2 row-span-2 grid grid-cols-3 grid-rows-3 primary-project"  : ""} ${i === 4 || i === 5 ? "grid grid-rows-[70%_30%] row-span-2 secondary-project" : ""} ${i === 3 || i === 6 || i === 2 || i === 1 ? "grid grid-rows-[75%_25%] tertiary-project" : ""}`}>
                               
-                              <h2 className={`${i === 0 ? "col-span-2 row-span-2 text-4xl" : ""}`}>
+                              <h2 className={`${i === 0 ? "col-span-2 row-span-2 text-4xl" : "text-lg"}`}>
                                   {i}
                                   {i === 0 ? "MyBudget" : ""}
                                   {i === 1 ? "Drag n' Drop Pizza Game" : ""}
@@ -161,6 +161,13 @@ export default async function Home() {
                                   {/* {i === 5 ? "Todo App" : ""} 
                                   {i === 5 ? "Todo App" : ""} */}
                               </h2>
+
+                              <div aria-label="project-tags" className={`${i === 4 || i === 5 ? "w-full h-full" : ""}`}>
+                                {i === 3 ? "Mood tracking app. Done as a group project." : ""}
+                                {i === 4 ? "Nutrition-tracking app. Powered with PHP & Laravel." : ""}
+                                {i === 5 ? "Get stuff done and on time with this mobile-friendly app!" : ""}
+                                {i === 6 ? "Create and rate workout routes! Coming Spring 2024." : ""}
+                              </div>
 
                         </div>
                     )  
