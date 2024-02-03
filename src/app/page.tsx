@@ -123,7 +123,7 @@ export default async function Home() {
                     </section> 
                 </section>
 
-                <section className='col-span-2'>
+                <section className='col-span-2 mb-4'>
                       <h2 className='font-extrabold text-3xl pt-4' style={{fontVariant: "small-caps"}}>Soft Skills</h2>
                       <section className='flex flex-col md:grid md:grid-cols-3 [&>*]:text-2xl md:[&>*]:mb-4'>
                         <p>Considerate</p>
@@ -143,6 +143,10 @@ export default async function Home() {
             </div> */}
             
             <h2 className='overflow-mask p-4 my-2 text-black dark:text-white text-right text-4xl font-extrabold border-b-4 border-green-500'>PROJECTS.</h2>
+
+            
+
+
 
             <h2 className='overflow-mask p-4 my-2 text-black dark:text-white text-right text-4xl font-extrabold border-b-4 border-blue-500'>BLOG.</h2>
 
