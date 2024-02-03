@@ -97,8 +97,9 @@ export default async function Home() {
 
             <h2 className='overflow-mask text-black dark:text-white /dark:text-black p-4 mt-2 text-right text-4xl font-extrabold border-b-4 border-orange-500'>SKILLSET.</h2>
 
-            <article className='flex flex-col md:flex-row justify-around px-4 [&>*]:grow overflow-mask border-b-4 border-orange-500'>
-                <section className='text-2xl md:border-r-4 md:border-orange-500 p-4' style={{fontVariant: "small-caps"}} aria-label="skills-frontend">
+            <article className='flex flex-col md:grid grid-cols-2 justify-around px-4 [&>*]:grow overflow-mask border-b-4 border-orange-500'>
+                
+                <section className='text-2xl /md:border-r-4 /md:border-orange-500 p-4' style={{fontVariant: "small-caps"}} aria-label="skills-frontend">
                     <h2 className='font-extrabold text-3xl'>Frontend</h2>
 
                     <section className='md:grid md:grid-cols-6 md:grid-rows-2'>
@@ -106,7 +107,7 @@ export default async function Home() {
                         <p className='col-span-2'>CSS</p>
                         <p className='col-span-2'>JS</p>
                         <p className='col-span-3'>React</p>
-                        <p className='col-span-3'>Next.JS</p>  
+                        <p className='col-span-3'>Next</p>  
                     </section>                    
                 </section>
 
@@ -117,9 +118,21 @@ export default async function Home() {
                         <p className='col-span-2'>PHP</p>
                         <p className='col-span-2'>Laravel</p>
                         <p className='col-span-2'>JS</p>
-                        <p className='col-span-3'>Next.JS</p>
+                        <p className='col-span-3'>Next</p>
                         <p className='col-span-3'>SQL</p>
                     </section> 
+                </section>
+
+                <section className='col-span-2'>
+                      <h2 className='font-extrabold text-3xl pt-4' style={{fontVariant: "small-caps"}}>Soft Skills</h2>
+                      <section className='flex flex-col md:grid md:grid-cols-3 [&>*]:text-2xl md:[&>*]:mb-4'>
+                        <p>Considerate</p>
+                        <p>Punctual</p>
+                        <p>Enthusiastic</p>
+                        <p>Analytical</p>
+                        <p>Creative</p>
+                        <p>Diligent</p>
+                      </section>
                 </section>
             </article>
 
