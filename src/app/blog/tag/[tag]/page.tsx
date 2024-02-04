@@ -52,6 +52,8 @@ export default async function Home({ params }: { params: { tag: string } }) {
             {/* <h2 className='text-blue-500 font-extrabold text-left' style={{fontVariant: "small-caps"}}>{params.id}</h2> */}
 
 
+            <h2 className='py-4 text-2xl'>Blog articles with #{params.tag}</h2>
+
             {blog_JSON.map((blog: any) => {
                   
                   let tagFound = false;
