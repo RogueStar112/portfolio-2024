@@ -40,3 +40,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 Thanks to [Dave Gray](https://www.davegray.codes/posts/light-dark-mode-nextjs-app-router-tailwind) for the dark mode code.
 
 [Bento Grid](https://dev.to/ibelick/creating-bento-grid-layouts-with-css-tailwind-css-26mo)
+
+## Image Credits
+
+[MyNutrition Background](https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L2lzMTYwNjItaW1hZ2Uta3d2eWZrd3IuanBn.jpg)
