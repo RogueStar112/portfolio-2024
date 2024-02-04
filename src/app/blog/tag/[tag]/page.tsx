@@ -14,6 +14,11 @@ let path = require('path');
 
 import ThemeSwitch from '../../../components/ThemeSwitch';
 
+// COMPONENTS 
+
+import Navbar from '@/app/components/Navbar';
+
+
 const montserrat = Montserrat({ weight: ['300', '500', '700', '800', '900'], style: ['normal', 'italic'], subsets: ['latin'] })
 const merriweather = Merriweather({ weight: ['300', '400', '700'], style: ['normal', 'italic'], subsets: ['latin'] })
 const teko = Teko({ weight: ['300', '400', '700'], style: ['normal'], subsets: ['latin'] })
@@ -38,12 +43,7 @@ export default async function Home({ params }: { params: { tag: string } }) {
           
           {/* <h1 className='font-montserrat p-logo'>DEMIE<br></br>MISTICA</h1> */}
 
-          <nav id='navbar' className={`${montserrat.className} [&>*]:font-bold [&>*]:self-center flex justify-around gap-3`}>
-              <Link href="/" style={{fontVariant: "small-caps"}}>Home</Link>
-              <Link href="/" style={{fontVariant: "small-caps"}}>Blog</Link>
-              <Link href="/" style={{fontVariant: "small-caps"}}>Projects</Link>
-              <ThemeSwitch />
-          </nav>
+          <Navbar />
 
         </header>
 

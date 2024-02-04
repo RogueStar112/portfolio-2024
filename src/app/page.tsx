@@ -8,7 +8,13 @@ import { url } from 'inspector';
 
 import { readFileSync } from 'fs';
 
-import ThemeSwitch from './components/ThemeSwitch';
+
+
+// COMPONENTS 
+
+import Navbar from './components/Navbar';
+
+
 
 // import { blog_sample } from './blog_sample.json';
 
@@ -38,12 +44,7 @@ export default async function Home() {
           
           {/* <h1 className='font-montserrat p-logo'>DEMIE<br></br>MISTICA</h1> */}
 
-          <nav id='navbar' className={`${montserrat.className} [&>*]:font-bold [&>*]:self-center flex justify-around gap-3`}>
-              <Link href="/" style={{fontVariant: "small-caps"}}>Home</Link>
-              <Link href="/" style={{fontVariant: "small-caps"}}>Blog</Link>
-              <Link href="/" style={{fontVariant: "small-caps"}}>Projects</Link>
-              <ThemeSwitch />
-          </nav>
+          <Navbar />
 
         </header>
 
@@ -97,7 +98,7 @@ export default async function Home() {
 
             <h2 className='overflow-mask text-black dark:text-white /dark:text-black p-4 mt-2 text-right text-4xl font-extrabold border-b-4 border-orange-500'>SKILLSET.</h2>
 
-            <article className='flex flex-col md:grid grid-cols-2 justify-around px-4 [&>*]:grow overflow-mask border-b-4 border-orange-500'>
+            <article className='flex flex-col md:grid grid-cols-2 justify-around px-4 [&>*]:grow overflow-mask /border-b-4 /border-orange-500'>
                 
                 <section className='text-2xl /md:border-r-4 /md:border-orange-500 p-4' style={{fontVariant: "small-caps"}} aria-label="skills-frontend">
                     <h2 className='font-extrabold text-3xl'>Frontend</h2>
@@ -144,7 +145,7 @@ export default async function Home() {
             
             <h2 className='overflow-mask p-4 my-2 text-black dark:text-white text-right text-4xl font-extrabold border-b-4 border-green-500'>PROJECTS.</h2>
 
-            <article className='grid grid-cols-3 auto-rows-[192px] gap-4'>
+            <article className='collapse md:visible grid grid-cols-3 auto-rows-[192px] gap-4'>
               {[...Array(7)].map((_, i) => {
                     return (
                         <div key={`bento-${i}`} className={`rounded-xl border-2 border-green-400/10 dark:bg-onyx bg-neutral-100 place-items-center ${i === 0 ? "col-span-2 row-span-2 primary-project"  : ""} ${i === 4 || i === 5 ? "row-span-2 secondary-project" : ""} ${i === 3 || i === 6 || i === 2 || i === 1 ? "tertiary-project" : ""}`}>
@@ -156,7 +157,7 @@ export default async function Home() {
                                   {i === 2 ? "TuneMasher" : ""}
                                   {i === 3 ? "MoodCanvas" : ""} */}
 
-                                  <Link href={`${i === 0 ? "https://github.com/RogueStar112/MyBudget" : ""}${i === 3 ? "https://roguestar112.github.io/mood-journal/index.html" : ""}`}>
+                                  <Link href={`${i === 0 ? "https://github.com/RogueStar112/MyBudget" : ""}${i === 3 ? "https://roguestar112.github.io/mood-journal/index.html" : ""}${i === 5 ? "https://todoproject-dev.vercel.app/" : ""}`}>
                                     <Image className='rounded-lg'  src={`${i === 0 ? "/images/MyBudgetBannerv4.png" : ""}${i === 3 ? "/images/MoodCanvasBannerv2.png" : ""}${i === 4 ? "/images/MyNutritionProjectGridv3.png" : ""}${i === 5 ? "/images/TodoAppPlaceholder.png" : ""}${i === 6 ? "/images/RouteRaterTBA.png" : ""}`} 
 width={`${i === 0 ? "570" : "0"}${i === 4 || i === 5 || i == 6 || i == 3 ? "277" : "0"}`} height={`${i === 0 || i === 4 || i === 5 ? "400" : "0"}${i === 3 || i === 6  ? "192" : ""}`} alt={'BentoImage'}/>
                                   </Link>
