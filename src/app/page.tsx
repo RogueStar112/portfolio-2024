@@ -147,7 +147,7 @@ export default async function Home() {
             <article className='grid grid-cols-3 auto-rows-[192px] gap-4'>
               {[...Array(7)].map((_, i) => {
                     return (
-                        <div key={`bento-${i}`} className={`rounded-xl border-2 border-green-400/10 dark:bg-onyx bg-neutral-100 place-items-center ${i === 0 ? "col-span-2 row-span-2 grid grid-cols-3 grid-rows-3 primary-project"  : ""} ${i === 4 || i === 5 ? "row-span-2 secondary-project" : ""} ${i === 3 || i === 6 || i === 2 || i === 1 ? "grid grid-rows-[75%_25%] tertiary-project" : ""}`}>
+                        <div key={`bento-${i}`} className={`rounded-xl border-2 border-green-400/10 dark:bg-onyx bg-neutral-100 place-items-center ${i === 0 ? "col-span-2 row-span-2 grid grid-cols-3 grid-rows-3 primary-project"  : ""} ${i === 4 || i === 5 ? "row-span-2 secondary-project" : ""} ${i === 3 || i === 6 || i === 2 || i === 1 ? "tertiary-project" : ""}`}>
                               
                               <h2 className={`${i === 0 ? "col-span-2 row-span-2 text-4xl" : "text-lg"}`}>
                                   {/* {i} */}
@@ -155,7 +155,7 @@ export default async function Home() {
                                   {i === 1 ? "Drag n' Drop Pizza Game" : ""}
                                   {i === 2 ? "TuneMasher" : ""}
                                   {i === 3 ? "MoodCanvas" : ""} */}
-                                  <Image className='rounded-lg' src={`${i === 4 ? "/images/MyNutritionProjectGridv2.png" : ""}`} width={`${i === 4 ? "277" : "0"}`} height={`${i === 4 ? "400" : "0"}`}/>
+                                  <Image className='rounded-lg' src={`${i === 4 ? "/images/MyNutritionProjectGridv3.png" : ""}${i === 5 ? "/images/TodoAppPlaceholder.png" : ""}${i === 6 ? "/images/RouteRaterTBA.png" : ""}`} width={`${i === 4 || i === 5 || i == 6 ? "277" : "0"}`} height={`${i === 4 || i === 5  ? "400" : "0"}${i === 6  ? "192" : "0"}`} alt={'BentoImage'}/>
                                   {/* {i === 5 ? "Todo App" : ""}
                                   {i === 6 ? "Route Rater" : ""} */}
                                   {/* {i === 5 ? "Todo App" : ""} 
