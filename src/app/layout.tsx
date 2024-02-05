@@ -6,6 +6,9 @@ import './hero_overflow.css'
 import { Providers } from './providers'
 
 
+import localFont from 'next/font/local';
+
+
 // export const inter = Inter({ subsets: ['latin'] })
 const montserrat = Montserrat({ weight: ['300', '500', '700', '800', '900'], style: ['normal', 'italic'], subsets: ['latin'] })
   

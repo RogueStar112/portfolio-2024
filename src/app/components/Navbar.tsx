@@ -10,6 +10,7 @@ import { Montserrat } from "next/font/google"
 
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross1 } from "react-icons/rx";
+import DyslexicFontSwitch from "./DyslexicFontSwitch"
 
 const montserrat = Montserrat({ weight: ['300', '500', '700', '800', '900'], style: ['normal', 'italic'], subsets: ['latin'] })
 
@@ -24,6 +25,7 @@ export default function Navbar() {
               <Link href="/" style={{fontVariant: "small-caps"}}>Blog</Link>
               <Link href="/" style={{fontVariant: "small-caps"}}>Projects</Link>
               <ThemeSwitch />
+              <DyslexicFontSwitch />
     </nav>
 
     
@@ -47,8 +49,9 @@ export default function Navbar() {
         <Link href="/" style={{fontVariant: "small-caps"}}>Blog</Link>
         <Link href="/" style={{fontVariant: "small-caps"}}>Projects</Link>
 
-        <div style={{fontVariant: "small-caps"}}>
+        <div className="grid grid-cols-6 [&>*]:max-w-[46px]" style={{fontVariant: "small-caps"}}>
           <ThemeSwitch />
+          <DyslexicFontSwitch />
         </div>
       </nav>
     {/* </div> */}

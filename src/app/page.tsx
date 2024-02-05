@@ -233,7 +233,9 @@ width={`${i === 0 ? "570" : "0"}${i === 4 || i === 5 || i == 6 || i == 3|| i == 
           
         </main>
 
-        <footer></footer>
+        <footer class>
+
+        </footer>
 
 
     </div>

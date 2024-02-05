@@ -1,5 +1,7 @@
 "use client"
 
+import theme from './theme.js';
+
 import { ThemeProvider } from '../../node_modules/next-themes/dist/index'
 
 export function Providers({ children }: { children: React.ReactNode }) {
