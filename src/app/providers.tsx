@@ -1,6 +1,5 @@
 "use client"
 
-import theme from './theme.js';
 
 import { ThemeProvider } from '../../node_modules/next-themes/dist/index'
 
