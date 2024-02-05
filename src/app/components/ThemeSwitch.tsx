@@ -25,11 +25,11 @@ export default function ThemeSwitch() {
   )
 
   if (resolvedTheme === 'dark') {
-    return <FiSun className="" onClick={() => setTheme('light')}></FiSun>
+    return <button style={{fontVariant: "small-caps"}} className="flex gap-4 dark:bg-white dark:text-onyx rounded-full p-2" onClick={() => setTheme('light')}><FiSun className="[&>*]:p-2"></FiSun><span className="hidden md:visible">Light Mode</span></button>
   }
 
   if (resolvedTheme === 'light') {
-    return <FiMoon className="" onClick={() => setTheme('dark')}></FiMoon>
+    return <button style={{fontVariant: "small-caps"}} className="flex gap-4 bg-onyx text-white rounded-full p-2" onClick={() => setTheme('dark')}><FiMoon className="dark:bg-onyx rounded-full [&>*]:p-2"></FiMoon><span className="hidden md:visible">Dark Mode</span></button>
   }
 
 }

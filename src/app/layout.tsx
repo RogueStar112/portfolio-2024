@@ -22,8 +22,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={`${montserrat.className} max-w-5xl mx-auto blur-none dark:bg-onyx`}>
+    <html className="duration-500" lang="en">
+      <body className={`${montserrat.className} max-w-5xl mx-auto blur-none dark:bg-onyx [&>*]:dark:bg-onyx duration-500`}>
         <Providers>
           {children}
         </Providers>
