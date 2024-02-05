@@ -25,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html className="duration-500" lang="en">
+    <html className="duration-500" lang="en" suppressHydrationWarning>
       <body className={`${montserrat.className} max-w-5xl mx-auto blur-none dark:bg-onyx [&>*]:dark:bg-onyx duration-500`}>
         <Providers>
           {children}

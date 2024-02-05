@@ -1,6 +1,10 @@
+'use client'
+
 import { useState, useEffect } from "react"
 
 import localFont from 'next/font/local'; 
+
+import { useTheme } from '../../../node_modules/next-themes/dist/index'
 
 const opendyslexic = localFont({src: '../../../public/fonts/OpenDyslexic-Regular.otf'});
 
@@ -8,10 +12,11 @@ import Image from "next/image";
 
 export default function DyslexicFontSwitch() {
 
-  const [mounted, setMounted] = useState(false)
-  useEffect(() =>  setMounted(true), [])
+  const [mounted, setMounted] = useState(false);
+  const { setTheme, resolvedTheme } = useTheme();
 
-  const [DysFont, SetDysFont] = useState(false);
+
+  useEffect(() =>  setMounted(true), [])
 
   if (!mounted) return (
     <Image
@@ -25,13 +30,22 @@ export default function DyslexicFontSwitch() {
     />
   )
 
-  if (DysFont === true) {
-    return <button style={{fontVariant: "small-caps"}} className={ `${opendyslexic.className} flex gap-4 dark:bg-white dark:text-onyx rounded-full p-2 text-sm`} onClick={() => SetDysFont(!DysFont)}>Dys</button>
+  if (resolvedTheme === 'dark') {
+    return <button style={{fontVariant: "small-caps"}} className={ `${opendyslexic.className} flex gap-4 bg-onyx text-white rounded-full p-2 text-sm`} onClick={() => setTheme('dark-dys')}>Dys</button>
   }
 
-  if (DysFont === false) {
-    return <button style={{fontVariant: "small-caps"}} className={ `${opendyslexic.className} flex gap-4 bg-onyx text-white rounded-full p-2  text-sm`} onClick={() => SetDysFont(!DysFont)}>Dys
+  if (resolvedTheme === 'dark-dys') {
+    return <button style={{fontVariant: "small-caps"}} className={ `${opendyslexic.className} flex gap-4 bg-white text-onyx dark:bg-white dark:text-onyx rounded-full p-2 text-sm`} onClick={() => setTheme('dark')}>Dys</button>
+  }
+
+
+  if (resolvedTheme === 'light-dys') {
+    return <button style={{fontVariant: "small-caps"}} className={ `${opendyslexic.className} flex gap-4 bg-onyx text-white rounded-full p-2 text-sm`} onClick={() => setTheme('light')}>Dys
 </button>
+  }
+
+   if (resolvedTheme === 'light') {
+    return <button style={{fontVariant: "small-caps"}} className={ `${opendyslexic.className} flex gap-4 dark:bg-white dark:text-onyx rounded-full p-2 text-sm`} onClick={() => setTheme('light-dys')}>Dys</button>
   }
 
 }

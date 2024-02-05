@@ -15,6 +15,24 @@ body {
 
 }
 
+@font-face {
+  font-family: 'OpenDyslexic-Regular';
+  src: local('OpenDyslexic-Regular');
+}
+
+.dark-dys > * {
+  font-family: 'OpenDyslexic-Regular' !important;
+  background-color: #444444;
+  color: white;
+  color-scheme: dark;
+}
+
+.light-dys > * {
+  font-family: 'OpenDyslexic-Regular' !important;
+  background-color: white;
+  color-scheme: light;
+}
+
 
 /* :root {
   --foreground-rgb: 0, 0, 0;

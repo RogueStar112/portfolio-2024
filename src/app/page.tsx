@@ -99,7 +99,7 @@ export default async function Home() {
             
             <h2 className='m-4 text-right text-4xl font-extrabold'>PROJECTS.</h2> */}
 
-            <h2 className='overflow-mask text-black dark:text-white /dark:text-black p-4 mt-2 text-right text-4xl font-extrabold border-b-4 border-orange-500'>SKILLSET.</h2>
+            <h2 className='overflow-mask dark:text-white /dark:text-black p-4 mt-2 text-right text-4xl font-extrabold border-b-4 border-orange-500'>SKILLSET.</h2>
 
             <article className='flex flex-col md:grid grid-cols-2 justify-around px-4 [&>*]:grow overflow-mask /border-b-4 /border-orange-500'>
                 
@@ -146,7 +146,7 @@ export default async function Home() {
 
             </div> */}
             
-            <h2 className='overflow-mask p-4 my-2 text-black dark:text-white text-right text-4xl font-extrabold border-b-4 border-green-500'>PROJECTS.</h2>
+            <h2 className='overflow-mask p-4 my-2 dark:text-white text-right text-4xl font-extrabold border-b-4 border-green-500'>PROJECTS.</h2>
 
             <article className='collapse md:visible grid grid-cols-3 auto-rows-[192px] gap-4'>
               {[...Array(7)].map((_, i) => {
@@ -186,7 +186,7 @@ width={`${i === 0 ? "570" : "0"}${i === 4 || i === 5 || i == 6 || i == 3|| i == 
 
 
 
-            <h2 className='overflow-mask p-4 my-2 text-black dark:text-white text-right text-4xl font-extrabold border-b-4 border-blue-500'>BLOG.</h2>
+            <h2 className='overflow-mask p-4 my-2 dark:text-white text-right text-4xl font-extrabold border-b-4 border-blue-500'>BLOG.</h2>
 
             <div className='grid grid-cols-1 md:grid-cols-3 gap-3'>
             {blog_JSON.map((blog: any) => {
