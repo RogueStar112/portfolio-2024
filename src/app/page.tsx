@@ -36,7 +36,7 @@ export default async function Home() {
   return (
     <div className='p-4 dark:bg-onyx h-screen dark:text-mint-cream mx-auto text-current max-w-4xl'>
 
-        <header className='flex justify-between'>
+        <header className='flex justify-between relative'>
           
           <div className='flex flex-col flex-start [&>*]:leading-[1.1rem]'>
 
@@ -103,7 +103,7 @@ export default async function Home() {
 
             <article className='flex flex-col md:grid grid-cols-2 justify-around px-4 [&>*]:grow overflow-mask /border-b-4 /border-orange-500'>
                 
-                <section className='text-2xl md:border-4 md:border-orange-500 p-4' style={{fontVariant: "small-caps"}} aria-label="skills-frontend">
+                <section className='text-2xl /md:border-4 /md:border-orange-500 p-4' style={{fontVariant: "small-caps"}} aria-label="skills-frontend">
                     <h2 className='font-extrabold text-3xl'>Frontend</h2>
 
                     <section className='md:grid md:grid-cols-6 md:grid-rows-2'>
@@ -160,9 +160,9 @@ export default async function Home() {
                                   {i === 2 ? "TuneMasher" : ""}
                                   {i === 3 ? "MoodCanvas" : ""} */}
 
-                                  <Link href={`${i === 0 ? "https://github.com/RogueStar112/MyBudget" : ""}${i === 3 ? "https://roguestar112.github.io/mood-journal/index.html" : ""}${i === 5 ? "https://todoproject-dev.vercel.app/" : ""}`}>
-                                    <Image className='rounded-lg'  src={`${i === 0 ? "/images/MyBudgetBannerv4.png" : ""}${i === 3 ? "/images/MoodCanvasBannerv2.png" : ""}${i === 4 ? "/images/MyNutritionProjectGridv3.png" : ""}${i === 5 ? "/images/TodoAppPlaceholder.png" : ""}${i === 6 ? "/images/RouteRaterTBA.png" : ""}`} 
-width={`${i === 0 ? "570" : "0"}${i === 4 || i === 5 || i == 6 || i == 3 ? "277" : "0"}`} height={`${i === 0 || i === 4 || i === 5 ? "400" : "0"}${i === 3 || i === 6  ? "192" : ""}`} alt={'BentoImage'}/>
+                                  <Link href={`${i === 0 ? "https://github.com/RogueStar112/MyBudget" : ""}${i === 1 ? "https://pizza-game-oct2023.vercel.app/" : ""}${i === 3 ? "https://roguestar112.github.io/mood-journal/index.html" : ""}${i === 4 ? "https://github.com/RogueStar112/MyNutrition" : ""}${i === 5 ? "https://todoproject-dev.vercel.app/" : ""}`}>
+                                    <Image className='rounded-lg'  src={`${i === 0 ? "/images/MyBudgetBannerv4.png" : ""}${i === 1 ? "/images/PizzaGamev2.png" : ""}${i === 3 ? "/images/MoodCanvasBannerv2.png" : ""}${i === 4 ? "/images/MyNutritionProjectGridv3.png" : ""}${i === 5 ? "/images/TodoAppPlaceholder.png" : ""}${i === 6 ? "/images/RouteRaterTBA.png" : ""}`} 
+width={`${i === 0 ? "570" : "0"}${i === 4 || i === 5 || i == 6 || i == 3|| i == 1 ? "277" : "0"}`} height={`${i === 0|| i == 1 || i === 4 || i === 5 ? "400" : "0"}${i === 3 || i === 6  ? "192" : ""}`} alt={'BentoImage'}/>
                                   </Link>
                                   {/* {i === 5 ? "Todo App" : ""}
                                   {i === 6 ? "Route Rater" : ""} */}
