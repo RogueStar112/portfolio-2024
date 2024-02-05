@@ -19,7 +19,7 @@ export default function Navbar() {
 
   return (
     <>
-    <nav id='navbar-desktop' className={`${montserrat.className}  [&>*]:font-bold [&>*]:self-center hidden md:flex justify-around gap-3`}>
+    <nav id='navbar-desktop' className={`${montserrat.className}  [&>*]:font-bold [&>*]:self-center hidden md:flex justify-end gap-3`}>
               <Link href="/" style={{fontVariant: "small-caps"}}>Home</Link>
               <Link href="/" style={{fontVariant: "small-caps"}}>Blog</Link>
               <Link href="/" style={{fontVariant: "small-caps"}}>Projects</Link>
@@ -27,13 +27,13 @@ export default function Navbar() {
     </nav>
 
     
-    <button id='navbar-mobile-btn' onClick={() => setShowMobileNav(!showMobileNav)}>
+    <button id='navbar-mobile-btn' className="relative" onClick={() => setShowMobileNav(!showMobileNav)}>
 
-    <GiHamburgerMenu  className={`${showMobileNav ? "flex flex-col hidden md:hidden" : "md:hidden"} flex flex-col justify-around gap-3 absolute right-0 top-0`} style={{scale: "2"}}>
+    <GiHamburgerMenu  className={`${showMobileNav ? "flex flex-col hidden md:hidden" : "md:hidden"} flex flex-col justify-around gap-3 absolute right-2 top-3`} style={{scale: "2"}}>
               
     </GiHamburgerMenu>
 
-    <RxCross1 className={`${showMobileNav ? "flex flex-col md:hidden" : "hidden md:hidden"} flex flex-col justify-around gap-3 absolute right-0 top-0`} style={{scale: "2"}}>
+    <RxCross1 className={`${showMobileNav ? "flex flex-col md:hidden" : "hidden md:hidden"} flex flex-col justify-around gap-3 absolute right-2 top-3`} style={{scale: "2"}}>
 
 
     </RxCross1>
@@ -42,13 +42,13 @@ export default function Navbar() {
 
 
     {/* <div className="w-screen"> */}
-      <nav id='navbar-mobile' className={`${montserrat.className}  [&>*]:font-bold [&>*]:self-center ${showMobileNav ? "flex flex-col md:hidden" : "hidden"} justify-around gap-3 col-span-2 [&>*]:col-span-2 [&>*]:w-full [&>*]:text-3xl [&>*]:p-4`}>
+      <nav id='navbar-mobile' className={`${montserrat.className}  [&>*]:font-bold [&>*]:self-center ${showMobileNav ? "flex flex-col md:hidden" : "hidden"} justify-around gap-3 col-span-2 [&>*]:col-span-2 [&>*]:w-full [&>*]:text-3xl [&>*]:px-4 [&>*]:py-2`}>
         <Link href="/" style={{fontVariant: "small-caps"}}>Home</Link>
         <Link href="/" style={{fontVariant: "small-caps"}}>Blog</Link>
         <Link href="/" style={{fontVariant: "small-caps"}}>Projects</Link>
 
         <div style={{fontVariant: "small-caps"}}>
-        <ThemeSwitch />
+          <ThemeSwitch />
         </div>
       </nav>
     {/* </div> */}
