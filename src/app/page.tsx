@@ -13,8 +13,11 @@ import { readFileSync } from 'fs';
 // COMPONENTS 
 
 import Navbar from './components/Navbar';
+import Skill from './components/Skill';
 
+// ICONS
 
+import { TiHtml5 } from "react-icons/ti";
 
 // import { blog_sample } from './blog_sample.json';
 
@@ -100,11 +103,11 @@ export default async function Home() {
 
             <article className='flex flex-col md:grid grid-cols-2 justify-around px-4 [&>*]:grow overflow-mask /border-b-4 /border-orange-500'>
                 
-                <section className='text-2xl /md:border-r-4 /md:border-orange-500 p-4' style={{fontVariant: "small-caps"}} aria-label="skills-frontend">
+                <section className='text-2xl md:border-4 md:border-orange-500 p-4' style={{fontVariant: "small-caps"}} aria-label="skills-frontend">
                     <h2 className='font-extrabold text-3xl'>Frontend</h2>
 
                     <section className='md:grid md:grid-cols-6 md:grid-rows-2'>
-                        <p className='col-span-2'>HTML</p>
+                        <Skill col="2">HTML</Skill>
                         <p className='col-span-2'>CSS</p>
                         <p className='col-span-2'>JS</p>
                         <p className='col-span-3'>React</p>
