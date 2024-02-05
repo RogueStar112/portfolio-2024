@@ -32,7 +32,7 @@ export default function Navbar() {
     
 
     {/* <div className="w-screen"> */}
-      <nav id='navbar-mobile' className={`${montserrat.className}  [&>*]:font-bold [&>*]:self-center ${showMobileNav ? "flex flex-col md:hidden" : "hidden"} justify-around gap-3 [&>*]:w-full`}>
+      <nav id='navbar-mobile' className={`${montserrat.className}  [&>*]:font-bold [&>*]:self-center ${showMobileNav ? "flex flex-col md:hidden" : "hidden"} justify-around gap-3 col-span-2 [&>*]:col-span-2`}>
         <Link href="/" style={{fontVariant: "small-caps"}}>Home</Link>
         <Link href="/" style={{fontVariant: "small-caps"}}>Blog</Link>
         <Link href="/" style={{fontVariant: "small-caps"}}>Projects</Link>
