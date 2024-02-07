@@ -17,7 +17,13 @@ import ThemeSwitch from '../../../components/ThemeSwitch';
 // COMPONENTS 
 
 import Navbar from '@/app/components/Navbar';
+import Footer from '@/app/components/Footer';
 
+// ICONS
+
+import { TiHtml5 } from "react-icons/ti";
+import { FaGithub } from 'react-icons/fa';
+import { FaLinkedin } from 'react-icons/fa';
 
 const montserrat = Montserrat({ weight: ['300', '500', '700', '800', '900'], style: ['normal', 'italic'], subsets: ['latin'] })
 const merriweather = Merriweather({ weight: ['300', '400', '700'], style: ['normal', 'italic'], subsets: ['latin'] })
@@ -142,7 +148,7 @@ export default async function Home({ params }: { params: { tag: string } }) {
           
         </main>
 
-        <footer></footer>
+        <Footer />
 
 
     </div>

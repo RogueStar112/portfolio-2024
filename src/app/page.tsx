@@ -14,10 +14,13 @@ import { readFileSync } from 'fs';
 
 import Navbar from './components/Navbar';
 import Skill from './components/Skill';
+import Footer from './components/Footer';
 
 // ICONS
 
 import { TiHtml5 } from "react-icons/ti";
+import { FaGithub } from 'react-icons/fa';
+import { FaLinkedin } from 'react-icons/fa';
 
 // import { blog_sample } from './blog_sample.json';
 
@@ -107,7 +110,7 @@ export default async function Home() {
                     <h2 className='font-extrabold text-3xl'>Frontend</h2>
 
                     <section className='md:grid md:grid-cols-6 md:grid-rows-2'>
-                        <Skill col="2">HTML</Skill>
+                        <p className='col-span-2'>HTML</p>
                         <p className='col-span-2'>CSS</p>
                         <p className='col-span-2'>JS</p>
                         <p className='col-span-3'>React</p>
@@ -146,7 +149,7 @@ export default async function Home() {
 
             </div> */}
             
-            <h2 className='overflow-mask p-4 my-2 dark:text-white text-right text-4xl font-extrabold border-b-4 border-green-500'>PROJECTS.</h2>
+            <h2 id='projects' className='overflow-mask p-4 my-2 dark:text-white text-right text-4xl font-extrabold border-b-4 border-green-500'>PROJECTS.</h2>
 
             <article className='collapse md:visible grid grid-cols-3 auto-rows-[192px] gap-4'>
               {[...Array(7)].map((_, i) => {
@@ -186,7 +189,7 @@ width={`${i === 0 ? "570" : "0"}${i === 4 || i === 5 || i == 6 || i == 3|| i == 
 
 
 
-            <h2 className='overflow-mask p-4 my-2 dark:text-white text-right text-4xl font-extrabold border-b-4 border-blue-500'>BLOG.</h2>
+            <h2 id='blog' className='overflow-mask p-4 my-2 dark:text-white text-right text-4xl font-extrabold border-b-4 border-blue-500'>BLOG.</h2>
 
             <div className='grid grid-cols-1 md:grid-cols-3 gap-3'>
             {blog_JSON.map((blog: any) => {
@@ -233,9 +236,7 @@ width={`${i === 0 ? "570" : "0"}${i === 4 || i === 5 || i == 6 || i == 3|| i == 
           
         </main>
 
-        <footer>
-
-        </footer>
+        <Footer />
 
 
     </div>

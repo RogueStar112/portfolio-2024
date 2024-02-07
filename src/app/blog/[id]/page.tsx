@@ -17,6 +17,14 @@ import ThemeSwitch from '../../components/ThemeSwitch';
 
 import Navbar from '@/app/components/Navbar';
 
+import Footer from '@/app/components/Footer';
+
+// ICONS
+
+import { TiHtml5 } from "react-icons/ti";
+import { FaGithub } from 'react-icons/fa';
+import { FaLinkedin } from 'react-icons/fa';
+
 let path = require('path');
 // import { blog_sample } from './blog_sample.json';
 
@@ -142,8 +150,7 @@ export default async function Home({ params }: { params: { id: number } }) {
           
         </main>
 
-        <footer></footer>
-
+        <Footer />
 
     </div>
   )
