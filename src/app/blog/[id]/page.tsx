@@ -19,6 +19,8 @@ import Navbar from '@/app/components/Navbar';
 
 import Footer from '@/app/components/Footer';
 
+import ImageCollection from '@/app/components/ImageCollection';
+
 // ICONS
 
 import { TiHtml5 } from "react-icons/ti";
@@ -75,13 +77,13 @@ export default async function Home({ params }: { params: { id: number } }) {
                           <article key={blog.id} id={blog.id} className={`/max-w-[100%] /md:max-w-[33.3%] py-4 flex flex-col justify-start content-end`}>
                             
 
-
-                            <Image className="rounded-t-lg overflow-mask-vert h-[400px] object-cover is-main-image" src={blog.images[0].file_path} width={864} height={400} alt={"Test"}/>
                             
+                            {/* <Image className="rounded-t-lg overflow-mask-vert h-[400px] object-cover is-main-image" src={blog.images[0].file_path} width={864} height={400} alt={"Test"}/>
+                             */}
                             {/* <p aria-label='image-caption' className='p-2 italic'>{[blog.images[0].caption ? blog.images[0].caption  : ""]}</p> */}
 
-                            <section className='grid grid-cols-4 gap-2'>
-                              {blog.images.map((image: any, index: any) => {
+                            <ImageCollection images={blog.images}>
+                              {/* {blog.images.map((image: any, index: any) => {
                                 
                                 if(image.is_main_image != 1) {
                                   return (
@@ -89,9 +91,16 @@ export default async function Home({ params }: { params: { id: number } }) {
                                     <Image key={`img_${blog.id}_${index}`} className='rounded-lg md:overflow-mask-vert object-cover max-h-[60px] md:max-h-[156px]' src={image.file_path} width={864} height={400} alt={"Test"}/>
 
                                   )
+                                } else {
+                                  return (
+
+                                    <Image key={`img_${blog.id}_${index}`} className="col-span-4 order-first rounded-t-lg overflow-mask-vert h-[400px] object-cover is-main-image" src={blog.images[0].file_path} width={864} height={400} alt={"Test"}/>
+                            
+
+                                  )
                                 }
-                              })}
-                            </section>
+                              })} */}
+                            </ImageCollection>
 
                             <section className='grid grid-cols-1 /md:grid-cols-2 md:grid-cols-[2fr_1fr]'>
                     
