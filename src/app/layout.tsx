@@ -5,8 +5,11 @@ import './hero_overflow.css'
 
 import { Providers } from './providers'
 
-
 import localFont from 'next/font/local';
+
+const opendyslexic = localFont({ src: './OpenDyslexic-Regular.otf'});
+
+
 
 
 // export const inter = Inter({ subsets: ['latin'] })
@@ -26,7 +29,7 @@ export default function RootLayout({
 }) {
   return (
     <html className="duration-500" lang="en" suppressHydrationWarning>
-      <body className={`${montserrat.className} max-w-5xl mx-auto blur-none dark:bg-onyx [&>*]:dark:bg-onyx duration-500`}>
+      <body className={`${montserrat.className} max-w-5xl mx-auto blur-none bg-transparent dark:bg-onyx [&>*]:dark:bg-onyx dark:duration-500duration-500`}>
         <Providers>
           {children}
         </Providers>

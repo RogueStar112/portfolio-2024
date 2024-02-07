@@ -23,6 +23,10 @@ const config: Config = {
           'small-caps': 'small-caps'
         },
 
+          fontFamily: {
+          opendyslexic: ['var(--font-opendyslexic)'],
+          },
+
           colors: {
       'sky-blue': '#93b7be',
       'mint-cream': '#f1fffa',

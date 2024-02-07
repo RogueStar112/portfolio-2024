@@ -3,6 +3,21 @@
 @tailwind utilities;
 
 
+.light {
+  /* Your default theme */
+  --background: white;
+  --foreground: black;
+  transition-duration: 0.5s;
+}
+
+.dark {
+  --background: #444444;
+  --foreground: white;
+  transition-duration: 0.5s;
+}
+
+
+
 html {
 
   transition: all 0.5s ease-in-out;
@@ -15,12 +30,14 @@ body {
 
 }
 
-@font-face {
+/* @font-face {
   font-family: 'OpenDyslexic';
   font-weight: 400;
   font-display: optional;
   src: local('OpenDyslexicFont'), url('/public/fonts/OpenDyslexic-Regular.otf') format('otf');
-}
+} */
+
+
 
 .dark-dys {
 
@@ -30,7 +47,8 @@ body {
 }
 
 .dark-dys > * {
-  font-family: 'OpenDyslexic', 'Arial' !important;
+  transition: all 0.5s ease-in-out;
+  font-family: '__opendyslexic_d8b60a', 'Arial' !important;
   background-color: #444444;
   color: white;
   color-scheme: dark;
@@ -44,11 +62,17 @@ body {
 }
 
 .light-dys > * {
-  font-family: 'OpenDyslexic', 'Arial' !important;
+  transition: all 0.5s ease-in-out;
+  font-family: '__opendyslexic_d8b60a', 'Arial' !important;
   background-color: white;
   color-scheme: light;
 }
 
+@layer components {
+  body * {
+      @apply transition-colors duration-500;
+  }
+}
 
 /* :root {
   --foreground-rgb: 0, 0, 0;

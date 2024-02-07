@@ -226,5 +226,36 @@
 
 }]
 
+},
+
+{
+
+"id": 7,
+"title": "My Autistic Self",
+"tags": ["autism", "mental-health", "personal"],
+"teaser_content": "My personal experiences with autism.",
+"full_content": "Definitely haven't written this at 2:30am without some compelling reason!",
+"created_by": "Demie Mistica",
+"dateTime_created": "07/02/2024, 02:25",
+"dateTime_updated": "07/02/2024, 02:25",
+"grid_format_id": "1",
+"images": [{
+
+"file_path": "/images/Neurodiversity1.JPG",
+"is_main_image": 1
+
+
+},
+
+{
+
+"file_path": "/images/NeurodiversitySymbol.png",
+"is_main_image": 0
+
+
 }
+]
+
+}
+
 ]
