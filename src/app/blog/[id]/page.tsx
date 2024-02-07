@@ -46,12 +46,11 @@ export default async function Home({ params }: { params: { id: number } }) {
 
         <header className='grid grid-cols-2 justify-between relative'>
           
-          <div className='flex flex-col flex-start [&>*]:leading-[1.1rem] grow'>
+          <Link className='flex flex-col flex-start [&>*]:leading-[1.1rem] grow' href={'/'}>
+              <p className='text-2xl font-extrabold'>DEMIE</p> 
+              <p className='text-2xl font-bold text-stone-500 dark:text-stone-400'>MISTICA</p>
+          </Link>
 
-            <p className='text-2xl font-extrabold'>DEMIE</p> 
-            <p className='text-2xl font-bold text-stone-500 dark:text-stone-400'>MISTICA</p>
-          
-          </div>
           
           {/* <h1 className='font-montserrat p-logo'>DEMIE<br></br>MISTICA</h1> */}
 
@@ -77,7 +76,7 @@ export default async function Home({ params }: { params: { id: number } }) {
                             
 
 
-                            <Image className="rounded-t-lg overflow-mask-vert h-[400px] object-cover " src={blog.images[0].file_path} width={864} height={400} alt={"Test"}/>
+                            <Image className="rounded-t-lg overflow-mask-vert h-[400px] object-cover is-main-image" src={blog.images[0].file_path} width={864} height={400} alt={"Test"}/>
                             
                             {/* <p aria-label='image-caption' className='p-2 italic'>{[blog.images[0].caption ? blog.images[0].caption  : ""]}</p> */}
 

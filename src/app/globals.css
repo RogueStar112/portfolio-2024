@@ -41,7 +41,7 @@ body {
 
 .dark-dys {
 
-  /* transition: all 0.5s ease-in-out; */
+  transition: all 0.5s ease-in-out;
   color: white;
   color-scheme: dark;
 }
@@ -56,7 +56,7 @@ body {
 
 .light-dys {
 
-  /* transition: all 0.5s ease-in-out; */
+  transition: all 0.5s ease-in-out;
   background-color: white;
   color-scheme: light;
 }
