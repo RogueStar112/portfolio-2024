@@ -28,8 +28,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html className="duration-500" lang="en" suppressHydrationWarning>
-      <body className={`${montserrat.className} max-w-5xl mx-auto blur-none bg-transparent dark:bg-onyx [&>*]:dark:bg-onyx dark:duration-500duration-500`}>
+    <html className="" lang="en" suppressHydrationWarning>
+      <body className={`${montserrat.className} max-w-5xl mx-auto blur-none bg-transparent dark:bg-onyx [&>*]:dark:bg-onyx dark:duration-500`}>
         <Providers>
           {children}
         </Providers>
