@@ -20,12 +20,12 @@
 
 html {
 
-  transition: all 0.5s ease-in-out;
+  /* transition: all 0.5s ease-in-out; */
 }
 
 body {
 
-  transition: all 0.5s ease-in-out;
+  /* transition: all 0.5s ease-in-out; */
 
 
 }
@@ -68,11 +68,11 @@ body {
   color-scheme: light;
 }
 
-@layer components {
+/* @layer components {
   body * {
       @apply transition-colors duration-500;
   }
-}
+} */
 
 /* :root {
   --foreground-rgb: 0, 0, 0;
