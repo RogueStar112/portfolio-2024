@@ -43,11 +43,11 @@ body {
 
   /* transition: all 0.5s ease-in-out; */
   color: white;
-  color-scheme: dark
+  color-scheme: dark;
 }
 
 .dark-dys > * {
-  /* transition: all 0.5s ease-in-out; */
+  transition: all 0.5s ease-in-out;
   font-family: '__opendyslexic_d8b60a', 'Arial' !important;
   background-color: #444444;
   color: white;
@@ -62,7 +62,7 @@ body {
 }
 
 .light-dys > * {
-  /* transition: all 0.5s ease-in-out; */
+  transition: all 0.5s ease-in-out;
   font-family: '__opendyslexic_d8b60a', 'Arial' !important;
   background-color: white;
   color-scheme: light;
