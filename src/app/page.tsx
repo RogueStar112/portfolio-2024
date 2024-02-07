@@ -202,10 +202,11 @@ width={`${i === 0 ? "570" : "0"}${i === 4 || i === 5 || i == 6 || i == 3|| i == 
                   let isLastElement = (blog_JSON[blog_JSON.length - 1].title === blog.title);
                   // ${isLastElement ? "col-span-full" : ""}
                   return (
-                  <article key={blog.id} id={blog.id} className={`/max-w-[100%] /md:max-w-[33.3%] flex flex-col justify-start content-end ${isLastElement ? "col-span-full" : ""}`}>
+                  <article key={blog.id} id={blog.id} className={`overflow-hidden rounded-lg /max-w-[100%] /md:max-w-[33.3%] flex flex-col justify-start content-end ${isLastElement ? "col-span-full" : ""}`}>
                     
-                    <Image className="rounded-t-lg overflow-mask-vert h-[250px] object-cover " src={blog.images[0].file_path} width={864} height={300} alt={"Test"}/>
-                    
+                    <Link href={`blog/${blog.id}`}>
+                      <Image className="rounded-t-lg overflow-mask-vert overflow-hidden h-[250px] object-cover hover:scale-110 duration-150" src={blog.images[0].file_path} width={864} height={300} alt={"Test"}/>
+                    </Link>
           
 
                     <section className='rounded-b-lg p-4 relative grow' aria-label='blog-text'>
