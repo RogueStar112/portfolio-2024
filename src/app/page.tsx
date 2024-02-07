@@ -43,9 +43,12 @@ export default async function Home() {
           
           <div className='flex flex-col flex-start [&>*]:leading-[1.1rem] grow'>
 
-            <p className='text-2xl font-extrabold'>DEMIE</p> 
-            <p className='text-2xl font-bold text-stone-500 dark:text-stone-400'>MISTICA</p>
-          
+            <Link className='flex flex-col flex-start [&>*]:leading-[1.1rem] grow' href={'/'}>
+              <p className='text-2xl font-extrabold'>DEMIE</p> 
+              <p className='text-2xl font-bold text-stone-500 dark:text-stone-400'>MISTICA</p>
+            </Link>
+
+
           </div>
           
           {/* <h1 className='font-montserrat p-logo'>DEMIE<br></br>MISTICA</h1> */}
@@ -102,7 +105,7 @@ export default async function Home() {
             
             <h2 className='m-4 text-right text-4xl font-extrabold'>PROJECTS.</h2> */}
 
-            <h2 className='overflow-mask dark:text-white /dark:text-black p-4 mt-2 text-right text-4xl font-extrabold border-b-4 border-orange-500'>SKILLSET.</h2>
+            <h2 id='skills' className='overflow-mask dark:text-white /dark:text-black p-4 mt-2 text-right text-4xl font-extrabold border-b-4 border-orange-500'>SKILLS.</h2>
 
             <article className='flex flex-col md:grid grid-cols-2 justify-around px-4 [&>*]:grow overflow-mask /border-b-4 /border-orange-500'>
                 
@@ -150,6 +153,8 @@ export default async function Home() {
             </div> */}
             
             <h2 id='projects' className='overflow-mask p-4 my-2 dark:text-white text-right text-4xl font-extrabold border-b-4 border-green-500'>PROJECTS.</h2>
+
+
 
             <article className='collapse md:visible grid grid-cols-3 auto-rows-[192px] gap-4'>
               {[...Array(7)].map((_, i) => {
@@ -205,7 +210,7 @@ width={`${i === 0 ? "570" : "0"}${i === 4 || i === 5 || i == 6 || i == 3|| i == 
 
                     <section className='rounded-b-lg p-4 relative grow' aria-label='blog-text'>
                    
-                      <Link href={`blog/${blog.id}`} className={`text-blue-500 dark:text-orange-500 font-extrabold text-left ${isLastElement ? "text-3xl" : ""}`} style={{fontVariant: "small-caps"}}>{blog.title}</Link>
+                      <Link href={`blog/${blog.id}`} className={`text-blue-500 dark:text-orange-500 font-extrabold text-left border-b-4 dark:border-orange-500 hover:text-orange-500 duration-200 ${isLastElement ? "text-3xl" : ""}`} style={{fontVariant: "small-caps"}}>{blog.title}</Link>
 
                          {/* <p className='text-stone-500 text-left'>{blog.dateTime_created}</p> */}
 
@@ -219,7 +224,7 @@ width={`${i === 0 ? "570" : "0"}${i === 4 || i === 5 || i == 6 || i == 3|| i == 
                         {blog.tags.map((tag: any) => {
                           
                             return (
-                                <Link key={tag} href={`/blog/tag/${tag}`} className='bg-blue-400 grow dark:bg-orange-700 p-2 text-white text-sm max-h-[40px]'>{tag}</Link>
+                                <Link key={tag} href={`/blog/tag/${tag}`} className='bg-blue-400 grow dark:bg-orange-700 dark:hover:bg-blue-700 hover:bg-orange-700 duration-200 p-2 text-white text-sm max-h-[40px]'>{tag}</Link>
                             )
 
                         })}
