@@ -12,6 +12,7 @@
 "images": [{
 
 "file_path": "/images/NatureReserve4.jpg",
+"caption": "Milton Country Park, Cambridge",
 "is_main_image": 1
 
 
@@ -20,6 +21,7 @@
 {
 
 "file_path": "/images/NatureReserve2.jpg",
+"caption": "Trumpington Meadows Park",
 "is_main_image": 0
 
 
@@ -28,6 +30,7 @@
 {
 
 "file_path": "/images/NatureReserve3.jpg",
+"caption": "Cherry Hinton Chalk Pits",
 "is_main_image": 0
 
 
@@ -36,6 +39,7 @@
 {
 
 "file_path": "/images/NatureReserve.jpg",
+"caption": "Trumpington Park, Opposite the M11.",
 "is_main_image": 0
 
 
@@ -44,6 +48,7 @@
 {
 
 "file_path": "/images/NatureReserve5.jpg",
+"caption": "Ouse Fen, Earith.",
 "is_main_image": 0
 
 
