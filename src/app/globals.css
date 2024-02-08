@@ -5,15 +5,16 @@
 
 .light {
   /* Your default theme */
+  transition: all 0.2s ease-in-out;
   --background: white;
   --foreground: black;
-  transition-duration: 0.5s;
 }
 
+
 .dark {
+  transition: all 0.5s ease-in-out;
   --background: #444444;
   --foreground: white;
-  transition-duration: 0.5s;
 }
 
 

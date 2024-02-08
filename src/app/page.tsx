@@ -202,7 +202,7 @@ width={`${i === 0 ? "570" : "0"}${i === 4 || i === 5 || i == 6 || i == 3|| i == 
                   let isLastElement = (blog_JSON[blog_JSON.length - 1].title === blog.title);
                   // ${isLastElement ? "col-span-full" : ""}
                   return (
-                  <article key={blog.id} id={blog.id} className={`overflow-hidden rounded-lg /max-w-[100%] /md:max-w-[33.3%] flex flex-col justify-start content-end ${isLastElement ? "col-span-full" : ""}`}>
+                  <article key={blog.id} id={blog.id} className={`/border-2 /border-blue-500 /dark:border-orange-500  overflow-hidden rounded-lg /max-w-[100%] /md:max-w-[33.3%] flex flex-col justify-start content-end ${isLastElement ? "col-span-full" : ""}`}>
                     
                     <Link href={`blog/${blog.id}`}>
                       <Image className="rounded-t-lg overflow-mask-vert overflow-hidden h-[250px] object-cover hover:scale-110 duration-150" src={blog.images[0].file_path} width={864} height={300} alt={"Test"}/>
@@ -221,11 +221,12 @@ width={`${i === 0 ? "570" : "0"}${i === 4 || i === 5 || i == 6 || i == 3|| i == 
 
 
 
-                             <section className='p-4 flex justify-center gap-1 flex-1 justify-self-end' aria-label='post-tags'>
+                             <section className='relative p-4 flex justify-center gap-1 flex-1 justify-self-end' aria-label='post-tags'>
+                              {/* <span className='absolute text-2xl md:text-5xl left-0 md:right-0 z-10 user-select opacity-35 select-none top-0 text-blue-500 dark:text-orange-500'>#</span> */}
                         {blog.tags.map((tag: any) => {
                           
                             return (
-                                <Link key={tag} href={`/blog/tag/${tag}`} className='bg-blue-400 grow dark:bg-orange-700 dark:hover:bg-blue-700 hover:bg-orange-700 duration-200 p-2 text-white text-sm max-h-[40px]'>{tag}</Link>
+                                <Link key={tag} href={`/blog/tag/${tag}`} className='z-0 bg-blue-400 grow dark:bg-orange-700 dark:hover:bg-blue-700 hover:bg-orange-700 duration-200 p-2 text-white text-sm max-h-[40px]'>{tag}</Link>
                             )
 
                         })}
