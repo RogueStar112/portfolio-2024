@@ -22,6 +22,15 @@ import { TiHtml5 } from "react-icons/ti";
 import { FaGithub } from 'react-icons/fa';
 import { FaLinkedin } from 'react-icons/fa';
 
+import { FaHtml5 } from 'react-icons/fa';
+import { FaCss3Alt } from 'react-icons/fa';
+import { IoLogoJavascript } from 'react-icons/io';
+import { FaReact } from 'react-icons/fa';
+import { FaLaravel } from 'react-icons/fa';
+import { FaPhp } from 'react-icons/fa';
+import { TbBrandNextjs } from 'react-icons/tb';
+import { FaDatabase } from 'react-icons/fa';
+
 // import { blog_sample } from './blog_sample.json';
 
 let path = require('path');
@@ -107,9 +116,59 @@ export default async function Home() {
 
             <h2 id='skills' className='overflow-mask dark:text-white /dark:text-black p-4 mt-2 text-right text-4xl font-extrabold border-b-4 border-orange-500'>SKILLS.</h2>
 
+            <article className='flex flex-col md:grid grid-cols-1 justify-around px-4 [&>*]:grow overflow-mask border-b-4 border-orange-500 /h-fit h-72 '>
+                    
+                    <section className='grid grid-cols-3 items-center [&>div>svg]:scale-[3] [&>div>svg]:mx-auto [&>div>svg]:mt-4  [&>*]:relative [&>*]:flex [&>*]:flex-col [&>*]:justify-center'>
+                        <div className=''>
+                          <p>HTML</p>
+                          <FaHtml5></FaHtml5>
+                        </div>
+                        <div>
+                          <p>CSS</p>
+                          <FaCss3Alt></FaCss3Alt>
+                        </div>
+                        <div>
+
+                        <p>JavaScript</p>
+<IoLogoJavascript></IoLogoJavascript></div>
+                    </section>
+
+
+                    <section className='grid grid-cols-2 items-center [&>div>svg]:scale-[3] [&>div>svg]:mx-auto [&>div>svg]:mt-4  [&>*]:relative [&>*]:flex [&>*]:flex-col [&>*]:justify-center '>
+                        <div>
+                          <p>PHP</p>
+                          <FaPhp></FaPhp>
+                        </div>
+                        <div>
+                          <p>Laravel</p>
+                          <FaLaravel></FaLaravel>
+                        </div>
+
+                    </section>
+
+                  <section className='grid grid-cols-3 items-center [&>div>svg]:scale-[3] [&>div>svg]:mx-auto [&>div>svg]:mt-4  [&>*]:relative [&>*]:flex [&>*]:flex-col [&>*]:justify-center'>
+                        <div className=''>
+                          <p>React</p>
+                          <FaReact></FaReact>
+                        </div>
+                        <div>
+                          <p>NextJS</p>
+                        <TbBrandNextjs></TbBrandNextjs>
+
+                        </div>
+                        <div>
+
+                        <p>SQL</p>
+                          <FaDatabase></FaDatabase>
+                        </div>
+                    </section>
+
+            </article>
+
+
             <article className='flex flex-col md:grid grid-cols-2 justify-around px-4 [&>*]:grow overflow-mask /border-b-4 /border-orange-500'>
                 
-                <section className='text-2xl /md:border-4 /md:border-orange-500 p-4' style={{fontVariant: "small-caps"}} aria-label="skills-frontend">
+                {/* <section className='text-2xl /md:border-4 /md:border-orange-500 p-4' style={{fontVariant: "small-caps"}} aria-label="skills-frontend">
                     <h2 className='font-extrabold text-3xl'>Frontend</h2>
 
                     <section className='md:grid md:grid-cols-6 md:grid-rows-2'>
@@ -131,7 +190,7 @@ export default async function Home() {
                         <p className='col-span-3'>Next</p>
                         <p className='col-span-3'>SQL</p>
                     </section> 
-                </section>
+                </section> */}
 
                 <section className='col-span-2 mb-4'>
                       <h2 className='font-extrabold text-3xl pt-4' style={{fontVariant: "small-caps"}}>Soft Skills</h2>
