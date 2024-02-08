@@ -33,9 +33,9 @@ export default function ImageCollection({images}: ImageCollectionType) {
             )
           } else {
             return (
-              <div key={`img_div_${index}`} className="relative md:[&>span]:hidden [&>span]:hover:block [&>span]:hover:absolute [&>span]:hover:bottom-0 [&>span]:bg-onyx [&>span]:p-2 [&>span]:text-white [&>span]:duration-150 col-span-4 order-first">
+              <div key={`img_div_${index}`} className="relative /md:[&>span]:hidden [&>span]:hover:block [&>span]:hover:absolute [&>span]:hover:bottom-0 [&>span]:bg-onyx [&>span]:p-2 [&>span]:text-white [&>span]:duration-150 col-span-4 order-first">
                 <Image key={`img_${index}`} className="col-span-4 order-first rounded-t-lg overflow-mask-vert h-[400px] object-cover is-main-image" src={image.file_path} width={864} height={400} alt={"Test"}/>
-                <span key={`img_span_${index}`} className="absolute bottom-0 select-none w-full rounded-b-lg">{image.caption ? image.caption : ""}</span>
+                <span key={`img_span_${index}`} className="absolute bottom-0 w-full md:w-fit select-none">{image.caption ? image.caption : ""}</span>
               </div>
             )
           }

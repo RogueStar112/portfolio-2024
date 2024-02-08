@@ -49,7 +49,7 @@ export default function NavBar() {
         <Link scroll={true} href="/#projects" className="border-b-2 border-green-500" style={{fontVariant: "small-caps"}}>Projects</Link>
         <Link scroll={true} href="/#blog" className="border-b-2 border-blue-500" style={{fontVariant: "small-caps"}}>Blog</Link>
 
-        <div className="grid grid-cols-6 gap-6 [&>*]:w-[40px]" style={{fontVariant: "small-caps"}}>
+        <div className="grid grid-cols-6 gap-6 [&>*]:w-[44px]" style={{fontVariant: "small-caps"}}>
           <ThemeSwitch />
           <DyslexicFontSwitch />
         </div>
