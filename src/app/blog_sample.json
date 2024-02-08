@@ -189,6 +189,7 @@
 "images": [{
 
 "file_path": "/images/Bootcamp_Campus.jpg",
+"caption": "The Bradfield Centre, Science Park, Cambridge.",
 "is_main_image": 1
 
 
@@ -197,6 +198,7 @@
 {
 
 "file_path": "/images/Bootcamp_Campus2.JPG",
+"caption": "Near the campus is a lovely pond.",
 "is_main_image": 0
 
 
@@ -205,6 +207,7 @@
 {
 
 "file_path": "/images/Bootcamp_Bridge.JPG",
+"caption": "A nice bridge, a walk from the campus.",
 "is_main_image": 0
 
 
@@ -213,6 +216,7 @@
 {
 
 "file_path": "/images/Bootcamp_Campus3.JPG",
+"caption": "The Bradfield Centre, but at another angle.",
 "is_main_image": 0
 
 
@@ -221,6 +225,7 @@
 {
 
 "file_path": "/images/Bootcamp_Graduation.JPG",
+"caption": "Graduation day! 1st Dec 2023.",
 "is_main_image": 0
 
 
