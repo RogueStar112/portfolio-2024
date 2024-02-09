@@ -4,7 +4,6 @@ import { useRouter } from 'next/router'
 
 import { readFileSync } from 'fs';
 
-
 import Link from 'next/link'
 import Image from 'next/image'
 
@@ -133,8 +132,14 @@ export default async function Home({ params }: { params: { id: number } }) {
 
                             <p className='p-2 text-justify text-xl col-span-2'>{blog.teaser_content}</p>
 
-                            <section className='p-2 first-letter:font-bold first-letter:text-2xl' aria-label='article-text'>
-                              {blog.full_content}
+                            <section className='p-2 first-letter:font-bold first-letter:text-2xl' style={{ whiteSpace: 'pre-line' }} aria-label='article-text'>
+                              {blog.full_content + "\n\n"}
+
+                              {blog.additional_content ? blog.additional_content.map((add_content: any) => {
+                                return ( 
+                                  add_content + "\n\n"
+                                )
+                              }) : ""}
                             </section>
 
                             

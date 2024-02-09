@@ -146,7 +146,7 @@ export default async function Home() {
 
                     </section>
 
-                  <section className='grid grid-cols-3 items-center [&>div>svg]:scale-[3] [&>div>svg]:mx-auto [&>div>svg]:mt-4  [&>*]:relative [&>*]:flex [&>*]:flex-col [&>*]:justify-center'>
+                  <section className='grid grid-cols-3 items-center [&>div>svg]:scale-[3] [&>div>svg]:mx-auto [&>div]:m-4 [&>div>svg]:mt-4  [&>*]:relative [&>*]:flex [&>*]:flex-col [&>*]:justify-center'>
                         <div className=''>
                           <p>React</p>
                           <FaReact></FaReact>

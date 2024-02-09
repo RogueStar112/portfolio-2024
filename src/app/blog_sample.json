@@ -4,7 +4,8 @@
 "title": "My love for nature reserves",
 "tags": ["personal", "nature", "walk", "lifestyle"],
 "teaser_content": "I have been to a variety of nature reserves in Cambridge throughout the years. Here are some highlights.",
-"full_content": "Most Accessible Park Award goes to: Milton Country Park. It has toilets, food and ice cream in the main area, as well as a relatively decent circuit that isn't too hard to follow! Personal Go-to Nature Reserve award goes to: Trumpington Meadows Park! It has a nice stretch along the M11, in addition to being a really beautiful park! Most Beautiful LNR goes to: Cherry Hinton Chalk Pits! Its magnificent stones create such a beautiful surrounding.",
+"full_content": "Most Accessible Park Award goes to: Milton Country Park. It has toilets, food and ice cream in the main area, as well as a relatively decent circuit that isn't too hard to follow!",
+"additional_content": ["Personal Go-to Nature Reserve award goes to: Trumpington Meadows Park! It has a nice stretch along the M11, in addition to being a really beautiful park!", "Most Beautiful Local Nature Reserve goes to: Cherry Hinton Chalk Pits! Its magnificent stones create such a beautiful surrounding."],
 "created_by": "Demie Mistica",
 "dateTime_created": "29/01/2024, 19:33",
 "dateTime_updated": "29/01/2024, 19:33",
@@ -53,7 +54,10 @@
 
 
 }
-]
+],
+"additional_images": [{
+
+}]
 
 },
 
@@ -64,7 +68,7 @@
 "title": "Visit to Campfire",
 "tags": ["personal", "social", "lifestyle"],
 "teaser_content": "I've gone to a campfire near a local nature reserve. It was nice getting to meet new people!",
-"full_content": "I have been to a variety of nature reserves in Cambridge throughout the years. here are some highlights.",
+"full_content": "With January coming to a close, I'd thought to come by and visit this nice campfire. It was the first time I've roasted a marshmallow, and had a proper cuppa in a campfire!",
 "created_by": "Demie Mistica",
 "dateTime_created": "29/01/2024, 21:07",
 "dateTime_updated": "29/01/2024, 21:07",
@@ -72,7 +76,43 @@
 "images": [{
 
 "file_path": "/images/Campfire.jpg",
+"caption": "Campfire near Trumpington Meadows Park",
 "is_main_image": 1
+
+
+},
+
+{
+
+"file_path": "/images/Campfire_Me.JPG",
+"is_main_image": 0
+
+
+},
+
+{
+
+"file_path": "/images/Campfire_Marshmallow.JPG",
+"caption": "Roasting a marshmallow at 24, better late than never!",
+"is_main_image": 0
+
+
+},
+
+{
+
+"file_path": "/images/Campfire_Poem.JPG",
+"caption": "A poem someone gave me during my stay.",
+"is_main_image": 0
+
+
+},
+
+{
+
+"file_path": "/images/Campfire_Sunset.JPG",
+"caption": "The looming sunset after I left.",
+"is_main_image": 0
 
 
 }]
@@ -86,6 +126,7 @@
 "tags": ["personal", "nature", "walk", "lifestyle"],
 "teaser_content": "I embarked on a 1.5hr journey, encountering muddy terrain along the way.",
 "full_content": "This is one of the longest walks I've done in 2024 so far, and I am pretty proud of that. Any progress is progress and I believe firmly that putting any effort is better than none.",
+"additional_content": ["The journey starts with a walk from Trumpington Meadows towards the construction site."],
 "created_by": "Demie Mistica",
 "dateTime_created": "29/01/2024, 21:15",
 "dateTime_updated": "29/01/2024, 21:15",
