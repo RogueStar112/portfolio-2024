@@ -40,12 +40,10 @@ export default async function Home({ params }: { params: { tag: string } }) {
 
         <header className='grid grid-cols-2 justify-between relative'>
           
-          <div className='flex flex-col flex-start [&>*]:leading-[1.1rem] grow'>
-
-            <p className='text-2xl font-extrabold'>DEMIE</p> 
-            <p className='text-2xl font-bold text-stone-500 dark:text-stone-400'>MISTICA</p>
-          
-          </div>
+          <Link className='flex flex-col flex-start [&>*]:leading-[1.1rem] grow' href={'/'}>
+              <p className='text-2xl font-extrabold'>DEMIE</p> 
+              <p className='text-2xl font-bold text-stone-500 dark:text-stone-400'>MISTICA</p>
+          </Link>
           
           {/* <h1 className='font-montserrat p-logo'>DEMIE<br></br>MISTICA</h1> */}
 
