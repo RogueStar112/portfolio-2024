@@ -270,7 +270,7 @@ width={`${i === 0 ? "570" : "0"}${i === 4 || i === 5 || i == 2 || i == 6 || i ==
 
                     <section className='rounded-b-lg p-4 relative grow' aria-label='blog-text'>
                    
-                      <Link href={`blog/${blog.id}`} className={`text-blue-500 dark:text-orange-500 font-extrabold text-left /border-b-4 dark:border-orange-500 hover:text-orange-500 duration-200 ${isLastElement ? "text-3xl" : ""}`} style={{fontVariant: "small-caps"}}>{blog.title}</Link>
+                      <Link href={`blog/${blog.id}`} className={`text-blue-500 dark:text-orange-500 font-extrabold text-left /border-b-4 dark:border-orange-500 hover:text-orange-500 duration-200 ${isLastElement ? "text-3xl" : "text-xl md:text-base"}`} style={{fontVariant: "small-caps"}}>{blog.title}</Link>
 
                          {/* <p className='text-stone-500 text-left'>{blog.dateTime_created}</p> */}
 
