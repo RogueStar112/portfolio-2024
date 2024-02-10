@@ -25,6 +25,9 @@ import ImageCollection from '@/app/components/ImageCollection';
 import { TiHtml5 } from "react-icons/ti";
 import { FaGithub } from 'react-icons/fa';
 import { FaLinkedin } from 'react-icons/fa';
+import { IoMdArrowDropleft } from 'react-icons/io';
+import { IoMdArrowDropright } from 'react-icons/io';
+
 
 let path = require('path');
 // import { blog_sample } from './blog_sample.json';
@@ -64,7 +67,7 @@ export default async function Home({ params }: { params: { id: number } }) {
             {/* <h2 className='text-blue-500 font-extrabold text-left' style={{fontVariant: "small-caps"}}>{params.id}</h2> */}
 
 
-            {blog_JSON.map((blog: any) => {
+            {blog_JSON.map((blog: any, index: any) => {
                   
                   
                   if (blog.id == params.id) {
@@ -144,12 +147,20 @@ export default async function Home({ params }: { params: { id: number } }) {
 
                             
                             
-                            
+                            <section className='flex justify-between mx-4'>
+                                <Link className='text-blue-500 dark:text-orange-500 flex justify-center place-items-center' href={`/blog/${blog.id-1}`}><IoMdArrowDropleft />Previous article<br></br></Link>
+
+                                <Link className='text-blue-500 dark:text-orange-500 flex justify-center place-items-center' href={`/blog/${blog.id+1}`}>Next article<IoMdArrowDropright /></Link>
+                            </section>
                           </article>
 
 
                         )
                   } else {
+
+                    return (
+                      <></>
+                    )
                     // return (
 
                     //   <article key="NaN">404: Blog Article not found.</article>
