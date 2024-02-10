@@ -20,7 +20,7 @@ export default function NavBar() {
 
   return (
     <>
-    <nav id='navbar-desktop' className={`${montserrat.className}  [&>*]:font-bold [&>*]:self-center hidden md:flex justify-end gap-3 sticky top-0`}>
+    <nav id='navbar-desktop' className={`${montserrat.className}  [&>*]:font-bold [&>*]:self-center hidden md:flex justify-end gap-3`}>
               <Link scroll={true} className="border-b-2 hover:border-orange-500"href="/#skills" style={{fontVariant: "small-caps"}}>Skills</Link>
               <Link scroll={true} className="border-b-2 hover:border-green-500" href="/#projects" style={{fontVariant: "small-caps"}}>Projects</Link>
               <Link scroll={true} className="border-b-2 hover:border-blue-500" href="/#blog" style={{fontVariant: "small-caps"}}>Blog</Link>
@@ -28,7 +28,7 @@ export default function NavBar() {
               <div className="flex relative gap-3 border-2 border-black dark:border-white p-1">
                 <ThemeSwitch />
                 <DyslexicFontSwitch />
-                <p className="absolute top-[-9px] left-[14px] px-2 bg-white dark:bg-onyx z-50 text-[8px] text-center">ACCESSIBILITY</p>
+                <p className="absolute top-[-9px] left-[14px] px-2 bg-inherit z-50 text-[8px] text-center">ACCESSIBILITY</p>
               </div>
     </nav>
 
@@ -56,7 +56,7 @@ export default function NavBar() {
         <div className="grid grid-cols-6 gap-6 border-2 border-black dark:border-white p-1 /[&>*]:w-[44px] relative" style={{fontVariant: "small-caps"}}>
           <ThemeSwitch />
           <DyslexicFontSwitch />
-          <p className="absolute top-[-9px] left-[14px] px-2 bg-white dark:bg-onyx z-50 text-[8px] text-center">ACCESSIBILITY</p>
+          <p className="absolute top-[-9px] left-[14px] px-2 bg-inherit z-50 text-[8px] text-center">ACCESSIBILITY</p>
         </div>
       </nav>
 

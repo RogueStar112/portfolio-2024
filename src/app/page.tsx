@@ -48,11 +48,11 @@ export default async function Home() {
   return (
     <div className='p-4 dark:bg-onyx h-screen dark:text-mint-cream mx-auto text-current max-w-4xl relative'>
 
-        <header className='grid grid-cols-2 justify-between relative sticky top-0 bg-white dark:bg-onyx z-50 py-2'>
+        <header className='grid grid-cols-2 justify-between relative sticky top-0 bg-inherit z-50 py-2'>
           
           <div className='flex flex-col flex-start [&>*]:leading-[1.1rem] grow'>
 
-            <Link className='flex flex-col justify-center [&>*]:leading-[1.1rem] grow' href={'/'}>
+            <Link className='flex flex-col justify-center [&>*]:leading-[1.1rem]' href={'/'}>
               <p className='text-2xl font-extrabold'>DEMIE</p> 
               <p className='text-2xl font-bold text-stone-500 dark:text-stone-400'>MISTICA</p>
             </Link>
@@ -255,7 +255,7 @@ width={`${i === 0 ? "570" : "0"}${i === 4 || i === 5 || i == 2 || i == 6 || i ==
 
             <h2 id='blog' className='overflow-mask p-4 my-2 dark:text-white text-right text-4xl font-extrabold border-b-4 border-blue-500'>BLOG.</h2>
 
-            <div className='grid grid-cols-1 md:grid-cols-3 gap-3'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3'>
             {blog_JSON.map((blog: any) => {
                   
                   let isLastElement = (blog_JSON[blog_JSON.length - 1].title === blog.title);
