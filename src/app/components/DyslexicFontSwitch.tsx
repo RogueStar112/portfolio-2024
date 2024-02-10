@@ -31,21 +31,21 @@ export default function DyslexicFontSwitch() {
   )
 
   if (resolvedTheme === 'dark') {
-    return <button style={{fontVariant: "small-caps"}} className={ `${opendyslexic.className} flex gap-4 bg-onyx text-white text-center rounded-full p-2 text-sm`} onClick={() => setTheme('dark-dys')}>Dys</button>
+    return <button style={{fontVariant: "small-caps"}} className={ `${opendyslexic.className} flex gap-4 border-2 border-solid border-white bg-onyx text-white text-center rounded-full p-2 text-sm`} onClick={() => setTheme('dark-dys')}>Dys</button>
   }
 
   if (resolvedTheme === 'dark-dys') {
-    return <button style={{fontVariant: "small-caps"}} className={ `${opendyslexic.className} flex gap-4 bg-white text-onyx text-center dark:bg-white dark:text-onyx rounded-full p-2 text-sm`} onClick={() => setTheme('dark')}>Dys</button>
+    return <button style={{fontVariant: "small-caps"}} className={ `${opendyslexic.className} flex gap-4 border-2 border-solid border-white bg-white text-onyx text-center dark:bg-white dark:text-onyx rounded-full p-2 text-sm`} onClick={() => setTheme('dark')}>Dys</button>
   }
 
 
   if (resolvedTheme === 'light-dys') {
-    return <button style={{fontVariant: "small-caps"}} className={ `${opendyslexic.className} flex gap-4 bg-onyx text-white text-center rounded-full p-2 text-sm`} onClick={() => setTheme('light')}>Dys
+    return <button style={{fontVariant: "small-caps"}} className={ `${opendyslexic.className} flex gap-4 border-2 border-solid border-onyx bg-onyx text-white text-center rounded-full p-2 text-sm`} onClick={() => setTheme('light')}>Dys
 </button>
   }
 
    if (resolvedTheme === 'light') {
-    return <button style={{fontVariant: "small-caps"}} className={ `${opendyslexic.className} flex gap-4 dark:bg-white text-center dark:text-onyx rounded-full p-2 text-sm`} onClick={() => setTheme('light-dys')}>Dys</button>
+    return <button style={{fontVariant: "small-caps"}} className={ `${opendyslexic.className} flex gap-4 border-2 border-solid border-onyx dark:bg-white text-center dark:text-onyx rounded-full p-2 text-sm`} onClick={() => setTheme('light-dys')}>Dys</button>
   }
 
 }

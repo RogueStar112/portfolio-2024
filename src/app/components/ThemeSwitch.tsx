@@ -25,21 +25,21 @@ export default function ThemeSwitch() {
   )
 
   if (resolvedTheme === 'dark') {
-    return <button style={{fontVariant: "small-caps"}} className="flex gap-4 dark:bg-white dark:text-onyx rounded-full p-2" onClick={() => setTheme('light')}><FiSun className="[&>*]:p-2"></FiSun><span className="hidden md:visible">Light Mode</span></button>
+    return <button style={{fontVariant: "small-caps"}} className="flex gap-4 dark:bg-white dark:text-onyx w-[40px] rounded-full p-2" onClick={() => setTheme('light')}><FiSun className="[&>*]:p-2 m-auto"></FiSun><span className="hidden md:visible">Light Mode</span></button>
   }
 
   if (resolvedTheme === 'dark-dys') {
-    return <button style={{fontVariant: "small-caps"}} className="flex gap-4 bg-white text-onyx rounded-full p-2" onClick={() => setTheme('light-dys')}><FiSun className="[&>*]:p-2"></FiSun><span className="hidden md:visible">Light Mode</span></button>
+    return <button style={{fontVariant: "small-caps"}} className="flex gap-4 bg-white text-onyx w-[40px] rounded-full p-2" onClick={() => setTheme('light-dys')}><FiSun className="[&>*]:p-2 m-auto"></FiSun><span className="hidden md:visible">Light Mode</span></button>
   }
 
 
   if (resolvedTheme === 'light-dys') {
-     return <button style={{fontVariant: "small-caps"}} className="flex gap-4 bg-onyx text-white rounded-full p-2" onClick={() => setTheme('dark-dys')}><FiMoon className="[&>*]:p-2"></FiMoon><span className="hidden md:visible">Light Mode</span></button>
+     return <button style={{fontVariant: "small-caps"}} className="flex gap-4 bg-onyx text-white w-[40px] rounded-full p-2" onClick={() => setTheme('dark-dys')}><FiMoon className="[&>*]:p-2 m-auto"></FiMoon><span className="hidden md:visible">Light Mode</span></button>
   }
 
   if (resolvedTheme === 'light') {
-    return <button style={{fontVariant: "small-caps"}} className="flex gap-4 bg-onyx text-white rounded-full p-2" onClick={() => setTheme('dark')}>
-<FiMoon className="dark:bg-onyx rounded-full [&>*]:p-2"></FiMoon><span className="hidden md:visible">Dark Mode</span></button>
+    return <button style={{fontVariant: "small-caps"}} className="flex gap-4 bg-onyx text-white w-[40px] rounded-full p-2" onClick={() => setTheme('dark')}>
+<FiMoon className="dark:bg-onyx rounded-full [&>*]:p-2 m-auto"></FiMoon><span className="hidden md:visible">Dark Mode</span></button>
   }
 
 }

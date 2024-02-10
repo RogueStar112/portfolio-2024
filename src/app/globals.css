@@ -5,22 +5,22 @@
 
 .light {
   /* Your default theme */
-  transition: all 0.2s ease-in-out;
   --background: white;
   --foreground: black;
+  transition: all 0.2s ease-in-out;
 }
 
 
 .dark {
-  transition: all 0.5s ease-in-out;
   --background: #444444;
   --foreground: white;
+  transition: all 0.2s ease-in-out;
 }
 
 
 
-html {
-
+html, body {
+    
   /* transition: all 0.5s ease-in-out; */
 }
 

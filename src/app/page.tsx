@@ -46,13 +46,13 @@ export default async function Home() {
   const blog_JSON = JSON.parse(readFileSync(blog_file, 'utf-8'));
 
   return (
-    <div className='p-4 dark:bg-onyx h-screen dark:text-mint-cream mx-auto text-current max-w-4xl'>
+    <div className='p-4 dark:bg-onyx h-screen dark:text-mint-cream mx-auto text-current max-w-4xl relative'>
 
-        <header className='grid grid-cols-2 justify-between relative'>
+        <header className='grid grid-cols-2 justify-between relative sticky top-0 bg-white dark:bg-onyx z-50 py-2'>
           
           <div className='flex flex-col flex-start [&>*]:leading-[1.1rem] grow'>
 
-            <Link className='flex flex-col flex-start [&>*]:leading-[1.1rem] grow' href={'/'}>
+            <Link className='flex flex-col justify-center [&>*]:leading-[1.1rem] grow' href={'/'}>
               <p className='text-2xl font-extrabold'>DEMIE</p> 
               <p className='text-2xl font-bold text-stone-500 dark:text-stone-400'>MISTICA</p>
             </Link>
@@ -193,7 +193,7 @@ export default async function Home() {
                 </section> */}
 
                 <section className='col-span-2 mb-4'>
-                      <h2 className='font-extrabold text-3xl pt-4' style={{fontVariant: "small-caps"}}>Soft Skills</h2>
+                      <h2 className='font-extrabold text-3xl pt-4 z-0' style={{fontVariant: "small-caps"}}>Soft Skills</h2>
                       <section className='flex flex-col md:grid md:grid-cols-3 [&>*]:text-2xl md:[&>*]:mb-4'>
                         <p>Considerate</p>
                         <p>Punctual</p>
