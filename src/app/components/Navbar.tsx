@@ -18,6 +18,9 @@ export default function NavBar() {
 
   const [showMobileNav, setShowMobileNav] = useState(false);
 
+  // Added 11/02/2024, to ensure dark and light mode toggle accordingly to the body with dyslexic modes.
+  const [isDarkDys, setIsDarkDys] = useState(false);
+
   return (
     <>
     <nav id='navbar-desktop' className={`${montserrat.className}  [&>*]:font-bold [&>*]:self-center hidden md:flex justify-end gap-3`}>
@@ -27,8 +30,8 @@ export default function NavBar() {
               
               <div className="flex relative gap-3 border-2 border-black dark:border-white p-1">
                 <ThemeSwitch />
-                <DyslexicFontSwitch />
-                <p className="absolute top-[-9px] left-[14px] px-2 bg-inherit z-50 text-[8px] text-center">ACCESSIBILITY</p>
+                <DyslexicFontSwitch isDarkDys={isDarkDys} setIsDarkDys={setIsDarkDys}/>
+                <p className="absolute top-[-9px] left-[12px] px-2 bg-inherit z-50 text-[8px] dark:bg-onyx bg-white text-center">ACCESSIBILITY</p>
               </div>
     </nav>
 
@@ -55,8 +58,8 @@ export default function NavBar() {
 
         <div className="grid grid-cols-6 gap-6 border-2 border-black dark:border-white p-1 /[&>*]:w-[44px] relative" style={{fontVariant: "small-caps"}}>
           <ThemeSwitch />
-          <DyslexicFontSwitch />
-          <p className="absolute top-[-9px] left-[14px] px-2 bg-inherit z-50 text-[8px] text-center">ACCESSIBILITY</p>
+          <DyslexicFontSwitch isDarkDys={isDarkDys} setIsDarkDys={setIsDarkDys}/>
+          <p className="absolute top-[-9px] left-[14px] px-2 bg-inherit z-50 text-[8px] dark:bg-onyx bg-white text-center">ACCESSIBILITY</p>
         </div>
       </nav>
 

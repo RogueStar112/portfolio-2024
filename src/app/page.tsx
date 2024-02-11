@@ -46,7 +46,7 @@ export default async function Home() {
   const blog_JSON = JSON.parse(readFileSync(blog_file, 'utf-8'));
 
   return (
-    <div className='p-4 dark:bg-onyx h-screen dark:text-mint-cream mx-auto text-current max-w-4xl relative'>
+    <div className='p-4 bg-white dark:bg-onyx h-screen dark:text-mint-cream mx-auto text-current max-w-4xl relative'>
 
         <header className='grid grid-cols-2 justify-between relative sticky top-0 bg-inherit z-50 py-2'>
           
@@ -79,9 +79,9 @@ export default async function Home() {
                 
                 <section className='overflow-mask h-[448px]'>
                 <Image className='object-cover object-center h-inherit' src={imageHero} fill={true} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" style={{objectFit: 'cover'}} alt='My portrait'></Image>
-                    <section className='absolute right-0 mr-4 top-[45%] text-white'>
-                      <p className='text-xl text-right md:text-4xl font-extrabold'>GREETINGS.</p>
-                      <p className={`${eb_garamond.className} font-initial`}>Full Stack Web Developer</p>
+                    <section className='absolute bottom-4 left-4 md:right-0 mr-4 md:top-[45%] text-white'>
+                      <p className='text-left md:text-right text-3xl md:text-4xl font-extrabold'>GREETINGS.</p>
+                      <p className={`${eb_garamond.className} font-initial md:text-right`}>Full Stack Web Developer</p>
                     </section>
                 </section>
 
