@@ -78,7 +78,7 @@ export default async function Home() {
               <article className='overflow-hidden relative'>
                 
                 <section className='overflow-mask h-[448px]'>
-                <Image className='object-cover object-center h-inherit' src={imageHero} fill={true} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" style={{objectFit: 'cover'}} alt='My portrait'></Image>
+                <Image className='object-cover object-center h-inherit' src={`/images/me_wlocationv2.png`} fill={true} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" style={{objectFit: 'cover'}} alt='My portrait'></Image>
                     <section className='absolute bottom-4 left-4 md:right-0 mr-4 md:top-[45%] text-white'>
                       <p className='text-left md:text-right text-3xl md:text-4xl font-extrabold'>GREETINGS.</p>
                       <p className={`${eb_garamond.className} font-initial md:text-right`}>Full Stack Web Developer</p>
