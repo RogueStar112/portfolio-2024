@@ -148,9 +148,9 @@ export default async function Home({ params }: { params: { id: number } }) {
                             
                             
                             <section className='flex justify-between mx-4'>
-                                <Link className='text-blue-500 dark:text-orange-500 flex justify-center place-items-center' href={`/blog/${blog.id-1}`}><IoMdArrowDropleft />Previous article<br></br></Link>
+                                <Link className='text-blue-500 dark:text-orange-500 flex justify-center place-items-center' href={`/blog/${blog.id+1}`}><IoMdArrowDropleft />Previous article<br></br></Link>
 
-                                <Link className='text-blue-500 dark:text-orange-500 flex justify-center place-items-center' href={`/blog/${blog.id+1}`}>Next article<IoMdArrowDropright /></Link>
+                                <Link className='text-blue-500 dark:text-orange-500 flex justify-center place-items-center' href={`/blog/${blog.id-1}`}>Next article<IoMdArrowDropright /></Link>
                             </section>
                           </article>
 

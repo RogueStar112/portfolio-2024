@@ -127,6 +127,7 @@
 "tags": ["personal", "nature", "walk", "lifestyle"],
 "teaser_content": "I embarked on a 1.5hr journey, encountering muddy terrain along the way.",
 "full_content": "This is one of the longest walks I've done in 2024 so far, and I am pretty proud of that. Any progress is progress and I believe firmly that putting any effort is better than none.",
+"additional_content": ["The journey starts with a walk from Trumpington Meadows towards the construction site."],
 "created_by": "Demie Mistica",
 "dateTime_created": "29/01/2024, 21:15",
 "dateTime_updated": "29/01/2024, 21:15",
@@ -191,9 +192,40 @@
 
 },
 
+
 {
 
 "id": 5,
+"title": "My Favourite Food",
+"tags": ["personal", "food"],
+"teaser_content": "Food that I love to cook/eat from time to time, including a tropical ice cream!",
+"full_content": "My go-to dish that I cook often is a (non-traditional) Carbonara.",
+"additional_content": ["In the summertime"],
+"created_by": "Demie Mistica",
+"dateTime_created": "02/02/2024, 20:08",
+"dateTime_updated": "02/02/2024, 20:08",
+"grid_format_id": "1",
+"images": [{
+
+"file_path": "/images/Food_1.JPG",
+"is_main_image": 1
+
+
+},
+
+{
+
+"file_path": "/images/FoodHero.png",
+"is_main_image": 0
+
+
+}]
+
+},
+
+{
+
+"id": 6,
 "title": "My time at coding bootcamp",
 "tags": ["education", "web-dev"],
 "teaser_content": "What I've done and learnt during my time here.",
@@ -251,7 +283,7 @@
 
 {
 
-"id": 6,
+"id": 7,
 "title": "My Autistic Self",
 "tags": ["mental-health", "personal"],
 "teaser_content": "My personal experiences with autism.",
