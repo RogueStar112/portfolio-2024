@@ -38,7 +38,13 @@ body {
   src: local('OpenDyslexicFont'), url('/public/fonts/OpenDyslexic-Regular.otf') format('otf');
 } */
 
+html .dark-dys {
+  color-scheme: dark;
+}
 
+html .light-dys {
+  color-scheme: light;
+}
 
 .dark-dys {
 

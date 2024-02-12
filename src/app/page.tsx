@@ -43,7 +43,7 @@ const eb_garamond = EB_Garamond({weight: ['500', '600'], style: ['normal'], subs
 export default async function Home() {
 
   const blog_file = path.join(process.cwd(), 'src/app', 'blog_sample.json');
-  const blog_JSON = JSON.parse(readFileSync(blog_file, 'utf-8'));
+  const blog_JSON = JSON.parse(readFileSync(blog_file, 'utf-8')).reverse();
 
   return (
     <div className='p-4 bg-white dark:bg-onyx h-screen dark:text-mint-cream mx-auto text-current max-w-4xl relative'>
@@ -258,17 +258,18 @@ width={`${i === 0 ? "570" : "0"}${i === 4 || i === 5 || i == 2 || i == 6 || i ==
             <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3'>
             {blog_JSON.map((blog: any) => {
                   
-                  let isLastElement = (blog_JSON[blog_JSON.length - 1].title === blog.title);
+                  // let isLastElement = (blog_JSON[blog_JSON.length - 1].title === blog.title);
+                  let isLastElement = false;
                   // ${isLastElement ? "col-span-full" : ""}
                   return (
-                  <article key={blog.id} id={blog.id} className={`border-2 border-green-400/10 /dark:border-orange-500  overflow-hidden rounded-lg /max-w-[100%] /md:max-w-[33.3%] flex flex-col justify-start content-end ${isLastElement ? "col-span-full" : ""}`}>
+                  <article key={blog.id} id={blog.id} className={`border-2 border-blue-200 dark:border-orange-500  overflow-hidden rounded-lg /max-w-[100%] /md:max-w-[33.3%] flex flex-col justify-start content-end ${isLastElement ? "col-span-full" : ""}`}>
                     
                     <Link href={`blog/${blog.id}`}>
                       <Image className="rounded-t-lg overflow-mask-vert overflow-hidden h-[250px] object-cover hover:scale-110 duration-150" src={blog.images[0].file_path} width={864} height={300} alt={"Test"}/>
                     </Link>
           
 
-                    <section className='rounded-b-lg p-4 relative grow' aria-label='blog-text'>
+                    <section className='flex flex-col justify-between rounded-b-lg p-4 relative grow' aria-label='blog-text'>
                    
                       <Link href={`blog/${blog.id}`} className={`text-blue-500 dark:text-orange-500 font-extrabold text-left /border-b-4 dark:border-orange-500 hover:text-orange-500 duration-200 ${isLastElement ? "text-3xl" : "text-xl md:text-base"}`} style={{fontVariant: "small-caps"}}>{blog.title}</Link>
 
@@ -279,7 +280,7 @@ width={`${i === 0 ? "570" : "0"}${i === 4 || i === 5 || i == 2 || i == 6 || i ==
 
                       <p className={`${isLastElement ? "text-center" : "text-justify"}`}>{blog.teaser_content}</p>
 
-                      <section className='relative py-4 flex justify-center gap-1 flex-1 justify-self-end' aria-label='post-tags'>
+                      <section className='relative py-4 flex justify-center items-end gap-1 flex-1' aria-label='post-tags'>
                               
                               {/* <span className='absolute text-2xl md:text-5xl left-0 md:right-0 z-10 user-select opacity-35 select-none top-0 text-blue-500 dark:text-orange-500'>#</span> */}
                                 {blog.tags.map((tag: any) => {
@@ -294,7 +295,7 @@ width={`${i === 0 ? "570" : "0"}${i === 4 || i === 5 || i == 2 || i == 6 || i ==
                       
                       {/* <section> */}
                             <section className='w-full'>
-                              <Link className='block bg-blue-400 grow dark:bg-orange-700 dark:hover:bg-blue-700 hover:bg-orange-700 duration-200 p-4 w-full text-white rounded-b-lg' key={`read-more-${blog.id}`} href={`/blog/${blog.id}`}>Read more</Link>
+                              <Link className='block bg-blue-400 grow dark:bg-orange-700 dark:hover:bg-orange-800 hover:bg-orange-700 duration-200 p-4 w-full text-white rounded-b-lg' key={`read-more-${blog.id}`} href={`/blog/${blog.id}`}>Read more</Link>
                             </section>
 
                             

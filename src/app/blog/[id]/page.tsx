@@ -48,9 +48,9 @@ export default async function Home({ params }: { params: { id: number } }) {
   return (
     <div className='p-4 dark:bg-onyx h-screen dark:text-mint-cream mx-auto text-current max-w-4xl'>
 
-        <header className='grid grid-cols-2 justify-between relative'>
+        <header className='grid grid-cols-2 justify-between relative sticky top-0 bg-inherit z-50 py-2'>
           
-          <Link className='flex flex-col flex-start [&>*]:leading-[1.1rem] grow' href={'/'}>
+          <Link className='flex flex-col justify-center [&>*]:leading-[1.1rem] grow' href={'/'}>
               <p className='text-2xl font-extrabold'>DEMIE</p> 
               <p className='text-2xl font-bold text-stone-500 dark:text-stone-400'>MISTICA</p>
           </Link>

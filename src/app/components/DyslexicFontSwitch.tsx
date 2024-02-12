@@ -23,9 +23,12 @@ export default function DyslexicFontSwitch({isDarkDys, setIsDarkDys}: darkDysChe
 
   useEffect(() =>  setMounted(true), [])
 
+  
+
   // Added 11/02/2024, to ensure dark and light mode toggle accordingly to the body with dyslexic modes.
  // Refactoring will be added to avoid confusion.
   function toggleDarkDysToBody() {
+    console.log('Toggled to dark');
     document.body.classList.toggle('dark');
     
   }
@@ -48,6 +51,7 @@ export default function DyslexicFontSwitch({isDarkDys, setIsDarkDys}: darkDysChe
   }
 
   if (resolvedTheme === 'dark-dys') {
+    document.body.classList.add('dark');
     return <button style={{fontVariant: "small-caps"}} className={ `${opendyslexic.className} flex gap-4 border-2 border-solid border-white bg-white text-onyx text-center dark:bg-white dark:text-onyx rounded-full p-2 text-sm w-[40px]`} onClick={() => {setTheme('dark'); toggleDarkDysToBody()}}>Dys</button>
   }
 
