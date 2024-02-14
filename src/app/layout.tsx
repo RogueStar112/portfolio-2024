@@ -19,7 +19,8 @@ const montserrat = Montserrat({ weight: ['300', '500', '700', '800', '900'], sty
 
 export const metadata: Metadata = {
   title: 'Demie Mistica - Web Developer',
-  description: 'Powered by NextJS.',
+  description: 'My personal portfolio, built with NextJS.',
+  keywords: ["web developer", "web developers near me", "front dev", "front end developer"],
 }
 
 export default function RootLayout({
