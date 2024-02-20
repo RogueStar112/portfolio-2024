@@ -45,6 +45,7 @@ export default async function Home({ params }: { params: { id: number } }) {
 
 
 
+
   return (
     <div className='p-4 bg-white dark:bg-onyx h-screen dark:text-mint-cream mx-auto text-current max-w-4xl'>
 
@@ -108,7 +109,7 @@ export default async function Home({ params }: { params: { id: number } }) {
                     
                               <section className='rounded-b-lg p-2 relative' aria-label='blog-text'>
                             
-                                <h2 className='text-blue-500 dark:text-orange-500 text-4xl font-extrabold text-center md:text-left whitespace-normal' style={{fontVariant: "small-caps"}}>{blog.title}</h2>
+                                <h2 className='text-blue-500 dark:text-orange-500 text-3xl md:text-4xl font-extrabold text-center md:text-left whitespace-normal' style={{fontVariant: "small-caps"}}>{blog.title}</h2>
 
                                   <p className='text-stone-500 text-center md:text-left'>Published on {blog.dateTime_created}</p>
 
@@ -143,14 +144,46 @@ export default async function Home({ params }: { params: { id: number } }) {
                                   add_content + "\n\n"
                                 )
                               }) : ""}
+
+                              {blog.additional_images ? blog.additional_images.map((add_image: any) => {
+                                
+                                return (
+
+                                  <section className={`block md:flex justify-${add_image.alignment} gap-4`}>
+                                    
+                                    
+                                    <p>{add_image.text_content}</p>
+
+                                    <aside className='relative'>
+
+                                    <h2 className='text-blue-500 dark:text-orange-500 text-xl md:text-2xl font-extrabold whitespace-normal m-2 text-center' style={{fontVariant: "small-caps"}}>{add_image.heading}</h2>
+
+
+                                      <Image src={add_image.file_path} className='md:max-h-[300px] object-cover object-top' width={864} height={400} alt='Additional Image'/>
+
+                                      <caption className='m-2 border-l-2 border-blue-500 dark:border-orange-500 w-full'>    {add_image.caption}</caption>
+                                        
+                                        
+                                    </aside> 
+
+
+                                  </section>
+
+                                )
+
+                              }) : ""}
                             </section>
 
                             
                             
                             <section className='flex justify-between mx-4'>
-                                <Link className='text-blue-500 dark:text-orange-500 flex justify-center place-items-center' href={`/blog/${blog.id+1}`}><IoMdArrowDropleft />Previous article<br></br></Link>
 
-                                <Link className='text-blue-500 dark:text-orange-500 flex justify-center place-items-center' href={`/blog/${blog.id-1}`}>Next article<IoMdArrowDropright /></Link>
+                                
+
+
+                                <Link className={`text-center text-blue-500 dark:text-orange-500 flex justify-center place-items-center`} href={`/blog/${blog_JSON[index+1] ? blog.id+1 : "1"}`}><IoMdArrowDropleft />Previous article<br></br>{blog_JSON[index+1] ? blog_JSON[index+1].title : blog_JSON[0].title}`</Link>
+
+                                <Link className={`text-center text-blue-500 dark:text-orange-500 flex justify-center place-items-center`} href={`/blog/${blog_JSON[index-1] ? blog.id-1 : blog_JSON.length}`}>Next article<br></br>{blog_JSON[index-1] ? blog_JSON[index-1].title : blog_JSON[blog_JSON.length-1].title}<IoMdArrowDropright /></Link>
                             </section>
                           </article>
 

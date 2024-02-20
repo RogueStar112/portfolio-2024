@@ -54,10 +54,7 @@
 
 
 }
-],
-"additional_images": [{
-
-}]
+]
 
 },
 
@@ -210,7 +207,6 @@
 
 
 },
-
 {
 
 "file_path": "/images/Bootcamp_Campus2.JPG",
@@ -255,7 +251,7 @@
 "title": "My Autistic Self",
 "tags": ["mental-health", "personal"],
 "teaser_content": "My personal experiences with autism.",
-"full_content": "Definitely haven't written this at 2:30am without some compelling reason!\n\n From my experience, autism isn't something I would take away but rather acknowledge that it's going to be a lifelong condition. And that's okay! While I see myself as needing extra accomodations at times to help me regulate my tasks and mood, this shouldn't stop me from reaching my full potential.\n\nAutism has made me accept imperfections in my life, that I especially can't control. For instance, I can't control inflation. I focus on what I can control instead.\n\nFor example, it's much easier to control my mood. Whether it'd be from taking deep breaths, to taking things more slowly than usual.",
+"full_content": "Definitely haven't written this at 2:30am without some compelling reason!\n\n From my experience, autism isn't something I would take away but rather acknowledge that it's going to be a lifelong condition. And that's okay! While I see myself as needing extra accomodations at times to help me regulate my tasks and mood, this shouldn't stop me from reaching my full potential.\n\nAutism has made me accept imperfections in my life, that I especially can't control. For instance, I can't control inflation. I focus on what I can control instead.\n\nFor example, it's much easier to control my mood. Whether it'd be from taking deep breaths, to taking things more slowly than usual.\n\nI feel like being understood for who I am comes with the neurodiverse package as well, but also being mindful that it won't necessarily restrict my decision-making. I don't expect the world to accomodate for me.\n\nIn my opinion, I find the word 'neurotypical' rather hostile. It's sort of like treating them as if they have no way of thinking outside the 'norm'. It's also the same for neurodivergence. While I can't necessarily come up with a more 'appealing' name for both terms, I do think that one phrase stands out the most- 'Human.' we are going to experience emotionally driven decisions either way.\n\nThis is not a call for people to pick on others because of their brain structures.\n\nAs an autistic person, I don't directly advocate for more acceptance. I advocate for people however, to be more mindful. To tap into our innate empathy. If you were in someone else's shoes, who was overwhelmed by loud noises and bright lights, would you tell them to just 'snap out of it'?",
 "created_by": "Demie Mistica",
 "dateTime_created": "07/02/2024, 02:25",
 "dateTime_updated": "07/02/2024, 02:25",
@@ -276,6 +272,39 @@
 
 }
 ]
+
+},
+
+{
+
+"id": 7,
+"title": "Embracing Yourself",
+"tags": ["mental-health", "personal", "ai"],
+"teaser_content": "A long-winded article on my struggles, and attempting to overcome them.",
+"full_content": "I've opted-in the rat race. I'm trying to catch my breath against the bullet train named 'Technological Advancements.' A lot of the things I've learnt over the years, can now be summarized by a chatbot who can shove its encyclopedia of answers right in front of our fingertips.\n\nAs much as I'd love to embrace AI, there's a lot of questions left in my mind that I've barely even asked throughout my life, because I was too busy pursuing those dreams.\n\nEmbracing myself was when I knew when to stop pursuing that train. That really the worst enemy was myself, my ego, and how these two affect others around me.\n\nMy biggest fear is coming across as someone who always looks out for themself, and never anybody else. That is one of the main reasons why I get out of bed everyday. While comfort is really important, embracing the unknown and taking risks is vital to spicing up life.\n\nBattling my worst perception of myself is difficult. I also feel like making mental health an important focus of my personality makes me feel like a boring person.",
+"created_by": "Demie Mistica",
+"dateTime_created": "15/02/2024, 18:48",
+"dateTime_updated": "15/02/2024, 18:48",
+"grid_format_id": "1",
+"is_new": 1,
+"images": [{
+
+"file_path": "/images/EY_Portrait.jpg",
+"is_main_image": 1
+
+
+}
+],
+
+"additional_images": [{
+
+"file_path": "/images/EY_Bins.jpg",
+"heading": "Taking out the trash",
+"caption": "The thought of this task is more daunting to me than actually doing it.",
+"text_content": "There are times that I have managed basic tasks, like taking out the trash, without fear or judgment holding me back. I long for those days.\n\nThe things that are really stopping me from doing this on a regular basis is lack of motivation or purpose. And I think it's okay to tell people this, rather than having to hide my true self in exchange for superficial professionalism. In other words, I think it's okay to show weakness in public, for as long as you find ways of coping or reducing them.\n\n",
+"alignment": "end"
+
+}]
 
 }
 
