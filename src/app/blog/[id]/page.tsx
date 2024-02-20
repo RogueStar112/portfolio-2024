@@ -145,11 +145,11 @@ export default async function Home({ params }: { params: { id: number } }) {
                                 )
                               }) : ""}
 
-                              {blog.additional_images ? blog.additional_images.map((add_image: any) => {
+                              {blog.additional_images ? blog.additional_images.map((add_image: any, add_index: any) => {
                                 
                                 return (
 
-                                  <section className={`block md:flex justify-${add_image.alignment} gap-4`}>
+                                  <section key={`additional_image_${add_index}`} className={`block md:flex justify-${add_image.alignment} gap-4`}>
                                     
                                     
                                     <p>{add_image.text_content}</p>
