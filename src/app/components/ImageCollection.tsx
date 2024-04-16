@@ -44,7 +44,7 @@ export default function ImageCollection({images}: ImageCollectionType) {
             if(index != mainImageIndex) {
               return (
                 // IF NOT A MAIN IMAGE
-                <div key={`img_div_${index}`} className="relative [&>span]:hidden [&>span]:hover:block [&>span]:rounded-b-lg [&>span]:hover:absolute [&>span]:hover:bottom-0 [&>span]:bg-onyx [&>span]:hover:bottom-0 [&>span]:p-1 [&>span]:text-white">
+                <div key={`img_div_${index}`} className="relative grow [&>img]:h-full [&>span]:hidden [&>span]:hover:block [&>span]:rounded-b-lg [&>span]:hover:absolute [&>span]:hover:bottom-0 [&>span]:bg-onyx [&>span]:hover:bottom-0 [&>span]:p-1 [&>span]:text-white">
                   <Image key={`img_${index}`} className='rounded-lg md:overflow-mask-vert object-cover max-h-[60px] md:max-h-[156px] overflow-x' onClick={() => setMainImageIndex(index)} src={image.file_path} width={864} height={400} alt={"Test"}/>
                   {/* <span key={`img_span_${index}`} className={`${image.caption ? "" : "hidden"} select-none`}>{image.caption ? image.caption : ""}</span> */}
                 </div>
