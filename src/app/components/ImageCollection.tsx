@@ -37,7 +37,7 @@ export default function ImageCollection({images}: ImageCollectionType) {
     )
   } else {
     return (
-      <section className='grid grid-cols-4 gap-2 relative'>
+      <section className='grid grid-cols-2 md:grid-cols-4 gap-2 relative'>
         {/* <button className="flex col-span-4 order-last bg-orange-500 text-white w-fit p-4 rounded-full" onClick={() => setAnimated(!animated)} ><FaWandMagicSparkles /></button> */}
         {images.map((image: any, index: any) => {
                                   
@@ -51,7 +51,7 @@ export default function ImageCollection({images}: ImageCollectionType) {
               )
             } else {
               return (
-                <div key={`img_div_${index}`} className="relative /md:[&>span]:hidden [&>span]:hover:block [&>span]:hover:absolute [&>span]:hover:bottom-0 [&>span]:bg-onyx dark:[&>span]:bg-black [&>span]:p-2 [&>span]:text-white [&>span]:duration-150 col-span-4 order-first">
+                <div key={`img_div_${index}`} className="relative /md:[&>span]:hidden [&>span]:hover:block [&>span]:hover:absolute [&>span]:hover:bottom-0 [&>span]:bg-onyx dark:[&>span]:bg-black [&>span]:p-2 [&>span]:text-white [&>span]:duration-150 col-span-2 md:col-span-4 order-first">
                   <Image key={`img_${index}`} className="col-span-4 order-first rounded-t-lg overflow-mask-vert h-[400px] object-cover is-main-image" src={image.file_path} width={864} height={400} alt={"Test"}/>
                   <span key={`img_span_${index}`} className={`absolute bottom-0 w-full md:w-fit select-none ${image.caption ? "" : "hidden"}`}>{image.caption ? image.caption : ""}</span>
                 </div>
