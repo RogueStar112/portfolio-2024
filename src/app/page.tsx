@@ -4,6 +4,8 @@ import Image from 'next/image'
 import { Inter, Teko, Montserrat, Merriweather, EB_Garamond } from 'next/font/google'
 
 import imageHero from './assets/images/me_wlocationv2.png'
+import patternSmallOne from './assets/images/stitchpatternshortv2.png'
+
 import { url } from 'inspector';
 
 import { readFileSync } from 'fs';
@@ -54,7 +56,7 @@ export default async function Home() {
 
             <Link className='flex flex-col justify-center [&>*]:leading-[1.1rem]' href={'/'}>
               <p className='text-2xl font-extrabold'>DEMIE</p> 
-              <p className='text-2xl font-bold text-stone-500 dark:text-stone-400'>MISTICA</p>
+              <p className='text-2xl font-bold /text-stone-500 /dark:text-stone-400 coffee-brown dark:text-[#be9f02]'>MISTICA</p>
             </Link>
 
 
@@ -71,8 +73,10 @@ export default async function Home() {
           {/* <h2 className={`${eb_garamond.className} text-2xl`}>Web Developer - Lifestyle Enthusiast</h2> */}
 
 
-          <div className='flex flex-col justify-between text-center py-4'>
-            
+          <div className='flex flex-col justify-between text-center /py-4'>
+
+            {/* <div className='object-cover bg-repeat-x w-full h-[16px]' style={{backgroundImage: `url('${patternSmallOne.src}')`}}/>          */}
+
             <article className='/overflow-hidden relative'>
 
               <article className='overflow-hidden relative'>

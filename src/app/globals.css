@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --primary-logo-color: black;
+  --secondary-logo-color: #7A6600;
+  --secondary-logo-color-dark: #be9f02;
+}
 
 .light {
   /* Your default theme */
@@ -75,6 +80,7 @@ html .light-dys {
   color-scheme: light;
 }
 
+
 /* @layer components {
   body * {
       @apply transition-colors duration-500;
@@ -104,3 +110,11 @@ body {
     )
     rgb(var(--background-start-rgb));
 } */
+
+.coffee-brown {
+  color: var(--secondary-logo-color);
+}
+
+.coffee-brown-darkm {
+  color: var(--secondary-logo-color-dark);
+}

@@ -42,7 +42,7 @@ export default async function Home({ params }: { params: { tag: string } }) {
           
           <Link className='flex flex-col justify-center [&>*]:leading-[1.1rem] grow' href={'/'}>
               <p className='text-2xl font-extrabold'>DEMIE</p> 
-              <p className='text-2xl font-bold text-stone-500 dark:text-stone-400'>MISTICA</p>
+              <p className='text-2xl font-bold /text-stone-500 /dark:text-stone-400 coffee-brown dark:text-[#be9f02]'>MISTICA</p>
           </Link>
           
           {/* <h1 className='font-montserrat p-logo'>DEMIE<br></br>MISTICA</h1> */}

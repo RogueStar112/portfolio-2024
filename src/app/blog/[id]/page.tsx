@@ -53,7 +53,7 @@ export default async function Home({ params }: { params: { id: number } }) {
           
           <Link className='flex flex-col justify-center [&>*]:leading-[1.1rem] grow' href={'/'}>
               <p className='text-2xl font-extrabold'>DEMIE</p> 
-              <p className='text-2xl font-bold text-stone-500 dark:text-stone-400'>MISTICA</p>
+              <p className='text-2xl font-bold /text-stone-500 /dark:text-stone-400 coffee-brown dark:text-[#be9f02]'>MISTICA</p>
           </Link>
 
           
@@ -134,11 +134,12 @@ export default async function Home({ params }: { params: { id: number } }) {
 
                             </section>
 
-                            <p className='p-2 text-justify text-xl col-span-2'>{blog.teaser_content}</p>
+                            <p className='p-2 text-justify text-xl col-span-2 md:w-[80%]'>{blog.teaser_content}</p>
 
                             <section className='p-2 first-letter:font-bold first-letter:text-2xl' style={{ whiteSpace: 'pre-line' }} aria-label='article-text'>
+                              <p className='md:w-[80%] mt-2 pl-2'>
                               {blog.full_content + "\n\n"}
-
+                              </p>
                               {blog.additional_content ? blog.additional_content.map((add_content: any) => {
                                 return ( 
                                   add_content + "\n\n"
@@ -149,22 +150,35 @@ export default async function Home({ params }: { params: { id: number } }) {
                                 
                                 return (
 
-                                  <section key={`additional_image_${add_index}`} className={`block md:flex justify-${add_image.alignment} gap-4`}>
+                                  <section key={`additional_image_${add_index}`} className={`block /md:flex justify-${add_image.alignment} gap-4`}>
                                     
                                     
-                                    <p>{add_image.text_content}</p>
+                                    <h2 className='w-full text-blue-500 dark:text-orange-500 text-xl md:text-2xl font-extrabold whitespace-normal /m-2  text-left' style={{fontVariant: "small-caps"}}>{add_image.heading}</h2>
+
+                                    <section>
+
+                                      <section className='flex flex-col'>
+                                        
+                                        <section className='relative'>
+                                          <Image src={add_image.file_path} className='max-h-[256px] md:w-full /md:max-w-[800px] md:max-h-[450px] object-cover mt-4 order-first' width={864} height={400} alt=''/>
+                                          <span key={`img_span_${add_index}`} className={`absolute bottom-0 w-fit p-2 select-none bg-onyx dark:bg-black text-white`}>{add_image.caption_img ? add_image.caption_img : ""}</span>
+                                        </section>
+
+                                        <caption className='mt-2 pl-2 border-l-2 border-blue-500 dark:border-orange-500 w-full text-left'>    {add_image.caption_outside}</caption>
+                                      </section>
+                      
+                                    <p className='md:w-[80%] mt-2 pl-2'>{add_image.text_content}</p>
 
                                     <aside className='relative'>
 
-                                    <h2 className='text-blue-500 dark:text-orange-500 text-xl md:text-2xl font-extrabold whitespace-normal m-2 text-center' style={{fontVariant: "small-caps"}}>{add_image.heading}</h2>
+                                    {/* <h2 className='text-blue-500 dark:text-orange-500 text-xl md:text-2xl font-extrabold whitespace-normal m-2 text-center' style={{fontVariant: "small-caps"}}>{add_image.heading}</h2> */}
 
-
-                                      <Image src={add_image.file_path} className='md:max-h-[300px] object-cover object-top' width={864} height={400} alt='Additional Image'/>
-
-                                      <caption className='m-2 border-l-2 border-blue-500 dark:border-orange-500 w-full'>    {add_image.caption}</caption>
+                                      {/* <ImageCollection images={add_image}></ImageCollection> */}
+                                      
+                                      
                                         
-                                        
-                                    </aside> 
+                                    </aside>
+                                    </section>
 
 
                                   </section>
