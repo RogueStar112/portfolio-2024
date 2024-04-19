@@ -250,15 +250,16 @@
 "id": 6,
 "title": "My Autistic Self",
 "tags": ["mental-health", "personal"],
-"teaser_content": "My personal experiences with autism.",
+"teaser_content": "My personal experiences being autistic.",
 "full_content": "Definitely haven't written this at 2:30am without some compelling reason!\n\n From my experience, autism isn't something I would take away but rather acknowledge that it's going to be a lifelong condition. And that's okay! While I see myself as needing extra accomodations at times to help me regulate my tasks and mood, this shouldn't stop me from reaching my full potential.\n\nAutism has made me accept imperfections in my life, that I especially can't control. For instance, I can't control inflation. I focus on what I can control instead.\n\nFor example, it's much easier to control my mood. Whether it'd be from taking deep breaths, to taking things more slowly than usual.\n\nI feel like being understood for who I am comes with the neurodiverse package as well, but also being mindful that it won't necessarily restrict my decision-making. I don't expect the world to accomodate for me.\n\nIn my opinion, I find the word 'neurotypical' rather hostile. It's sort of like treating them as if they have no way of thinking outside the 'norm'. It's also the same for neurodivergence. While I can't necessarily come up with a more 'appealing' name for both terms, I do think that one phrase stands out the most- 'Human.' we are going to experience emotionally driven decisions either way.\n\nThis is not a call for people to pick on others because of their brain structures.\n\nAs an autistic person, I don't directly advocate for more acceptance. I advocate for people however, to be more mindful. To tap into our innate empathy. If you were in someone else's shoes, who was overwhelmed by loud noises and bright lights, would you tell them to just 'snap out of it'?",
 "created_by": "Demie Mistica",
 "dateTime_created": "07/02/2024, 02:25",
-"dateTime_updated": "07/02/2024, 02:25",
+"dateTime_updated": "19/04/2024, 03:07",
 "grid_format_id": "1",
 "images": [{
 
-"file_path": "/images/Neurodiversity1.JPG",
+"file_path": "/images/MAS_CNRThumbsUp.JPG",
+"caption": "Nature Reserves + Demie = Perfection.",
 "is_main_image": 1
 
 
@@ -266,12 +267,46 @@
 
 {
 
-"file_path": "/images/NeurodiversitySymbol.png",
+"file_path": "/images/HeadphonesCollection.JPG",
+"caption": "Music is ESSENTIAL, but I admit, this is a lot of cans.",
+"is_main_image": 0
+
+
+},
+
+{
+
+"file_path": "/images/MAS_Carbonara.JPG",
+"caption": "My deep interest in cooking, especially pasta, is the thing I strive for.",
 "is_main_image": 0
 
 
 }
-]
+
+],
+
+"additional_images": [{
+
+"file_path": "/images/MAS_FoodCollection.png",
+"heading": "My Special Interests",
+"caption_img": "Food. Lots of it.",
+"caption_outside": "If there's one thing that I need to reduce, is the amount I spend on eating out.",
+"text_content": "Now, this is a lesson learnt late, but better late than never.\n\nSometimes, my understanding of consequences is impaired, therefore I tend to spend unreasonable amounts of money on takeout. And look, while autism isn't something I'd take away from myself, I do feel like taking responsibility should be a key element of who I am.\n\nHowever, due to traumatic past experiences, the takeout addiction has become a major coping mechanism.",
+"alignment": "end",
+"obj_cover": "center"
+},
+
+{
+
+"file_path": "/images/EY_Bins_Smaller_Portrait.png",
+"heading": "Taking out the trash",
+"caption_img": "Me taking out the garbage outside my house.",
+"caption_outside": "This is something I should be doing more often, but often forget to do. Self-neglect is a real villain sometimes. Even basic tasks like taking out the trash are monumental, in a good or bad way.",
+"text_content": "There are times that I have managed basic tasks, like taking out the trash, without fear or judgment holding me back. I long for those days.\n\nThe things that are really stopping me from doing this on a regular basis is lack of motivation or purpose. And I think it's okay to tell people this, rather than having to hide my true self in exchange for superficial professionalism. In other words, I think it's okay to show weakness in public, for as long as you find ways of coping or reducing them.\n\n",
+"alignment": "end",
+"obj_cover": "top",
+"position_y": "-150px"
+}]
 
 },
 
@@ -294,17 +329,7 @@
 
 
 }
-],
-
-"additional_images": [{
-
-"file_path": "/images/EY_Bins.jpg",
-"heading": "Taking out the trash",
-"caption": "The thought of this task is more daunting to me than actually doing it.",
-"text_content": "There are times that I have managed basic tasks, like taking out the trash, without fear or judgment holding me back. I long for those days.\n\nThe things that are really stopping me from doing this on a regular basis is lack of motivation or purpose. And I think it's okay to tell people this, rather than having to hide my true self in exchange for superficial professionalism. In other words, I think it's okay to show weakness in public, for as long as you find ways of coping or reducing them.\n\n",
-"alignment": "end"
-
-}]
+]
 
 },
 
@@ -314,7 +339,7 @@
 "title": "Blossoming to Independence",
 "tags": ["mental-health", "independence"],
 "teaser_content": "I'm 24 and I still haven't grasped the concept of adulthood. Now's the time to embrace it.",
-"full_content": "I feel like time has frozen so much in my life. The concept of responsiblity has only just existed in my headspace for such a short time, that I haven't had any time to truly master what it really feels like to be independent.\n\nThat being said, I don't intend on stopping my pursuit of growth and solitude. Change IS scary. But not all things that are scary are necessarily bad.\n\nWhen someone asked me how I felt taking the bus in this village for the first time\n I replied: 'Regardless of how I feel right now, I have to take the bus there. No amount of anxiety can change that.'\n\nI thought, that getting home was more important than whatever anxiety I had, which I think shows a lot of personal growth.\n\nWhile my walks at the local park are still there, I still don't feel like I'm fully engaging with life. I feel like parts are still missing, like taking ownership.",
+"full_content": "I feel like time has frozen so much in my life. The concept of responsiblity has only just existed in my headspace for such a short time, that I haven't had any time to truly master what it really feels like to be independent.\n\nThat being said, I don't intend on stopping my pursuit of growth and solitude. Change IS scary. But not all things that are scary are necessarily bad.\n\nWhen someone asked me how I felt taking the bus in this village for the first time\n I replied: 'Regardless of how I feel right now, I have to take the bus there. No amount of anxiety can change that.'\n\nI thought, that getting home was more important than whatever anxiety I had, which I think shows a lot of personal growth.\n\nWhile my walks at the local park are still there, I still don't feel like I'm fully engaging with life. I feel like parts are still missing, like taking ownership.\n\nIndependence is something we do at times, even when we don't realize it. The decision to take the bus from somewhere unfamiliar to my house was an independent decision.\n\nI could've decided to walk the whole trek too, which is an independent decision as well, albeit not the most optimal.",
 "created_by": "Demie Mistica",
 "dateTime_created": "15/04/2024, 22:12",
 "dateTime_updated": "15/04/2024, 22:12",
@@ -372,19 +397,21 @@
 "heading": "Money Matters",
 "caption_img": "CHRISTOPHER BILL",
 "caption_outside": "Money is a very sensitive subject, but nevertheless is a necessary evil.",
-"text_content": "The part that I struggle with the most is with money. I spend it like there's no tomorrow. Now I want to change this. Start setting budgets, and being responsible you know?\n\nOne of my strongest habits is letting my finances define my mental health, when really, regardless of whatever I have, I should try to be optimistic at all times.\n\nIt's just for some reason, I blame anyone but myself for my situation. Now it's my turn to pick the pieces up and sort it out.",
-"alignment": "end"
-
+"text_content": "The part that I struggle with the most is with money. I spend it like there's no tomorrow. Now I want to change this. Start setting budgets, and being responsible you know?\n\nOne of my strongest habits is letting my finances define my mental health, when really, regardless of whatever I have, I should try to be optimistic at all times.\n\nIt's just for some reason, I blame anyone but myself for my situation. Now it's my turn to pick the pieces up and sort it out. In truth, ",
+"alignment": "end",
+"obj_cover": "center"
 },
 
 {
 
-"file_path": "/images/EY_Bins.jpg",
+"file_path": "/images/EY_Bins_Smaller_Portrait.png",
 "heading": "Taking out the trash",
-"caption": "Pikachu",
+"caption_img": "Me taking out the garbage outside my house.",
+"caption_outside": "This is something I should be doing more often, but often forget to do. Self-neglect is a real villain sometimes. Even basic tasks like taking out the trash are monumental, in a good or bad way.",
 "text_content": "There are times that I have managed basic tasks, like taking out the trash, without fear or judgment holding me back. I long for those days.\n\nThe things that are really stopping me from doing this on a regular basis is lack of motivation or purpose. And I think it's okay to tell people this, rather than having to hide my true self in exchange for superficial professionalism. In other words, I think it's okay to show weakness in public, for as long as you find ways of coping or reducing them.\n\n",
-"alignment": "end"
-
+"alignment": "end",
+"obj_cover": "top",
+"position_y": "-150px"
 }]
 
 }
