@@ -5,7 +5,7 @@ import { FaLinkedin } from "react-icons/fa"
 
 export default function Footer() {
     return (
-        <footer className='border-t-2 p-4 border-neutral-500 flex justify-between w-full'>
+        <footer className='border-t-2 mt-4 p-4 border-neutral-500 flex justify-between w-full'>
 
             <p>&copy; 2024</p>
             

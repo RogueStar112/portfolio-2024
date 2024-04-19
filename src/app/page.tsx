@@ -282,7 +282,7 @@ width={`${i === 0 ? "570" : "0"}${i === 4 || i === 5 || i == 2 || i == 6 || i ==
                          {/* <p className='text-stone-500 text-left'>{blog.dateTime_created}</p> */}
 
 
-                      <p className={`${isLastElement ? "text-center" : "text-justify"} px-2`}>{blog.teaser_content}</p>
+                      <p className={`${isLastElement ? "text-center" : "text-left"} px-2`}>{blog.teaser_content}</p>
 
                       <section className='relative py-4 flex justify-center items-end gap-1 flex-1 mx-2' aria-label='post-tags'>
                               

@@ -251,7 +251,7 @@
 "title": "My Autistic Self",
 "tags": ["mental-health", "personal"],
 "teaser_content": "My personal experiences being autistic.",
-"full_content": "Definitely haven't written this at 2:30am without some compelling reason!\n\n From my experience, autism isn't something I would take away but rather acknowledge that it's going to be a lifelong condition. And that's okay! While I see myself as needing extra accomodations at times to help me regulate my tasks and mood, this shouldn't stop me from reaching my full potential.\n\nI have special interests, but I don't really have the ability to 'infodump' about them because of how hard they are to explain to people.\n\nAutism has made me accept imperfections in my life, that I especially can't control. For instance, I can't control inflation. I focus on what I can control instead.\n\nFor example, it's much easier to control my mood. Whether it'd be from taking deep breaths, to taking things more slowly than usual.\n\nI feel like being understood for who I am comes with the neurodiverse package as well, but also being mindful that it won't necessarily restrict my decision-making. I don't expect the world to accomodate for me.\n\nIn my opinion, I find the word 'neurotypical' rather hostile. It's sort of like treating them as if they have no way of thinking outside the 'norm'. It's also the same for neurodivergence. While I can't necessarily come up with a more 'appealing' name for both terms, I do think that one phrase stands out the most- 'Human.' we are going to experience emotionally driven decisions either way.\n\nThis is not a call for people to pick on others because of their brain structures.\n\nAs an autistic person, I don't directly advocate for more acceptance. I advocate for people however, to be more mindful. To tap into our innate empathy. If you were in someone else's shoes, who was overwhelmed by loud noises and bright lights, would you tell them to just 'snap out of it'?\n\nAlso, I want to clarify that my personal experiences of autism are unique, but does NOT translate to quirkiness. You can view autism or neurodivergence however you wish, but what it shouldn't be regarded as, in my honest opinion, is to use it as an excuse.\n\nFor me, It took way too long to realize that the only person who can turn their own life around is themselves. If I don't look after myself, I will become more pessimistic, and in turn, poor mental health arises.",
+"full_content": "Definitely haven't written this at 2:30am without some compelling reason!\n\n From my experience, autism isn't something I would take away but rather acknowledge that it's going to be a lifelong condition. And that's okay! While I see myself as needing extra accomodations at times to help me regulate my tasks and mood, this shouldn't stop me from reaching my full potential.\n\nI have special interests, but I don't really have the ability to 'infodump' about them because of how hard they are to explain to people.\n\nAutism has made me accept imperfections in my life, that I especially can't control. For instance, I can't control inflation. I focus on what I can control instead.\n\nFor example, it's much easier to control my mood. Whether it'd be from taking deep breaths, to taking things more slowly than usual.\n\nI feel like being understood for who I am comes with the neurodiverse package as well, but also being mindful that it won't necessarily restrict my decision-making. I don't expect the world to accomodate for me.\n\nIn my opinion, I find the word 'neurotypical' rather hostile. It's sort of like treating them as if they have no way of thinking outside the 'norm'. It's also the same for neurodivergence. While I can't necessarily come up with a more 'appealing' name for both terms, I do think that one phrase stands out the most- 'Human.' we are going to experience emotionally driven decisions either way.\n\nThis is not a call for people to pick on others because of their brain structures.\n\nAs an autistic person, I don't directly advocate for more acceptance. I advocate for people however, to be more mindful. To tap into our innate empathy. If you were in someone else's shoes, who was overwhelmed by loud noises and bright lights, would you tell them to just 'snap out of it'?\n\nAlso, I want to clarify that my personal experiences of autism are unique, but does NOT translate to quirkiness. You can view autism or neurodivergence however you wish, but what it shouldn't be regarded as, in my honest opinion, is to use it as an excuse for bad behaviour.\n\nFor me, It took way too long to realize that the only person who can turn their own life around is themselves. If I don't look after myself, I will become more pessimistic, and in turn, poor mental health arises.",
 "created_by": "Demie Mistica",
 "dateTime_created": "07/02/2024, 02:25",
 "dateTime_updated": "19/04/2024, 03:07",
@@ -297,7 +297,7 @@
 "additional_images": [{
 
 "file_path": "/images/MAS_FoodCollection.png",
-"heading": "My Special Interests (#1) - Food",
+"heading": "Special Interest #1 - Food",
 "caption_img": "Food. Lots of it.",
 "caption_outside": "If there's one thing that I need to reduce, is the amount I spend on eating out.",
 "text_content": "Now, this is a lesson learnt late, but better late than never.\n\nSometimes, my understanding of consequences is impaired, therefore I tend to spend unreasonable amounts of money on takeout. And look, while autism isn't something I'd take away from myself, I do feel like taking responsibility should be a key element of who I am.\n\nHowever, due to traumatic past experiences, the takeout addiction has become a major coping mechanism.",
@@ -421,6 +421,54 @@
 "alignment": "end",
 "obj_cover": "top",
 "position_y": "-150px"
+}]
+
+},
+
+{
+
+"id": 9,
+"title": "My Web Design Tenets",
+"tags": ["programming", "web-dev"],
+"teaser_content": "An overview of how I design websites, and how to build beyond these skills.",
+"full_content": "I want to say that, from my personal experience, building websites is a skill in of itself.\n It's also another skill to inspire others to do the same.\n\nWhen building a portfolio website in particular, I don't really have any set rules on how I present myself. In fact, I want honesty and transparency to be the driving force and passion on how I build this website.\n\nLet me be clear though, you do NOT HAVE to know how to use HTML, CSS, and Javascript to make a website. These particular web-design languages are useful, but not essential. However I would highly recommend doing them, as it will help you to understand how websites work in general.\n\nHere are some of the fundamentals I would follow, in any project.\n\n",
+"created_by": "Demie Mistica",
+"dateTime_created": "19/04/2024, 21:10",
+"dateTime_updated": "19/04/2024, 21:10",
+"grid_format_id": "1",
+"images": [{
+
+"file_path": "/images/MPS_Cover.JPG",
+"caption": "Visual Studio Code, my beloved.",
+"is_main_image": 1
+
+
+}
+
+],
+
+"additional_images": [
+{
+
+"file_path": "/images/MAS_TTTSBAW.jpg",
+"heading": "1. Have a design or goal in mind",
+"caption_img": "The goal can be as simple as having an outlet, to something more like creating a community.",
+"caption_outside": "Websites are what you make of them, Don't let your fears hinder you from trying.",
+"text_content": "When I made this website, I only really had one goal in mind, which is to have a place to write and provide advice from experience. Your goals are probably going to be different, so think carefully what you want to get out when you make a website.",
+"alignment": "end",
+"obj_cover": "top",
+"position_y": "-150px"
+},
+
+{
+
+"file_path": "/images/MPS_TechStack.png",
+"heading": "2. Build your tech loadout",
+"caption_img": "React, PHP, MySQL, what the heck are these exactly!?",
+"caption_outside": "This may look daunting, but you only really need to pick like a select few.",
+"text_content": "Credit to: https://novateus.com/blog/what-is-a-tech-stack-how-can-you-choose-one-for-your-project/\n\n",
+"alignment": "end",
+"obj_cover": "center"
 }]
 
 }
