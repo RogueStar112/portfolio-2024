@@ -41,10 +41,15 @@ export default function ImageCollection({images}: ImageCollectionType) {
   //     setMainImageIndex(index);
   //   })
   // }
-  const container = useRef();
-  const boxRef = useRef();
+
+
+  // GSAP animations for later.
+
+
+  // const container = useRef<HTMLElement>(null);
+  // const boxRef = useRef<HTMLElement>(null);
   
-  const { contextSafe } = useGSAP({ scope: container });
+  // const { contextSafe } = useGSAP({ scope: container });
 
   
 
@@ -54,7 +59,7 @@ export default function ImageCollection({images}: ImageCollectionType) {
     )
   } else {
     return (
-      <section ref={container} className='grid grid-cols-2 md:grid-cols-4 gap-2 relative overflow-hidden'>
+      <section className='grid grid-cols-2 md:grid-cols-4 gap-2 relative overflow-hidden'>
         {/* <button className="flex col-span-4 order-last bg-orange-500 text-white w-fit p-4 rounded-full" onClick={() => setAnimated(!animated)} ><FaWandMagicSparkles /></button> */}
         {images.map((image: any, index: any) => {
                                   
