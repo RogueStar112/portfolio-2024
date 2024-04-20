@@ -123,14 +123,14 @@ export default async function Home() {
             <article className='flex flex-col md:grid grid-cols-1 justify-around px-4 [&>*]:grow overflow-mask border-b-4 border-orange-500 /h-fit h-72 '>
                     
                     <section className='grid grid-cols-3 items-center [&>div>svg]:scale-[3] [&>div>svg]:mx-auto [&>div>svg]:mt-4  [&>*]:relative [&>*]:flex [&>*]:flex-col [&>*]:justify-center'>
-                        <Skill col='1' scale={3}>
+                        <div className=''>
                           <p>HTML</p>
                           <FaHtml5></FaHtml5>
-                        </Skill>
-                        <Skill col='1' scale={3}>
+                        </div>
+                        <div>
                           <p>CSS</p>
                           <FaCss3Alt></FaCss3Alt>
-                        </Skill>
+                        </div>
                         <div>
 
                         <p>JavaScript</p>
