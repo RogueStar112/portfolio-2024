@@ -42,7 +42,7 @@ export default function ImageCollection({images}: ImageCollectionType) {
   //   })
   // }
 
-  function next_image(index) {
+  function next_image(index: number) {
     if (mainImageIndex+1 > images.length-1) {
       setMainImageIndex(0);
       
