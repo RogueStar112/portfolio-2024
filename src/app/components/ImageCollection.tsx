@@ -125,7 +125,7 @@ export default function ImageCollection({images}: ImageCollectionType) {
                   <span key={`img_span_${index}`} className={`absolute bottom-0 w-full md:w-fit select-none ${image.caption ? "" : "hidden"}`}>{image.caption ? image.caption : ""}</span>
 
                   <button type="button" onClick={() => setMainImageIndex(images[index-1] ? index-1 : images.length-1)} className={`${images.length === 1 ? `hidden` : ``} absolute left-0 top-1/2 text-white [&>*]:scale-[3] pl-4 ml-2 [&>*]:rounded-full /[&>*]:bg-blue-500 /[&>*]:dark:bg-orange-500`}><FaAngleLeft /></button>
-                  <button type="button" onClick={() => next_image(index+1)} className={`${images.length === 1 ? `hidden` : ``} absolute right-0 top-1/2 text-white [&>*]:scale-[3] pr-4 mr-2 [&>*]:rounded-full /[&>*]:bg-blue-500 /[&>*]:dark:bg-orange-500`}><FaAngleRight /></button>
+                  <button type="button" onClick={() => next_image(index+1)} className={`${images.length <= 1 ? `hidden` : ``} absolute right-0 top-1/2 text-white [&>*]:scale-[3] pr-4 mr-2 [&>*]:rounded-full /[&>*]:bg-blue-500 /[&>*]:dark:bg-orange-500`}><FaAngleRight /></button>
                 </div>
               )
             }
