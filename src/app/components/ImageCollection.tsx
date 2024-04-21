@@ -42,14 +42,33 @@ export default function ImageCollection({images}: ImageCollectionType) {
   //   })
   // }
 
+  function next_image(index) {
+    if (mainImageIndex+1 > images.length-1) {
+      setMainImageIndex(0);
+      
+
+    } else {
+      setMainImageIndex(index++);
+    }
+
+    // gsap.to(`#img_${mainImageIndex}`, {x: 0 - document.getElementById(`img_${mainImageIndex-1}`)?.clientWidth+8, duration: 1})
+    // gsap.to(`#img_${mainImageIndex}`, {x: document.getElementById(`img_${mainImageIndex+1}`)?.clientWidth+8, duration: 1})
+  }
+
 
   // GSAP animations for later.
 
 
-  // const container = useRef<HTMLElement>(null);
-  // const boxRef = useRef<HTMLElement>(null);
+  const container = useRef<HTMLElement>(null);
+  const boxRef = useRef<HTMLElement>(null);
   
-  // const { contextSafe } = useGSAP({ scope: container });
+  const { contextSafe } = useGSAP({ scope: container });
+
+  // const nextSlide = contextSafe(() => {
+  //   gsap.to(`img_${mainImageIndex}`, {x: document.getElementById('')})
+  // })
+
+  
 
   
 
@@ -59,7 +78,7 @@ export default function ImageCollection({images}: ImageCollectionType) {
     )
   } else {
     return (
-      <section className='grid grid-cols-2 md:grid-cols-4 gap-2 relative overflow-hidden'>
+      <section ref={container} className='grid grid-cols-2 md:grid-cols-4 gap-2 relative overflow-hidden'>
         {/* <button className="flex col-span-4 order-last bg-orange-500 text-white w-fit p-4 rounded-full" onClick={() => setAnimated(!animated)} ><FaWandMagicSparkles /></button> */}
         {images.map((image: any, index: any) => {
                                   
@@ -71,15 +90,42 @@ export default function ImageCollection({images}: ImageCollectionType) {
                   {/* <span key={`img_span_${index}`} className={`${image.caption ? "" : "hidden"} select-none`}>{image.caption ? image.caption : ""}</span> */}
                 </div>
               )
+            
+            // if last selection of image
+            // } if(index == mainImageIndex -1 || index == images.length - 1 ) {
+
+            //   return (
+            //       <div key={`img_div_${index}`} className="sepia relative /md:[&>span]:hidden [&>span]:hover:block [&>span]:hover:absolute [&>span]:hover:bottom-0 [&>span]:bg-onyx dark:[&>span]:bg-black [&>span]:p-2 [&>span]:text-white [&>span]:duration-150 col-span-2 md:col-span-4 order-first [&>button]:opacity-0 [&>button]:duration-200 [&>button]:hover:opacity-100 is-main-image">
+            //       <Image key={`img_${index}`} className="col-span-4 order-first rounded-t-lg overflow-mask-vert h-[400px] object-cover is-main-image" src={image.file_path} width={864} height={400} alt={"Test"}/>
+            //       <span key={`img_span_${index}`} className={`absolute bottom-0 w-full md:w-fit select-none ${image.caption ? "" : "hidden"}`}>{image.caption ? image.caption : ""}</span>
+
+            //       <button type="button" onClick={() => setMainImageIndex(images[index-1] ? index-1 : images.length-1)} className={`${images.length === 1 ? `hidden` : ``} absolute left-0 top-1/2 text-white [&>*]:scale-[3] pl-4 ml-2 [&>*]:rounded-full /[&>*]:bg-blue-500 /[&>*]:dark:bg-orange-500`}><FaAngleLeft /></button>
+            //       <button type="button" onClick={() => setMainImageIndex(images[index+1] ? index+1 : 0)} className={`${images.length === 1 ? `hidden` : ``} absolute right-0 top-1/2 text-white [&>*]:scale-[3] pr-4 mr-2 [&>*]:rounded-full /[&>*]:bg-blue-500 /[&>*]:dark:bg-orange-500`}><FaAngleRight /></button>
+            //       </div>
+            //   )
+
+            // // if recent selection of image
+            // } if(index == mainImageIndex + 1) {
+
+            //   return (
+            //       <div key={`img_div_${index}`} className="invert relative /md:[&>span]:hidden [&>span]:hover:block [&>span]:hover:absolute [&>span]:hover:bottom-0 [&>span]:bg-onyx dark:[&>span]:bg-black [&>span]:p-2 [&>span]:text-white [&>span]:duration-150 col-span-2 md:col-span-4 order-first [&>button]:opacity-0 [&>button]:duration-200 [&>button]:hover:opacity-100 is-main-image">
+            //       <Image key={`img_${index}`} className="col-span-4 order-first rounded-t-lg overflow-mask-vert h-[400px] object-cover is-main-image" src={image.file_path} width={864} height={400} alt={"Test"}/>
+            //       <span key={`img_span_${index}`} className={`absolute bottom-0 w-full md:w-fit select-none ${image.caption ? "" : "hidden"}`}>{image.caption ? image.caption : ""}</span>
+
+            //       <button type="button" onClick={() => setMainImageIndex(images[index-1] ? index-1 : images.length-1)} className={`${images.length === 1 ? `hidden` : ``} absolute left-0 top-1/2 text-white [&>*]:scale-[3] pl-4 ml-2 [&>*]:rounded-full /[&>*]:bg-blue-500 /[&>*]:dark:bg-orange-500`}><FaAngleLeft /></button>
+            //       <button type="button" onClick={() => setMainImageIndex(images[index+1] ? index+1 : 0)} className={`${images.length === 1 ? `hidden` : ``} absolute right-0 top-1/2 text-white [&>*]:scale-[3] pr-4 mr-2 [&>*]:rounded-full /[&>*]:bg-blue-500 /[&>*]:dark:bg-orange-500`}><FaAngleRight /></button>
+            //       </div>
+            //   )
+
             } else {
               // MAIN IMAGE
               return (
-                <div key={`img_div_${index}`} className="relative /md:[&>span]:hidden [&>span]:hover:block [&>span]:hover:absolute [&>span]:hover:bottom-0 [&>span]:bg-onyx dark:[&>span]:bg-black [&>span]:p-2 [&>span]:text-white [&>span]:duration-150 col-span-2 md:col-span-4 order-first [&>button]:opacity-0 [&>button]:duration-100 [&>button]:hover:opacity-100 is-main-image">
+                <div key={`img_div_${index}`} id={`img_${index}`} className="relative /md:[&>span]:hidden [&>span]:hover:block [&>span]:hover:absolute [&>span]:hover:bottom-0 [&>span]:bg-onyx dark:[&>span]:bg-black [&>span]:p-2 [&>span]:text-white [&>span]:duration-150 col-span-2 md:col-span-4 order-first [&>button]:opacity-0 [&>button]:duration-200 [&>button]:hover:opacity-100 is-main-image">
                   <Image key={`img_${index}`} className="col-span-4 order-first rounded-t-lg overflow-mask-vert h-[400px] object-cover is-main-image" src={image.file_path} width={864} height={400} alt={"Test"}/>
                   <span key={`img_span_${index}`} className={`absolute bottom-0 w-full md:w-fit select-none ${image.caption ? "" : "hidden"}`}>{image.caption ? image.caption : ""}</span>
 
-                  <button type="button" onClick={() => setMainImageIndex(images[index-1] ? index-1 : images.length-1)} className={`absolute left-0 top-1/2 text-white [&>*]:scale-[3] pl-4 ml-2 [&>*]:rounded-full /[&>*]:bg-blue-500 /[&>*]:dark:bg-orange-500`}><FaAngleLeft /></button>
-                  <button type="button" onClick={() => setMainImageIndex(images[index+1] ? index+1 : 0)} className={`absolute right-0 top-1/2 text-white [&>*]:scale-[3] pr-4 mr-2 [&>*]:rounded-full /[&>*]:bg-blue-500 /[&>*]:dark:bg-orange-500`}><FaAngleRight /></button>
+                  <button type="button" onClick={() => setMainImageIndex(images[index-1] ? index-1 : images.length-1)} className={`${images.length === 1 ? `hidden` : ``} absolute left-0 top-1/2 text-white [&>*]:scale-[3] pl-4 ml-2 [&>*]:rounded-full /[&>*]:bg-blue-500 /[&>*]:dark:bg-orange-500`}><FaAngleLeft /></button>
+                  <button type="button" onClick={() => next_image(index+1)} className={`${images.length === 1 ? `hidden` : ``} absolute right-0 top-1/2 text-white [&>*]:scale-[3] pr-4 mr-2 [&>*]:rounded-full /[&>*]:bg-blue-500 /[&>*]:dark:bg-orange-500`}><FaAngleRight /></button>
                 </div>
               )
             }
