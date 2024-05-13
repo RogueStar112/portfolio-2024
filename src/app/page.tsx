@@ -48,7 +48,7 @@ export default async function Home() {
   const blog_JSON = JSON.parse(readFileSync(blog_file, 'utf-8')).reverse();
 
   return (
-    <div className='p-4 bg-white dark:bg-onyx h-screen dark:text-mint-cream mx-auto text-current max-w-4xl relative'>
+    <div className='p-4 bg-white dark:bg-onyx h-full dark:text-mint-cream mx-auto text-current max-w-4xl relative'>
 
         <header className='grid grid-cols-2 justify-between relative sticky top-0 bg-inherit z-50 py-2'>
           
@@ -268,7 +268,7 @@ width={`${i === 0 ? "570" : "0"}${i === 4 || i === 5 || i == 2 || i == 6 || i ==
                   return (
                   <article key={blog.id} id={blog.id} className={`border-2 border-blue-200 dark:border-orange-500 overflow-hidden rounded-lg /max-w-[100%] /md:max-w-[33.3%] grid grid-cols-[80px_1fr] md:flex md:flex-col justify-start content-end ${isLastElement ? "col-span-full" : ""}`}>
                     
-                    <Link href={`blog/${blog.id}`} className='w-full'>
+                    <Link href={`blog/${blog.id}`} className='w-full overflow-hidden max-h-[206px]'>
                       <Image className="border-r-2 border-white dark:border-onyx md:rounded-t-lg md:overflow-mask-vert overflow-hidden /h-[250px] h-full object-cover hover:scale-110 duration-150" src={blog.images[0].file_path} width={864} height={300} alt={"Test"}/>
                     </Link>
           

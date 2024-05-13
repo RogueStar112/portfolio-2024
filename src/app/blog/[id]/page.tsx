@@ -47,7 +47,7 @@ export default async function Home({ params }: { params: { id: number } }) {
 
 
   return (
-    <div className='p-4 bg-white dark:bg-onyx h-screen dark:text-mint-cream mx-auto text-current max-w-4xl'>
+    <div className='p-4 bg-white dark:bg-onyx h-full dark:text-mint-cream mx-auto text-current max-w-4xl'>
 
         <header className='grid grid-cols-2 justify-between relative sticky top-0 bg-inherit z-50 py-2'>
           

@@ -471,6 +471,43 @@
 "obj_cover": "center"
 }]
 
-}
+},
+
+{
+
+    "id": 10,
+    "title": "When and when not to vent.",
+    "tags": ["mental-health", "recovery"],
+    "teaser_content": "Venting can be healthy, but it can lead to pain towards others if not controlled.",
+    "full_content": "Throughout my teenage years, I've always thought there's no such limit to venting, and that it's actually healthy to let it out as much as needed. However, this does end up being a double-edged sword. Let me explain.\n\nTo consider others when venting is an important step for personal growth. Wallowing in misery can only get you so far. This isn't a 'snap out of it' message, but rather get you to understand that despite these tough times, to learn how to better yourself when you've moved on.\n\nI know the phrase 'loving yourself' is cliche and I get it, I don't LOVE myself but I can tolerate myself at best. But this tolerance is more than enough to kickstart a positive journey towards mental health once more.\n\nI am no mental health professional, but I must digress something that is deep in my beliefs, which is: Never let others drag you down for having a rough time. Everyone has dark moments. Social media often hides these in highlight reels. Cause truthfully, people really only want an escape from reality as it already is.\n\nNot all venting has to lead to a solution. Having a friend or loved one to listen to you can be enough to get your two feet back on track. I know that for sure that I would not be the man I am now if it weren't for people lending their ear and allowing me to speak my mind.\n\n",
+    "created_by": "Demie Mistica",
+    "dateTime_created": "13/05/2024, 19:19",
+    "dateTime_updated": "13/05/2024, 19:19",
+    "grid_format_id": "1",
+    "images": [{
+    
+    "file_path": "/images/VENTING_1.jpg",
+    "caption": "Let those tears out no matter what.",
+    "is_main_image": 1
+    
+    
+    }
+    
+    ],
+    
+    "additional_images": [
+    {
+    
+    "file_path": "/images/VENTING_2.jpg",
+    "heading": "Reminiscing about happier times.",
+    "caption_img": "This was me back in 2018, when things were simpler...",
+    "caption_outside": "Physically healthier and not actually caring about others thought at the time.",
+    "text_content": "Try to look back at times when negativity did not lead you a dark road. I don't mean to toot my own horn, but I've attempted to try to be the light in the darkness, in the sense that I had to be happy for others. People torn me down however, because pessimism was the only thing they ever knew.\n\nTimes are really bleak today and I totally understand why people are generally frustrated with the way things operate with incompetent powers at hand.\n\nVent as much as needed, but please, don't let it be the only tool in your emotional toolkit.\n\n'Apologies don't mean a thing, if you don't ever fix it' ~NF",
+    "alignment": "end",
+    "obj_cover": "top",
+    "position_y": "-150px"
+    }]
+    
+    }
 
 ]
