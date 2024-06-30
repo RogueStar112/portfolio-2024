@@ -568,13 +568,24 @@
         ],
         
         "additional_images": [
+            {
+        
+                "file_path": "/images/UP_EXTRA1.JPG",
+                "heading": "Spontaneous Growth",
+                "caption_img": "Aura, Cambridge",
+                "caption_outside": "Sometimes growth spirals and snowballs out of control.",
+                "text_content": "Life can throw curveballs at you, but you've got to see your life going at an upward angle. Sure you may have your lowest moments at times, but try to see today's version of you as better than the one before. It's most certainly possible to change your surroundings, you just have to be willing to do whatever it takes to get to that stage.\n\nI have a hard time when it comes to doing this, because I tend to compare my past self to my present self and think that it's better in some ways. Which may be true, but if that was the case, then I should find the reasons for why that may be the case, then try to improve my future self.",
+                "alignment": "end",
+                "obj_cover": "top",
+                "position_y": "-150px"
+                },
         {
         
         "file_path": "/images/UP_GA.JPG",
         "heading": "Finding the light at the end of the tunnel",
         "caption_img": "Trumpington Meadows Park, Cambridge",
         "caption_outside": "I understand what it means to live a full life now. And it has little to do with how much you earn. It's about finding what you want to live for.",
-        "text_content": "With the introduction of walks during the summer, my mind has felt clearer and more able to understand that my life will have ups and downs. It's about riding the wave that matters. I can't really speak for those with depression since I don't really have it, but I can empathize with the fact that hope can be lackluster.\n\nThat's why, carving your own destiny, if your circumstances allow it, is the best way forward.\n\nOtherwise, I'm not gonna say you're out of luck, as that creates fatalism. For me I've been dealt a pretty good hand, but regardless of our circumstances, find out how to unlock your untapped potential regardless of where you are. That's what creates a strong person. It's not about how much silver spoons you have, but rather how much you can pull through.",
+        "text_content": "And what I mean by the caption above, is that, you should find reasons to motivate yourself, for good mental health is a solid foundation to making great things happen.\n\nWith the introduction of walks during the summer for example, my mind has felt clearer and more able to understand that my life will have ups and downs. It's about riding the wave that matters. I can't really speak for those with depression since I don't really have it, but I can empathize with the fact that hope can be lackluster.\n\nThat's why, carving your own destiny, if your circumstances allow it, is the best way forward. I do feel that at times, negativity creates this 'fog' that makes it hard to see what you envision for yourself. However, given the right tools to correct this, you can make and achieve your goals.\n\nI'm not gonna say you're out of luck, as that creates fatalism. For me I've been dealt a pretty good hand, but regardless of our circumstances, find out how to unlock your untapped potential regardless of where you are. That's what creates a strong person. It's not about how much silver spoons you have, but rather how much you can pull through.",
         "alignment": "end",
         "obj_cover": "top",
         "position_y": "-150px"
