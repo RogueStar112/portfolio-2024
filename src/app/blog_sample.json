@@ -473,41 +473,112 @@
 
 },
 
-{
-
-    "id": 10,
-    "title": "When and when not to vent.",
-    "tags": ["mental-health", "recovery"],
-    "teaser_content": "Venting can be healthy, but it can lead to pain towards others if not controlled.",
-    "full_content": "Throughout my teenage years, I've always thought there's no such limit to venting, and that it's actually healthy to let it out as much as needed. However, this does end up being a double-edged sword. Let me explain.\n\nTo consider others when venting is an important step for personal growth. Wallowing in misery can only get you so far. This isn't a 'snap out of it' message, but rather get you to understand that despite these tough times, to learn how to better yourself when you've moved on.\n\nI know the phrase 'loving yourself' is cliche and I get it, I don't LOVE myself but I can tolerate myself at best. But this tolerance is more than enough to kickstart a positive journey towards mental health once more.\n\nI am no mental health professional, but I must digress something that is deep in my beliefs, which is: Never let others drag you down for having a rough time. Everyone has dark moments. Social media often hides these in highlight reels. Cause truthfully, people really only want an escape from reality as it already is.\n\nNot all venting has to lead to a solution. Having a friend or loved one to listen to you can be enough to get your two feet back on track. I know that for sure that I would not be the man I am now if it weren't for people lending their ear and allowing me to speak my mind.\n\n",
-    "created_by": "Demie Mistica",
-    "dateTime_created": "13/05/2024, 19:19",
-    "dateTime_updated": "13/05/2024, 19:19",
-    "grid_format_id": "1",
-    "images": [{
-    
-    "file_path": "/images/VENTING_1.jpg",
-    "caption": "Let those tears out no matter what.",
-    "is_main_image": 1
-    
-    
-    }
-    
-    ],
-    
-    "additional_images": [
     {
-    
-    "file_path": "/images/VENTING_2.jpg",
-    "heading": "Reminiscing about happier times.",
-    "caption_img": "This was me back in 2018, when things were simpler...",
-    "caption_outside": "Physically healthier and not actually caring about others thought at the time.",
-    "text_content": "Try to look back at times when negativity did not lead you a dark road. I don't mean to toot my own horn, but I've attempted to try to be the light in the darkness, in the sense that I had to be happy for others. People torn me down however, because pessimism was the only thing they ever knew.\n\nTimes are really bleak today and I totally understand why people are generally frustrated with the way things operate with incompetent powers at hand.\n\nVent as much as needed, but please, don't let it be the only tool in your emotional toolkit.\n\n'Apologies don't mean a thing, if you don't ever fix it' ~NF",
-    "alignment": "end",
-    "obj_cover": "top",
-    "position_y": "-150px"
-    }]
-    
-    }
 
+        "id": 10,
+        "title": "When and when not to vent.",
+        "tags": ["mental-health", "recovery"],
+        "teaser_content": "Venting can be healthy, but it can lead to pain towards others if not controlled.",
+        "full_content": "Throughout my teenage years, I've always thought there's no such limit to venting, and that it's actually healthy to let it out as much as needed. However, this does end up being a double-edged sword. Let me explain.\n\nTo consider others when venting is an important step for personal growth. Wallowing in misery can only get you so far. This isn't a 'snap out of it' message, but rather get you to understand that despite these tough times, to learn how to better yourself when you've moved on.\n\nI know the phrase 'loving yourself' is cliche and I get it, I don't LOVE myself but I can tolerate myself at best. But this tolerance is more than enough to kickstart a positive journey towards mental health once more.\n\nI am no mental health professional, but I must digress something that is deep in my beliefs, which is: Never let others drag you down for having a rough time. Everyone has dark moments. Social media often hides these in highlight reels. Cause truthfully, people really only want an escape from reality as it already is.\n\nNot all venting has to lead to a solution. Having a friend or loved one to listen to you can be enough to get your two feet back on track. I know that for sure that I would not be the man I am now if it weren't for people lending their ear and allowing me to speak my mind.\n\n",
+        "created_by": "Demie Mistica",
+        "dateTime_created": "13/05/2024, 19:19",
+        "dateTime_updated": "13/05/2024, 19:19",
+        "grid_format_id": "1",
+        "images": [{
+        
+        "file_path": "/images/VENTING_1.jpg",
+        "caption": "Let those tears out no matter what.",
+        "is_main_image": 1
+        
+        
+        }
+        
+        ],
+        
+        "additional_images": [
+        {
+        
+        "file_path": "/images/VENTING_2.jpg",
+        "heading": "Reminiscing about happier times.",
+        "caption_img": "This was me back in 2018, when things were simpler...",
+        "caption_outside": "Physically healthier and not actually caring about others thought at the time.",
+        "text_content": "Try to look back at times when negativity did not lead you a dark road. I don't mean to toot my own horn, but I've attempted to try to be the light in the darkness, in the sense that I had to be happy for others. People torn me down however, because pessimism was the only thing they ever knew.\n\nTimes are really bleak today and I totally understand why people are generally frustrated with the way things operate with incompetent powers at hand.\n\nVent as much as needed, but please, don't let it be the only tool in your emotional toolkit.\n\n'Apologies don't mean a thing, if you don't ever fix it' ~NF",
+        "alignment": "end",
+        "obj_cover": "top",
+        "position_y": "-150px"
+        }]
+        
+        },
+
+        {
+        "id": 11,
+        "title": "Untapped Potential",
+        "tags": ["mental-health", "motivation", "positivity"],
+        "teaser_content": "Believe it or not, there is so much potential within you. You just have to unlock it.",
+        "full_content": "To be honest, I've never really thought I had it in me to walk a total distance of 21km within a week, but here I am, standing tall and proud of that achievement.\n\nIt wouldn't have been done without the inspiration and motivation given by my friends and the music I listen to.\n\nIn the midst of all this, I realized something was instrumental in all of this, and that was the power of inspiration and role models. I look up to my friends for strength and guidance. Everybody is different and may have different ways to motivate themselves, however I found inspiration to be the most effective.\n\nCombined with the ability to have a sense of future self, I feel like that's what is currently sparking my untapped potential. It's like a golden age for me, that no depression can ever touch.",
+        "created_by": "Demie Mistica",
+        "dateTime_created": "30/06/2024, 20:28",
+        "dateTime_updated": "30/06/2024, 20:28",
+        "grid_format_id": "1",
+        "images": [{
+        
+        "file_path": "/images/UP_SELFIECOVER.JPG",
+        "caption": "To tap into untapped potential is like mining gold.",
+        "is_main_image": 1
+        
+        
+        },
+
+        {
+        
+            "file_path": "/images/UP_COVER.JPG",
+            "caption": "",
+            "is_main_image": 0
+            
+            
+            },
+
+            {
+        
+                "file_path": "/images/UP_2.JPG",
+                "caption": "Addenbrookes, Cambridge.",
+                "is_main_image": 0
+                
+                
+                },
+
+                {
+        
+                    "file_path": "/images/UP_3.JPG",
+                    "caption": "Addenbrookes, Cambridge.",
+                    "is_main_image": 0
+                    
+                    
+                    },
+
+                {
+        
+                "file_path": "/images/UP_EXERCISE2.PNG",
+                "caption": "A total of 1,021kcal burnt, and 8.69km walked. Nice.",
+                "is_main_image": 0
+                
+                
+                }
+        
+        ],
+        
+        "additional_images": [
+        {
+        
+        "file_path": "/images/UP_GA.JPG",
+        "heading": "Finding the light at the end of the tunnel",
+        "caption_img": "Trumpington Meadows Park, Cambridge",
+        "caption_outside": "I understand what it means to live a full life now. And it has little to do with how much you earn. It's about finding what you want to live for.",
+        "text_content": "With the introduction of walks during the summer, my mind has felt clearer and more able to understand that my life will have ups and downs. It's about riding the wave that matters. I can't really speak for those with depression since I don't really have it, but I can empathize with the fact that hope can be lackluster.\n\nThat's why, carving your own destiny, if your circumstances allow it, is the best way forward.\n\nOtherwise, I'm not gonna say you're out of luck, as that creates fatalism. For me I've been dealt a pretty good hand, but regardless of our circumstances, find out how to unlock your untapped potential regardless of where you are. That's what creates a strong person. It's not about how much silver spoons you have, but rather how much you can pull through.",
+        "alignment": "end",
+        "obj_cover": "top",
+        "position_y": "-150px"
+        }]
+
+        }
 ]

@@ -105,7 +105,7 @@ export default async function Home({ params }: { params: { id: number } }) {
                               })} */}
                             </ImageCollection>
 
-                            <section className='grid grid-cols-1 /md:grid-cols-2 md:grid-cols-[2fr_1fr]'>
+                            <section className='grid grid-cols-1 /md:grid-cols-2 md:grid-cols-[1fr_1fr]'>
                     
                               <section className='rounded-b-lg p-2 relative' aria-label='blog-text'>
                             
