@@ -473,47 +473,12 @@
 
 },
 
-    {
-
-        "id": 10,
-        "title": "When and when not to vent.",
-        "tags": ["mental-health", "recovery"],
-        "teaser_content": "Venting can be healthy, but it can lead to pain towards others if not controlled.",
-        "full_content": "Throughout my teenage years, I've always thought there's no such limit to venting, and that it's actually healthy to let it out as much as needed. However, this does end up being a double-edged sword. Let me explain.\n\nTo consider others when venting is an important step for personal growth. Wallowing in misery can only get you so far. This isn't a 'snap out of it' message, but rather get you to understand that despite these tough times, to learn how to better yourself when you've moved on.\n\nI know the phrase 'loving yourself' is cliche and I get it, I don't LOVE myself but I can tolerate myself at best. But this tolerance is more than enough to kickstart a positive journey towards mental health once more.\n\nI am no mental health professional, but I must digress something that is deep in my beliefs, which is: Never let others drag you down for having a rough time. Everyone has dark moments. Social media often hides these in highlight reels. Cause truthfully, people really only want an escape from reality as it already is.\n\nNot all venting has to lead to a solution. Having a friend or loved one to listen to you can be enough to get your two feet back on track. I know that for sure that I would not be the man I am now if it weren't for people lending their ear and allowing me to speak my mind.\n\n",
-        "created_by": "Demie Mistica",
-        "dateTime_created": "13/05/2024, 19:19",
-        "dateTime_updated": "13/05/2024, 19:19",
-        "grid_format_id": "1",
-        "images": [{
-        
-        "file_path": "/images/VENTING_1.jpg",
-        "caption": "Let those tears out no matter what.",
-        "is_main_image": 1
-        
-        
-        }
-        
-        ],
-        
-        "additional_images": [
-        {
-        
-        "file_path": "/images/VENTING_2.jpg",
-        "heading": "Reminiscing about happier times.",
-        "caption_img": "This was me back in 2018, when things were simpler...",
-        "caption_outside": "Physically healthier and not actually caring about others thought at the time.",
-        "text_content": "Try to look back at times when negativity did not lead you a dark road. I don't mean to toot my own horn, but I've attempted to try to be the light in the darkness, in the sense that I had to be happy for others. People torn me down however, because pessimism was the only thing they ever knew.\n\nTimes are really bleak today and I totally understand why people are generally frustrated with the way things operate with incompetent powers at hand.\n\nVent as much as needed, but please, don't let it be the only tool in your emotional toolkit.\n\n'Apologies don't mean a thing, if you don't ever fix it' ~NF",
-        "alignment": "end",
-        "obj_cover": "top",
-        "position_y": "-150px"
-        }]
-        
-        },
+   
 
         {
         "id": 11,
         "title": "Untapped Potential",
-        "tags": ["mental-health", "motivation", "positivity"],
+        "tags": ["mental-health", "positivity"],
         "teaser_content": "Believe it or not, there is so much potential within you. You just have to unlock it.",
         "full_content": "To be honest, I've never really thought I had it in me to walk a total distance of 21km within a week, but here I am, standing tall and proud of that achievement.\n\nIt wouldn't have been done without the inspiration and motivation given by my friends and the music I listen to.\n\nIn the midst of all this, I realized something was instrumental in all of this, and that was the power of inspiration and role models. I look up to my friends for strength and guidance. Everybody is different and may have different ways to motivate themselves, however I found inspiration to be the most effective.\n\nCombined with the ability to have a sense of future self, I feel like that's what is currently sparking my untapped potential. It's like a golden age for me, that no depression can ever touch.",
         "created_by": "Demie Mistica",
@@ -591,5 +556,55 @@
         "position_y": "-150px"
         }]
 
-        }
+        },
+
+
+        
+    
+            {
+            "id": 12,
+            "title": "Financial Frustrations",
+            "tags": ["money", "personal"],
+            "teaser_content": "The cost of living is speeding while I'm doing the legal limit; it's criminal, and cannot be ignored.",
+            "full_content": "And crossing the legal limit when I shouldn't feels like a hazard- Money is such a pain to deal with. I feel like part of it is by design. I mean credit cards exist, as well as those buy now pay later schemes too. Just when you feel like you're in control of your finances, some emergency pops out of nowhere and you have to pay out of pocket- whether it'd be a car fault, to health complications... It's such a kick in the bollocks.\n\nI will say though, despite my utterly crap relationship with money, I want to share some lessons that I want to tell my younger self, and to anyone who's really struggling out there to make every penny count.",
+            "created_by": "Demie Mistica",
+            "dateTime_created": "03/07/2024, 01:50",
+            "dateTime_updated": "03/07/2024, 01:50",
+            "grid_format_id": "1",
+            "images": [{
+            
+            "file_path": "/images/FF_COVER_HD.png",
+            "caption": "Whenever money is involved, my brain blows out.",
+            "is_main_image": 1
+            
+            
+            }
+            
+            ],
+            
+            "additional_images": [
+                {
+            
+                    "file_path": "/images/FF_NOTAKEAWAYS.png",
+                    "heading": "Culprit #1 - Takeaway companies",
+                    "caption_img": "#FREEFROMTAKEAWAYS",
+                    "caption_outside": "Sometimes, losses are victories, and shying away from takeaways is always a good thing.",
+                    "text_content": "I don't want to make you feel powerless over your finances. In fact, one of the categories I struggle with and I feel like is a matter of self-control, is takeaways. I've been struggling to put them away endlessly for years and months on end that I've lost count on how much money I've lost from buying crap from them.\n\nTo be honest I don't care if I'm BANNED from using their apps, I wish that was a real thing. Their predatory marketing makes it so you feel like treating yourself out of pocket, when really, a majority of takeouts can lead to a spiralling spending spree. At least for me that's what happened when 21 year old me lacked discipline at the time. And guess what? My future self would be ashamed to have so much food right in front of me that it becomes so hard to maintain how much I'm eating.\n\nAnd to tell you the truth, I spend hundreds a month on takeaway, when I should be learning how to cook easy and simple meals at home!",
+                    "alignment": "end",
+                    "obj_cover": "top",
+                    "position_y": "-150px"
+                    },
+            {
+            
+            "file_path": "/images/FF_BUDGETING.png",
+            "heading": "Solution #1 - Budgeting Techniques",
+            "caption_img": "Always know your what your income and expense figures are.",
+            "caption_outside": "I've always been hiding from budgeting because I feel like I'm already saving. Truthfully this isn't the case anymore and I should've budgeted right from the start.",
+            "text_content": "Sometimes simple dishes taste better than overcomplicating things.",
+            "alignment": "end",
+            "obj_cover": "top",
+            "position_y": "-150px"
+            }]
+    
+            }
 ]
