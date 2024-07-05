@@ -476,7 +476,7 @@
    
 
         {
-        "id": 11,
+        "id": 10,
         "title": "Untapped Potential",
         "tags": ["mental-health", "positivity"],
         "teaser_content": "Believe it or not, there is so much potential within you. You just have to unlock it.",
@@ -562,11 +562,11 @@
         
     
             {
-            "id": 12,
+            "id": 11,
             "title": "Financial Frustrations",
             "tags": ["money", "personal"],
             "teaser_content": "The cost of living is speeding while I'm doing the legal limit; it's criminal, and cannot be ignored.",
-            "full_content": "And crossing the legal limit when I shouldn't feels like a hazard- Money is such a pain to deal with. I feel like part of it is by design. I mean credit cards exist, as well as those buy now pay later schemes too. Just when you feel like you're in control of your finances, some emergency pops out of nowhere and you have to pay out of pocket- whether it'd be a car fault, to health complications... It's such a kick in the bollocks.\n\nI will say though, despite my utterly crap relationship with money, I want to share some lessons that I want to tell my younger self, and to anyone who's really struggling out there to make every penny count.",
+            "full_content": "And crossing the legal limit when I shouldn't feels like a hazard- Money is such a pain to deal with. I feel like part of it is by design. I mean credit cards exist, as well as those buy now pay later schemes too. Just when you feel like you're in control of your finances, some emergency pops out of nowhere and you have to pay out of pocket- whether it'd be a car fault, to health complications... It's such a kick in the bollocks.\n\nWhen it comes to pain, nothing compares to not having the basic needs available to you right at hand- food, drink and shelter etc. I've heard there is enough for everyone to be fed adequately in this world but due to how distribution works we've screwed that up.\n\nI will say though, despite my utterly crap relationship with money, I want to share some lessons that I want to tell my younger self, and to anyone who's really struggling out there to make every penny count.",
             "created_by": "Demie Mistica",
             "dateTime_created": "03/07/2024, 01:50",
             "dateTime_updated": "03/07/2024, 01:50",
@@ -594,13 +594,25 @@
                     "obj_cover": "top",
                     "position_y": "-150px"
                     },
+
+                    {
+            
+                        "file_path": "/images/FF_OSTRICH2.png",
+                        "heading": "Culprit #2 - The Ostrich Effect",
+                        "caption_img": "What you have left in your pocket is more important than comfort.",
+                        "caption_outside": "This is unfortunately true, as I've avoided financial responsibility for a long, long time.",
+                        "text_content": "Now this is more of me blaming myself, but needless to say, financial responsibility starts with you. It's not easy to partake financial matters when:\n\na) you have little control over your money\nb) you're living cheque to cheque\nc) you overspend a lot of the time\n\nHOWEVER, it's better to try to investigate reasons for these rather than burying your head in the sand pretending everything will all be okay. I know this from experience and I should know better to not evade this responsibility, no matter how uncomfortable I am with the situation.",
+                        "alignment": "end",
+                        "obj_cover": "top",
+                        "position_y": "-150px"
+                        },
             {
             
             "file_path": "/images/FF_BUDGETING.png",
             "heading": "Solution #1 - Budgeting Techniques",
             "caption_img": "Always know your what your income and expense figures are.",
-            "caption_outside": "I've always been hiding from budgeting because I feel like I'm already saving. Truthfully this isn't the case anymore and I should've budgeted right from the start.",
-            "text_content": "Sometimes simple dishes taste better than overcomplicating things.",
+            "caption_outside": "I've always been hiding from budgeting because I feel like I'm already saving without putting in much effort. Truthfully this isn't the case anymore and I should've budgeted right from the start.",
+            "text_content": "Sometimes simple dishes taste better than overcomplicating things. It's the same with budgeting, you don't need to overanalyze every single transaction that you process throughout your daily life. Just have a rough plan of what you want out of your budget, say saving at least £10 every time you do grocery shopping for instance. You could do this by switching to non-branded goods, as an example.\n\nSure there may be a noticeable difference in the quality of the food you eat but it'll definitely help your wallet in the long run.\n\nI'm pretty sure that by reading this article that you are either looking to relate or find a solution. In which case, I feel like the solution should start with a firm foundation. Try other budgeting websites like Martin Lewis' one as I'm not too versed into the budgeting world. I'm just a guy venting their frustrations.",
             "alignment": "end",
             "obj_cover": "top",
             "position_y": "-150px"
