@@ -17,6 +17,7 @@ import { readFileSync } from 'fs';
 import Navbar from './components/Navbar';
 import Skill from './components/Skill';
 import Footer from './components/Footer';
+import ProjectDetails from './components/ProjectDetails';
 
 // ICONS
 
@@ -47,10 +48,21 @@ export default async function Home() {
   const blog_file = path.join(process.cwd(), 'src/app', 'blog_sample.json');
   const blog_JSON = JSON.parse(readFileSync(blog_file, 'utf-8')).reverse();
 
+  const reveal_file = path.join(process.cwd(), 'src/app', 'app_reveal.json');
+  
+
+  const revealProject = (index: number) => {
+
+    const revealDetails = JSON.parse(readFileSync(reveal_file[index], 'utf-8'));
+
+
+
+  }
+
   return (
     <div className='p-4 bg-white dark:bg-onyx h-full dark:text-mint-cream mx-auto text-current max-w-4xl relative'>
 
-        <header className='grid grid-cols-2 justify-between relative sticky top-0 bg-inherit z-50 py-2'>
+        <header className='grid grid-cols-2 justify-center relative sticky top-0 bg-inherit z-50 py-2'>
           
           <div className='flex flex-col justify-center [&>*]:leading-[1.1rem] grow'>
 
@@ -220,7 +232,7 @@ export default async function Home() {
             
             <h2 id='projects' className='overflow-mask p-4 my-2 dark:text-white text-right text-4xl font-extrabold border-b-4 border-green-500'>PROJECTS.</h2>
 
-
+            
 
             <article className='/collapse md:visible grid grid-cols-3 auto-rows-[81px] md:auto-rows-[192px] gap-4'>
               {[...Array(7)].map((_, i) => {

@@ -172,7 +172,7 @@
 "id": 4,
 "title": "Taking Ownership in 2024",
 "tags": ["introspection", "mental-health"],
-"teaser_content": "Here are my hardships I faced in 2023, that I will conquer in 2024.",
+"teaser_content": "Here are my hardships I faced in 2023, which I will conquer in 2024.",
 "full_content": "Firstly, my spending habits were dominant. Money became a double-edged sword for my mental health, that I am going to put it to the side. Society and media filled my head with so many choices that it made me feel wealthier than I actually am. To me, pointing this out feels liberating, as it shows the potential I have to control my finances. \n\n Secondly, I overrelied on others. I became too dependent on people's positive feedback. I have a hard time making my own decisions sometimes when put under a lot of pressure.\n\nA part of growing up in my opinion is learning how not to let things get to you. It may be difficult at the beginning, but it's a skill just like anything else.\n\nTaking ownership also means taking responsibility. For me, independence is something to embrace. That's not to say that things will be okay as a one man army, but it'll strengthen my confidence in the long run.\n\nThis post may not be as light-hearted as most of my other ones, but that's okay. The big picture to look at here is that if you're content, do what you can to improve.",
 "created_by": "Demie Mistica",
 "dateTime_created": "30/01/2024, 01:38",
@@ -191,10 +191,10 @@
 {
 
 "id": 5,
-"title": "My time at coding bootcamp",
+"title": "Time at Coding Bootcamp",
 "tags": ["education", "web-dev"],
 "teaser_content": "What I've done and learnt during my time here.",
-"full_content": "Starting from August, I booked my taster session with the folks at Tech Educators. First impressions were in, and I knew this course was going to change my life for the better.\n\n One month later, the course jumpstarted with a lesson on Markdown. My nerves were kicking in, but managed to keep my cool on the first day back. Meeting people from different kinds of backgrounds and skill levels, it was refreshing to see everyone thrive in a fully positive and inclusive environment.\n\n To this day, this coding bootcamp has shaped the way I've looked at education in general. That there IS hope out there, and if you work hard and stay calm under pressure, you can achieve the best of work.\n\nThe bootcamp taught me that social connections are most certainly possible, with the right group, place, and time. That's not to say that a bootcamp is always going to be a life-changing experience, but it can help guide you in the right direction.",
+"full_content": "Starting from August of 2023, I booked my taster session with the folks at Tech Educators. First impressions were in, and I knew this course was going to change my life for the better.\n\n One month later, the course jumpstarted with a lesson on Markdown. My nerves were kicking in, but managed to keep my cool on the first day back. Meeting people from different kinds of backgrounds and skill levels, it was refreshing to see everyone thrive in a fully positive and inclusive environment.\n\n To this day, this coding bootcamp has shaped the way I've looked at education in general. That there IS hope out there, and if you work hard and stay calm under pressure, you can achieve the best of work.\n\nThe bootcamp taught me that social connections are most certainly possible, with the right group, place, and time. That's not to say that a bootcamp is always going to be a life-changing experience, but it can help guide you in the right direction.\n\n(UPDATE: July 2024)\nEver since I graduated 7 months ago, I've had an itching curiosity that just won't stop growing. I feel like it's thanks to this bootcamp that I've not given up my passion for coding entirely.",
 "created_by": "Demie Mistica",
 "dateTime_created": "03/02/2024, 00:45",
 "dateTime_updated": "03/02/2024, 00:45",
@@ -241,9 +241,35 @@
 "is_main_image": 0
 
 
-}]
+}],
 
-},
+"additional_images": [
+                {
+            
+                    "file_path": "/images/MTACB_1.JPG",
+                    "heading": "Inside The Bradfield Centre",
+                    "caption_img": "The campus in Cambridge.",
+                    "caption_outside": "It feels like yesterday since I've been here, but in reality it's been months!",
+                    "text_content": "The bootcamp campus in of itself gives me bittersweet memories. While I mostly attended my bootcamp sessions online, the times I've been here made me feel like I was in a different dimension. In a way, it feels good to be reminded of past obstacles that you've conquered so that you know how far you've come.",
+                    "alignment": "end",
+                    "obj_cover": "bottom",
+                    "position_y": "0px"
+                    },
+
+
+                    {
+            
+                        "file_path": "/images/MTACB_COMPLETION.png",
+                        "heading": "After the Bootcamp",
+                        "caption_img": "Certificate",
+                        "caption_outside": "The bootcamp taught me a lot of things I wouldn't have otherwise known as someone experienced with PHP.",
+                        "text_content": "I still hang around the Tech Educators community from time to time, meeting new cohorts from time to time. If it weren't for the employment team motivating me to put more commits to GitHub, I would've not made this website and challenged myself altogether.",
+                        "alignment": "end",
+                        "obj_cover": "center",
+                        "position_y": "0px"
+                        }  
+                ]
+            },
 
 {
 

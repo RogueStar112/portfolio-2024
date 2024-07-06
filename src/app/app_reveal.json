@@ -1,0 +1,9 @@
+[{
+  "id": 0,
+  "title": "MyBudget",
+  "description": "Categorize your spending habits, find new spending trends and more!",
+  "languages": ["PHP", "Laravel"],
+  "tags": ["budgeting", "practical"],
+  "github_url": "",
+  "project_url": ""  
+}]
