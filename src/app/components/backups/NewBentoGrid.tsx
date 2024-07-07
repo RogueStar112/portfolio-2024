@@ -16,10 +16,10 @@ import ProjectDetails from "../ProjectDetails"
 
                                     {/* <ProjectDetails content={reveal_file[i]} /> */}
                                     
-                                    <div onClick={revealProject(i)}>
+                                    {/* <div onClick={revealProject(i)}> */}
                                     <Image className='rounded-lg'  src={`${i === 0 ? "/images/MyBudgetBannerv4.png" : ""}${i === 1 ? "/images/PizzaGamev2.png" : ""}${i === 2 ? "/images/MyJournalTBA.png" : ""}${i === 3 ? "/images/MoodCanvasBannerv2.png" : ""}${i === 4 ? "/images/MyNutritionProjectGridv3.png" : ""}${i === 5 ? "/images/TodoAppPlaceholder.png" : ""}${i === 6 ? "/images/RouteRaterTBA.png" : ""}`} 
 width={`${i === 0 ? "570" : "0"}${i === 4 || i === 5 || i == 2 || i == 6 || i == 3|| i == 1 ? "277" : "0"}`} height={`${i === 0|| i == 1 || i == 2 || i === 4 || i === 5 ? "400" : "0"}${i === 3 || i === 6  ? "192" : ""}`} alt={'BentoImage'}/>
-                                    </div>
+                                    {/* </div> */}
                         
                                   {/* {i === 5 ? "Todo App" : ""}
                                   {i === 6 ? "Route Rater" : ""} */}
