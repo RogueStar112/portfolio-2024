@@ -644,5 +644,56 @@
             "position_y": "-150px"
             }]
     
-            }
+            },
+
+            {
+                "id": 12,
+                "title": "Overcoming My Fears",
+                "tags": ["personal", "positivity"],
+                "teaser_content": "I cannot ignore this void that needs to be addressed. Light is there at the end of the tunnel.",
+                "full_content": "For years, I've told myself that I'm not worthy enough to do anything with my life. Years of that suffering has left me crippled and unable to do anything substantial. As much as I love to rely on 'realistic thinking'- which is, to have a balanced positive and negative perspective, that is impossible to have at a constant.\n\nI've lied to you in the first paragraph already, because my achievements have spoken loud and clear that I'm not a complete failure. I'm going to be completely honest though, I can and will do better to achieve my goals. If I EVER feel like crap, I'll just pop back to this article and tell myself, that my achievements and how far I've come, is not a sign to give up.",
+                "created_by": "Demie Mistica",
+                "dateTime_created": "03/07/2024, 01:50",
+                "dateTime_updated": "03/07/2024, 01:50",
+                "grid_format_id": "1",
+                "images": [{
+                
+                "file_path": "/images/OMF_TUNNEL.jpg",
+                "caption": "As much as I hate the saying, I feel it's true.",
+                "is_main_image": 1
+                
+                
+                }
+                
+                ],
+                
+                "additional_images": [
+                    {
+                
+                        "file_path": "/images/OMF_WALKING.jpg",
+                        "heading": "Overcoming My Own Worst Enemy - Myself",
+                        "caption_img": "I don't often look at the mirror, but I believe I can be a nuisance to myself.",
+                        "caption_outside": "However, that doesn't mean it's a sign for me to give up.",
+                        "text_content": "This page is for people who've tried so hard, but feel like they haven't done good enough. I'm not going to give myself empty promises, I'm going to commit to them fully and hopefully one day overcome my worst fears. I really think that the worst part of myself is that I'm thinking that I'm not capable enough when I truly am.\n\nThe reason why I haven't fully given up, is because I have:\n- A driver's licence, so I can go anywhere I need to.\n- Confidence to do anything when given the right opportunity\n- Passion that won't extinguish easily.",
+                        "alignment": "end",
+                        "obj_cover": "center",
+                        "height": "600px",
+                        "position_y": "-250px"
+                        },
+    
+                        {
+                
+                            "file_path": "/images/FF_OSTRICH2.png",
+                            "heading": "Overcoming My Fear of Responsibility",
+                            "caption_img": "Imagine this is me, burying my head in the sand.",
+                            "caption_outside": "I can't keep burying myself like this, for I feel it's cowardly.",
+                            "text_content": "I might have poor decision making skills but surely it won't like this forever. I think I can conquer anything with the right attitude.",
+                            "height": "450px",
+                            "alignment": "end",
+                            "obj_cover": "top",
+                            "position_y": "-150px"
+                            }
+                ]
+        
+                }
 ]

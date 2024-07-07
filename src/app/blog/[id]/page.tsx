@@ -160,7 +160,7 @@ export default async function Home({ params }: { params: { id: number } }) {
                                       <section className='flex flex-col'>
                                         
                                         <section className='relative'>
-                                          <Image src={add_image.file_path} className={`max-h-[256px] md:w-full /md:max-w-[800px] md:max-h-[450px] object-cover mt-4 order-first object-center-top object-top`}  width={864} height={400} style={{top: `${add_image.position_y}`, objectPosition: `${add_image.obj_cover}`}} alt=''/>
+                                          <Image src={add_image.file_path} className={`max-h-[256px] md:w-full /md:max-w-[800px] md:max-h-[600px] object-cover mt-4 order-first object-center-top object-top`}  width={864} height={400} style={{top: `${add_image.position_y}`, objectPosition: `${add_image.obj_cover}`, height: `${add_image.height ? add_image.height: 400}`}} alt=''/>
                                           <span key={`img_span_${add_index}`} className={`absolute bottom-0 w-fit p-2 select-none bg-onyx dark:bg-black text-white`}>{add_image.caption_img ? add_image.caption_img : ""}</span>
                                         </section>
 
