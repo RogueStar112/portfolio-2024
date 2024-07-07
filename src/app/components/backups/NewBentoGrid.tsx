@@ -1,3 +1,7 @@
+import Link from "next/link"
+import Image from "next/image"
+import ProjectDetails from "../ProjectDetails"
+
 <article className='/collapse md:visible grid grid-cols-3 auto-rows-[81px] md:auto-rows-[192px] gap-4'>
               {[...Array(7)].map((_, i) => {
                     return (
@@ -10,7 +14,7 @@
                                   {i === 2 ? "TuneMasher" : ""}
                                   {i === 3 ? "MoodCanvas" : ""} */}
 
-                                    <ProjectDetails content={reveal_file[i]} />
+                                    {/* <ProjectDetails content={reveal_file[i]} /> */}
                                     
                                     <div onClick={revealProject(i)}>
                                     <Image className='rounded-lg'  src={`${i === 0 ? "/images/MyBudgetBannerv4.png" : ""}${i === 1 ? "/images/PizzaGamev2.png" : ""}${i === 2 ? "/images/MyJournalTBA.png" : ""}${i === 3 ? "/images/MoodCanvasBannerv2.png" : ""}${i === 4 ? "/images/MyNutritionProjectGridv3.png" : ""}${i === 5 ? "/images/TodoAppPlaceholder.png" : ""}${i === 6 ? "/images/RouteRaterTBA.png" : ""}`} 

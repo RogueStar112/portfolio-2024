@@ -1,3 +1,6 @@
+import Link from "next/link"
+import Image from "next/image"
+
 <article className='/collapse md:visible grid grid-cols-3 auto-rows-[81px] md:auto-rows-[192px] gap-4'>
               {[...Array(7)].map((_, i) => {
                     return (
