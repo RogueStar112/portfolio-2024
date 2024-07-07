@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 
-export default function ProjectDetails(index) {
+export default function ProjectDetails(index: any) {
 
   const [isDisplayed, setIsDisplayed] = useState(false);
 
