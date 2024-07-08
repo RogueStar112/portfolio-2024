@@ -4,11 +4,11 @@ import './globals.css'
 import './hero_overflow.css'
 
 import { Providers } from './providers'
+import { Analytics } from '@vercel/analytics/react';
 
 import localFont from 'next/font/local';
 
 const opendyslexic = localFont({ src: './OpenDyslexic-Regular.otf'});
-
 
 
 
@@ -33,6 +33,7 @@ export default function RootLayout({
       <body className={`${montserrat.className} max-w-5xl mx-auto blur-none bg-transparent dark:bg-onyx [&>*]:dark:bg-onyx dark:duration-500`}>
         <Providers>
           {children}
+          <Analytics />
         </Providers>
       </body>
     </html>
