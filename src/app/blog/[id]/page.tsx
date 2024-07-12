@@ -28,12 +28,63 @@ import { FaLinkedin } from 'react-icons/fa';
 import { IoMdArrowDropleft } from 'react-icons/io';
 import { IoMdArrowDropright } from 'react-icons/io';
 
+import { Quote } from '@/app/components/Quote';
 
 let path = require('path');
 // import { blog_sample } from './blog_sample.json';
 
 const montserrat = Montserrat({ weight: ['300', '500', '700', '800', '900'], style: ['normal', 'italic'], subsets: ['latin'] });
 const eb_garamond = EB_Garamond({weight: ['500', '600'], style: ['normal'], subsets: ['latin']});
+
+// const textParser = (str: string) => {
+//   const regex = /<q>(.*?)<a>(.*?)<\/a><\/q>/g;
+//   const parts = str.split(regex);
+
+//   return parts.map((part, index) => {
+//     if (index % 2 === 1) {
+//       return <Quote key={index}>{part}</Quote>;
+//     }
+//     return part;
+//   });
+// };
+
+const textParser = (str: string) => {
+  const regex = /<q>(.*?)<a>(.*?)<\/a><\/q>/g;
+  const parts = [];
+  let match;
+
+  // Using regex.exec() to find all matches in the string
+  while ((match = regex.exec(str)) !== null) {
+    parts.push(match);
+  }
+
+  // Construct the resulting array of React elements and strings
+  const result = [];
+  let lastIndex = 0;
+
+  parts.forEach((part, index) => {
+    const [fullMatch, quote, author] = part;
+    const matchIndex = part.index;
+
+    // Push the text before the current match
+    if (lastIndex < matchIndex) {
+      result.push(str.substring(lastIndex, matchIndex));
+    }
+
+    // Push the Quote component with the parsed quote and author
+    result.push(<Quote key={index} author={author}>{quote}</Quote>);
+
+    // Update the last index to be the end of the current match
+    lastIndex = matchIndex + fullMatch.length;
+  });
+
+  // Push the remaining text after the last match
+  if (lastIndex < str.length) {
+    result.push(str.substring(lastIndex));
+  }
+
+  return result;
+};
 
 export default async function Home({ params }: { params: { id: number } }) {
 
@@ -138,7 +189,7 @@ export default async function Home({ params }: { params: { id: number } }) {
 
                             <section className='p-2 first-letter:font-bold first-letter:text-2xl' style={{ whiteSpace: 'pre-line' }} aria-label='article-text'>
                               <p className='md:w-[80%] mt-2 pl-2'>
-                              {blog.full_content + "\n\n"}
+                              {textParser(blog.full_content + "\n\n")}
                               </p>
                               {blog.additional_content ? blog.additional_content.map((add_content: any) => {
                                 return ( 
@@ -167,7 +218,7 @@ export default async function Home({ params }: { params: { id: number } }) {
                                         <caption className='mt-2 pl-2 border-l-2 border-blue-500 dark:border-orange-500 w-full text-left mb-4'>    {add_image.caption_outside}</caption>
                                       </section>
                       
-                                    <p className='md:w-[80%] mt-2 pl-2'>{add_image.text_content}</p>
+                                    <p className='md:w-[80%] mt-2 pl-2'>{textParser(add_image.text_content)}</p>
 
                                     <aside className='relative'>
 
