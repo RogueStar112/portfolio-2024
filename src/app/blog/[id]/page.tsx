@@ -29,6 +29,8 @@ import { IoMdArrowDropleft } from 'react-icons/io';
 import { IoMdArrowDropright } from 'react-icons/io';
 
 import { Quote } from '@/app/components/Quote';
+import { Tip } from '@/app/components/Tip';
+
 
 let path = require('path');
 // import { blog_sample } from './blog_sample.json';
@@ -48,8 +50,46 @@ const eb_garamond = EB_Garamond({weight: ['500', '600'], style: ['normal'], subs
 //   });
 // };
 
+// const textParser = (str: string) => {
+//   const regex = /<q>(.*?)<a>(.*?)<\/a><\/q>/g;
+//   const parts = [];
+//   let match;
+
+//   // Using regex.exec() to find all matches in the string
+//   while ((match = regex.exec(str)) !== null) {
+//     parts.push(match);
+//   }
+
+//   // Construct the resulting array of React elements and strings
+//   const result = [];
+//   let lastIndex = 0;
+
+//   parts.forEach((part, index) => {
+//     const [fullMatch, quote, author] = part;
+//     const matchIndex = part.index;
+
+//     // Push the text before the current match
+//     if (lastIndex < matchIndex) {
+//       result.push(str.substring(lastIndex, matchIndex));
+//     }
+
+//     // Push the Quote component with the parsed quote and author
+//     result.push(<Quote key={index} author={author}>{quote}</Quote>);
+
+//     // Update the last index to be the end of the current match
+//     lastIndex = matchIndex + fullMatch.length;
+//   });
+
+//   // Push the remaining text after the last match
+//   if (lastIndex < str.length) {
+//     result.push(str.substring(lastIndex));
+//   }
+
+//   return result;
+// };
+
 const textParser = (str: string) => {
-  const regex = /<q>(.*?)<a>(.*?)<\/a><\/q>/g;
+  const regex = /<q>(.*?)<a>(.*?)<\/a><\/q>|<t>(.*?)<\/t>/g;
   const parts = [];
   let match;
 
@@ -63,7 +103,7 @@ const textParser = (str: string) => {
   let lastIndex = 0;
 
   parts.forEach((part, index) => {
-    const [fullMatch, quote, author] = part;
+    const [fullMatch, quote, author, tip] = part;
     const matchIndex = part.index;
 
     // Push the text before the current match
@@ -71,8 +111,12 @@ const textParser = (str: string) => {
       result.push(str.substring(lastIndex, matchIndex));
     }
 
-    // Push the Quote component with the parsed quote and author
-    result.push(<Quote key={index} author={author}>{quote}</Quote>);
+    // Push the appropriate component based on the match
+    if (quote !== undefined && author !== undefined) {
+      result.push(<Quote key={index} author={author}>{quote}</Quote>);
+    } else if (tip !== undefined) {
+      result.push(<Tip key={index}>{tip}</Tip>);
+    }
 
     // Update the last index to be the end of the current match
     lastIndex = matchIndex + fullMatch.length;

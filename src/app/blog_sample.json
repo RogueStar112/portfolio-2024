@@ -221,7 +221,7 @@
           "personal"
        ],
        "teaser_content":"My personal experiences being autistic.",
-       "full_content":"Definitely haven't written this at 2:30am without some compelling reason!\n\n From my experience, autism isn't something I would take away but rather acknowledge that it's going to be a lifelong condition. And that's okay! While I see myself as needing extra accomodations at times to help me regulate my tasks and mood, this shouldn't stop me from reaching my full potential.\n\nI have special interests, but I don't really have the ability to 'infodump' about them because of how hard they are to explain to people.\n\nAutism has made me accept imperfections in my life, that I especially can't control. For instance, I can't control inflation. I focus on what I can control instead.\n\nFor example, it's much easier to control my mood. Whether it'd be from taking deep breaths, to taking things more slowly than usual.\n\nI feel like being understood for who I am comes with the neurodiverse package as well, but also being mindful that it won't necessarily restrict my decision-making. I don't expect the world to accomodate for me.\n\nIn my opinion, I find the word 'neurotypical' rather hostile. It's sort of like treating them as if they have no way of thinking outside the 'norm'. It's also the same for neurodivergence. While I can't necessarily come up with a more 'appealing' name for both terms, I do think that one phrase stands out the most- 'Human.' we are going to experience emotionally driven decisions either way.\n\nThis is not a call for people to pick on others because of their brain structures.\n\nAs an autistic person, I don't directly advocate for more acceptance. I advocate for people however, to be more mindful. To tap into our innate empathy. If you were in someone else's shoes, who was overwhelmed by loud noises and bright lights, would you tell them to just 'snap out of it'?\n\nAlso, I want to clarify that my personal experiences of autism are unique, but does NOT translate to quirkiness. You can view autism or neurodivergence however you wish, but what it shouldn't be regarded as, in my honest opinion, is to use it as an excuse for bad behaviour.\n\nFor me, It took way too long to realize that the only person who can turn their own life around is themselves. If I don't look after myself, I will become more pessimistic, and in turn, poor mental health arises.",
+       "full_content":"<t>Have you tried the accessibility buttons on the top right? The first button activates dark/light mode, whereas the second is a 'dyslexic-friendly' font! Give them a go!</t>\nDefinitely haven't written this at 2:30am without some compelling reason!\n\n From my experience, autism isn't something I would take away but rather acknowledge that it's going to be a lifelong condition. And that's okay! While I see myself as needing extra accomodations at times to help me regulate my tasks and mood, this shouldn't stop me from reaching my full potential.\n\nI have special interests, but I don't really have the ability to 'infodump' about them because of how hard they are to explain to people.\n\nAutism has made me accept imperfections in my life, that I especially can't control. For instance, I can't control inflation. I focus on what I can control instead.\n\nFor example, it's much easier to control my mood. Whether it'd be from taking deep breaths, to taking things more slowly than usual.\n\nI feel like being understood for who I am comes with the neurodiverse package as well, but also being mindful that it won't necessarily restrict my decision-making. I don't expect the world to accomodate for me.\n\nIn my opinion, I find the word 'neurotypical' rather hostile. It's sort of like treating them as if they have no way of thinking outside the 'norm'. It's also the same for neurodivergence. While I can't necessarily come up with a more 'appealing' name for both terms, I do think that one phrase stands out the most- 'Human.' we are going to experience emotionally driven decisions either way.\n\nThis is not a call for people to pick on others because of their brain structures.\n\nAs an autistic person, I don't directly advocate for more acceptance. I advocate for people however, to be more mindful. To tap into our innate empathy. If you were in someone else's shoes, who was overwhelmed by loud noises and bright lights, would you tell them to just 'snap out of it'?\n\nAlso, I want to clarify that my personal experiences of autism are unique, but does NOT translate to quirkiness. You can view autism or neurodivergence however you wish, but what it shouldn't be regarded as, in my honest opinion, is to use it as an excuse for bad behaviour.\n\nFor me, It took way too long to realize that the only person who can turn their own life around is themselves. If I don't look after myself, I will become more pessimistic, and in turn, poor mental health arises.",
        "created_by":"Demie Mistica",
        "dateTime_created":"07/02/2024, 02:25",
        "dateTime_updated":"19/04/2024, 03:07",
@@ -246,6 +246,11 @@
              "file_path":"/images/MAS_Shadow.JPG",
              "caption":"It's okay not to be okay.",
              "is_main_image":0
+          },
+          {
+            "file_path": "/images/rosetintedglasses2.jpg",
+            "caption": "Imagine autism as a different lens, that one cannot take off.",
+            "is_main_image": 0
           }
        ],
        "additional_images":[
@@ -259,11 +264,11 @@
              "obj_cover":"center"
           },
           {
-             "file_path":"/images/MAS_TTTSBAW.jpg",
-             "heading":"The Tendency To See Black And White",
-             "caption_img":"The optimist sees colour, whereas pessimists might look away.",
-             "caption_outside":"Black and white thinking for me, is like the bread and butter of how I look at myself.",
-             "text_content":"If there's one thing I want you to take away reading about my autistic experiences, is that yes, I can be upset at times when things don't go the way they should. But I want to work towards making ends meet.\n\nConflict resolution is so essential.",
+             "file_path":"/images/sensoryoverwhelm.jpg",
+             "heading":"Why Executive Dysfunction is my worst enemy",
+             "caption_img":"Being overloaded can stop be from doing important tasks.",
+             "caption_outside":"Sensory overload is often the main reason why I can't get things done a majority of the time.",
+             "text_content":"Executive dysfunction is a nicer term than 'laziness' ever will be. It's a way of saying that every time functioning can't exist, that there is a reason behind it.\n\n<q>Being neurodivergent or normal can be like collecting Infinity Stones, as everyone of us is different.<a>Demie</a></q>For me especially, I need a good reason to start doing chores otherwise I won't really do them. Sometimes I may FORGET the reason why they are important because I'm very focused on something else, whether it'd be writing on this website to playing video games!",
              "alignment":"end",
              "obj_cover":"top",
              "position_y":"-150px"
