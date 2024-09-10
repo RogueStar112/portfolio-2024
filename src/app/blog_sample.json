@@ -304,7 +304,7 @@
           "mental-health",
           "independence"
        ],
-       "teaser_content":"I'm 24 and I still haven't grasped the concept of adulthood. Now's the time to embrace it.",
+       "teaser_content":"I'm 24 as of writing this, and I still haven't grasped the concept of adulthood. Now's the time to embrace it.",
        "full_content":"I feel like time has frozen so much in my life. The concept of responsiblity has only just existed in my headspace for such a short time, that I haven't had any time to truly master what it really feels like to be independent.\n\nThat being said, I don't intend on stopping my pursuit of growth and solitude. Change IS scary. But not all things that are scary are necessarily bad.\n\nWhen someone asked me how I felt taking the bus in this village for the first time\n I replied:<q>Regardless of how I feel right now, I have to take the bus there. No amount of anxiety can change that.<a>Demie</a></q>I thought, that getting home was more important than whatever anxiety I had, which I think shows a lot of personal growth.\n\nWhile my walks at the local park are still there, I still don't feel like I'm fully engaging with life. I feel like parts are still missing, like taking ownership.\n\nIndependence is something we do at times, even when we don't realize it. The decision to take the bus from somewhere unfamiliar to my house was an independent decision.\n\nI could've decided to walk the whole trek too, which is an independent decision as well, albeit not the most optimal.",
        "created_by":"Demie Mistica",
        "dateTime_created":"15/04/2024, 22:12",
@@ -616,6 +616,72 @@
             "height":"500px",
             "alignment":"end",
             "obj_cover":"top",
+            "position_y":"-150px"
+         }
+      ]
+   },
+
+   {
+      "id":14,
+      "title":"Move With Pressure",
+      "tags":[
+         "mental-health",
+         "improvement"
+      ],
+      "teaser_content":"Put pressure on yourself: To learn, to grow, and to live. Because you're important.",
+      "full_content":"<t>Have you tried the accessibility buttons on the top right? The first button activates dark/light mode, whereas the second is a 'dyslexic-friendly' font! Give them a go!</t>\nI've gone through a lot of hardship in my life, only to realize now that living it is not going to be easy. I've said it, put pressure on yourself to improve and grow. Learn a new language, new instrument or go to that networking event you've probably been dreading to go. It will be worth the effort!",
+      "created_by":"Demie Mistica",
+      "dateTime_created":"10/09/2024, 18:46",
+      "dateTime_updated":"10/09/2024, 18:46",
+      "grid_format_id":"1",
+      "images":[
+         {
+            "file_path":"/images/MWP_HERO.JPG",
+            "caption":"Even through the tough times, smiles release endorphins.",
+            "is_main_image":1
+         },
+
+         {
+            "file_path":"/images/MWP_MAIN1_MOTORWAY.JPG",
+            "caption": "Think of your mind as the motorway- it's fast, but your body needs to be able to catch up."
+         },
+
+         {
+            "file_path":"/images/MWP_MAIN2_ROYAL.JPG",
+            "caption": "Statues leave a legacy behind. What will yours be?"
+         },
+
+         {
+            "file_path":"/images/MWP_MAIN3_TRAIN.JPG",
+            "caption": "My first time using the train outside of family, Aug 2024."
+         },
+
+         {
+            "file_path":"/images/MWP_MAIN4_WINDMILL.JPG",
+            "caption": "Have a low profile, like this windmill like I just found yesterday."
+         }
+      ],
+      "additional_images":[
+         {
+            "file_path":"/images/MWP_SIDE1.JPG",
+            "heading":"Don't wait - get things done ASAP.",
+            "caption_img":"You are the director of your life - make it a best seller.",
+            "caption_outside":"Don't be afraid to take the leap of faith and expand that comfort zone.",
+            "text_content":"I'm gradually increasing my confidence by making short films. I didn't really care much for what content they had, for the pleasure and memories were the things that were most valuable to me.\n\nThe greatest thing about technology is that we can become a powerful influence in the globe- it all takes a few clicks of the camera and the uttering of articulate words.\n\nI am by no means trying to say, create content for the sake of it. <q>Create things that generate value to others and especially yourself, stuff that aligns with your values.<a>Demie</a></q>\n\nGetting things done isn't always easy, when mental health is a struggle to maintain at times. Which is why I move on to the next point:",
+            "alignment":"end",
+            "obj_cover":"center",
+            "height":"530px",
+            "position_y":"-250px"
+         },
+         {
+            "file_path":"/images/MWP_SIDE2.JPG",
+            "heading":"Allow yourself to take breaks",
+            "caption_img":"Taking breaks, and getting sleep, is equally as important as getting things done.",
+            "caption_outside":"Remember that your body is like a machine. It requires resources, even sleep, to function normally.",
+            "text_content":"I've taken a month or two break since writing my last article here. I felt like I needed it to be honest, because without it, I may not be able to regulate myself. I know this article turned into advice land all of a sudden, but it's true. You don't have to fall asleep to achieve your dreams either.",
+            "height":"500px",
+            "alignment":"end",
+            "obj_cover":"center",
             "position_y":"-150px"
          }
       ]
