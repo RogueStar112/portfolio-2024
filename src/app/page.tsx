@@ -97,7 +97,7 @@ export default async function Home() {
               <article className='overflow-hidden relative'>
                 
                 <section className='overflow-mask h-[448px]'>
-                <Image className='object-cover object-center h-inherit' src={`/images/Hero2Filtered.png`} fill={true} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" style={{objectFit: 'cover'}} alt='My portrait'></Image>
+                <Image className='object-cover object-center h-inherit' src={`/images/Hero3.JPG`} fill={true} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" style={{objectFit: 'cover'}} alt='My portrait'></Image>
                     <section className='absolute bottom-4 left-4 md:right-0 mr-4 md:top-[45%] text-white'>
                       <p className='text-center md:text-right text-3xl md:text-4xl font-extrabold'>GREETINGS.</p>
                       <p className={`${eb_garamond.className} font-initial md:text-right`}>Web Developer | Lifestyle Enthusiast</p>
@@ -246,7 +246,7 @@ export default async function Home() {
                                   {i === 2 ? "TuneMasher" : ""}
                                   {i === 3 ? "MoodCanvas" : ""} */}
 
-                                  <Link href={`${i === 0 ? "https://github.com/RogueStar112/MyBudget" : ""}${i === 1 ? "https://pizza-game-oct2023.vercel.app/" : ""}${i === 3 ? "https://roguestar112.github.io/mood-journal/index.html" : ""}${i === 4 ? "https://github.com/RogueStar112/MyNutrition" : ""}${i === 5 ? "https://todoproject-dev.vercel.app/" : ""}`}>
+                                  <Link href={`${i === 0 ? "https://github.com/RogueStar112/MyBudget-May2024" : ""}${i === 1 ? "https://pizza-game-oct2023.vercel.app/" : ""}${i === 3 ? "https://roguestar112.github.io/mood-journal/index.html" : ""}${i === 4 ? "https://github.com/RogueStar112/MyNutrition" : ""}${i === 5 ? "https://todoproject-dev.vercel.app/" : ""}`}>
                                     <Image className='rounded-lg'  src={`${i === 0 ? "/images/MyBudgetBannerv4.png" : ""}${i === 1 ? "/images/PizzaGamev2.png" : ""}${i === 2 ? "/images/MyJournalTBA.png" : ""}${i === 3 ? "/images/MoodCanvasBannerv2.png" : ""}${i === 4 ? "/images/MyNutritionProjectGridv3.png" : ""}${i === 5 ? "/images/TodoAppPlaceholder.png" : ""}${i === 6 ? "/images/RouteRaterTBA.png" : ""}`} 
 width={`${i === 0 ? "570" : "0"}${i === 4 || i === 5 || i == 2 || i == 6 || i == 3|| i == 1 ? "277" : "0"}`} height={`${i === 0|| i == 1 || i == 2 || i === 4 || i === 5 ? "400" : "0"}${i === 3 || i === 6  ? "192" : ""}`} alt={'BentoImage'}/>
                                   </Link>
