@@ -689,51 +689,67 @@
 
    {
       "id":15,
-      "title":"Tired of Fake People",
-      "tags":[
-         "personal",
-         "vent"
-      ],
-      "teaser_content":"Honestly, I'm tired of people pleasing and masking all the time.",
-      "full_content":"It's honestly exhausting to live in a world that only accepts a partial version of who I am, as if I'm living in a simulation. And even if I had the mask off, you wouldn't want to see every part of me. It's so awkward playing these stupid mind games. It's exhausting and soul sucking.\n\nNow let me clarify something blatantly obvious, and that is, not everyone is fake. But at times, even the most genuine appearing souls can show a bit of superficiality that can slip under the radar. For instance, certain YouTubers like MrBeast have not had drama up until just recently in 2024.\n\nWhat you see of me from this website is a subjective blueprint- however you interpret my articles is entirely yours to decide.\n\nIt's the reason why I've not been posting in this website for a little while. How does one even tackle the topic of authenticity when having to mask?\n\nThis is just an observation but I've come up with a theory on why people have become more disconnected than ever.",
-      "created_by":"Demie Mistica",
-      "dateTime_created":"01/11/2024, 02:36",
-      "dateTime_updated":"01/11/2024, 02:36",
-      "grid_format_id":"1",
-      "images":[
-         {
-            "file_path":"/images/tofp_1901.jpg",
-            "caption":"Friend groups sometimes dissipate like butter in a hot pan.",
-            "is_main_image":1
-         }
-      ],
-      "additional_images":[
-         
-      ]
-   },
-
-   {
-      "id":16,
-      "title":"The Woes and Wonders of Mania",
+      "title":"Embrace Change",
       "tags":[
          "mental-health",
-         "recovery"
+         "personal"
       ],
-      "teaser_content":"It's 3am, I'm bursting with ideas and I don't want to rest.",
-      "full_content":"Let's be honest, some of us have pulled an all-nighter and likely end up regretting it later. But I can't help it sometimes, because I hate sleep schedules. Yet, if I want to grow, I'll eventually have to readjust to the world's body clock.\n\nThis article is about my experiences of mania. Restlessness, racing thoughts, unending energy levels, you name it. As unusual as it sounds, I feel like its strengths should be embraced. I'll even go as far as to say that without it, I wouldn't be a web developer.\n\nI want people to understand that it's totally okay to not have to follow societal norms. Ideas flow, and sometimes they come at the most awkward times.\n\nWhen I'm in manic mode, everything is stimulating. From the clicky sounds of my mechanical keyboard, to the dance music I'm listening to, it feels like I'm on top of the world. It's an addictive cycle.\n\nI might eat the most unhealthy foods too, because I don't have that ability to recognize my needs when I'm manic. Pizza? Burgers? Sign me up, the manic diet is a ravenous one.\n\nSelf-neglect is my main woe. Criticisms from others hurt a lot more, and I don't know how to deal with rejection when I'm in this phase. \n\nBut the main part of my mania is that it's a contributive phase. It's something that I would continue to work with until my eyes can no longer hold its eyelids.",
+      "teaser_content":"I'm fighting for the change I want to see in this world.",
+      "full_content":"<t>Have you tried the accessibility buttons on the top right? The first button activates dark/light mode, whereas the second is a 'dyslexic-friendly' font! Give them a go!</t>\nEven as someone who's afraid of change, I'm ready to change. It's safe to say that Britain has shaped who I am, for better or worse.",
       "created_by":"Demie Mistica",
-      "dateTime_created":"20/11/2024, 03:37",
-      "dateTime_updated":"20/11/2024, 03:37",
+      "dateTime_created":"22/10/2024, 05:16",
+      "dateTime_updated":"22/10/2024, 05:16",
       "grid_format_id":"1",
       "images":[
          {
-            "file_path":"/images/TWOM_COVER_II.png",
-            "caption":"My desk setup when I'm alone. Yes, it's full of LEDs and I don't mind.",
+            "file_path":"/images/MWP_HERO.JPG",
+            "caption":"Even through the tough times, smiles release endorphins.",
             "is_main_image":1
+         },
+
+         {
+            "file_path":"/images/MWP_MAIN1_MOTORWAY.JPG",
+            "caption": "Think of your mind as the motorway- it's fast, but your body needs to be able to catch up."
+         },
+
+         {
+            "file_path":"/images/MWP_MAIN2_ROYAL.JPG",
+            "caption": "Statues leave a legacy behind. What will yours be?"
+         },
+
+         {
+            "file_path":"/images/MWP_MAIN3_TRAIN.JPG",
+            "caption": "My first time using the train outside of family, Aug 2024."
+         },
+
+         {
+            "file_path":"/images/MWP_MAIN4_WINDMILL.JPG",
+            "caption": "Have a low profile, like this windmill like I just found yesterday."
          }
       ],
       "additional_images":[
-   
+         {
+            "file_path":"/images/MWP_SIDE1.JPG",
+            "heading":"Don't wait - get things done ASAP.",
+            "caption_img":"You are the director of your life - make it a best seller.",
+            "caption_outside":"Don't be afraid to take the leap of faith and expand that comfort zone.",
+            "text_content":"I'm gradually increasing my confidence by making short films. I didn't really care much for what content they had, for the pleasure and memories were the things that were most valuable to me.\n\nThe greatest thing about technology is that we can become a powerful influence in the globe- it all takes a few clicks of the camera and the uttering of articulate words.\n\nI am by no means trying to say, create content for the sake of it. <q>Create things that generate value to others and especially yourself, stuff that aligns with your values.<a>Demie</a></q>\n\nGetting things done isn't always easy, when mental health is a struggle to maintain at times. Which is why I move on to the next point:",
+            "alignment":"end",
+            "obj_cover":"center",
+            "height":"530px",
+            "position_y":"-250px"
+         },
+         {
+            "file_path":"/images/MWP_SIDE2.JPG",
+            "heading":"Allow yourself to take breaks",
+            "caption_img":"Taking breaks, and getting sleep, is equally as important as getting things done.",
+            "caption_outside":"Remember that your body is like a machine. It requires resources, even sleep, to function normally.",
+            "text_content":"I've taken a month or two break since writing my last article here. I felt like I needed it to be honest, because without it, I may not be able to regulate myself. I know this article turned into advice land all of a sudden, but it's true. You don't have to fall asleep to achieve your dreams either.",
+            "height":"500px",
+            "alignment":"end",
+            "obj_cover":"center",
+            "position_y":"-150px"
+         }
       ]
    }
  ]

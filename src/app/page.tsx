@@ -97,8 +97,10 @@ export default async function Home() {
               <article className='overflow-hidden relative'>
                 
                 <section className='overflow-mask h-[448px]'>
-                <Image className='object-cover object-center h-inherit' src={`/images/Hero3.JPG`} fill={true} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" style={{objectFit: 'cover'}} alt='My portrait'></Image>
-                    <section className='absolute bottom-4 left-4 md:right-0 mr-4 md:top-[45%] text-white'>
+
+                <Image src={`/images/DM_TRANSPARENT_II.PNG`} width="512" height="512"/>
+                {/* <Image className='object-cover object-center h-inherit w-[512px]' src={`/images/DM_TRANSPARENT_II.PNG`} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt='My portrait'></Image> */}
+                    <section className='absolute bottom-4 left-4 md:right-0 mr-4 md:top-[45%] text-black dark:text-white'>
                       <p className='text-center md:text-right text-3xl md:text-4xl font-extrabold'>GREETINGS.</p>
                       <p className={`${eb_garamond.className} font-initial md:text-right`}>Web Developer | Lifestyle Enthusiast</p>
                     </section>
@@ -132,6 +134,12 @@ export default async function Home() {
             </article>
             
             <h2 className='m-4 text-right text-4xl font-extrabold'>PROJECTS.</h2> */}
+            
+            <h2 id='about' className='overflow-mask dark:text-white /dark:text-black p-4 mt-2 text-right text-4xl font-extrabold border-b-4 border-emerald-500'>ABOUT.</h2>
+
+            <h3 className='mt-4 text-left italic uppercase'>From slinging spreadsheets to wrangling websites</h3>
+
+            <p className='mt-4 text-left'>I am a passionate, data-driven web developer who uses their vast wealth of experience in lifestyle to make apps that spark curiosity and maximize productivity. </p>
 
             <h2 id='skills' className='overflow-mask dark:text-white /dark:text-black p-4 mt-2 text-right text-4xl font-extrabold border-b-4 border-orange-500'>SKILLS.</h2>
 

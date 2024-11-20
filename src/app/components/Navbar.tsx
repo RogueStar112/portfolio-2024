@@ -24,6 +24,7 @@ export default function NavBar() {
   return (
     <>
     <nav id='navbar-desktop' className={`${montserrat.className}  [&>*]:font-bold [&>*]:self-center hidden md:flex justify-end gap-3`}>
+              <Link scroll={true} className="border-b-2 hover:border-emerald-500"href="/#about" style={{fontVariant: "small-caps"}}>About</Link>
               <Link scroll={true} className="border-b-2 hover:border-orange-500"href="/#skills" style={{fontVariant: "small-caps"}}>Skills</Link>
               <Link scroll={true} className="border-b-2 hover:border-green-500" href="/#projects" style={{fontVariant: "small-caps"}}>Projects</Link>
               <Link scroll={true} className="border-b-2 hover:border-blue-500" href="/#blog" style={{fontVariant: "small-caps"}}>Blog</Link>
@@ -52,6 +53,7 @@ export default function NavBar() {
 
  
       <nav id='navbar-mobile' className={`${montserrat.className}  [&>*]:font-bold [&>*]:self-left ${showMobileNav ? "flex flex-col md:hidden" : "hidden"} justify-around gap-3 col-span-2 [&>*]:col-span-2 [&>div]:w-full [&>a]:text-3xl [&>*]:px-4 [&>*]:py-2 [&>a]:w-full`}>
+        <Link scroll={true} href="/#about" className="border-b-2 border-orange-500" style={{fontVariant: "small-caps"}}>About me</Link>
         <Link scroll={true} href="/#skills" className="border-b-2 border-orange-500" style={{fontVariant: "small-caps"}}>Skills</Link>
         <Link scroll={true} href="/#projects" className="border-b-2 border-green-500" style={{fontVariant: "small-caps"}}>Projects</Link>
         <Link scroll={true} href="/#blog" className="border-b-2 border-blue-500" style={{fontVariant: "small-caps"}}>Blog</Link>

@@ -304,7 +304,7 @@
           "mental-health",
           "independence"
        ],
-       "teaser_content":"I'm 24 as of writing this, and I still haven't grasped the concept of adulthood. Now's the time to embrace it.",
+       "teaser_content":"I'm 24 and I still haven't grasped the concept of adulthood. Now's the time to embrace it.",
        "full_content":"I feel like time has frozen so much in my life. The concept of responsiblity has only just existed in my headspace for such a short time, that I haven't had any time to truly master what it really feels like to be independent.\n\nThat being said, I don't intend on stopping my pursuit of growth and solitude. Change IS scary. But not all things that are scary are necessarily bad.\n\nWhen someone asked me how I felt taking the bus in this village for the first time\n I replied:<q>Regardless of how I feel right now, I have to take the bus there. No amount of anxiety can change that.<a>Demie</a></q>I thought, that getting home was more important than whatever anxiety I had, which I think shows a lot of personal growth.\n\nWhile my walks at the local park are still there, I still don't feel like I'm fully engaging with life. I feel like parts are still missing, like taking ownership.\n\nIndependence is something we do at times, even when we don't realize it. The decision to take the bus from somewhere unfamiliar to my house was an independent decision.\n\nI could've decided to walk the whole trek too, which is an independent decision as well, albeit not the most optimal.",
        "created_by":"Demie Mistica",
        "dateTime_created":"15/04/2024, 22:12",
@@ -623,117 +623,48 @@
 
    {
       "id":14,
-      "title":"Move With Pressure",
+      "title":"Taking My Own Advice",
       "tags":[
          "mental-health",
-         "improvement"
+         "self-care"
       ],
-      "teaser_content":"Put pressure on yourself: To learn, to grow, and to live. Because you're important.",
-      "full_content":"<t>Have you tried the accessibility buttons on the top right? The first button activates dark/light mode, whereas the second is a 'dyslexic-friendly' font! Give them a go!</t>\nI've gone through a lot of hardship in my life, only to realize now that living it is not going to be easy. I've said it, put pressure on yourself to improve and grow. Learn a new language, new instrument or go to that networking event you've probably been dreading to go. It will be worth the effort!",
+      "teaser_content":"It's okay not to be okay, but not if you let it stay that way.",
+      "full_content":"<t>Have you tried the accessibility buttons on the top right? The first button activates dark/light mode, whereas the second is a 'dyslexic-friendly' font! Give them a go!</t>\nI know what I just said will create a bit of controversy, but I said it. Treat yourself, when it's warranted. It's so important to be able to do things for yourself in a world that is dictated by routine and order.\n\nI find that other people can only do so much to help you. But... <q>If you can't love yourself, how in the hell can you love somebody else?<a>RuPaul</a></q>I think it's so important to understand that just because you put yourself first, it doesn't mean you are doing it at the expense of others.\n\nI'll go further and say that you don't even have to love yourself, but just accept yourself for who you are, including your perks and flaws.",
       "created_by":"Demie Mistica",
-      "dateTime_created":"10/09/2024, 18:46",
-      "dateTime_updated":"10/09/2024, 18:46",
+      "dateTime_created":"13/07/2024, 22:24",
+      "dateTime_updated":"13/07/2024, 22:24",
       "grid_format_id":"1",
       "images":[
          {
-            "file_path":"/images/MWP_HERO.JPG",
-            "caption":"Even through the tough times, smiles release endorphins.",
-            "is_main_image":1
-         },
-
-         {
-            "file_path":"/images/MWP_MAIN1_MOTORWAY.JPG",
-            "caption": "Think of your mind as the motorway- it's fast, but your body needs to be able to catch up."
-         },
-
-         {
-            "file_path":"/images/MWP_MAIN2_ROYAL.JPG",
-            "caption": "Statues leave a legacy behind. What will yours be?"
-         },
-
-         {
-            "file_path":"/images/MWP_MAIN3_TRAIN.JPG",
-            "caption": "My first time using the train outside of family, Aug 2024."
-         },
-
-         {
-            "file_path":"/images/MWP_MAIN4_WINDMILL.JPG",
-            "caption": "Have a low profile, like this windmill like I just found yesterday."
+            "file_path":"/images/TCOY_COVER.jpg",
+            "caption":"When possible, delve into what makes you happy. Even through food.",
+            "is_main_image":1,
+            "position_y":"-300px"
          }
       ],
       "additional_images":[
          {
-            "file_path":"/images/MWP_SIDE1.JPG",
-            "heading":"Don't wait - get things done ASAP.",
-            "caption_img":"You are the director of your life - make it a best seller.",
-            "caption_outside":"Don't be afraid to take the leap of faith and expand that comfort zone.",
-            "text_content":"I'm gradually increasing my confidence by making short films. I didn't really care much for what content they had, for the pleasure and memories were the things that were most valuable to me.\n\nThe greatest thing about technology is that we can become a powerful influence in the globe- it all takes a few clicks of the camera and the uttering of articulate words.\n\nI am by no means trying to say, create content for the sake of it. <q>Create things that generate value to others and especially yourself, stuff that aligns with your values.<a>Demie</a></q>\n\nGetting things done isn't always easy, when mental health is a struggle to maintain at times. Which is why I move on to the next point:",
+            "file_path":"/images/TCOY_COVER.jpg",
+            "heading":"Take care of yourself physically",
+            "caption_img":"Local Nature Reserve",
+            "caption_outside":"Walking in nature is one way for me to destress and get fitter.",
+            "text_content":"I normally take walks and listen to music because it empowers my mental health. It's such a good way to start the day that it can motivate me to do other things.\n\nTaking care of yourself physically doesn't just have to include exercise. It can also include eating foods that feel right. For example, pizza may not be the healthiest food out there for me, but it screams comfort food for me that I think it's okay to have it every now and then. (Once-twice a week). At other times, I'll just have something healthier like a sandwich!",
             "alignment":"end",
             "obj_cover":"center",
-            "height":"530px",
+            "height":"450px",
             "position_y":"-250px"
          },
          {
-            "file_path":"/images/MWP_SIDE2.JPG",
-            "heading":"Allow yourself to take breaks",
-            "caption_img":"Taking breaks, and getting sleep, is equally as important as getting things done.",
-            "caption_outside":"Remember that your body is like a machine. It requires resources, even sleep, to function normally.",
-            "text_content":"I've taken a month or two break since writing my last article here. I felt like I needed it to be honest, because without it, I may not be able to regulate myself. I know this article turned into advice land all of a sudden, but it's true. You don't have to fall asleep to achieve your dreams either.",
+            "file_path":"/images/treatyourself_tr.jpg",
+            "heading":"Take Responsibility",
+            "caption_img":"Your life is your very own.",
+            "caption_outside":"Taking responsibility is one of the most powerful things you can do to increase your independence.",
+            "text_content":"To be responsible for yourself means you show a lot of emotional maturity. If you have to do something you need to do, even if you don't feel comfortable doing it, like doing chores or taking a shower, that discomfort will trade off in the end.\n\nDon't let other people (even myself) tell you what you should do with your life. Do something that you feel aligns best with your values. This article is just a small reminder, to just put yourself first.",
             "height":"500px",
             "alignment":"end",
-            "obj_cover":"center",
+            "obj_cover":"top",
             "position_y":"-150px"
          }
-      ]
-   },
-
-   {
-      "id":15,
-      "title":"Tired of Fake People",
-      "tags":[
-         "personal",
-         "vent"
-      ],
-      "teaser_content":"Honestly, I'm tired of people pleasing and masking all the time.",
-      "full_content":"It's honestly exhausting to live in a world that only accepts a partial version of who I am, as if I'm living in a simulation. And even if I had the mask off, you wouldn't want to see every part of me. It's so awkward playing these stupid mind games. It's exhausting and soul sucking.\n\nNow let me clarify something blatantly obvious, and that is, not everyone is fake. But at times, even the most genuine appearing souls can show a bit of superficiality that can slip under the radar. For instance, certain YouTubers like MrBeast have not had drama up until just recently in 2024.\n\nWhat you see of me from this website is a subjective blueprint- however you interpret my articles is entirely yours to decide.\n\nIt's the reason why I've not been posting in this website for a little while. How does one even tackle the topic of authenticity when having to mask?\n\nThis is just an observation but I've come up with a theory on why people have become more disconnected than ever.",
-      "created_by":"Demie Mistica",
-      "dateTime_created":"01/11/2024, 02:36",
-      "dateTime_updated":"01/11/2024, 02:36",
-      "grid_format_id":"1",
-      "images":[
-         {
-            "file_path":"/images/tofp_1901.jpg",
-            "caption":"Friend groups sometimes dissipate like butter in a hot pan.",
-            "is_main_image":1
-         }
-      ],
-      "additional_images":[
-         
-      ]
-   },
-
-   {
-      "id":16,
-      "title":"The Woes and Wonders of Mania",
-      "tags":[
-         "mental-health",
-         "recovery"
-      ],
-      "teaser_content":"It's 3am, I'm bursting with ideas and I don't want to rest.",
-      "full_content":"Let's be honest, some of us have pulled an all-nighter and likely end up regretting it later. But I can't help it sometimes, because I hate sleep schedules. Yet, if I want to grow, I'll eventually have to readjust to the world's body clock.\n\nThis article is about my experiences of mania. Restlessness, racing thoughts, unending energy levels, you name it. As unusual as it sounds, I feel like its strengths should be embraced. I'll even go as far as to say that without it, I wouldn't be a web developer.\n\nI want people to understand that it's totally okay to not have to follow societal norms. Ideas flow, and sometimes they come at the most awkward times.\n\nWhen I'm in manic mode, everything is stimulating. From the clicky sounds of my mechanical keyboard, to the dance music I'm listening to, it feels like I'm on top of the world. It's an addictive cycle.\n\nI might eat the most unhealthy foods too, because I don't have that ability to recognize my needs when I'm manic. Pizza? Burgers? Sign me up, the manic diet is a ravenous one.\n\nSelf-neglect is my main woe. Criticisms from others hurt a lot more, and I don't know how to deal with rejection when I'm in this phase. \n\nBut the main part of my mania is that it's a contributive phase. It's something that I would continue to work with until my eyes can no longer hold its eyelids.",
-      "created_by":"Demie Mistica",
-      "dateTime_created":"20/11/2024, 03:37",
-      "dateTime_updated":"20/11/2024, 03:37",
-      "grid_format_id":"1",
-      "images":[
-         {
-            "file_path":"/images/TWOM_COVER_II.png",
-            "caption":"My desk setup when I'm alone. Yes, it's full of LEDs and I don't mind.",
-            "is_main_image":1
-         }
-      ],
-      "additional_images":[
-   
       ]
    }
  ]

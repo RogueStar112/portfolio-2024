@@ -179,26 +179,9 @@ export default async function Home({ params }: { params: { id: number } }) {
                             {/* <Image className="rounded-t-lg overflow-mask-vert h-[400px] object-cover is-main-image" src={blog.images[0].file_path} width={864} height={400} alt={"Test"}/>
                              */}
                             {/* <p aria-label='image-caption' className='p-2 italic'>{[blog.images[0].caption ? blog.images[0].caption  : ""]}</p> */}
-
-                            <ImageCollection images={blog.images}>
-                              {/* {blog.images.map((image: any, index: any) => {
-                                
-                                if(image.is_main_image != 1) {
-                                  return (
-                                    
-                                    <Image key={`img_${blog.id}_${index}`} className='rounded-lg md:overflow-mask-vert object-cover max-h-[60px] md:max-h-[156px]' src={image.file_path} width={864} height={400} alt={"Test"}/>
-
-                                  )
-                                } else {
-                                  return (
-
-                                    <Image key={`img_${blog.id}_${index}`} className="col-span-4 order-first rounded-t-lg overflow-mask-vert h-[400px] object-cover is-main-image" src={blog.images[0].file_path} width={864} height={400} alt={"Test"}/>
                             
-
-                                  )
-                                }
-                              })} */}
-                            </ImageCollection>
+                            {!blog.is_multiblog && <ImageCollection images={blog.images} />}  
+                            
 
                             <section className='grid grid-cols-1 /md:grid-cols-2 md:grid-cols-[3fr_2fr]'>
                     
