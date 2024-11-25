@@ -155,7 +155,7 @@ export default async function Home() {
             <Image className=' mx-auto mt-6' src={DM_MOTTO} alt='From slinging spreadsheets to wrangling websites' />
             {/* <h3 className='mt-4 text-left italic uppercase'>From slinging spreadsheets to wrangling websites</h3> */}
 
-            <p className='mt-4 text-left'>Name's Demie. As the motto suggests, my web development journey started through a budgeting spreadsheet. A colleague suggested to turn it into a website, and hence, in 2020, I tapped into the world of HTML.<br></br><br></br>
+            <p className='mt-4 text-left'>Name&apos;s Demie. As the motto suggests, my web development journey started through a budgeting spreadsheet. A colleague suggested to turn it into a website, and hence, in 2020, I tapped into the world of HTML.<br></br><br></br>
 
             I hail from the stormy capital of Manila, Philippines. In 1999, the computer was in its early stages. Yet, I was exposed to technology at a very young age.</p>
 
