@@ -34,6 +34,9 @@ import { FaPhp } from 'react-icons/fa';
 import { TbBrandNextjs } from 'react-icons/tb';
 import { FaDatabase } from 'react-icons/fa';
 
+import DM_MOTTO from '../../public/./images/DM_MOTTO_TC_V2.svg'
+import DM_MOTTO_DARK from '../../public/./images/DM_MOTTO_TC_V2_DARK.svg'
+
 // import { blog_sample } from './blog_sample.json';
 
 let path = require('path');
@@ -96,13 +99,25 @@ export default async function Home() {
 
               <article className='overflow-hidden relative'>
                 
-                <section className='overflow-mask h-[448px]'>
+                <section className=''>
 
-                <Image src={`/images/DM_TRANSPARENT_II.PNG`} width="512" height="512" alt="My face"/>
+                <Image className='overflow-mask' src={`/images/DM_TRANSPARENT_II.PNG`} width="512" height="512" alt="My face"/>
                 {/* <Image className='object-cover object-center h-inherit w-[512px]' src={`/images/DM_TRANSPARENT_II.PNG`} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt='My portrait'></Image> */}
-                    <section className='absolute bottom-4 left-4 md:right-0 mr-4 md:top-[45%] text-black dark:text-white'>
+                    <section className='md:absolute bottom-0 left-4 md:right-0 mr-4 md:h-full text-black dark:text-white flex flex-col justify-end md:justify-center mt-12'>
                       <p className='text-center md:text-right text-3xl md:text-4xl font-extrabold'>GREETINGS.</p>
-                      <p className={`${eb_garamond.className} font-initial md:text-right`}>Web Developer | Lifestyle Enthusiast</p>
+                      <p className={`${eb_garamond.className} font-initial md:text-right`}>Web Developer | Lifestyle Enthusiast<br></br>📍 Cambridge, UK</p>
+          
+                      <section id='socials' className='flex justify-around md:justify-end m-4'>
+
+                                <div className='flex gap-8 [&>*]:[&>*]:scale-[2] /[&>*]:[&>*]:text-neutral-500' aria-label='socials'>
+                        <Link target="_blank" className="[&>*]:text-neutral-500 dark:[&>*]:text-white md:text-neutral-500 md:[&>*]:hover:text-blue-500 md:dark:[&>*]:hover:text-black [&>*]:duration-150" href={'https://github.com/RogueStar112'}>
+                              <FaGithub />
+                        </Link>
+                        <Link target="_blank" className="[&>*]:text-[#0077B5] md:text-neutral-500 md:[&>*]:hover:text-blue-500 md:[&>*]:hover:text-[#0077B5] [&>*]:duration-150" href={'https://www.linkedin.com/in/demie-mistica-049779296/'}><FaLinkedin /></Link>
+                      </div>
+
+                      </section>
+   
                     </section>
                 </section>
 
@@ -135,13 +150,16 @@ export default async function Home() {
             
             <h2 className='m-4 text-right text-4xl font-extrabold'>PROJECTS.</h2> */}
             
-            <h2 id='about' className='overflow-mask dark:text-white /dark:text-black p-4 mt-2 text-right text-4xl font-extrabold border-b-4 border-emerald-500'>ABOUT.</h2>
+            <h2 id='about' className='overflow-mask dark:text-white /dark:text-black p-4 mt-2 text-right text-4xl font-extrabold border-b-4 border-emerald-500 bg-gradient-to-r dark:from-onyx from-white dark:to-emerald-500 to-emerald-500 from-70% to-100%'>ABOUT.</h2>
+              
+            <Image className=' mx-auto mt-6' src={DM_MOTTO} alt='From slinging spreadsheets to wrangling websites' />
+            {/* <h3 className='mt-4 text-left italic uppercase'>From slinging spreadsheets to wrangling websites</h3> */}
 
-            <h3 className='mt-4 text-left italic uppercase'>From slinging spreadsheets to wrangling websites</h3>
+            <p className='mt-4 text-left'>Name's Demie. As the motto suggests, my web development journey started through a budgeting spreadsheet. A colleague suggested to turn it into a website, and hence, in 2020, I tapped into the world of HTML.<br></br><br></br>
 
-            <p className='mt-4 text-left'>I am a passionate, data-driven web developer who uses their vast wealth of experience in lifestyle to make apps that spark curiosity and maximize productivity. </p>
+            I hail from the stormy capital of Manila, Philippines. In 1999, the computer was in its early stages. Yet, I was exposed to technology at a very young age.</p>
 
-            <h2 id='skills' className='overflow-mask dark:text-white /dark:text-black p-4 mt-2 text-right text-4xl font-extrabold border-b-4 border-orange-500'>SKILLS.</h2>
+            <h2 id='skills' className='overflow-mask dark:text-white /dark:text-black p-4 mt-2 text-right text-4xl font-extrabold border-b-4 border-orange-500 dark:from-onyx bg-gradient-to-r from-white dark:to-orange-500 to-orange-500 from-70% to-100%'>SKILLS.</h2>
 
             <article className='flex flex-col md:grid grid-cols-1 justify-around px-4 [&>*]:grow overflow-mask border-b-4 border-orange-500 /h-fit h-72 '>
                     
@@ -238,7 +256,7 @@ export default async function Home() {
 
             </div> */}
             
-            <h2 id='projects' className='overflow-mask p-4 my-2 dark:text-white text-right text-4xl font-extrabold border-b-4 border-green-500'>PROJECTS.</h2>
+            <h2 id='projects' className='overflow-mask p-4 my-2 dark:text-white text-right text-4xl font-extrabold border-b-4 border-green-500 bg-gradient-to-r dark:from-onyx from-white dark:to-green-500 to-green-500 from-70% to-100%'>PROJECTS.</h2>
 
             
 
@@ -280,7 +298,7 @@ width={`${i === 0 ? "570" : "0"}${i === 4 || i === 5 || i == 2 || i == 6 || i ==
 
 
 
-            <h2 id='blog' className='overflow-mask p-4 my-2 dark:text-white text-right text-4xl font-extrabold border-b-4 border-blue-500'>BLOG.</h2>
+            <h2 id='blog' className='overflow-mask p-4 my-2 dark:text-white text-right text-4xl font-extrabold border-b-4 border-blue-500 bg-gradient-to-r dark:from-onyx from-white dark:to-blue-500 to-blue-500 from-70% to-100%'>BLOG.</h2>
 
             <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3'>
             {blog_JSON.map((blog: any) => {
