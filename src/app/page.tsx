@@ -34,8 +34,13 @@ import { FaPhp } from 'react-icons/fa';
 import { TbBrandNextjs } from 'react-icons/tb';
 import { FaDatabase } from 'react-icons/fa';
 
+import { motion } from "motion/react"
+
 import DM_MOTTO from '../../public/./images/DM_MOTTO_TC_V2.svg'
 import DM_MOTTO_DARK from '../../public/./images/DM_MOTTO_TC_V2_DARK.svg'
+
+import DM_HERO from '../../public/./images/DM_HERO_26112024_SHADED.png'
+import DM_ABOUT from '../../public/./images/DM_ABOUT_1.jpg'
 
 // import { blog_sample } from './blog_sample.json';
 
@@ -101,16 +106,16 @@ export default async function Home() {
                 
                 <section className=''>
 
-                <Image className='overflow-mask' src={`/images/DM_TRANSPARENT_II.PNG`} width="512" height="512" alt="My face"/>
+                <Image className='overflow-mask' src={DM_HERO} width="1920" height="512" alt="My face"/>
                 {/* <Image className='object-cover object-center h-inherit w-[512px]' src={`/images/DM_TRANSPARENT_II.PNG`} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt='My portrait'></Image> */}
-                    <section className='md:absolute bottom-0 left-4 md:right-0 mr-4 md:h-full text-black dark:text-white flex flex-col justify-end md:justify-center mt-12'>
+                    <section className='md:absolute bottom-0 left-4 md:right-0 mr-4 md:h-full text-black md:text-white dark:text-white flex flex-col justify-end md:justify-center mt-12'>
                       <p className='text-center md:text-right text-3xl md:text-4xl font-extrabold'>GREETINGS.</p>
                       <p className={`${eb_garamond.className} font-initial md:text-right`}>Web Developer | Lifestyle Enthusiast<br></br>📍 Cambridge, UK</p>
           
                       <section id='socials' className='flex justify-around md:justify-end m-4'>
 
                                 <div className='flex gap-8 [&>*]:[&>*]:scale-[2] /[&>*]:[&>*]:text-neutral-500' aria-label='socials'>
-                        <Link target="_blank" className="[&>*]:text-neutral-500 dark:[&>*]:text-white md:text-neutral-500 md:[&>*]:hover:text-blue-500 md:dark:[&>*]:hover:text-black [&>*]:duration-150" href={'https://github.com/RogueStar112'}>
+                        <Link target="_blank" className="text-neutral-500 dark:[&>*]:text-white md:text-white md:[&>*]:hover:text-yellow-500 md:dark:[&>*]:hover:text-yellow-500 [&>*]:duration-150" href={'https://github.com/RogueStar112'}>
                               <FaGithub />
                         </Link>
                         <Link target="_blank" className="[&>*]:text-[#0077B5] md:text-neutral-500 md:[&>*]:hover:text-blue-500 md:[&>*]:hover:text-[#0077B5] [&>*]:duration-150" href={'https://www.linkedin.com/in/demie-mistica-049779296/'}><FaLinkedin /></Link>
@@ -121,7 +126,7 @@ export default async function Home() {
                     </section>
                 </section>
 
-
+                
                 
               </article>
               
@@ -150,14 +155,23 @@ export default async function Home() {
             
             <h2 className='m-4 text-right text-4xl font-extrabold'>PROJECTS.</h2> */}
             
-            <h2 id='about' className='overflow-mask dark:text-white /dark:text-black p-4 mt-2 text-right text-4xl font-extrabold border-b-4 border-emerald-500 bg-gradient-to-r dark:from-onyx from-white dark:to-emerald-500 to-emerald-500 from-70% to-100%'>ABOUT.</h2>
+            <h2 id='about' className='overflow-mask dark:text-white /dark:text-black p-4 text-right text-4xl font-extrabold border-b-4 border-emerald-500 bg-gradient-to-r dark:from-onyx from-white dark:to-emerald-500 to-emerald-500 from-70% to-100%'>ABOUT.</h2>
               
             <Image className=' mx-auto mt-6' src={DM_MOTTO} alt='From slinging spreadsheets to wrangling websites' />
             {/* <h3 className='mt-4 text-left italic uppercase'>From slinging spreadsheets to wrangling websites</h3> */}
+            
+            
+            <div className='flex flex-col md:flex-row'>
+            
+            <Image className="p-4 rounded-full" src={DM_ABOUT} width="256" height="256" alt="About picture"/>
 
-            <p className='mt-4 text-left'>Name&apos;s Demie. As the motto suggests, my web development journey started through a budgeting spreadsheet. A colleague suggested to turn it into a website, and hence, in 2020, I tapped into the world of HTML.<br></br><br></br>
+            <p className='mt-4 text-left'>Name&apos;s Demie. I&apos;m 25. As the motto suggests, my web development journey started through a budgeting spreadsheet. A colleague suggested to turn it into a website, and hence, in 2020, I tapped into the world of HTML.<br></br><br></br>
 
-            I hail from the stormy capital of Manila, Philippines. In 1999, the computer was in its early stages. Yet, I was exposed to technology at a very young age.</p>
+            I hail from the stormy capital of 🇵🇭 Manila, Philippines. In my birth year of 1999, the computer was in its early stages. Thus, I was exposed to technology at a very young age. It was later on in my 20s that I then realized, this webdev stuff could become more than just a hobby.
+            <br></br><br></br>
+            Hence to this day, I dedicate to making websites that leave their mark. Lastly, don&apos;t miss out on my <a className='text-blue-500' href="/#blog">blog posts right here!</a></p>
+
+            </div>
 
             <h2 id='skills' className='overflow-mask dark:text-white /dark:text-black p-4 mt-2 text-right text-4xl font-extrabold border-b-4 border-orange-500 dark:from-onyx bg-gradient-to-r from-white dark:to-orange-500 to-orange-500 from-70% to-100%'>SKILLS.</h2>
 
