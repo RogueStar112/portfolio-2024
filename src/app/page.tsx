@@ -17,12 +17,14 @@ import { readFileSync } from 'fs';
 import Navbar from './components/Navbar';
 import Skill from './components/Skill';
 import Footer from './components/Footer';
+import GreetingMessage from './components/GreetingMessage';
 import ProjectDetails from './components/ProjectDetails';
 
 // ICONS
 
 import { TiHtml5 } from "react-icons/ti";
 import { FaGithub } from 'react-icons/fa';
+import { PiReadCvLogo } from "react-icons/pi";
 import { FaLinkedin } from 'react-icons/fa';
 
 import { FaHtml5 } from 'react-icons/fa';
@@ -72,7 +74,7 @@ export default async function Home() {
 
         <header className='grid grid-cols-2 justify-center relative sticky top-0 bg-inherit z-50 py-2'>
           
-          <div className='flex flex-col justify-center [&>*]:leading-[1.1rem] grow'>
+          <div className='flex flex-col justify-center [&>*]:leading-[1.1rem] grow' >
 
             <Link className='flex flex-col justify-center [&>*]:leading-[1.1rem]' href={'/'}>
               <p className='text-2xl font-extrabold'>DEMIE</p> 
@@ -106,24 +108,11 @@ export default async function Home() {
                 
                 <section className=''>
 
-                <Image className='overflow-mask' src={DM_HERO} width="1920" height="512" alt="My face"/>
+                <Image className='hidden sm:block overflow-mask' src={DM_HERO} width="1920" height="512" alt="My face"/>
                 {/* <Image className='object-cover object-center h-inherit w-[512px]' src={`/images/DM_TRANSPARENT_II.PNG`} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt='My portrait'></Image> */}
-                    <section className='md:absolute bottom-0 left-4 md:right-0 mr-4 md:h-full text-black md:text-white dark:text-white flex flex-col justify-end md:justify-center mt-12'>
-                      <p className='text-center md:text-right text-3xl md:text-4xl font-extrabold'>GREETINGS.</p>
-                      <p className={`${eb_garamond.className} font-initial md:text-right`}>Web Developer | Lifestyle Enthusiast<br></br>📍 Cambridge, UK</p>
-          
-                      <section id='socials' className='flex justify-around md:justify-end m-4'>
-
-                                <div className='flex gap-8 [&>*]:[&>*]:scale-[2] /[&>*]:[&>*]:text-neutral-500' aria-label='socials'>
-                        <Link target="_blank" className="text-neutral-500 dark:[&>*]:text-white md:text-white md:[&>*]:hover:text-yellow-500 md:dark:[&>*]:hover:text-yellow-500 [&>*]:duration-150" href={'https://github.com/RogueStar112'}>
-                              <FaGithub />
-                        </Link>
-                        <Link target="_blank" className="[&>*]:text-[#0077B5] md:text-neutral-500 md:[&>*]:hover:text-blue-500 md:[&>*]:hover:text-[#0077B5] [&>*]:duration-150" href={'https://www.linkedin.com/in/demie-mistica-049779296/'}><FaLinkedin /></Link>
-                      </div>
-
-                      </section>
-   
-                    </section>
+                  
+                
+                <GreetingMessage />
                 </section>
 
                 
@@ -162,9 +151,15 @@ export default async function Home() {
             
             
             <div className='flex flex-col md:flex-row'>
-            
-            <Image className="p-4 rounded-full" src={DM_ABOUT} width="256" height="256" alt="About picture"/>
 
+
+              <div className='flex w-full justify-center md:justify-start '>
+
+              <Image className="p-4 rounded-full" src={DM_ABOUT} width="256" height="256" alt="About picture"/>
+
+              </div>
+            
+            
             <p className='mt-4 text-left'>Name&apos;s Demie. I&apos;m 25. As the motto suggests, my web development journey started through a budgeting spreadsheet. A colleague suggested to turn it into a website, and hence, in 2020, I tapped into the world of HTML.<br></br><br></br>
 
             I hail from the stormy capital of 🇵🇭 Manila, Philippines. In my birth year of 1999, the computer was in its early stages. Thus, I was exposed to technology at a very young age. It was later on in my 20s that I then realized, this webdev stuff could become more than just a hobby.

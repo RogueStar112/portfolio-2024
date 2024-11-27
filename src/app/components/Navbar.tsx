@@ -12,6 +12,9 @@ import { Montserrat } from "next/font/google"
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross1 } from "react-icons/rx";
 
+import { motion } from "motion/react"
+import { AnimatePresence } from "motion/react"
+
 const montserrat = Montserrat({ weight: ['300', '500', '700', '800', '900'], style: ['normal', 'italic'], subsets: ['latin'] })
 
 export default function NavBar() {
@@ -23,7 +26,7 @@ export default function NavBar() {
 
   return (
     <>
-    <nav id='navbar-desktop' className={`${montserrat.className}  [&>*]:font-bold [&>*]:self-center hidden md:flex justify-end gap-3`}>
+    <motion.nav id='navbar-desktop' className={`${montserrat.className}  [&>*]:font-bold [&>*]:self-center hidden md:flex justify-end gap-3`} initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { duration: 0.6 } }} exit={{ opacity: 0 }}>
               <Link scroll={true} className="border-b-2 hover:border-emerald-500"href="/#about" style={{fontVariant: "small-caps"}}>About</Link>
               <Link scroll={true} className="border-b-2 hover:border-orange-500"href="/#skills" style={{fontVariant: "small-caps"}}>Skills</Link>
               <Link scroll={true} className="border-b-2 hover:border-green-500" href="/#projects" style={{fontVariant: "small-caps"}}>Projects</Link>
@@ -34,10 +37,10 @@ export default function NavBar() {
                 <DyslexicFontSwitch isDarkDys={isDarkDys} setIsDarkDys={setIsDarkDys}/>
                 <p className="absolute top-[-9px] left-[12px] px-2 bg-inherit z-50 text-[8px] dark:bg-onyx bg-white text-center">ACCESSIBILITY</p>
               </div>
-    </nav>
+    </motion.nav>
 
     
-    <button id='navbar-mobile-btn' className="relative" onClick={() => setShowMobileNav(!showMobileNav)}>
+    <motion.button id='navbar-mobile-btn' className="relative" onClick={() => setShowMobileNav(!showMobileNav)}>
 
     <GiHamburgerMenu  className={`${showMobileNav ? "flex-col hidden md:hidden" : "flex md:hidden"} flex flex-col justify-around gap-3 absolute right-2 top-3`} style={{scale: "2"}}>
               
@@ -48,11 +51,12 @@ export default function NavBar() {
 
     </RxCross1>
 
-    </button>
+    </motion.button>
 
 
- 
-      <nav id='navbar-mobile' className={`${montserrat.className}  [&>*]:font-bold [&>*]:self-left ${showMobileNav ? "flex flex-col md:hidden" : "hidden"} justify-around gap-3 col-span-2 [&>*]:col-span-2 [&>div]:w-full [&>a]:text-3xl [&>*]:px-4 [&>*]:py-2 [&>a]:w-full`}>
+      <AnimatePresence>
+      {showMobileNav ? ( 
+      <motion.nav key='modal' id='navbar-mobile' className={`${montserrat.className}  [&>*]:font-bold [&>*]:self-left flex flex-col md:hidden justify-around gap-3 col-span-2 [&>*]:col-span-2 [&>div]:w-full [&>a]:text-3xl [&>*]:px-4 [&>*]:py-2 [&>a]:w-full`} initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { duration: 0.6 } }} exit={{ opacity: 0 }}>
         <Link scroll={true} href="/#about" className="border-b-2 border-orange-500" style={{fontVariant: "small-caps"}}>About me</Link>
         <Link scroll={true} href="/#skills" className="border-b-2 border-orange-500" style={{fontVariant: "small-caps"}}>Skills</Link>
         <Link scroll={true} href="/#projects" className="border-b-2 border-green-500" style={{fontVariant: "small-caps"}}>Projects</Link>
@@ -63,7 +67,9 @@ export default function NavBar() {
           <DyslexicFontSwitch isDarkDys={isDarkDys} setIsDarkDys={setIsDarkDys}/>
           <p className="absolute top-[-9px] left-[14px] px-2 bg-inherit z-50 text-[8px] dark:bg-onyx bg-white text-center">ACCESSIBILITY</p>
         </div>
-      </nav>
+      </motion.nav>
+      ) : null}
+      </AnimatePresence>
 
     </>
   )
