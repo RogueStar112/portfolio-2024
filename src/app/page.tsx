@@ -108,7 +108,7 @@ export default async function Home() {
                 
                 <section className=''>
 
-                <Image className='hidden sm:block overflow-mask' src={DM_HERO} width="1920" height="512" alt="My face"/>
+                <Image className='hidden sm:block overflow-mask' src={'/images/DM_HERO_26112024_SHADED.png'} width="1920" height="512" alt="My face"/>
                 {/* <Image className='object-cover object-center h-inherit w-[512px]' src={`/images/DM_TRANSPARENT_II.PNG`} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt='My portrait'></Image> */}
                   
                 
