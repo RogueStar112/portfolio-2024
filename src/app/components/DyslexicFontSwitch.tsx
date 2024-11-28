@@ -47,22 +47,22 @@ export default function DyslexicFontSwitch({isDarkDys, setIsDarkDys}: darkDysChe
   )
 
   if (resolvedTheme === 'dark') {
-    return <button style={{fontVariant: "small-caps"}} className={ `${opendyslexic.className} flex gap-4 border-2 border-solid border-white bg-onyx text-white text-center rounded-full p-2 text-sm w-[40px]`} onClick={() => {setTheme('dark-dys'); toggleDarkDysToBody()} }>Dys</button>
+    return <button style={{fontVariant: "small-caps"}} className={ `${opendyslexic.className} flex gap-4 border-2 border-solid border-white bg-onyx text-white text-center rounded-full text-sm w-[40px]`} onClick={() => {setTheme('dark-dys'); toggleDarkDysToBody()} }><p className="w-full text-center py-2">Dys</p></button>
   }
 
   if (resolvedTheme === 'dark-dys') {
     document.body.classList.add('dark');
-    return <button style={{fontVariant: "small-caps"}} className={ `${opendyslexic.className} flex gap-4 border-2 border-solid border-white bg-white text-onyx text-center dark:bg-white dark:text-onyx rounded-full p-2 text-sm w-[40px]`} onClick={() => {setTheme('dark'); toggleDarkDysToBody()}}>Dys</button>
+    return <button style={{fontVariant: "small-caps"}} className={ `${opendyslexic.className} flex gap-4 border-2 border-solid border-white bg-white text-onyx text-center dark:bg-white dark:text-onyx rounded-full text-sm w-[40px]`} onClick={() => {setTheme('dark'); toggleDarkDysToBody()}}><p className="w-full text-center py-2">Dys</p></button>
   }
 
 
   if (resolvedTheme === 'light-dys') {
-    return <button style={{fontVariant: "small-caps"}} className={ `${opendyslexic.className} flex gap-4 border-2 border-solid border-onyx bg-onyx text-white text-center rounded-full p-2 text-sm w-[40px]`} onClick={() => setTheme('light')}>Dys
+    return <button style={{fontVariant: "small-caps"}} className={ `${opendyslexic.className} flex gap-4 border-2 border-solid border-onyx bg-onyx text-white text-center rounded-full text-sm w-[40px]`} onClick={() => setTheme('light')}><p className="w-full text-center py-2">Dys</p>
 </button>
   }
 
    if (resolvedTheme === 'light') {
-    return <button style={{fontVariant: "small-caps"}} className={ `${opendyslexic.className} flex gap-4 border-2 border-solid border-onyx dark:bg-white text-center dark:text-onyx rounded-full p-2 text-sm w-[40px]`} onClick={() => setTheme('light-dys')}>Dys</button>
+    return <button style={{fontVariant: "small-caps"}} className={ `${opendyslexic.className} flex gap-4 border-2 border-solid border-onyx dark:bg-white text-center dark:text-onyx rounded-full text-sm w-[40px]`} onClick={() => setTheme('light-dys')}><p className="w-full text-center py-2">Dys</p></button>
   }
 
 }
