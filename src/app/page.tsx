@@ -318,7 +318,7 @@ width={`${i === 0 ? "570" : "0"}${i === 4 || i === 5 || i == 2 || i == 6 || i ==
 
                   return (
 
-                    <Blog {...blog} />
+                    <Blog {...blog} key={blog.id} />
 
                 )
             })}
