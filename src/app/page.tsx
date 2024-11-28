@@ -44,6 +44,7 @@ import DM_MOTTO_DARK from '../../public/./images/DM_MOTTO_TC_V2_DARK.svg'
 import DM_HERO from '../../public/./images/DM_HERO_26112024_SHADED.png'
 import DM_ABOUT from '../../public/./images/DM_ABOUT_1.jpg'
 
+import { track } from '@vercel/analytics';
 // import { blog_sample } from './blog_sample.json';
 
 let path = require('path');
