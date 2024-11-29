@@ -130,16 +130,33 @@ const textParser = (str: string) => {
   return result;
 };
 
-export default async function Home({ params }: { params: { id: number } }) {
+interface Blog {
+  id: number;
+  title: string;
+  full_content: string;
+  additional_content: string[];
+  images: { file_path: string; caption: string }[];
+}
 
-  const blog_file = path.join(process.cwd(), 'src/app', 'blog_sample.json');
-  // const blog_JSON = JSON.parse(blog_file);
-  const blog_JSON = JSON.parse(readFileSync(blog_file, 'utf-8'));
 
+export async function generateStaticParams() {
+  const blogFile = path.join(process.cwd(), 'src/app', 'blog_sample.json');
+  const blogJSON: Blog[] = JSON.parse(readFileSync(blogFile, 'utf-8'));
 
+  return blogJSON.map((blog) => ({
+    id: blog.id.toString(),
+  }));
+}
 
+export default async function BlogPost({ params }: { params: { id: string } }) {
+  const blogFile = path.join(process.cwd(), 'src/app', 'blog_sample.json');
+  const blogJSON: Blog[] = JSON.parse(readFileSync(blogFile, 'utf-8'));
 
+  const blog = blogJSON.find((b) => b.id === parseInt(params.id, 10));
 
+  if (!blog) {
+    return <div>Blog post not found</div>;
+  }
 
   return (
     <div className='p-4 bg-white dark:bg-onyx h-full dark:text-mint-cream mx-auto text-current max-w-4xl'>
@@ -162,8 +179,8 @@ export default async function Home({ params }: { params: { id: number } }) {
 
             {/* <h2 className='text-blue-500 font-extrabold text-left' style={{fontVariant: "small-caps"}}>{params.id}</h2> */}
 
-
-            {blog_JSON.map((blog: any, index: any) => {
+          
+            {blogJSON.map((blog: any, index: any) => {
                   
                   
                   if (blog.id == params.id) {
@@ -273,9 +290,9 @@ export default async function Home({ params }: { params: { id: number } }) {
                                 
 
 
-                                <Link className={`text-center text-blue-500 dark:text-orange-500 flex justify-center place-items-center`} href={`/blog/${blog_JSON[index+1] ? blog.id+1 : "1"}`}><IoMdArrowDropleft />Previous article<br></br>{blog_JSON[index+1] ? blog_JSON[index+1].title : blog_JSON[0].title}`</Link>
+                                <Link className={`text-center text-blue-500 dark:text-orange-500 flex justify-center place-items-center`} href={`/blog/${blogJSON[index+1] ? blog.id+1 : "1"}`}><IoMdArrowDropleft />Previous article<br></br>{blogJSON[index+1] ? blogJSON[index+1].title : blogJSON[0].title}`</Link>
 
-                                <Link className={`text-center text-blue-500 dark:text-orange-500 flex justify-center place-items-center`} href={`/blog/${blog_JSON[index-1] ? blog.id-1 : blog_JSON.length}`}>Next article<br></br>{blog_JSON[index-1] ? blog_JSON[index-1].title : blog_JSON[blog_JSON.length-1].title}<IoMdArrowDropright /></Link>
+                                <Link className={`text-center text-blue-500 dark:text-orange-500 flex justify-center place-items-center`} href={`/blog/${blogJSON[index-1] ? blog.id-1 : blogJSON.length}`}>Next article<br></br>{blogJSON[index-1] ? blogJSON[index-1].title : blogJSON[blogJSON.length-1].title}<IoMdArrowDropright /></Link>
                             </section>
                           </article>
 
@@ -304,3 +321,4 @@ export default async function Home({ params }: { params: { id: number } }) {
     </div>
   )
 }
+
