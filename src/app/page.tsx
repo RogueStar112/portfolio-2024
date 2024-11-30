@@ -274,12 +274,12 @@ export default async function Home() {
             
             <h2 id='projects' className='overflow-mask p-4 my-2 dark:text-white text-right text-4xl font-extrabold border-b-4 border-green-500 bg-gradient-to-r dark:from-onyx from-white dark:to-green-500 to-green-500 from-70% to-100%'>PROJECTS.</h2>
 
-            {projects_JSON.map((project: any) => {
+            {projects_JSON.map((project: any, index: number) => {
               
               return (
-                <div className='grid grid-cols-3 grid-flow-row md:grid-flow-col rounded-lg md:max-h-[281px] my-4 gap-4 md:gap-0'>
+                <div key={project.index} className='grid grid-cols-3 grid-flow-row md:grid-flow-col rounded-lg md:max-h-[281px] my-4 gap-4 md:gap-0'>
 
-                    <div key={project.id} className="col-span-3 md:col-span-1 md:row-span-3 ...">
+                    <div  className="col-span-3 md:col-span-1 md:row-span-3 ...">
                       
                       <Image src={project.img_src} width={277} height={520} className='object-cover max-h-[281px] md:rounded-l-lg mx-auto md:mx-0'
                     alt='Project Image'/>
