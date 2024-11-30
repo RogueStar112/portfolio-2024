@@ -279,7 +279,7 @@ export default async function Home() {
               return (
                 <div key={project.index} className='grid grid-cols-3 grid-flow-row md:grid-flow-col rounded-lg md:max-h-[281px] my-4 gap-4 md:gap-0'>
 
-                    <div  className="col-span-3 md:col-span-1 md:row-span-3 ...">
+                    <div className="col-span-3 md:col-span-1 md:row-span-3 ...">
                       
                       <Image src={project.img_src} width={277} height={520} className='object-cover max-h-[281px] md:rounded-l-lg mx-auto md:mx-0'
                     alt='Project Image'/>

@@ -19,7 +19,7 @@
 "date": "TBA 2024/2025",
 "tech_stack": ["React", "NextJS", "SQL", "Tailwind"], 
 "soft_stack": ["Community", "Online"],
-"url": "",
+"url": "https://github.com/RogueStar112/the-euphoria-project",
 "github_url": "https://github.com/RogueStar112/the-euphoria-project",
 "img_src": "/images/euphoriaprojectblk.png"
 
@@ -33,7 +33,7 @@
   "date": "WIP",
   "tech_stack": ["PHP", "Laravel", "SQL", "Tailwind"], 
   "soft_stack": ["Budgeting", "Key Project"],
-  "url": "my-budget-may2024.vercel.app",
+  "url": "https://my-budget-may2024.vercel.app/",
   "github_url": "https://github.com/RogueStar112/MyBudget-May2024",
   "img_src": "/images/MyBudgetBannerv4.png"
   
