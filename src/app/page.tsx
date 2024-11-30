@@ -279,7 +279,7 @@ export default async function Home() {
               return (
                 <div className='grid grid-cols-3 grid-flow-row md:grid-flow-col rounded-lg md:max-h-[281px] my-4 gap-4 md:gap-0'>
 
-                    <div className="col-span-3 md:col-span-1 md:row-span-3 ...">
+                    <div key={project.id} className="col-span-3 md:col-span-1 md:row-span-3 ...">
                       
                       <Image src={project.img_src} width={277} height={520} className='object-cover max-h-[281px] md:rounded-l-lg mx-auto md:mx-0'
                     alt='Project Image'/>
@@ -299,17 +299,17 @@ export default async function Home() {
                     <div className="col-span-full gap-4 flex ... text-left flex-col md:flex-row">
                       
                       <div className='flex gap-1 [&>*]:h-min [&>*]:w-max [&>*]:basis-0 grow'>
-                      {project.tech_stack.map((tech_tag: any) => {
+                      {project.tech_stack.map((tech_tag: any, index: number) => {
                       return (
-                        <p className='p-1 rounded-lg bg-blue-500 text-white dark:text-mint-cream grow text-center'>{tech_tag}</p>
+                        <p key={index} className='p-1 rounded-lg bg-blue-500 text-white dark:text-mint-cream grow text-center'>{tech_tag}</p>
                       )
                     })}
                     </div>
 
                     <div className='flex gap-1 [&>*]:h-min [&>*]:w-max grow'>
-                    {project.soft_stack.map((soft_tag: any) => {
+                    {project.soft_stack.map((soft_tag: any, index: number) => {
                       return (
-                        <p className='p-1 rounded-lg dark:bg-emerald-600 bg-emerald-500 text-white dark:text-mint-cream grow text-center '>{soft_tag}</p>
+                        <p key={index} className='p-1 rounded-lg dark:bg-emerald-600 bg-emerald-500 text-white dark:text-mint-cream grow text-center '>{soft_tag}</p>
                       )
                     })}
                     </div>
