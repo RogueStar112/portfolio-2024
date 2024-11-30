@@ -1,24 +1,84 @@
 [{
 
 "id": 1,
-"name": "MoodJournal",
+"name": "Mood Canvas",
 "description": "Rate and describe how you feel, as much as you need to here.",
+"date": "30/09/2023",
 "tech_stack": ["HTML", "CSS", "JS"], 
 "soft_stack": ["Group Project", "Pair Programming"],
-"url": "https://roguestar112.github.io/mood-journal/"
-
+"url": "https://roguestar112.github.io/mood-journal/",
+"github_url": "https://github.com/RogueStar112/mood-journal",
+"img_src": "/images/MoodCanvasBannerv2.png"
 },
-
 
 {
 
 "id": 2,
-"name": "MoodJournal",
-"description": "Rate and describe how you feel, as much as you need to here.",
-"tech_stack": ["HTML", "CSS", "JS"], 
-"soft_stack": ["Group Project", "Pair Programming"],
-"url": "https://roguestar112.github.io/mood-journal/"
+"name": "The Euphoria Project",
+"description": "A social platform with a unique focus on personality. Coming Soon",
+"date": "TBA 2024/2025",
+"tech_stack": ["React", "NextJS", "SQL", "Tailwind"], 
+"soft_stack": ["Community", "Online"],
+"url": "",
+"github_url": "https://github.com/RogueStar112/the-euphoria-project",
+"img_src": "/images/euphoriaprojectblk.png"
+
+},
+
+{
+
+  "id": 3,
+  "name": "MyBudget",
+  "description": "Manage and categorize your finances easily.",
+  "date": "WIP",
+  "tech_stack": ["PHP", "Laravel", "SQL", "Tailwind"], 
+  "soft_stack": ["Budgeting", "Key Project"],
+  "url": "my-budget-may2024.vercel.app",
+  "github_url": "https://github.com/RogueStar112/MyBudget-May2024",
+  "img_src": "/images/MyBudgetBannerv4.png"
+  
+  },
 
 
+{
+
+    "id": 4,
+    "name": "MyNutrition",
+    "description": "Track calories and so much more, to keep you healthy.",
+    "date": "WIP",
+    "tech_stack": ["PHP", "Laravel", "SQL", "Tailwind"], 
+    "soft_stack": ["Lifestyle", "Key Project"],
+    "url": "https://github.com/RogueStar112/MyNutrition",
+    "github_url": "https://github.com/RogueStar112/MyNutrition",
+    "img_src": "/images/MyNutritionProjectGridv3.png"
+    
+},
+
+{
+
+  "id": 5,
+  "name": "Pizza Game",
+  "description": "Drag and drop them pizzas, on your way to culinary success.",
+  "date": "Early 2022",
+  "tech_stack": ["React"], 
+  "soft_stack": ["Games", "Side Project", "PC/iOS"],
+  "url": "https://pizza-game-oct2023.vercel.app/",
+  "github_url": "https://github.com/RogueStar112/pizza-game",
+  "img_src": "/images/PizzaGamev2.png"
+  
+},
+
+{
+
+  "id": 6,
+  "name": "ToDo App",
+  "description": "Assign tasks, get stuff done.",
+  "date": "Early 2022",
+  "tech_stack": ["React"], 
+  "soft_stack": ["Productivity", "PC/Mobile"],
+  "url": "https://todoproject-dev.vercel.app/",
+  "github_url": "https://github.com/RogueStar112/todoproject-dev",
+  "img_src": "/images/TodoAppPlaceholder.png"
+  
 }
 ]

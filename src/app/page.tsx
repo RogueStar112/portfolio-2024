@@ -24,7 +24,7 @@ import ProjectDetails from './components/ProjectDetails';
 // ICONS
 
 import { TiHtml5 } from "react-icons/ti";
-import { FaGithub } from 'react-icons/fa';
+import { FaGithub, FaGlobe } from 'react-icons/fa';
 import { PiReadCvLogo } from "react-icons/pi";
 import { FaLinkedin } from 'react-icons/fa';
 
@@ -46,6 +46,7 @@ import DM_HERO from '../../public/./images/DM_HERO_26112024_SHADED.png'
 import DM_ABOUT from '../../public/./images/DM_ABOUT_1.jpg'
 
 import { track } from '@vercel/analytics';
+import { div } from 'motion/react-client';
 // import { blog_sample } from './blog_sample.json';
 
 let path = require('path');
@@ -59,6 +60,10 @@ export default async function Home() {
 
   const blog_file = path.join(process.cwd(), 'src/app', 'blog_sample.json');
   const blog_JSON = JSON.parse(readFileSync(blog_file, 'utf-8')).reverse();
+
+  const projects_file = path.join(process.cwd(), 'src/app', 'projects.json');
+  const projects_JSON = JSON.parse(readFileSync(projects_file, 'utf-8'));
+
 
   const reveal_file = path.join(process.cwd(), 'src/app', 'app_reveal.json');
   
@@ -269,43 +274,65 @@ export default async function Home() {
             
             <h2 id='projects' className='overflow-mask p-4 my-2 dark:text-white text-right text-4xl font-extrabold border-b-4 border-green-500 bg-gradient-to-r dark:from-onyx from-white dark:to-green-500 to-green-500 from-70% to-100%'>PROJECTS.</h2>
 
+            {projects_JSON.map((project: any) => {
+              
+              return (
+                <div className='grid grid-cols-3 grid-flow-row md:grid-flow-col rounded-lg md:max-h-[281px] my-4 gap-4 md:gap-0'>
+
+                    <div className="col-span-3 md:col-span-1 md:row-span-3 ...">
+                      
+                      <Image src={project.img_src} width={277} height={520} className='object-cover max-h-[281px] md:rounded-l-lg mx-auto md:mx-0'
+                    alt='Project Image'/>
+                    </div>
+
+
+                    <div className='col-span-3 md:col-span-2 row-span-3 grid grid-cols-3 border-b-4 dark:border-green-900 border-green-100 bg-gradient-to-r dark:from-onyx from-white dark:to-green-900 to-green-100 from-70% to-100% p-2 rounded-r-lg gap-4 md:gap-0'>
+
+                    <div className="col-span-full inline-block text-green-600 ">
+
+                      <div className='flex justify-between flex-col md:flex-row'>
+                       <p className='text-left text-2xl font-extrabold' style={{fontVariant: "small-caps"}}>{project.name}</p>
+                       <p className='text-left md:text-right'>📅 {project.date}</p>
+                      </div>
+                      <p className='text-left text-black dark:text-mint-cream'>{project.description}</p>
+                    </div>
+                    <div className="col-span-full gap-4 flex ... text-left flex-col md:flex-row">
+                      
+                      <div className='flex gap-1 [&>*]:h-min [&>*]:w-max [&>*]:basis-0 grow'>
+                      {project.tech_stack.map((tech_tag: any) => {
+                      return (
+                        <p className='p-1 rounded-lg bg-blue-500 text-white dark:text-mint-cream grow text-center'>{tech_tag}</p>
+                      )
+                    })}
+                    </div>
+
+                    <div className='flex gap-1 [&>*]:h-min [&>*]:w-max grow'>
+                    {project.soft_stack.map((soft_tag: any) => {
+                      return (
+                        <p className='p-1 rounded-lg dark:bg-emerald-600 bg-emerald-500 text-white dark:text-mint-cream grow text-center '>{soft_tag}</p>
+                      )
+                    })}
+                    </div>
+                    
+                    </div>
+                    <div className={`${project.github_url ? `` : `opacity-60`} col-span-3 md:col-span-2 ... [&>*>*]:scale-[3] p-4 flex gap-16 justify-center md:justify-start w-full md:w-min`}>
+                      
+                      <Link href={project.github_url ?? ""}>
+                      <FaGithub />
+                      </Link>
+
+                      <Link href={project.url  ?? ""}>
+                      <FaGlobe />
+                      </Link>
+                    </div>
+
+                    </div>
+                </div>
+              )
+
+            })}
+
             
-
-            <article className='/collapse md:visible grid grid-cols-3 auto-rows-[81px] md:auto-rows-[192px] gap-4'>
-              {[...Array(7)].map((_, i) => {
-                    return (
-                        <div key={`bento-${i}`} className={`rounded-xl border-2 border-green-400/10 dark:bg-onyx bg-neutral-100 place-items-center ${i === 0 ? "col-span-2 row-span-2 primary-project"  : ""} ${i === 4 || i === 5 ? "row-span-2 secondary-project" : ""} ${i === 3 || i === 6 || i === 2 || i === 1 ? "tertiary-project" : ""}`}>
-                              
-                              <h2 className={`${i === 0 ? "md:col-span-2 md:row-span-2 text-4xl [&>*]:block [&>*]:overflow-auto" : "text-lg [&>*]:block [&>*]:overflow-auto"}`}>
-                                  {/* {i} */}
-                                  {/* {i === 0 ? "MyBudget" : ""}
-                                  {i === 1 ? "Drag n' Drop Pizza Game" : ""}
-                                  {i === 2 ? "TuneMasher" : ""}
-                                  {i === 3 ? "MoodCanvas" : ""} */}
-
-                                  <Link href={`${i === 0 ? "https://github.com/RogueStar112/MyBudget-May2024" : ""}${i === 1 ? "https://pizza-game-oct2023.vercel.app/" : ""}${i === 3 ? "https://roguestar112.github.io/mood-journal/index.html" : ""}${i === 4 ? "https://github.com/RogueStar112/MyNutrition" : ""}${i === 5 ? "https://todoproject-dev.vercel.app/" : ""}`}>
-                                    <Image className='rounded-lg'  src={`${i === 0 ? "/images/MyBudgetBannerv4.png" : ""}${i === 1 ? "/images/PizzaGamev2.png" : ""}${i === 2 ? "/images/MyJournalTBA.png" : ""}${i === 3 ? "/images/MoodCanvasBannerv2.png" : ""}${i === 4 ? "/images/MyNutritionProjectGridv3.png" : ""}${i === 5 ? "/images/TodoAppPlaceholder.png" : ""}${i === 6 ? "/images/RouteRaterTBA.png" : ""}`} 
-width={`${i === 0 ? "570" : "0"}${i === 4 || i === 5 || i == 2 || i == 6 || i == 3|| i == 1 ? "277" : "0"}`} height={`${i === 0|| i == 1 || i == 2 || i === 4 || i === 5 ? "400" : "0"}${i === 3 || i === 6  ? "192" : ""}`} alt={'BentoImage'}/>
-                                  </Link>
-                                  {/* {i === 5 ? "Todo App" : ""}
-                                  {i === 6 ? "Route Rater" : ""} */}
-                                  {/* {i === 5 ? "Todo App" : ""} 
-                                  {i === 5 ? "Todo App" : ""} */}
-                              </h2>
-
-                              {/* <div className="collapse" aria-label="project-tags" className={`${i === 4 || i === 5 ? "w-full h-full" : ""}`}>
-                                {i === 3 ? "Mood tracking app. Done as a group project." : ""}
-                                {i === 4 ? "Nutrition-tracking app. Powered with PHP & Laravel." : ""}
-                                {i === 5 ? "Get stuff done and on time with this mobile-friendly app!" : ""}
-                              </div> */}
-
-                        </div>
-                    )  
-                })}
-              {/* <div>
-
-              </div> */}
-            </article>
 
 
 
