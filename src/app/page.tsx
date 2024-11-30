@@ -277,7 +277,7 @@ export default async function Home() {
             {projects_JSON.map((project: any, index: number) => {
               
               return (
-                <div key={project.index} className='grid grid-cols-3 grid-flow-row md:grid-flow-col rounded-lg md:max-h-[281px] my-4 gap-4 md:gap-0'>
+                <div key={index} className='grid grid-cols-3 grid-flow-row md:grid-flow-col rounded-lg md:max-h-[281px] my-4 gap-4 md:gap-0'>
 
                     <div className="col-span-3 md:col-span-1 md:row-span-3 ...">
                       
