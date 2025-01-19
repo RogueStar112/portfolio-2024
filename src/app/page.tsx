@@ -40,7 +40,7 @@ import { FaDatabase } from 'react-icons/fa';
 import { motion } from "motion/react"
 
 import DM_MOTTO from '../../public/./images/DM_MOTTO_TC_V2.svg'
-import DM_MOTTO_DARK from '../../public/./images/DM_MOTTO_TC_V2_DARK.svg'
+import DM_MOTTO_DARK from '../../public/images/DM_MOTTO_TC_V2_WHITE.svg';
 
 import DM_HERO from '../../public/./images/DM_HERO_26112024_SHADED.png'
 import DM_ABOUT from '../../public/./images/DM_ABOUT_1.jpg'
@@ -79,23 +79,13 @@ export default async function Home() {
   return (
     <div className='p-4 bg-white dark:bg-onyx h-full dark:text-mint-cream mx-auto text-current max-w-4xl relative'>
 
-        <header className='grid grid-cols-2 justify-center relative sticky top-0 bg-inherit z-50 py-2'>
-          
-          <div className='flex flex-col justify-center [&>*]:leading-[1.1rem] grow' >
-
-            <Link className='flex flex-col justify-center [&>*]:leading-[1.1rem]' href={'/'}>
-              <p className='text-2xl font-extrabold'>DEMIE</p> 
-              <p className='text-2xl font-bold /text-stone-500 /dark:text-stone-400 coffee-brown dark:text-[#be9f02]'>MISTICA</p>
-            </Link>
-
-
-          </div>
+       
           
           {/* <h1 className='font-montserrat p-logo'>DEMIE<br></br>MISTICA</h1> */}
 
-          <Navbar />
+        <Navbar />
 
-        </header>
+  
 
 
         <main className='dark:bg-onyx transition-500'>
@@ -153,7 +143,9 @@ export default async function Home() {
             
             <h2 id='about' className='overflow-mask dark:text-white /dark:text-black p-4 text-right text-4xl font-extrabold border-b-4 border-emerald-500 bg-gradient-to-r dark:from-onyx from-white dark:to-emerald-500 to-emerald-500 from-70% to-100%'>ABOUT.</h2>
               
-            <Image className=' mx-auto mt-6' src={DM_MOTTO} alt='From slinging spreadsheets to wrangling websites' />
+            <Image className=' mx-auto mt-6 dark:hidden' src={DM_MOTTO} alt='From slinging spreadsheets to wrangling websites' />
+
+            <Image className=' mx-auto mt-6 hidden dark:block' src={DM_MOTTO_DARK} alt='From slinging spreadsheets to wrangling websites' />
             {/* <h3 className='mt-4 text-left italic uppercase'>From slinging spreadsheets to wrangling websites</h3> */}
             
             

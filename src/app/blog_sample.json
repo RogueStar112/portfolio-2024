@@ -695,7 +695,7 @@
          "vent"
       ],
       "teaser_content":"Honestly, I'm tired of people pleasing and masking all the time.",
-      "full_content":"It's honestly exhausting to live in a world that only accepts a partial version of who I am, as if I'm living in a simulation. And even if I had the mask off, you wouldn't want to see every part of me. It's so awkward playing these stupid mind games. It's exhausting and soul sucking.\n\nNow let me clarify something blatantly obvious, and that is, not everyone is fake. But at times, even the most genuine appearing souls can show a bit of superficiality that can slip under the radar. For instance, certain YouTubers like MrBeast have not had drama up until just recently in 2024.\n\nWhat you see of me from this website is a subjective blueprint- however you interpret my articles is entirely yours to decide.\n\nIt's the reason why I've not been posting in this website for a little while. How does one even tackle the topic of authenticity when having to mask?\n\nThis is just an observation but I've come up with a theory on why people have become more disconnected than ever.",
+      "full_content":"Warning: Explicit Language\n\n\n\nIt's honestly exhausting to live in a world that only accepts a partial version of who I am, as if I'm living in a simulation. And even if I had the mask off, you wouldn't want to see every part of me. It's so awkward playing these stupid mind games. It's exhausting and soul sucking.\n\nNow let me clarify something blatantly obvious, and that is, not everyone is fake. But at times, even the most genuine appearing souls can show a bit of superficiality that can slip under the radar. For instance, certain YouTubers like MrBeast have not had drama up until just recently in 2024.\n\nWhat you see of me from this website is a subjective blueprint- however you interpret my articles is entirely yours to decide.\n\nIt's the reason why I've not been posting in this website for a little while. How does one even tackle the topic of authenticity when having to mask?\n\nThis is just an observation but I've come up with theories on why people have become more disconnected than ever.",
       "created_by":"Demie Mistica",
       "dateTime_created":"01/11/2024, 02:36",
       "dateTime_updated":"01/11/2024, 02:36",
@@ -708,7 +708,40 @@
          }
       ],
       "additional_images":[
-         
+         {
+            "file_path":"/images/pexels-boa-vision-914571-2239595.jpg",
+            "heading":"The Enshittification of People",
+            "caption_img":"People have become more distant than ever before.",
+            "caption_outside":"I can't speak about certain issues because people are ingrained in their beliefs.",
+            "text_content":"It's becoming ever harder than ever to find people who are open-minded and willing to engage in a conversation. I attribute it to the fact that people are becoming more superficial and wanting the high of getting validation more than ever. I value honesty and integrity more than anything else, yet people tend to distance from that in favour of professionalism.\n\nWhy should I contribute to a society that is this superficial and unwilling to start an open and honest conversation about things? Why do things have to be sugarcoated all the time? Even when I started this personal branding of my website, I couldn't believe that I had to do this in the first place.",
+            "alignment":"end",
+            "obj_cover":"bottom",
+            "height":"530px",
+            "position_y":"-250px"
+         },
+         {
+            "file_path":"/images/pexels-cottonbro-7396383.jpg",
+            "heading":"Ghosting",
+            "caption_img":"Honestly, fuck being ghosted.",
+            "caption_outside":"Whether it's through employment or through a friend, ghosting is a pain to deal with.",
+            "text_content":"Ghosting is such a common thing now, especially through employment. I've dedicated my time to making the necessary documents to get this job, yet they don't give me any improvement or feedback to help.\n\nThe fact that people can't make the time to respond and give valuable feedback is astonishing, and I don't like that.",
+            "height":"500px",
+            "alignment":"end",
+            "obj_cover":"center",
+            "position_y":"-150px"
+         },
+
+         {
+            "file_path":"/images/pexels-pixabay-355952.jpg",
+            "heading":"Lack of Listening and Critical Thinking Skills",
+            "caption_img":"I struggle with this a lot, and I can relate...",
+            "caption_outside":"When someone is too nice at the start, it's most likely too good to be true.",
+            "text_content":"I'm trying my best.",
+            "height":"500px",
+            "alignment":"end",
+            "obj_cover":"center",
+            "position_y":"-150px"
+         }
       ]
    },
 
@@ -734,6 +767,114 @@
       ],
       "additional_images":[
    
+      ]
+   },
+
+
+   {
+      "id":17,
+      "title":"Dealing with Burnout",
+      "tags":[
+         "mental-health",
+         "recovery"
+      ],
+      "teaser_content":"I need long, lengthy breaks whenever I code. Let's talk about this.",
+      "full_content":"I'll be honest, coding burns me out so much. I've written this article as a warm up activity to slowly get me back into code.\n\nHonestly it's hard. I really want to do coding again, but at times, the burnout is undeniably strong that I cannot even muster up a single line.\n\nWhy is this so difficult? I just want to express my creativity, yet nothing is coming up. I've given myself several weeks to rest, yet none of that rest seems to have worked. ",
+      "created_by":"Demie Mistica",
+      "dateTime_created":"07/01/2025, 14:23",
+      "dateTime_updated":"07/01/2025, 14:23",
+      "grid_format_id":"1",
+      "images":[
+         {
+        
+            "file_path":"/images/Burnout_FerrisWheel.jpg",
+            "caption":"I take walks to recover from burnout. It's very refreshing.",
+            "is_main_image":1
+         },
+
+         {
+            "file_path":"/images/Burnout_Cover.jpg",
+            "caption":"I take walks to recover from burnout. It's very refreshing.",
+            "is_main_image":0
+         }
+      ],
+      "additional_images":[
+         
+      ]
+   },
+
+   {
+      "id":18,
+      "title":"I'm Not Sorry For Who I Am",
+      "tags":[
+         "mental-health",
+         "forgiveness"
+      ],
+      "teaser_content":"Self-forgiveness is one of the most powerful tools in my arsenal. And no, it's not narcissistic to say that.",
+      "full_content":"For years, I've grown up thinking that I was scum of the earth. Undeserving of any sympathy or a chance to even grow in life. It was due to the fact that I've hurt others along the way towards my own path of self interest.\n\nGrowing up autistic, I feel like a part of me will always mask who I am on the internet, no matter how deep these actions were. Because I've been so isolated growing up, I've learnt that the only way to grow is to go with the flow.\n\nThis article talks about self-forgiveness exclusively, because I feel like it's important for me and others to recognize the fact that no matter what sort of things you've gone through, if you want to become a better person, and on the path to doing so, you deserve a second chance in life.\n\nPart of the reason why I wanted to make this website in the first place was to allow myself to freely speak my mind without anyone stopping me. To allow me to unmask. To share my thoughts without the fear of being judged or having to censor them.\n\nRecently, I've had to distance myself from a handful of 'friends'. They broke me first however, as they were the ones to distance me in the first place. However, knowing that they don't want to be a part of their plans lets me know how much they value me- nada. I don't think I have to change who I am just to see them again.\n\nOne of the hardest things for me to realize was that I didn't always need permission from people to be myself.",
+      "created_by":"Demie Mistica",
+      "dateTime_created":"13/01/2025, 18:56",
+      "dateTime_updated":"13/01/2025, 18:56",
+      "grid_format_id":"1",
+      "images":[
+         {
+            "file_path":"/images/INSFWIA_Cover.JPG",
+            "caption":"There is no shame in taking pride of who you are. You just have to learn to accept yourself.",
+            "is_main_image":1
+         }
+      ],
+      "additional_images":[
+         
+      ]
+   },
+
+   {
+      "id":19,
+      "title":"Resurfacing From The Dark",
+      "tags":[
+         "mental-health",
+         "pep-talk"
+      ],
+      "teaser_content":"Coming back from a rut is difficult, especially with ADHD mixed in.",
+      "full_content":"It took me nearly a full month to recover from the burnout that is coding. Writing a single line wasn't easy, and I felt like I had to constantly rely on vices to keep me afloat.",
+      "created_by":"Demie Mistica",
+      "dateTime_created":"19/01/2025, 00:23",
+      "dateTime_updated":"19/01/2025, 00:23",
+      "grid_format_id":"1",
+      "images":[
+         {
+            "file_path":"/images/RFTS_COVER.png",
+            "caption":"There is light at the end of every tunnel- but also darkness inbetween.",
+            "is_main_image":1
+         }
+      ],
+      "additional_images":[
+         
+      ]
+   },
+
+   {
+      "id":20,
+      "title":"Roadmap to 2025",
+      "tags":[
+         "introspection",
+         "hindsight"
+      ],
+      "teaser_content":"I see great things for me this year. I just have to manifest them.",
+      "full_content":"For years, I've grown up thinking that I was scum of the earth. Undeserving of any sympathy or a chance to even grow in life. It was due to the fact that I've hurt others along the way towards my own path of self interest.\n\nGrowing up autistic, I feel like a part of me will always mask who I am on the internet, no matter how deep these actions were. Because I've been so isolated growing up, I've learnt that the only way to grow is to go with the flow.\n\nThis article talks about self-forgiveness exclusively, because I feel like it's important for me and others to recognize the fact that no matter what sort of things you've gone through, if you want to become a better person, and on the path to doing so, you deserve a second chance in life.\n\nPart of the reason why I wanted to make this website in the first place was to allow myself to freely speak my mind without anyone stopping me. To allow me to unmask. To share my thoughts without the fear of being judged or having to censor them.\n\nRecently, I've had to distance myself from a handful of 'friends'. They broke me first however, as they were the ones to distance me in the first place. However, knowing that they don't want to be a part of their plans lets me know how much they value me- nada. I don't think I have to change who I am just to see them again.",
+      "created_by":"Demie Mistica",
+      "dateTime_created":"13/01/2025, 18:56",
+      "dateTime_updated":"13/01/2025, 18:56",
+      "grid_format_id":"1",
+      "images":[
+         {
+            "file_path":"/images/TSOFAS18012025_1937.jpg",
+            "caption":"There is no shame in taking pride of who you are. You just have to learn to accept yourself.",
+            "is_main_image":1
+         }
+      ],
+      "additional_images":[
+         
       ]
    }
  ]
