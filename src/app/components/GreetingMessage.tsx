@@ -32,7 +32,7 @@ export default function GreetingMessage() {
                               <FaGithub />
                         </Link>
                         <Link target="_blank" className="text-neutral-500 dark:[&>*]:text-white md:text-white md:[&>*]:hover:text-yellow-500 md:dark:[&>*]:hover:text-yellow-500 [&>*]:duration-150" href={'https://www.linkedin.com/in/demie-mistica-049779296/'} onClick={() => {track('Visited LinkedIn')}}><FaLinkedin /></Link>
-                        <Link target="_blank" className="text-neutral-500 dark:[&>*]:text-white md:text-white md:[&>*]:hover:text-yellow-500 md:dark:[&>*]:hover:text-yellow-500 [&>*]:duration-150 [&>span]:hover:block" onClick={() => {track('Downloaded CV')}} href={'https://docs.google.com/document/d/1T-FvQfNCqpm93mP-az5CdBPWtWYkuwc4CF6ov12hxB4/edit?usp=sharing'}><PiReadCvLogo /></Link>
+                        <Link target="_blank" className="text-neutral-500 dark:[&>*]:text-white md:text-white md:[&>*]:hover:text-yellow-500 md:dark:[&>*]:hover:text-yellow-500 [&>*]:duration-150 [&>span]:hover:block" onClick={() => {track('Downloaded CV')}} href={'https://docs.google.com/document/d/12QaCgjy6Db6pvGVqAARgoHSXmBJ-l3IWbG0eG_7n7JY/edit?usp=sharing'}><PiReadCvLogo /></Link>
                       </div>
 
                       </section>

@@ -49,3 +49,5 @@ Thanks to [Dave Gray](https://www.davegray.codes/posts/light-dark-mode-nextjs-ap
 
 [PizzaGame Background](https://live.staticflickr.com/65535/50504042927_08a76822d2_b.jpg)
 [- License](https://creativecommons.org/licenses/by/2.0/). Moved original background and added personal visuals.
+
+[Article 21 - Tackling Uncertainty - Image 1 - Photo by Jonathan Petersson:](https://www.pexels.com/photo/photo-of-two-red-dices-965879/)
