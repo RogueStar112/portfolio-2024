@@ -108,7 +108,7 @@ export default async function Home() {
                 <div className='relative'> 
                   <section className='h-[620px]'>
 
-                  <Image className='/hidden object-none object-[25%_75%] sm:object-cover h-full sm:h-fit absolute sm:static z-0 sm:block overflow-mask' src={'/images/DM_HERO_26112024_SHADED.png'} width="1920" height="512" alt="My face"/>
+                  <Image className='/hidden object-none object-[25%_75%] brightness-[0.8] sm:object-cover h-full sm:h-fit absolute sm:static z-0 sm:block overflow-mask' src={'/images/DM_HERO_26112024_SHADED.png'} width="1920" height="512" alt="My face"/>
                   {/* <Image className='object-cover object-center h-inherit w-[512px]' src={`/images/DM_TRANSPARENT_II.PNG`} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt='My portrait'></Image> */}
                     
                   
