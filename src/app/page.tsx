@@ -76,6 +76,8 @@ export default async function Home() {
 
   }
 
+
+
   return (
     <div className='p-4 bg-white dark:bg-onyx h-full dark:text-mint-cream mx-auto text-current max-w-4xl relative'>
 
@@ -102,16 +104,17 @@ export default async function Home() {
             <article className='/overflow-hidden relative'>
 
               <article className='overflow-hidden relative'>
-                
-                <section className=''>
 
-                <Image className='hidden sm:block overflow-mask' src={'/images/DM_HERO_26112024_SHADED.png'} width="1920" height="512" alt="My face"/>
-                {/* <Image className='object-cover object-center h-inherit w-[512px]' src={`/images/DM_TRANSPARENT_II.PNG`} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt='My portrait'></Image> */}
+                <div className='relative'> 
+                  <section className='h-[620px]'>
+
+                  <Image className='/hidden object-none object-[25%_75%] sm:object-cover h-full sm:h-fit absolute sm:static z-0 sm:block overflow-mask' src={'/images/DM_HERO_26112024_SHADED.png'} width="1920" height="512" alt="My face"/>
+                  {/* <Image className='object-cover object-center h-inherit w-[512px]' src={`/images/DM_TRANSPARENT_II.PNG`} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt='My portrait'></Image> */}
+                    
                   
-                
-                <GreetingMessage />
-                </section>
-
+                  <GreetingMessage />
+                  </section>
+                </div>
                 
                 
               </article>
