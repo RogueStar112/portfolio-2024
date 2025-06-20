@@ -148,9 +148,7 @@ body {
 
     will-change: transform;
     animation: mobileslide 10s linear infinite;
-    > * {
-      flex: 0 0 100%;
-    }
+
   }
 
 }
