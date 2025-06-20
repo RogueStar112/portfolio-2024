@@ -20,6 +20,8 @@ import Footer from './components/Footer';
 import Blog from './components/Blog';
 import GreetingMessage from './components/GreetingMessage';
 import ProjectDetails from './components/ProjectDetails';
+import SkillCollection from './components/SkillCollection';
+import SkillGallery from './components/SkillGallery'
 
 // ICONS
 
@@ -34,8 +36,14 @@ import { IoLogoJavascript } from 'react-icons/io';
 import { FaReact } from 'react-icons/fa';
 import { FaLaravel } from 'react-icons/fa';
 import { FaPhp } from 'react-icons/fa';
+import { FaDigitalOcean } from "react-icons/fa";
 import { TbBrandNextjs } from 'react-icons/tb';
 import { FaDatabase } from 'react-icons/fa';
+import { FaCrown } from "react-icons/fa";
+import { MdOutlineEmail } from "react-icons/md";
+
+import { FaLongArrowAltLeft } from "react-icons/fa";
+import { FaLongArrowAltRight } from "react-icons/fa";
 
 import { motion } from "motion/react"
 
@@ -79,7 +87,7 @@ export default async function Home() {
 
 
   return (
-    <div className='p-4 bg-white dark:bg-onyx h-full dark:text-mint-cream mx-auto text-current max-w-4xl relative'>
+    <div className='p-4 bg-white dark:bg-onyx h-full dark:text-mint-cream mx-auto text-current max-w-7xl relative'>
 
        
           
@@ -106,7 +114,7 @@ export default async function Home() {
               <article className='overflow-hidden relative'>
 
                 <div className='relative'> 
-                  <section className='h-[620px]'>
+                  <section className='/h-[620px]'>
 
                   <Image className='/hidden object-none object-[25%_75%] brightness-[0.8] sm:brightness-100 sm:object-cover h-full sm:h-fit absolute sm:static z-0 sm:block overflow-mask' src={'/images/DM_HERO_26112024_SHADED.png'} width="1920" height="512" alt="My face"/>
                   {/* <Image className='object-cover object-center h-inherit w-[512px]' src={`/images/DM_TRANSPARENT_II.PNG`} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt='My portrait'></Image> */}
@@ -157,12 +165,12 @@ export default async function Home() {
 
               <div className='flex w-full justify-center md:justify-start '>
 
-              <Image className="p-4 rounded-full" src={DM_ABOUT} width="256" height="256" alt="About picture"/>
+              <Image className="p-4 rounded-full" src={DM_ABOUT} width="384" height="384" alt="About picture"/>
 
               </div>
             
             
-            <p className='mt-4 text-left'>Name&apos;s Demie. I&apos;m 25. As the motto suggests, my web development journey started through a budgeting spreadsheet. A colleague suggested to turn it into a website, and hence, in 2020, I tapped into the world of HTML.<br></br><br></br>
+            <p className='mt-4 text-justify'>Name&apos;s Demie. I&apos;m 25. As the motto suggests, my web development journey started through a budgeting spreadsheet. A colleague suggested to turn it into a website, and hence, in 2020, I tapped into the world of HTML.<br></br><br></br>
 
             I hail from the stormy capital of 🇵🇭 Manila, Philippines. In my birth year of 1999, the computer was in its early stages. Thus, I was exposed to technology at a very young age. It was later on in my 20s that I then realized, this webdev stuff could become more than just a hobby.
             <br></br><br></br>
@@ -172,55 +180,9 @@ export default async function Home() {
 
             <h2 id='skills' className='overflow-mask dark:text-white /dark:text-black p-4 mt-2 text-right text-4xl font-extrabold border-b-4 border-orange-500 dark:from-onyx bg-gradient-to-r from-white dark:to-orange-500 to-orange-500 from-70% to-100%'>SKILLS.</h2>
 
-            <article className='flex flex-col md:grid grid-cols-1 justify-around px-4 [&>*]:grow overflow-mask border-b-4 border-orange-500 /h-fit h-72 '>
-                    
-                    <section className='grid grid-cols-3 items-center [&>div>svg]:scale-[3] [&>div>svg]:mx-auto [&>div>svg]:mt-4  [&>*]:relative [&>*]:flex [&>*]:flex-col [&>*]:justify-center'>
-                        <Skill col='1' scale={3}>
-                          <p>HTML</p>
-                          <FaHtml5></FaHtml5>
-                        </Skill>
-                        <Skill col='1' scale={3}>
-                          <p>CSS</p>
-                          <FaCss3Alt></FaCss3Alt>
-                        </Skill>
-                        <div>
-
-                        <p>JavaScript</p>
-<IoLogoJavascript></IoLogoJavascript></div>
-                    </section>
-
-
-                    <section className='grid grid-cols-2 items-center [&>div>svg]:scale-[3] [&>div>svg]:mx-auto [&>div>svg]:mt-4  [&>*]:relative [&>*]:flex [&>*]:flex-col [&>*]:justify-center '>
-                        <div>
-                          <p>PHP</p>
-                          <FaPhp></FaPhp>
-                        </div>
-                        <div>
-                          <p>Laravel</p>
-                          <FaLaravel></FaLaravel>
-                        </div>
-
-                    </section>
-
-                  <section className='grid grid-cols-3 items-center [&>div>svg]:scale-[3] [&>div>svg]:mx-auto [&>div]:m-4 [&>div>svg]:mt-4  [&>*]:relative [&>*]:flex [&>*]:flex-col [&>*]:justify-center'>
-                        <div className=''>
-                          <p>React</p>
-                          <FaReact></FaReact>
-                        </div>
-                        <div>
-                          <p>NextJS</p>
-                        <TbBrandNextjs></TbBrandNextjs>
-
-                        </div>
-                        <div>
-
-                        <p>SQL</p>
-                          <FaDatabase></FaDatabase>
-                        </div>
-                    </section>
-
-            </article>
-
+            <SkillCollection />
+            
+            {/* <SkillGallery /> */}
 
             <article className='flex flex-col md:grid grid-cols-2 justify-around px-4 [&>*]:grow overflow-mask /border-b-4 /border-orange-500'>
                 
@@ -248,7 +210,7 @@ export default async function Home() {
                     </section> 
                 </section> */}
 
-                <section className='col-span-2 mb-4'>
+                {/* <section className='col-span-2 mb-4 border-t-4 border-orange-500 pt-4'>
                       <h2 className='font-extrabold text-3xl pt-4 z-0' style={{fontVariant: "small-caps"}}>Soft Skills</h2>
                       <section className='flex flex-col md:grid md:grid-cols-3 [&>*]:text-2xl md:[&>*]:mb-4'>
                         <p>Considerate</p>
@@ -258,7 +220,7 @@ export default async function Home() {
                         <p>Creative</p>
                         <p>Diligent</p>
                       </section>
-                </section>
+                </section> */}
             </article>
 
             {/* <div aria-label="section-skillset"  className='grid grid-cols-3 [&>*]:grow'>
@@ -272,45 +234,46 @@ export default async function Home() {
             {projects_JSON.map((project: any, index: number) => {
               
               return (
-                <div key={index} className='grid grid-cols-3 grid-flow-row md:grid-flow-col rounded-lg md:max-h-[281px] my-4 gap-4 md:gap-0'>
+                <div key={index} className='max-w-7xl /mx-auto grid grid-cols-3 grid-flow-row md:grid-flow-col rounded-lg /md:max-h-[281px] my-4 gap-4 md:gap-4'>
 
-                    <div className="col-span-3 md:col-span-1 md:row-span-3 ...">
+                    <div className="col-span-3 md:col-span-1 md:row-span-3 gap-24 ...">
                       
-                      <Image src={project.img_src} width={277} height={520} className='object-cover max-h-[281px] md:rounded-l-lg mx-auto md:mx-0'
+                      <Image src={project.img_src} width={277} height={520} className='object-cover /max-h-[281px] md:rounded-lg w-full rounded-lg md:mx-auto md:mx-0'
                     alt='Project Image'/>
                     </div>
 
 
-                    <div className='col-span-3 md:col-span-2 row-span-3 grid grid-cols-3 border-b-4 dark:border-green-900 border-green-100 bg-gradient-to-r dark:from-onyx from-white dark:to-green-900 to-green-100 from-70% to-100% p-2 rounded-r-lg gap-4 md:gap-0'>
+                    <div className={`col-span-3 md:col-span-2 row-span-3 grid grid-cols-3 border-b-4 dark:border-green-900 border-green-100 bg-gradient-to-b md:bg-gradient-to-r dark:from-onyx from-white dark:to-green-900 to-green-100 from-70% to-100% p-2 rounded-r-lg gap-4 md:gap-0 ${project.is_featured ? "border-yellow-500 dark:border-yellow-100 to-yellow-100 dark:to-yellow-600 from-20%" : ""}`}>
 
-                    <div className="col-span-full inline-block text-green-600 ">
+                      <div className={`${project.is_featured ? "text-yellow-600 dark:text-yellow-200" : ""} col-span-full inline-block text-green-600 `}>
 
-                      <div className='flex justify-between flex-col md:flex-row'>
-                       <p className='text-left text-2xl font-extrabold' style={{fontVariant: "small-caps"}}>{project.name}</p>
-                       <p className='text-left md:text-right'>📅 {project.date}</p>
+                        <div className='flex justify-between flex-col md:flex-row'>
+                        <p className='text-left text-2xl font-extrabold' style={{fontVariant: "small-caps"}}>{project.name}</p>
+                        <p className='text-left md:text-right'>📅 {project.date}</p>
+                        </div>
+                        <p className='text-left text-black dark:text-mint-cream'>{project.description}</p>
                       </div>
-                      <p className='text-left text-black dark:text-mint-cream'>{project.description}</p>
-                    </div>
-                    <div className="col-span-full gap-4 flex ... text-left flex-col md:flex-row">
-                      
-                      <div className='flex gap-1 [&>*]:h-min [&>*]:w-max [&>*]:basis-0 grow'>
-                      {project.tech_stack.map((tech_tag: any, index: number) => {
-                      return (
-                        <p key={index} className='p-1 rounded-lg bg-blue-500 text-white dark:text-mint-cream grow text-center'>{tech_tag}</p>
-                      )
-                    })}
-                    </div>
+                      <div className="col-span-full gap-4 flex ... text-left flex-col md:flex-row">
+                        
+                        <div className='flex gap-1 [&>*]:h-min [&>*]:w-max [&>*]:basis-0 grow'>
+                        {project.tech_stack.map((tech_tag: any, index: number) => {
+                        return (
+                          <p key={index} className='p-1 rounded-lg bg-blue-500 text-white dark:text-mint-cream grow text-center'>{tech_tag}</p>
+                        )
+                      })}
+                      </div>
 
-                    <div className='flex gap-1 [&>*]:h-min [&>*]:w-max grow'>
-                    {project.soft_stack.map((soft_tag: any, index: number) => {
-                      return (
-                        <p key={index} className='p-1 rounded-lg dark:bg-emerald-600 bg-emerald-500 text-white dark:text-mint-cream grow text-center '>{soft_tag}</p>
-                      )
-                    })}
-                    </div>
+                      <div className='flex gap-1 [&>*]:h-min [&>*]:w-max grow'>
+                      {project.soft_stack.map((soft_tag: any, index: number) => {
+                        return (
+                          <p key={index} className={`p-1 rounded-lg dark:bg-emerald-600 bg-emerald-500 text-white dark:text-mint-cream grow text-center ${project.is_featured ? "bg-yellow-600 dark:bg-yellow-700 " : ""}}`}>{soft_tag}</p>
+                        )
+                      })}
+                      </div>
                     
                     </div>
-                    <div className={`${project.github_url ? `` : `opacity-60`} col-span-3 md:col-span-2 ... [&>*>*]:scale-[3] p-4 flex gap-16 justify-center md:justify-start w-full md:w-min`}>
+
+                    <div className={`${project.github_url ? `` : `opacity-60`} col-span-2 md:col-span-2 ${project.is_featured ? "" : "col-span-full md:col-span-full"}  ... [&>*>*]:scale-[3] p-4 flex gap-16 justify-center md:justify-start items-center w-full`}>
                       
                       <Link href={project.github_url ?? ""}>
                       <FaGithub />
@@ -319,7 +282,20 @@ export default async function Home() {
                       <Link href={project.url  ?? ""}>
                       <FaGlobe />
                       </Link>
+
                     </div>
+                    
+                    {project.is_featured ? 
+                    <div className='flex flex-col gap-2 [&>*>*]:scale-[2.4] md:[&>*>*]:scale-[3.4] items-center justify-center md:place-self-end text-yellow-600 dark:text-yellow-200'>
+                      <div className='flex flex-col md:mb-4'>
+                        <FaCrown />
+                        
+                      </div>
+                      Featured
+                    </div>
+                    
+                    : <></>
+                    }
 
                     </div>
                 </div>

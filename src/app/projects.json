@@ -1,27 +1,29 @@
-[{
+[
+{
 
-"id": 1,
-"name": "Mood Canvas",
-"description": "Rate and describe how you feel, as much as you need to here.",
-"date": "30/09/2023",
-"tech_stack": ["HTML", "CSS", "JS"], 
-"soft_stack": ["Group Project", "Pair Programming"],
-"url": "https://roguestar112.github.io/mood-journal/",
-"github_url": "https://github.com/RogueStar112/mood-journal",
-"img_src": "/images/MoodCanvasBannerv2.png"
+    "id": 1,
+    "name": "MyNutrition",
+    "description": "Track calories and so much more, to keep you healthy.",
+    "date": "Aug 2025",
+    "tech_stack": ["PHP", "Laravel", "MySQL", "Tailwind"], 
+    "soft_stack": ["Lifestyle", "Key Project"],
+    "url": "https://mynutrition-dm.com/",
+    "github_url": "https://github.com/RogueStar112/MyNutrition",
+    "img_src": "/images/MyNutritionLogo20062025_0941_Orange.png",
+    "is_featured": true
 },
 
 {
 
 "id": 2,
-"name": "The Euphoria Project",
+"name": "The Euphoria Hub",
 "description": "A social platform with a unique focus on personality. Coming Soon",
 "date": "TBA 2024/2025",
-"tech_stack": ["React", "NextJS", "SQL", "Tailwind"], 
+"tech_stack": ["PHP", "Laravel", "SQL", "Tailwind"], 
 "soft_stack": ["Community", "Online"],
 "url": "https://github.com/RogueStar112/the-euphoria-project",
 "github_url": "https://github.com/RogueStar112/the-euphoria-project",
-"img_src": "/images/euphoriaprojectblk.png"
+"img_src": "/images/TEH_V5b.png"
 
 },
 
@@ -42,16 +44,15 @@
 
 {
 
-    "id": 4,
-    "name": "MyNutrition",
-    "description": "Track calories and so much more, to keep you healthy.",
-    "date": "WIP",
-    "tech_stack": ["PHP", "Laravel", "SQL", "Tailwind"], 
-    "soft_stack": ["Lifestyle", "Key Project"],
-    "url": "https://github.com/RogueStar112/MyNutrition",
-    "github_url": "https://github.com/RogueStar112/MyNutrition",
-    "img_src": "/images/MyNutritionProjectGridv3.png"
-    
+"id": 4,
+"name": "Mood Canvas",
+"description": "Rate and describe how you feel, as much as you need to here.",
+"date": "30/09/2023",
+"tech_stack": ["HTML", "CSS", "JS"], 
+"soft_stack": ["Group Project", "Pair Programming"],
+"url": "https://roguestar112.github.io/mood-journal/",
+"github_url": "https://github.com/RogueStar112/mood-journal",
+"img_src": "/images/MoodCanvasBannerv2.png"
 },
 
 {

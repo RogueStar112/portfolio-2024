@@ -188,7 +188,7 @@ export default async function BlogPost({ params }: { params: { id: string } }) {
                             {!blog.is_multiblog && <ImageCollection images={blog.images} />}  
                             
 
-                            <section className='grid grid-cols-1 /md:grid-cols-2 md:grid-cols-[3fr_2fr]'>
+                            <section className='grid grid-cols-1 /md:grid-cols-2 md:grid-cols-[4fr_2fr]'>
                     
                               <section className='rounded-b-lg p-2 relative' aria-label='blog-text'>
                             

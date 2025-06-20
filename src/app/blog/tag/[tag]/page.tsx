@@ -38,18 +38,7 @@ export default async function Home({ params }: { params: { tag: string } }) {
   return (
     <div className='p-4 bg-white dark:bg-onyx h-full dark:text-mint-cream mx-auto text-current max-w-4xl'>
 
-        <header className='grid grid-cols-2 justify-between relative sticky top-0 bg-inherit z-50 py-2'>
-          
-          <Link className='flex flex-col justify-center [&>*]:leading-[1.1rem] grow' href={'/'}>
-              <p className='text-2xl font-extrabold'>DEMIE</p> 
-              <p className='text-2xl font-bold /text-stone-500 /dark:text-stone-400 coffee-brown dark:text-[#be9f02]'>MISTICA</p>
-          </Link>
-          
-          {/* <h1 className='font-montserrat p-logo'>DEMIE<br></br>MISTICA</h1> */}
-
-          <Navbar />
-
-        </header>
+        <Navbar />
 
         <main>
 

@@ -118,3 +118,39 @@ body {
 .coffee-brown-darkm {
   color: var(--secondary-logo-color-dark);
 }
+
+.skill-circle {
+    /* Center index is 3 → adjust based on item count */
+    --center: 3;
+    transform: scale(calc(1 - (abs(var(--i) - var(--center)) * 0.1)));
+  }
+
+/* Fallback if `abs()` unsupported by some browsers */
+.skill-circle {
+  --distance: calc(var(--i) - var(--center));
+  /* --scale: calc(1 - (clamp(-4, var(--distance), 4) * 0.05)); */
+  transform: scale(var(--scale));
+}
+
+@media (width <= 40rem) { 
+
+  @keyframes mobileslide {
+
+      0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-200%);
+    }
+  }
+
+  .slide-animation-mobile {
+
+    will-change: transform;
+    animation: mobileslide 10s linear infinite;
+    > * {
+      flex: 0 0 100%;
+    }
+  }
+
+}

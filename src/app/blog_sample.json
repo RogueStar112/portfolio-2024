@@ -736,7 +736,7 @@
             "heading":"Lack of Listening and Critical Thinking Skills",
             "caption_img":"I struggle with this a lot, and I can relate...",
             "caption_outside":"When someone is too nice at the start, it's most likely too good to be true.",
-            "text_content":"I'm trying my best.",
+            "text_content":"I'm trying my best to be optimistic about people in general. However, sometimes it's really hard to believe that people have purely good intentions in the first place.\n\n It's really difficult to talk to someone who refuses to take responsibility for their actions, nor be able to listen to what others have to say.",
             "height":"500px",
             "alignment":"end",
             "obj_cover":"center",
@@ -836,7 +836,7 @@
          "pep-talk"
       ],
       "teaser_content":"Coming back from a rut is difficult, especially with ADHD mixed in.",
-      "full_content":"It took me nearly a full month to recover from the burnout that is coding. Writing a single line wasn't easy, and I felt like I had to constantly rely on vices to keep me afloat.",
+      "full_content":"It took me nearly a full month to recover from coding burnout. Writing a single line wasn't easy, and I felt like I had to constantly rely on vices to keep me afloat.\n\nRecognizing that I was in a rut was the first step. However, that self-recognition is often too late, leaving me buried underneath a hole that's too deep to get out of without help.\n\nSo, by working hard and getting through the motions, whether it'd be my daily chores, to making websites, these actions create that rut hole unconsciously.\n\nI'm working my best to work on earlier recognition of when I do this. Here I name by best strategies for getting out of this rut.\n\n",
       "created_by":"Demie Mistica",
       "dateTime_created":"19/01/2025, 00:23",
       "dateTime_updated":"19/01/2025, 00:23",
@@ -855,21 +855,21 @@
 
    {
       "id":20,
-      "title":"Roadmap to 2025",
+      "title":"Tackling Uncertainty",
       "tags":[
          "introspection",
          "hindsight"
       ],
-      "teaser_content":"I see great things for me this year. I just have to manifest them.",
-      "full_content":"For years, I've grown up thinking that I was scum of the earth. Undeserving of any sympathy or a chance to even grow in life. It was due to the fact that I've hurt others along the way towards my own path of self interest.\n\nGrowing up autistic, I feel like a part of me will always mask who I am on the internet, no matter how deep these actions were. Because I've been so isolated growing up, I've learnt that the only way to grow is to go with the flow.\n\nThis article talks about self-forgiveness exclusively, because I feel like it's important for me and others to recognize the fact that no matter what sort of things you've gone through, if you want to become a better person, and on the path to doing so, you deserve a second chance in life.\n\nPart of the reason why I wanted to make this website in the first place was to allow myself to freely speak my mind without anyone stopping me. To allow me to unmask. To share my thoughts without the fear of being judged or having to censor them.\n\nRecently, I've had to distance myself from a handful of 'friends'. They broke me first however, as they were the ones to distance me in the first place. However, knowing that they don't want to be a part of their plans lets me know how much they value me- nada. I don't think I have to change who I am just to see them again.",
+      "teaser_content":"Sometimes, you just have to go with the flow.",
+      "full_content":"I'm coming to terms with the fact that my life can't always have the same routine everyday. Some parts of it will be unpredictable.\n\nFor instance, I may have to deal with an emergency, with my finances etc. With the cost of living crisis still at hand, it's really difficult to keep my head level at times, especially when I feel like I haven't managed my money very well.",
       "created_by":"Demie Mistica",
-      "dateTime_created":"13/01/2025, 18:56",
-      "dateTime_updated":"13/01/2025, 18:56",
-      "grid_format_id":"1",
+      "dateTime_created":"08/03/2025, 01:17",
+      "dateTime_updated":"08/03/2025, 01:17",
+      "grid_format_id":2,
       "images":[
          {
-            "file_path":"/images/TSOFAS18012025_1937.jpg",
-            "caption":"There is no shame in taking pride of who you are. You just have to learn to accept yourself.",
+            "file_path":"/images/Dice.jpg",
+            "caption":"Whatever hand of cards you've been given, there's always a chance of improving.",
             "is_main_image":1
          }
       ],
@@ -880,26 +880,37 @@
 
    {
       "id":21,
-      "title":"Tackling Uncertainty",
+      "title":"Developing MyNutrition",
       "tags":[
-         "introspection",
-         "hindsight"
+         "web-dev",
+         "hindsight",
+         "frontend"
       ],
-      "teaser_content":"Sometimes, you just have to go with the flow.",
-      "full_content":"I'm coming to terms with the fact that my life can't always have the same routine everyday. Some parts of it will be unpredictable.",
+      "teaser_content":"Here are my design philosophies behind developing MyNutrition.",
+      "full_content":"First things first, let me tell you what inspired me to make this website in the first place.\n\nI personally really struggle with my weight. I've really struggled to work on this, so I wanted to create a website that could make it easier not only for me but for others too!\n\nI decided to go for an orange colour scheme because I feel like nutrition and fitness is generally a really difficult discipline. I also feel like orange would be the best for giving the website its unique and passionate flair for those who are trying to achieve their goals.",
       "created_by":"Demie Mistica",
-      "dateTime_created":"08/03/2025, 01:17",
-      "dateTime_updated":"08/03/2025, 01:17",
-      "grid_format_id":"1",
+      "dateTime_created":"16/03/2025, 01:05",
+      "dateTime_updated":"16/03/2025, 01:05",
+      "grid_format_id":2,
       "images":[
          {
-            "file_path":"/images/Dice.jpg",
-            "caption":"Whatever hand of cards you've been given, there's always a chance of improving.",
+            "file_path":"/images/mynutrition logo white.png",
+            "caption":"",
             "is_main_image":1
          }
       ],
       "additional_images":[
-         
+         {
+            "file_path":"/images/mynutrition_banner 16032025.png",
+            "heading":"The Header",
+            "caption_img":"It has various slides!",
+            "caption_outside":"I feel like the most eye-catching part of the page is the header, and I'm proud of how far it's come.",
+            "text_content":"The header took a bit of creativity! I used JavaScript and CSS to make the text carousel and blobby hero image come to life.\n\n",
+            "alignment":"end",
+            "obj_cover":"left",
+            "height":"530px",
+            "position_y":"-250px"
+         }
       ]
    }
  ]
