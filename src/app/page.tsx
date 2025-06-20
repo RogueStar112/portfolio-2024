@@ -174,7 +174,7 @@ export default async function Home() {
 
             I hail from the stormy capital of 🇵🇭 Manila, Philippines. In my birth year of 1999, the computer was in its early stages. Thus, I was exposed to technology at a very young age. It was later on in my 20s that I then realized, this webdev stuff could become more than just a hobby.
             <br></br><br></br>
-            Hence to this day, I dedicate to making websites that leave their mark. Lastly, don&apos;t miss out on my <a className='text-blue-500' href="/#blog">blog posts right here!</a></p>
+            Hence to this day, I dedicate to making websites that leave their mark. Lastly, don&apos;t miss out on my <Link className='text-blue-500' href="/#blog">blog posts right here!</Link></p>
 
             </div>
 
