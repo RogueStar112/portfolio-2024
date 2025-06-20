@@ -30,7 +30,8 @@ const merriweather = Merriweather({ weight: ['300', '400', '700'], style: ['norm
 const teko = Teko({ weight: ['300', '400', '700'], style: ['normal'], subsets: ['latin'] })
 const eb_garamond = EB_Garamond({weight: ['500', '600'], style: ['normal'], subsets: ['latin']});
 
-export default async function Home({ params }: { params: { tag: string } }) {
+export default async function Home(props: { params: Promise<{ tag: string }> }) {
+  const params = await props.params;
 
   const blog_file = path.join(process.cwd(), 'src/app', 'blog_sample.json');
   const blog_JSON = JSON.parse(readFileSync(blog_file, 'utf-8'));

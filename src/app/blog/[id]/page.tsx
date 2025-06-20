@@ -148,7 +148,8 @@ export async function generateStaticParams() {
   }));
 }
 
-export default async function BlogPost({ params }: { params: { id: string } }) {
+export default async function BlogPost(props: { params: Promise<{ id: string }> }) {
+  const params = await props.params;
   const blogFile = path.join(process.cwd(), 'src/app', 'blog_sample.json');
   const blogJSON: Blog[] = JSON.parse(readFileSync(blogFile, 'utf-8'));
 
