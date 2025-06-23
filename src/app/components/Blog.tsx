@@ -6,10 +6,10 @@ export default function Blog(blog: any) {
   
   return (
 
-    <article key={blog.id} id={blog.id} className={`/col-span-full border-2 border-blue-200 dark:border-orange-500 overflow-hidden rounded-lg /max-w-[100%] /md:max-w-[33.3%] grid grid-cols-[80px_1fr] md:flex md:flex-col justify-start content-end ${isLastElement ? "col-span-full" : ""}`}>
+    <article key={blog.id} id={blog.id} className={`col-span-1 border-2 border-blue-200 dark:border-orange-500 overflow-hidden rounded-lg /max-w-[100%] /md:max-w-[33.3%] grid grid-cols-[80px_1fr] md:flex md:flex-col justify-start content-end ${isLastElement ? "col-span-full" : ""}`}>
                     
-                    <Link href={`blog/${blog.id}`} className='w-full overflow-hidden max-h-fit md:min-h-[206px] md:max-h-[206px]'>
-                      <Image className="border-r-2 border-white dark:border-onyx md:rounded-t-lg md:overflow-mask-vert overflow-hidden /h-[250px] h-full object-cover hover:scale-110 duration-150" src={blog.images[0].file_path ?? ""} width={864} height={300} alt={"Test"}/>
+                    <Link href={`blog/${blog.id}`} className='w-full overflow-hidden /max-h-fit md:min-h-[206px] md:max-h-[206px]'>
+                      <Image className="border-r-2 border-white dark:border-onyx md:rounded-t-lg md:overflow-mask-vert overflow-hidden /h-[250px] h-full object-cover hover:scale-110 duration-150" src={blog.images[0].file_path ?? ""} width={1024} height={300} alt={"Test"}/>
                     </Link>
           
 

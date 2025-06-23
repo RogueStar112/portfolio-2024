@@ -160,7 +160,7 @@ export default async function BlogPost(props: { params: Promise<{ id: string }> 
   }
 
   return (
-    <div className='p-4 bg-white dark:bg-onyx h-full dark:text-mint-cream mx-auto text-current max-w-4xl'>
+    <div className='p-4 bg-white dark:bg-onyx h-full dark:text-mint-cream mx-auto text-current max-w-5xl'>
 
         <Navbar />
 

@@ -27,7 +27,11 @@ export default function SkillCollection() {
     return (
 
       <div className='overflow-mask overflow-hidden'>
-        <article className='slide-animation-mobile skills-carousel flex /min-w-[1728px] sm:[&>*]:scale-2 mx-auto md:mx-0 /md:grid /grid-cols-1 justify-around px-4 [&>*]:grow /overflow-mask /border-b-4 /border-orange-500 /h-fit /h-72 py-12 relative text-sm'>
+
+        {/* <p className='my-4'>Hover over a skill to find out more!</p> */}
+
+
+        <article className='slide-animation-mobile skills-carousel flex /min-w-[1728px] sm:[&>*]:scale-2 mx-auto md:mx-0 /md:grid /grid-cols-1 justify-around px-4 [&>*]:grow /overflow-mask /border-b-4 /border-orange-500 /h-fit /h-72 pt-8 pb-12 relative text-sm'>
                             
                             {/* <div className='absolute hidden sm:block -left-8 top-1/2 -translate-y-1/2 -translate-x-1/2 text-black dark:text-white [&>*]:scale-[3]'>
                                                <FaLongArrowAltLeft />
@@ -40,7 +44,7 @@ export default function SkillCollection() {
                             
                             <Skillset>
                             {/* <section className='grid grid-cols-3 items-center [&>div>svg]:scale-[3] /[&>div>svg]:mx-auto /[&>div>svg]:mt-4  [&>*]:relative [&>*]:flex [&>*]:flex-col [&>*]:justify-center'> */}
-                                <Skill col='1' scale={2} bg_color="transparent" text_color="#ff9800" index={4} center={4}>
+                                <Skill col='1' scale={2} bg_color="transparent" text_color="#ff9800" hover_bg_color='#ff9800' index={4} center={4}>
                                   {/* <p>HTML</p> */}
                                   <FaHtml5></FaHtml5>
                                   HTML
@@ -50,7 +54,16 @@ export default function SkillCollection() {
                                           <div className='text-yellow-500'><FaStar /></div>
                                           <div className='text-yellow-500'><FaStarHalfAlt /></div>
                                   </div>
+
+                                  {/* <section className='gap-2 hidden -left-[50%] justify-center -bottom-[30%] whitespace-nowrap w-[992px]'>
+                                    <p>Semantic HTML ⭐⭐</p>
+                                    <p>HTML Structuring ⭐⭐⭐</p>
+                                    <p>HTML Accessibility ⭐⭐</p>
+
+                                    <p></p>
+                                  </section> */}
                                 </Skill>
+                                
                                 <Skill col='1' scale={2}  bg_color="transparent" text_color="#2196f3" index={3} center={4}>
                                   {/* <p>CSS</p> */}
                                   <FaCss3Alt></FaCss3Alt>
@@ -61,10 +74,18 @@ export default function SkillCollection() {
                                           <div className='text-yellow-500'><FaStar /></div>
                                           <div className='text-yellow-500'><FaStarHalfAlt /></div>
                                   </div>
+
+                                  {/* <section className='gap-2 hidden -left-[50%] justify-center -bottom-[30%] whitespace-nowrap w-[992px]'>
+                                    <p>Semantic HTML ⭐⭐</p>
+                                    <p>HTML Structuring ⭐⭐⭐</p>
+                                    <p>HTML Accessibility ⭐⭐</p>
+
+                                    <p></p>
+                                  </section> */}
                                 </Skill>
         
         
-                                <Skill col='1' scale={2}  bg_color="transparent" text_color="black" index={2} center={4}>
+                                <Skill col='1' scale={2}  bg_color="transparent" text_color="black" dark_text_color='white' index={2} center={4}>
         
                                       {/* <p>JS</p> */}
                                       <IoLogoJavascript></IoLogoJavascript>
@@ -115,7 +136,7 @@ export default function SkillCollection() {
 
                                   <div className='flex w-full  gap-2 relative [&>*]:grow text-center [&>*>*]:mx-auto'>
                                           <div className='text-yellow-500'><FaStar /></div>
-                                          <div className='text-yellow-500'><FaStarHalfAlt /></div>
+                                          <div className='text-yellow-500'><FaStar /></div>
                                           <div className='text-yellow-500'><FaRegStar /></div>
                                   </div>
                                 </Skill>
