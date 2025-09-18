@@ -16,6 +16,20 @@
 {
 
 "id": 2,
+"name": "Hatch",
+"description": "A collaborative AI app allowing users to collaborate on personal projects and interests.",
+"date": "Sep 2025",
+"tech_stack": ["React", "Next.js", "Supabase"], 
+"soft_stack": ["Community", "Online", "Group Project"],
+"url": "https://hack-ed-2025.vercel.app/",
+"github_url": "https://github.com/RogueStar112/HackEd-2025",
+"img_src": "/images/hatch_transparent.png",
+"is_featured": true
+},
+
+{
+
+"id": 3,
 "name": "The Euphoria Hub",
 "description": "A social platform with a unique focus on personality. Coming Soon",
 "date": "TBA 2024/2025",
@@ -29,7 +43,7 @@
 
 {
 
-  "id": 3,
+  "id": 4,
   "name": "MyBudget",
   "description": "Manage and categorize your finances easily.",
   "date": "WIP",
@@ -44,7 +58,7 @@
 
 {
 
-"id": 4,
+"id": 5,
 "name": "Mood Canvas",
 "description": "Rate and describe how you feel, as much as you need to here.",
 "date": "30/09/2023",
@@ -57,7 +71,7 @@
 
 {
 
-  "id": 5,
+  "id": 6,
   "name": "Pizza Game",
   "description": "Drag and drop them pizzas, on your way to culinary success.",
   "date": "Early 2022",
@@ -71,7 +85,7 @@
 
 {
 
-  "id": 6,
+  "id": 7,
   "name": "ToDo App",
   "description": "Assign tasks, get stuff done.",
   "date": "Early 2022",
