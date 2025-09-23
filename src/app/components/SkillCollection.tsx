@@ -21,6 +21,7 @@ import { FaRegStar } from "react-icons/fa6";
 
 import { FaLongArrowAltLeft } from "react-icons/fa";
 import { FaLongArrowAltRight } from "react-icons/fa";
+import { SiSupabase } from 'react-icons/si';
 
 export default function SkillCollection() {
 
@@ -166,14 +167,14 @@ export default function SkillCollection() {
                                   </div>
                                 </Skill>
         
-                                <Skill col='1' scale={2} bg_color="transparent" text_color="#0080FF" index={4} center={4}>
+                                <Skill col='1' scale={2} bg_color="transparent" text_color="#34b27b" index={4} center={4}>
                                 {/* <p>SQL</p> */}
-                                  <FaDigitalOcean></FaDigitalOcean>
-                                  DigitalOcean
+                                  <SiSupabase></SiSupabase>
+                                  Supabase
 
                                   <div className='flex w-full justify-center  gap-2 relative [&>*]:grow text-center [&>*>*]:mx-auto'>
                                           <div className='text-yellow-500'><FaStar /></div>
-                                          <div className='text-yellow-500'><FaRegStar /></div>
+                                          <div className='text-yellow-500'><FaStar /></div>
                                           <div className='text-yellow-500'><FaRegStar /></div>
                                   </div>
                                 </Skill>

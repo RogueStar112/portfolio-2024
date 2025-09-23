@@ -29,8 +29,13 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html className="scroll-smooth" lang="en" suppressHydrationWarning>
-      <body className={`${montserrat.className} max-w-5xl mx-auto blur-none bg-transparent dark:bg-onyx [&>*]:dark:bg-onyx dark:duration-500`}>
+    <html className="scroll-smooth w-full relative" lang="en" suppressHydrationWarning>
+
+      {/* Credit to: https://ibelick.com/blog/create-grid-and-dot-backgrounds-with-css-tailwind-css for grid-dot background styling*/}
+      <div className='absolute inset-0 h-full w-full bg-transparent bg-[radial-gradient(#cccccc_1px,transparent_1px)] dark:bg-[radial-gradient(#000000_1px,transparent_1px)] [background-size:36px_36px] select-none z-0'></div>
+
+
+      <body className={`${montserrat.className} max-w-5xl mx-auto blur-none bg-transparent dark:bg-onyx [&>*]:dark:bg-onyx dark:duration-500 relative z-[999]`}>
         <Providers>
           {children}
           <Analytics />

@@ -87,7 +87,7 @@ export default async function Home() {
 
 
   return (
-    <div className='p-4 bg-white dark:bg-onyx h-full dark:text-mint-cream mx-auto text-current max-w-7xl relative'>
+    <div className='p-4 bg-transparent dark:bg-transparent h-full dark:text-mint-cream mx-auto text-current max-w-7xl relative'>
 
        
           
@@ -116,7 +116,7 @@ export default async function Home() {
                 <div className='relative'> 
                   <section className='h-[620px] md:h-fit'>
 
-                  <Image className='/hidden object-none object-[25%_75%] brightness-[0.8] sm:brightness-100 sm:object-cover h-full sm:h-fit absolute sm:static z-0 sm:block overflow-mask' src={'/images/DM_HERO_26112024_SHADED.png'} width="1920" height="512" alt="My face"/>
+                  <Image className='/hidden object-cover object-[25%_75%] sm:object-[50%_50%] brightness-[0.8] sm:brightness-[0.7] sm:object-cover h-full sm:h-fit absolute sm:static z-0 sm:block overflow-mask' src={'/images/DM_MOTTO_23092025.png'} width="1920" height="512" alt="My face"/>
                   {/* <Image className='object-cover object-center h-inherit w-[512px]' src={`/images/DM_TRANSPARENT_II.PNG`} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt='My portrait'></Image> */}
                     
                   
@@ -160,7 +160,7 @@ export default async function Home() {
             {/* <h3 className='mt-4 text-left italic uppercase'>From slinging spreadsheets to wrangling websites</h3> */}
             
             
-            <div className='flex flex-col md:flex-row'>
+            <div className='flex flex-col md:flex-row items-center'>
 
 
               <div className='flex w-full justify-center md:justify-start '>
@@ -178,7 +178,7 @@ export default async function Home() {
 
             </div>
 
-            <h2 id='skills' className='overflow-mask dark:text-white /dark:text-black p-4 mt-2 text-right text-4xl font-extrabold border-b-4 border-orange-500 dark:from-onyx bg-gradient-to-r from-white dark:to-orange-500 to-orange-500 from-70% to-100%'>SKILLS.</h2>
+            <h2 id='skills' className='overflow-mask dark:text-white /dark:text-black p-4 mt-2 text-right text-4xl font-extrabold border-b-4 border-orange-500 dark:from-transparent bg-gradient-to-r from-transparent dark:to-orange-500 to-orange-500 from-70% to-100%'>SKILLS.</h2>
 
             <SkillCollection />
             

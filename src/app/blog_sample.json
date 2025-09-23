@@ -992,5 +992,65 @@
             "position_y":"-250px"
          }
       ]
+   },
+
+   {
+      "id":24,
+      "title":"Stifling the Pursuit Of Perfectionism",
+      "tags":[
+         "mental-health",
+         "recovery"
+      ],
+      "teaser_content":"Perfectionism is something I've always had gripes with. Let's talk about this. (WIP)",
+      "full_content":"<t>Have you tried the accessibility buttons on the top right (or hamburger menu on mobile)? The first button activates dark/light mode, whereas the second is a 'dyslexic-friendly' font! Give them a go!</t>\nHaving completed a 3-day coding hackathon recently, I realized something very important. That, whatever skills you build along the way, is what allows your desires to materialize. In other words, The journey is what gets you to where you want to be.",
+      "created_by":"Demie Mistica",
+      "dateTime_created":"23/06/2025, 03:30",
+      "dateTime_updated":"23/06/2025, 03:30",
+      "grid_format_id":2,
+      "images":[
+         {
+            "file_path":"/images/STPOP_HERO.png",
+            "caption":"Taking a walk at the final day of the hackathon.",
+            "is_main_image":1
+         },
+
+         {
+            "file_path":"/images/STPOP_1.png",
+            "caption":"Taking a walk at the final day of the hackathon.",
+            "is_main_image":0
+         },
+
+         {
+            "file_path":"/images/STPOP_2.png",
+            "caption":"Taking a walk at the final day of the hackathon.",
+            "is_main_image":0
+         }
+      ],
+
+       "additional_images":[
+         {
+            "file_path":"/images/BTI_PT2_Rekindling_Flame.jpg",
+            "heading":"Reigniting That Flame",
+            "caption_img":"A flame that is twice as bright, burns twice as fast.",
+            "caption_outside":"A small bit of light never hurt anyone.",
+            "text_content":" Sometimes, it can be really difficult to gather the strength to light up the strength in your heart. When really, all it really took was to mentally believe in oneself, through the things you do and what you stand for.\n\nSometimes the strongest flames come from doing the things you love, to the point where you even forget that you had a self-grudge to begin with. Being proud of who you are should not be confused with thinking you are better than everyone else.\n\n There’s a thin line between arrogance and confidence that tends to easily be overlooked. Some people love to extinguish your flames, just because they can. They want to see you fail. They think by quelling your flames, that theirs grows brighter. Such is not the case in this modern world. Growth and collaboration starts with a strong sense of independence. ",
+            "alignment":"end",
+            "obj_cover":"left",
+            "height":"530px",
+            "position_y":"-250px"
+         },
+
+         {
+            "file_path":"/images/BTI_PT2_2.JPG",
+            "heading":"Independence does not come overnight",
+            "caption_img":"Take this sculpture as your destination. To get there, you have to independently visit it.",
+            "caption_outside":"Appreciating where you are now can go a long way towards paving your future.",
+            "text_content":"It took me many, many years to realize that even after moving in my house in mid-2021, fast forward to 2025, that I still have a LOT to learn. I have to learn how to look after myself, make ends meet, and upkeep my connections from time to time.\n\nThough, you don't have to face things alone all the time. There will be times where no one can help you, but if at any point you get stuck in your own personal journey being unable to answer questions for yourself, it is NEVER a bad thing to ask for help from the right people. <q>It ain't a bad thing to ask for help, don't make you less of a person.<a>Cruisin - Huey Mack</a></q>",
+            "alignment":"center",
+            "obj_cover":"bottom",
+            "height":"530px",
+            "position_y":"-250px"
+         }
+      ]
    }
  ]
