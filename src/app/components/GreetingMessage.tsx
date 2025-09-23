@@ -19,7 +19,7 @@ import { track } from '@vercel/analytics';
 export default function GreetingMessage() {
   return (
     <section className='md:absolute bottom-0 left-4 md:right-0 /mr-4 h-screen sm:h-full text-black md:text-white dark:text-white flex flex-col items-center md:items-end justify-center /md:justify-end /mt-12'>
-      <div className="h-fit w-full sm:w-fit absolute bottom-0 text-white sm:h-full sm:flex sm:flex-col sm:justify-center sm:items-center p-4 sm:p-0 bg-gradient-to-b from-transparent to-blue-500 sm:bg-gradient-to-r sm:from-transparent sm:to-green-800/50">
+      <div className="h-fit w-full sm:w-fit absolute bottom-0 text-white sm:h-full sm:flex sm:flex-col sm:justify-center sm:items-center p-4 sm:p-0 bg-gradient-to-b from-transparent to-blue-800 sm:bg-gradient-to-r sm:from-transparent sm:to-green-800/50">
                         <motion.p className='text-center text-3xl md:text-4xl font-extrabold' initial={{y: -50, opacity: 0}} animate={{ y: 0, opacity: 1, transition: { duration: 0.6, ease: "easeInOut" }  }}>GREETINGS.</motion.p>
                         <motion.p className={`${eb_garamond.className} font-initial`} initial={{opacity: 0}} animate={{ opacity: 1, transition: { duration: 0.6, ease: "easeInOut" }  }}>Web Developer | Lifestyle Enthusiast</motion.p>
                         <motion.p className={`${eb_garamond.className} font-initial`} initial={{opacity: 0}} animate={{ opacity: 1, transition: { duration: 0.6, ease: "easeInOut" }  }}>📍 United Kingdom</motion.p>

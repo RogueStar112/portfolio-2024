@@ -28,7 +28,7 @@ export default function NavBar() {
   const [isDarkDys, setIsDarkDys] = useState(false);
 
   return (
-    <header className='grid grid-cols-2 justify-between relative sticky bg-gradient-to-b from-white dark:from-transparent from-[33%] to-transparent top-0 bg-inherit z-50 py-2'>
+    <header className={`grid grid-cols-2 justify-between relative sticky from-white dark:from-onyx ${showMobileNav ? `bg-gradient-to-b from-[90%]` : `bg-gradient-to-b from-[33%]`} to-transparent top-0 bg-inherit z-50 py-2`}>
 
       
     <Link className='flex flex-col justify-center [&>*]:leading-[1.1rem] grow' href={'/'}>
