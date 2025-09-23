@@ -152,11 +152,11 @@ export default async function Home() {
             
             <h2 className='m-4 text-right text-4xl font-extrabold'>PROJECTS.</h2> */}
             
-            <h2 id='about' className='overflow-mask dark:text-white /dark:text-black p-4 text-right text-4xl font-extrabold border-b-4 border-emerald-500 bg-gradient-to-r dark:from-onyx from-white dark:to-emerald-500 to-emerald-500 from-70% to-100%'>ABOUT.</h2>
+            <h2 id='about' className='overflow-mask dark:text-white /dark:text-black p-4 text-right text-4xl font-extrabold border-b-4 border-emerald-500 bg-gradient-to-r dark:from-onyx from-transparent dark:to-emerald-500 to-emerald-500 from-70% to-100%'>ABOUT.</h2>
               
-            <Image className=' mx-auto mt-6 dark:hidden' src={DM_MOTTO} alt='From slinging spreadsheets to wrangling websites' />
+            {/* <Image className=' mx-auto mt-6 dark:hidden' src={DM_MOTTO} alt='From slinging spreadsheets to wrangling websites' />
 
-            <Image className=' mx-auto mt-6 hidden dark:block' src={DM_MOTTO_DARK} alt='From slinging spreadsheets to wrangling websites' />
+            <Image className=' mx-auto mt-6 hidden dark:block' src={DM_MOTTO_DARK} alt='From slinging spreadsheets to wrangling websites' /> */}
             {/* <h3 className='mt-4 text-left italic uppercase'>From slinging spreadsheets to wrangling websites</h3> */}
             
             
@@ -169,13 +169,16 @@ export default async function Home() {
 
               </div>
             
-            
-            <p className='mt-4 text-justify'>Name&apos;s Demie. I&apos;m 25. As the motto suggests, my web development journey started through a budgeting spreadsheet. A colleague suggested to turn it into a website, and hence, in 2020, I tapped into the world of HTML.<br></br><br></br>
+            <div className='flex flex-col'>
+              <Image className=' mx-auto dark:hidden' src={DM_MOTTO} alt='From slinging spreadsheets to wrangling websites' />
+
+              <Image className=' mx-auto hidden dark:block' src={DM_MOTTO_DARK} alt='From slinging spreadsheets to wrangling websites' />
+            <p className='mt-4 text-justify'>Name&apos;s Demie. I&apos;m 26. As the motto suggests, my web development journey started through a budgeting spreadsheet. A colleague suggested to turn it into a website, and hence, in 2020, I tapped into the world of HTML.<br></br><br></br>
 
             I hail from the stormy capital of 🇵🇭 Manila, Philippines. In my birth year of 1999, the computer was in its early stages. Thus, I was exposed to technology at a very young age. It was later on in my 20s that I then realized, this webdev stuff could become more than just a hobby.
             <br></br><br></br>
             Hence to this day, I dedicate to making websites that leave their mark. Lastly, don&apos;t miss out on my <Link className='text-blue-500' href="/#blog">blog posts right here!</Link></p>
-
+            </div>
             </div>
 
             <h2 id='skills' className='overflow-mask dark:text-white /dark:text-black p-4 mt-2 text-right text-4xl font-extrabold border-b-4 border-orange-500 dark:from-transparent bg-gradient-to-r from-transparent dark:to-orange-500 to-orange-500 from-70% to-100%'>SKILLS.</h2>
@@ -229,7 +232,7 @@ export default async function Home() {
 
             </div> */}
             
-            <h2 id='projects' className='overflow-mask p-4 my-2 dark:text-white text-right text-4xl font-extrabold border-b-4 border-green-500 bg-gradient-to-r dark:from-onyx from-white dark:to-green-500 to-green-500 from-70% to-100%'>PROJECTS.</h2>
+            <h2 id='projects' className='overflow-mask p-4 my-2 dark:text-white text-right text-4xl font-extrabold border-b-4 border-green-500 bg-gradient-to-r dark:from-onyx from-transparent dark:to-green-500 to-green-500 from-70% to-100%'>PROJECTS.</h2>
 
             {projects_JSON.map((project: any, index: number) => {
               
@@ -243,7 +246,7 @@ export default async function Home() {
                     </div>
 
 
-                    <div className={`col-span-3 md:col-span-2 row-span-3 grid grid-cols-3 border-b-4 dark:border-green-900 border-green-100 bg-gradient-to-b md:bg-gradient-to-r dark:from-onyx from-white dark:to-green-900 to-green-100 from-70% to-100% p-2 rounded-r-lg gap-4 md:gap-0 ${project.is_featured ? "border-yellow-500 dark:border-yellow-100 to-yellow-100 dark:to-yellow-600 from-20%" : ""}`}>
+                    <div className={`col-span-3 md:col-span-2 row-span-3 grid grid-cols-3 border-b-4 dark:border-green-900 border-green-100 bg-gradient-to-b md:bg-gradient-to-r dark:from-onyx from-transparent dark:to-green-900 to-green-100 from-70% to-100% p-2 rounded-r-lg gap-4 md:gap-0 ${project.is_featured ? "border-yellow-500 dark:border-yellow-100 to-yellow-100 dark:to-yellow-600 from-20%" : ""}`}>
 
                       <div className={`${project.is_featured ? "text-yellow-600 dark:text-yellow-200" : ""} col-span-full inline-block text-green-600 `}>
 
@@ -307,7 +310,7 @@ export default async function Home() {
 
 
 
-            <h2 id='blog' className='overflow-mask p-4 my-2 dark:text-white text-right text-4xl font-extrabold border-b-4 border-blue-500 bg-gradient-to-r dark:from-onyx from-white dark:to-blue-500 to-blue-500 from-70% to-100%'>BLOG.</h2>
+            <h2 id='blog' className='overflow-mask p-4 my-2 dark:text-white text-right text-4xl font-extrabold border-b-4 border-blue-500 bg-gradient-to-r dark:from-onyx from-transparent dark:to-blue-500 to-blue-500 from-70% to-100%'>BLOG.</h2>
 
             <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3'>
             {blog_JSON.map((blog: any) => {
