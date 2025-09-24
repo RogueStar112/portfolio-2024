@@ -996,12 +996,12 @@
 
    {
       "id":24,
-      "title":"Stifling the Pursuit Of Perfectionism",
+      "title":"My First Coding Hackathon Experience",
       "tags":[
-         "mental-health",
-         "recovery"
+         "coding",
+         "web-dev"
       ],
-      "teaser_content":"Perfectionism is something I've always had gripes with. Let's talk about this. (WIP)",
+      "teaser_content":"What I've learnt and gone through within my 3 day hackathon journey.",
       "full_content":"<t>Have you tried the accessibility buttons on the top right (or hamburger menu on mobile)? The first button activates dark/light mode, whereas the second is a 'dyslexic-friendly' font! Give them a go!</t>\nHaving completed a 3-day coding hackathon recently, I realized something very important. That, whatever skills you build along the way, is what allows your desires to materialize. In other words, The journey is what gets you to where you want to be.",
       "created_by":"Demie Mistica",
       "dateTime_created":"23/06/2025, 03:30",
