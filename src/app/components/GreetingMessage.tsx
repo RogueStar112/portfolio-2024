@@ -16,7 +16,13 @@ const eb_garamond = EB_Garamond({weight: ['500', '600'], style: ['normal'], subs
 
 import { track } from '@vercel/analytics';
 
+// import { useRouter } from "next/navigation";
+
 export default function GreetingMessage() {
+  // const router = useRouter();
+
+  // router.refresh();
+
   return (
     <section className='md:absolute bottom-0 left-4 md:right-0 /mr-4 h-screen sm:h-full text-black md:text-white dark:text-white flex flex-col items-center md:items-end justify-center /md:justify-end /mt-12'>
       <div className="h-fit w-full sm:w-fit absolute bottom-0 text-white sm:h-full sm:flex sm:flex-col sm:justify-center sm:items-center p-4 sm:p-0 sm:pr-6 bg-gradient-to-b from-transparent to-blue-800 sm:bg-gradient-to-r sm:from-transparent sm:to-green-800/50">

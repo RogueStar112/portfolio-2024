@@ -30,16 +30,18 @@ export default function RootLayout({
 }) {
   return (
     <html className="scroll-smooth w-full relative overflow-x-hidden" lang="en" suppressHydrationWarning>
-
+      
       {/* Credit to: https://ibelick.com/blog/create-grid-and-dot-backgrounds-with-css-tailwind-css for grid-dot background styling*/}
-      <div className='absolute inset-0 h-full w-full bg-transparent bg-[radial-gradient(#cccccc_1px,transparent_1px)] dark:bg-[radial-gradient(#000000_1px,transparent_1px)] [background-size:36px_36px] select-none z-0'></div>
 
-
-      <body className={`${montserrat.className} max-w-5xl mx-auto blur-none bg-transparent dark:bg-onyx [&>*]:dark:bg-onyx dark:duration-500 relative z-[999]`}>
-        <Providers>
-          {children}
-          <Analytics />
-        </Providers>
+      <body className={`${montserrat.className} /max-w-5xl /mx-auto blur-none bg-transparent dark:bg-onyx [&>*]:dark:bg-onyx dark:duration-500 relative z-[999]`}>
+        <div className='absolute inset-0 h-full w-full bg-transparent bg-[radial-gradient(#cccccc_1px,transparent_1px)] dark:bg-[radial-gradient(#000000_1px,transparent_1px)] [background-size:36px_36px] select-none z-0'></div>
+        
+        <div className='max-w-5xl mx-auto'>
+          <Providers>
+            {children}
+            <Analytics />
+          </Providers>
+        </div>
       </body>
     </html>
   )

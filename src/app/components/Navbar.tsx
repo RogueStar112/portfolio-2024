@@ -18,6 +18,9 @@ import { RxCross1 } from "react-icons/rx";
 import { motion } from "motion/react"
 import { AnimatePresence } from "motion/react"
 
+// import { useRouter } from "next/navigation";
+
+
 const montserrat = Montserrat({ weight: ['300', '500', '700', '800', '900'], style: ['normal', 'italic'], subsets: ['latin'] })
 
 export default function NavBar() {
@@ -26,6 +29,10 @@ export default function NavBar() {
 
   // Added 11/02/2024, to ensure dark and light mode toggle accordingly to the body with dyslexic modes.
   const [isDarkDys, setIsDarkDys] = useState(false);
+
+  // const router = useRouter();
+
+  // router.refresh();
 
   return (
     <header className={`grid grid-cols-2 justify-between relative sticky from-white dark:from-onyx ${showMobileNav ? `bg-gradient-to-b from-[90%]` : `bg-gradient-to-b from-[33%]`} to-transparent top-0 bg-inherit z-50 py-2`}>
