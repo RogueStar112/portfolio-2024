@@ -1,3 +1,4 @@
+
 import { promises as fs } from 'fs';
 import Link from 'next/link'
 import Image from 'next/image'
@@ -116,7 +117,7 @@ export default async function Home() {
                 <div className='relative'> 
                   <section className='h-[620px] md:h-fit'>
 
-                  <Image className='/hidden object-cover object-[25%_75%] sm:object-[50%_50%] brightness-[0.8] sm:brightness-[0.7] sm:object-cover h-full sm:h-fit absolute sm:static z-0 sm:block overflow-mask' src={'/images/DM_MOTTO_23092025.png'} width="1920" height="512" alt="My face"/>
+                  <Image className='/hidden object-cover object-[39%_75%] sm:object-[50%_50%] brightness-[0.8] sm:brightness-[0.7] sm:object-cover h-full sm:h-fit absolute sm:static z-0 sm:block overflow-mask' src={'/images/DM_HERO_26122025.jpg'} width="1920" height="512" alt="My face"/>
                   {/* <Image className='object-cover object-center h-inherit w-[512px]' src={`/images/DM_TRANSPARENT_II.PNG`} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt='My portrait'></Image> */}
                     
                   

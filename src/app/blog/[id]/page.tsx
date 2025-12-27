@@ -1,7 +1,5 @@
 import { promises as fs } from 'fs';
 
-import { useRouter } from 'next/router'
-
 import { readFileSync } from 'fs';
 
 import Link from 'next/link'
@@ -178,7 +176,7 @@ export default async function BlogPost(props: { params: Promise<{ id: string }> 
                         // This replaces \n with newline.
                         // blog.full_content = blog.full_content.replace(/\n/g, "\\\\n").replace(/\r/g, "\\\\r").replace(/\t/g, "\\\\t");
                         return (
-                          <article key={blog.id} id={blog.id} className={`/max-w-[100%] /md:max-w-[33.3%] py-4 flex flex-col justify-start content-end`}>
+                          <article key={blog.id} id={blog.id} className={`/max-w-[100%] /md:max-w-[33.3%] py-4 flex flex-col justify-start content-end dark:text-white!`}>
                             
 
                             
@@ -248,7 +246,7 @@ export default async function BlogPost(props: { params: Promise<{ id: string }> 
                                           <span key={`img_span_${add_index}`} className={`absolute bottom-0 w-fit p-2 select-none bg-onyx dark:bg-black text-white`}>{add_image.caption_img ? add_image.caption_img : ""}</span>
                                         </section>
 
-                                        <caption className='mt-2 pl-2 border-l-2 border-blue-500 dark:border-orange-500 w-full text-left mb-4'>    {add_image.caption_outside}</caption>
+                                        <p className='mt-2 pl-2 border-l-2 border-blue-500 dark:border-orange-500 w-full text-left mb-4'>    {add_image.caption_outside}</p>
                                       </section>
                       
                                     <p className='md:w-[80%] mt-2 pl-2'>{textParser(add_image.text_content)}</p>
@@ -290,7 +288,7 @@ export default async function BlogPost(props: { params: Promise<{ id: string }> 
                   } else {
 
                     return (
-                      <></>
+                      <div key={blog.id}></div>
                     )
                     // return (
 

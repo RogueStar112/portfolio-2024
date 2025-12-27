@@ -1052,5 +1052,170 @@
             "position_y":"-250px"
          }
       ]
+   },
+
+   {
+      "id":25,
+      "title":"Becoming confident, yet humble",
+      "tags":[
+         "confidence",
+         "mental-health"
+      ],
+      "teaser_content":"Confidence and humility is a tough balance to strike.",
+      "full_content":"<t>Have you tried the accessibility buttons on the top right (or hamburger menu on mobile)? The first button activates dark/light mode, whereas the second is a 'dyslexic-friendly' font! Give them a go!</t>\nI'll be honest, confidence was something I never really had when I was younger.",
+      "created_by":"Demie Mistica",
+      "dateTime_created":"23/06/2025, 03:30",
+      "dateTime_updated":"23/06/2025, 03:30",
+      "grid_format_id":2,
+      "images":[
+         {
+            "file_path":"/images/IMG_1239.jpg",
+            "caption":"",
+            "is_main_image":1
+         }
+      ],
+
+       "additional_images":[
+         {
+            "file_path":"/images/BTI_PT2_Rekindling_Flame.jpg",
+            "heading":"Reigniting That Flame",
+            "caption_img":"A flame that is twice as bright, burns twice as fast.",
+            "caption_outside":"A small bit of light never hurt anyone.",
+            "text_content":" Sometimes, it can be really difficult to gather the strength to light up the strength in your heart. When really, all it really took was to mentally believe in oneself, through the things you do and what you stand for.\n\nSometimes the strongest flames come from doing the things you love, to the point where you even forget that you had a self-grudge to begin with. Being proud of who you are should not be confused with thinking you are better than everyone else.\n\n There’s a thin line between arrogance and confidence that tends to easily be overlooked. Some people love to extinguish your flames, just because they can. They want to see you fail. They think by quelling your flames, that theirs grows brighter. Such is not the case in this modern world. Growth and collaboration starts with a strong sense of independence. ",
+            "alignment":"end",
+            "obj_cover":"left",
+            "height":"530px",
+            "position_y":"-250px"
+         },
+
+         {
+            "file_path":"/images/BTI_PT2_2.JPG",
+            "heading":"Independence does not come overnight",
+            "caption_img":"Take this sculpture as your destination. To get there, you have to independently visit it.",
+            "caption_outside":"Appreciating where you are now can go a long way towards paving your future.",
+            "text_content":"It took me many, many years to realize that even after moving in my house in mid-2021, fast forward to 2025, that I still have a LOT to learn. I have to learn how to look after myself, make ends meet, and upkeep my connections from time to time.\n\nThough, you don't have to face things alone all the time. There will be times where no one can help you, but if at any point you get stuck in your own personal journey being unable to answer questions for yourself, it is NEVER a bad thing to ask for help from the right people. <q>It ain't a bad thing to ask for help, don't make you less of a person.<a>Cruisin - Huey Mack</a></q>",
+            "alignment":"center",
+            "obj_cover":"bottom",
+            "height":"530px",
+            "position_y":"-250px"
+         }
+      ]
+   },
+
+   {
+      "id":26,
+      "title":"Growing Out Of Who I Was",
+      "tags":[
+         "mental-health",
+         "growth"
+      ],
+      "teaser_content":"Memories of who I used to be bring mixed feelings- Mostly good, some bad with a hint of ugly.",
+      "full_content":"<t>Have you tried the accessibility buttons on the top right (or hamburger menu on mobile)? The first button activates dark/light mode, whereas the second is a 'dyslexic-friendly' font! Give them a go!</t>\nLooking back at who I was- I was cringey, unhinged and maybe even a little crazy. Like most teenagers at this sort of era right? Yet somehow, I cling onto the past like I'm yearning for those good old days.\n\nIt's almost as if, coming to terms with the past is like trying to clean your bathroom with a 99.9% effective detergent- That remaining .1% just won't go away no matter how hard I try.\n\nAnd not to mention, that .1% sometimes grows into an even bigger stain.\n\nDuring my late teens of my life, I had no effective identity. I just followed along whatever made sense to me at the time, without an ounce of critical thinking.\n\nRecovery is not something that just happens overnight. I even struggle to get sleep.",
+      "created_by":"Demie Mistica",
+      "dateTime_created":"09/11/2025, 02:38",
+      "dateTime_updated":"09/11/2025, 02:38",
+      "grid_format_id":2,
+      "images":[
+         {
+            "file_path":"/images/09112025_trueself.png",
+            "caption":"",
+            "is_main_image":1
+         }
+      ],
+
+       "additional_images":[
+         {
+            "file_path":"/images/BTI_PT2_Rekindling_Flame.jpg",
+            "heading":"Reigniting That Flame",
+            "caption_img":"A flame that is twice as bright, burns twice as fast.",
+            "caption_outside":"A small bit of light never hurt anyone.",
+            "text_content":" Sometimes, it can be really difficult to gather the strength to light up the strength in your heart. When really, all it really took was to mentally believe in oneself, through the things you do and what you stand for.\n\nSometimes the strongest flames come from doing the things you love, to the point where you even forget that you had a self-grudge to begin with. Being proud of who you are should not be confused with thinking you are better than everyone else.\n\n There’s a thin line between arrogance and confidence that tends to easily be overlooked. Some people love to extinguish your flames, just because they can. They want to see you fail. They think by quelling your flames, that theirs grows brighter. Such is not the case in this modern world. Growth and collaboration starts with a strong sense of independence. ",
+            "alignment":"end",
+            "obj_cover":"left",
+            "height":"530px",
+            "position_y":"-250px"
+         },
+
+         {
+            "file_path":"/images/BTI_PT2_2.JPG",
+            "heading":"Independence does not come overnight",
+            "caption_img":"Take this sculpture as your destination. To get there, you have to independently visit it.",
+            "caption_outside":"Appreciating where you are now can go a long way towards paving your future.",
+            "text_content":"It took me many, many years to realize that even after moving in my house in mid-2021, fast forward to 2025, that I still have a LOT to learn. I have to learn how to look after myself, make ends meet, and upkeep my connections from time to time.\n\nThough, you don't have to face things alone all the time. There will be times where no one can help you, but if at any point you get stuck in your own personal journey being unable to answer questions for yourself, it is NEVER a bad thing to ask for help from the right people. <q>It ain't a bad thing to ask for help, don't make you less of a person.<a>Cruisin - Huey Mack</a></q>",
+            "alignment":"center",
+            "obj_cover":"bottom",
+            "height":"530px",
+            "position_y":"-250px"
+         }
+      ]
+   },
+
+   {
+      "id":27,
+      "title":"My 2025 Retrospective",
+      "tags":[
+         "retrospective",
+         "learning"
+      ],
+      "teaser_content":"I have felt a significant amount of growth this year, probably the most growth I've had since COVID. Here are my top 2025 highlights.",
+      "full_content":"If I were to tell anything to my younger self, I wouldn't tell him anything. He is perfect the way he is. None of the achievements, hardships, or even failures will compare to where I am right now.\n\nI recognized that throughout my life, I needed to regulate myself constantly whenever I felt heated and wanted to spiral. Whether that'd be taking walks, expressing myself through photography or listening to music, I felt these remedies were something I could always rely on.\n\nI couldn't say the same for my past relationships and other people though. I knew far late this year in December, that I had to be the strongest advocate for myself. No amount of help from others can change me as much as I can myself.\n\nMy strides towards independence have grown significantly compared to 2024. I actually felt I TOOK some agency in my life, instead of coasting and living in my comfort zone all the time.",
+      "created_by":"Demie Mistica",
+      "dateTime_created":"26/12/2025, 15:16",
+      "dateTime_updated":"26/12/2025, 15:16",
+      "grid_format_id":2,
+      "images":[
+         {
+            "file_path":"/images/IMG_0731_II.PNG",
+            "caption":"I look to the skies, wondering and pondering as to what 2026 will offer.",
+            "is_main_image":1
+         },
+
+         {
+            "file_path":"/images/IMG_1822_train.jpg",
+            "caption":"9th November 2025: Going to the train for the first time on my own, to London."
+         },
+
+         {
+            "file_path":"/images/ChristmasDay_2025MemoryII.jpg",
+            "caption":"Christmas Day: Tears flew through my eyes, as I tried to build up my courage."
+         },
+
+         {
+            "file_path":"/images/IMG_0192.jpg",
+            "caption":"Summer 2025: I still go out for my occasional walks every now and then, to clear my mind."
+         },
+
+         
+         {
+            "file_path":"/images/LAKE_DISTRICT.jpg",
+            "caption":"April 2025: The Lake District visit helped me realize that I've still a lot to learn. The scenery was epic."
+         }
+      ],
+
+       "additional_images":[
+         {
+            "file_path":"/images/BTI_PT2_Rekindling_Flame.jpg",
+            "heading":"Reigniting That Flame",
+            "caption_img":"A flame that is twice as bright, burns twice as fast.",
+            "caption_outside":"A small bit of light never hurt anyone.",
+            "text_content":" Sometimes, it can be really difficult to gather the strength to light up the strength in your heart. When really, all it really took was to mentally believe in oneself, through the things you do and what you stand for.\n\nSometimes the strongest flames come from doing the things you love, to the point where you even forget that you had a self-grudge to begin with. Being proud of who you are should not be confused with thinking you are better than everyone else.\n\n There’s a thin line between arrogance and confidence that tends to easily be overlooked. Some people love to extinguish your flames, just because they can. They want to see you fail. They think by quelling your flames, that theirs grows brighter. Such is not the case in this modern world. Growth and collaboration starts with a strong sense of independence. ",
+            "alignment":"end",
+            "obj_cover":"left",
+            "height":"530px",
+            "position_y":"-250px"
+         },
+
+         {
+            "file_path":"/images/BTI_PT2_2.JPG",
+            "heading":"Independence does not come overnight",
+            "caption_img":"Take this sculpture as your destination. To get there, you have to independently visit it.",
+            "caption_outside":"Appreciating where you are now can go a long way towards paving your future.",
+            "text_content":"It took me many, many years to realize that even after moving in my house in mid-2021, fast forward to 2025, that I still have a LOT to learn. I have to learn how to look after myself, make ends meet, and upkeep my connections from time to time.\n\nThough, you don't have to face things alone all the time. There will be times where no one can help you, but if at any point you get stuck in your own personal journey being unable to answer questions for yourself, it is NEVER a bad thing to ask for help from the right people. <q>It ain't a bad thing to ask for help, don't make you less of a person.<a>Cruisin - Huey Mack</a></q>",
+            "alignment":"center",
+            "obj_cover":"bottom",
+            "height":"530px",
+            "position_y":"-250px"
+         }
+      ]
    }
  ]
