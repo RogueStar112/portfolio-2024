@@ -25,7 +25,7 @@ export default function GreetingMessage() {
 
   return (
     <section className='md:absolute bottom-0 left-4 md:right-0 /mr-4  sm:h-full text-white md:text-white dark:text-white flex flex-col items-center md:items-end justify-center /md:justify-end /mt-12 '>
-      <div className="h-fit w-full sm:w-fit md:absolute bottom-0 sm:h-full sm:flex sm:flex-col sm:justify-center sm:items-center p-4 sm:p-0 sm:pr-24 bg-linear-to-b to-blue-800 sm:bg-linear-to-r from-blue-800 sm:from-transparent sm:to-green-800 sm:from-0% sm:to-100%">
+      <div className="h-fit w-full sm:w-fit md:absolute bottom-0 sm:h-full sm:flex sm:flex-col sm:justify-center sm:items-center p-4 sm:p-0 sm:pr-24 bg-linear-to-b to-blue-800 sm:bg-linear-to-r from-transparent sm:from-transparent sm:to-green-800 sm:from-0% sm:to-100%">
                         <motion.p className='text-center text-3xl md:text-4xl font-extrabold' initial={{y: -50, opacity: 0}} animate={{ y: 0, opacity: 1, transition: { duration: 0.6, ease: "easeInOut" }  }}>GREETINGS.</motion.p>
                         <motion.p className={`${eb_garamond.className} font-initial text-center`} initial={{opacity: 0}} animate={{ opacity: 1, transition: { duration: 0.6, ease: "easeInOut" }  }}>Web Developer | Lifestyle Enthusiast</motion.p>
                         <motion.p className={`${eb_garamond.className} font-initial text-center`} initial={{opacity: 0}} animate={{ opacity: 1, transition: { duration: 0.6, ease: "easeInOut" }  }}>📍 United Kingdom</motion.p>
