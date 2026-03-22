@@ -91,13 +91,13 @@ export default async function Home() {
 
     <div>
 
-      <div className='hidden sm:block sm:absolute left-6 top-[64rem]'>
+      <div className='hidden sm:block sm:absolute left-6 top-256'>
 
             <Image className='w-full h-full' src={'/images/london_portal.gif'} width="512" height="512" alt="My face"/>
       
       </div>
 
-      <div className='hidden sm:block sm:absolute right-6 top-[128rem]'>
+      <div className='hidden sm:block sm:absolute right-6 top-512'>
 
             <Image className='w-full h-full invert' src={'/images/london_portal.gif'} width="512" height="512" alt="My face"/>
       
@@ -123,24 +123,24 @@ export default async function Home() {
 
           </div>
 
-          <div className='flex flex-col justify-between text-center /py-4 relative'>
+          {/* <div className='flex flex-col justify-between text-center /py-4 relative'> */}
 
-            <div className='max-w-7xl mx-auto'>
+            <div className='md:max-w-7xl mx-auto'>
             {/* <div className='object-cover bg-repeat-x w-full h-[16px]' style={{backgroundImage: `url('${patternSmallOne.src}')`}}/>          */}
 
             <article className='/overflow-hidden relative'>
 
               <article className='overflow-hidden relative'>
 
-                <div className='relative'> 
-                  <section className='relative'>
+                <div className='relative flex flex-col'> 
+    
 
-                  <Image className='w-full h-full' src={'/images/DM_21032026_II.png'} width="1920" height="512" alt="My face"/>
+                  <Image className='w-full h-full object-cover' src={'/images/DM_21032026_II.png'} width="1920" height="512" alt="My face"/>
                   {/* <Image className='object-cover object-center h-inherit w-[512px]' src={`/images/DM_TRANSPARENT_II.PNG`} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt='My portrait'></Image> */}
                     
                   
                   <GreetingMessage />
-                  </section>
+              
                 </div>
                 
                 
@@ -171,7 +171,7 @@ export default async function Home() {
             
             <h2 className='m-4 text-right text-4xl font-extrabold'>PROJECTS.</h2> */}
             
-            <h2 id='about' className='overflow-mask dark:text-white /dark:text-black p-4 text-right text-4xl font-extrabold border-b-4 border-emerald-500 bg-gradient-to-r dark:from-onyx from-transparent dark:to-emerald-500 to-emerald-500 from-70% to-100%'>ABOUT.</h2>
+            <h2 id='about' className='overflow-mask dark:text-white /dark:text-black p-4 text-right text-4xl font-extrabold border-b-4 border-emerald-500 bg-linear-to-r dark:from-onyx from-transparent dark:to-emerald-500 to-emerald-500 from-70% to-100%'>ABOUT.</h2>
               
             {/* <Image className=' mx-auto mt-6 dark:hidden' src={DM_MOTTO} alt='From slinging spreadsheets to wrangling websites' />
 
@@ -189,7 +189,7 @@ export default async function Home() {
               </div>
             
             <div className='flex flex-col'>
-              <Image className=' mx-auto dark:hidden' src={DM_MOTTO} alt='From slinging spreadsheets to wrangling websites' />
+             <Image className='mx-auto w-full max-w-md h-auto dark:hidden' src={DM_MOTTO} alt='From slinging spreadsheets to wrangling websites' />
 
               <Image className=' mx-auto hidden dark:block' src={DM_MOTTO_DARK} alt='From slinging spreadsheets to wrangling websites' />
             <p className='mt-4 text-justify'>Name&apos;s Demie. I&apos;m 26. As the motto suggests, my web development journey started through a budgeting spreadsheet. A colleague suggested to turn it into a website, and hence, in 2020, I tapped into the world of HTML.<br></br><br></br>
@@ -200,13 +200,13 @@ export default async function Home() {
             </div>
             </div>
 
-            <h2 id='skills' className='overflow-mask dark:text-white /dark:text-black p-4 mt-2 text-right text-4xl font-extrabold border-b-4 border-orange-500 dark:from-transparent bg-gradient-to-r from-transparent dark:to-orange-500 to-orange-500 from-70% to-100%'>SKILLS.</h2>
+            <h2 id='skills' className='overflow-mask dark:text-white /dark:text-black p-4 mt-2 text-right text-4xl font-extrabold border-b-4 border-orange-500 dark:from-transparent bg-linear-to-r from-transparent dark:to-orange-500 to-orange-500 from-70% to-100%'>SKILLS.</h2>
 
             <SkillCollection />
             
             {/* <SkillGallery /> */}
 
-            <article className='flex flex-col md:grid grid-cols-2 justify-around px-4 [&>*]:grow overflow-mask /border-b-4 /border-orange-500'>
+            <article className='flex flex-col md:grid grid-cols-2 justify-around px-4 *:grow overflow-mask /border-b-4 /border-orange-500'>
                 
                 {/* <section className='text-2xl /md:border-4 /md:border-orange-500 p-4' style={{fontVariant: "small-caps"}} aria-label="skills-frontend">
                     <h2 className='font-extrabold text-3xl'>Frontend</h2>
@@ -234,7 +234,7 @@ export default async function Home() {
 
                 {/* <section className='col-span-2 mb-4 border-t-4 border-orange-500 pt-4'>
                       <h2 className='font-extrabold text-3xl pt-4 z-0' style={{fontVariant: "small-caps"}}>Soft Skills</h2>
-                      <section className='flex flex-col md:grid md:grid-cols-3 [&>*]:text-2xl md:[&>*]:mb-4'>
+                      <section className='flex flex-col md:grid md:grid-cols-3 *:text-2xl md:*:mb-4'>
                         <p>Considerate</p>
                         <p>Punctual</p>
                         <p>Enthusiastic</p>
@@ -245,13 +245,13 @@ export default async function Home() {
                 </section> */}
             </article>
 
-            {/* <div aria-label="section-skillset"  className='grid grid-cols-3 [&>*]:grow'>
+            {/* <div aria-label="section-skillset"  className='grid grid-cols-3 *:grow'>
                   
                 <Image className="p-4" src={`/images/Laravel_logo.png`} width={288} height={256} alt='Laravel'></Image>
 
             </div> */}
             
-            <h2 id='projects' className='overflow-mask p-4 my-2 dark:text-white text-right text-4xl font-extrabold border-b-4 border-green-500 bg-gradient-to-r dark:from-onyx from-transparent dark:to-green-500 to-green-500 from-70% to-100%'>PROJECTS.</h2>
+            <h2 id='projects' className='overflow-mask p-4 my-2 dark:text-white text-right text-4xl font-extrabold border-b-4 border-green-500 bg-linear-to-r dark:from-onyx from-transparent dark:to-green-500 to-green-500 from-70% to-100%'>PROJECTS.</h2>
 
             {projects_JSON.map((project: any, index: number) => {
               
@@ -265,7 +265,7 @@ export default async function Home() {
                     </div>
 
 
-                    <div className={`col-span-3 md:col-span-2 row-span-3 grid grid-cols-3 border-b-4 dark:border-green-900 border-green-100 bg-gradient-to-b md:bg-gradient-to-r dark:from-onyx from-transparent dark:to-green-900 to-green-100 from-70% to-100% p-2 rounded-r-lg gap-4 md:gap-0 ${project.is_featured ? "border-yellow-500 dark:border-yellow-100 to-yellow-100 dark:to-yellow-600 from-20%" : ""}`}>
+                    <div className={`col-span-3 md:col-span-2 row-span-3 grid grid-cols-3 border-b-4 dark:border-green-900 border-green-100 bg-linear-to-b md:bg-linear-to-r dark:from-onyx from-transparent dark:to-green-900 to-green-100 from-70% to-100% p-2 rounded-r-lg gap-4 md:gap-0 ${project.is_featured ? "border-yellow-500 dark:border-yellow-100 to-yellow-100 dark:to-yellow-600 from-20%" : ""}`}>
 
                       <div className={`${project.is_featured ? "text-yellow-600 dark:text-yellow-200" : ""} col-span-full inline-block text-green-600 `}>
 
@@ -277,7 +277,7 @@ export default async function Home() {
                       </div>
                       <div className="col-span-full gap-4 flex ... text-left flex-col md:flex-row">
                         
-                        <div className='flex gap-1 [&>*]:h-min [&>*]:w-max [&>*]:basis-0 grow'>
+                        <div className='flex gap-1 *:h-min *:w-max *:basis-0 grow'>
                         {project.tech_stack.map((tech_tag: any, index: number) => {
                         return (
                           <p key={index} className='p-1 rounded-lg bg-blue-500 text-white dark:text-mint-cream grow text-center'>{tech_tag}</p>
@@ -285,7 +285,7 @@ export default async function Home() {
                       })}
                       </div>
 
-                      <div className='flex gap-1 [&>*]:h-min [&>*]:w-max grow'>
+                      <div className='flex gap-1 *:h-min *:w-max grow'>
                       {project.soft_stack.map((soft_tag: any, index: number) => {
                         return (
                           <p key={index} className={`p-1 rounded-lg dark:bg-emerald-600 bg-emerald-500 text-white dark:text-mint-cream grow text-center ${project.is_featured ? "bg-yellow-600 dark:bg-yellow-700 " : ""}}`}>{soft_tag}</p>
@@ -329,7 +329,7 @@ export default async function Home() {
 
 
 
-            <h2 id='blog' className='overflow-mask p-4 my-2 dark:text-white text-right text-4xl font-extrabold border-b-4 border-blue-500 bg-gradient-to-r dark:from-onyx from-transparent dark:to-blue-500 to-blue-500 from-70% to-100%'>BLOG.</h2>
+            <h2 id='blog' className='overflow-mask p-4 my-2 dark:text-white text-right text-4xl font-extrabold border-b-4 border-blue-500 bg-linear-to-r dark:from-onyx from-transparent dark:to-blue-500 to-blue-500 from-70% to-100%'>BLOG.</h2>
 
             <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3'>
             {blog_JSON.map((blog: any) => {
@@ -344,7 +344,7 @@ export default async function Home() {
             })}
             </div>
 
-          </div>
+          {/* </div> */}
           
           </div>
           

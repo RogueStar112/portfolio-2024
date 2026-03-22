@@ -4,189 +4,166 @@ import Skill from './Skill';
 import Skillset from './Skillset';
 
 // ICONS
-
-import { FaHtml5 } from 'react-icons/fa';
-import { FaCss3Alt } from 'react-icons/fa';
+import { FaHtml5, FaCss3Alt, FaReact, FaLaravel, FaPhp, FaDigitalOcean, FaDatabase, FaStar, FaStarHalfAlt, FaLongArrowAltLeft, FaLongArrowAltRight } from 'react-icons/fa';
 import { IoLogoJavascript } from 'react-icons/io';
-import { FaReact } from 'react-icons/fa';
-import { FaLaravel } from 'react-icons/fa';
-import { FaPhp } from 'react-icons/fa';
-import { FaDigitalOcean } from "react-icons/fa";
 import { TbBrandNextjs } from 'react-icons/tb';
-import { FaDatabase } from 'react-icons/fa';
-
-import { FaStar } from "react-icons/fa";
-import { FaStarHalfAlt } from "react-icons/fa";
 import { FaRegStar } from "react-icons/fa6";
-
-import { FaLongArrowAltLeft } from "react-icons/fa";
-import { FaLongArrowAltRight } from "react-icons/fa";
 import { SiSupabase } from 'react-icons/si';
 
 export default function SkillCollection() {
-
-    return (
-
-      <div className='overflow-mask overflow-hidden'>
-
-        {/* <p className='my-4'>Hover over a skill to find out more!</p> */}
-
-
-        <article className='slide-animation-mobile skills-carousel flex /min-w-[1728px] sm:[&>*]:scale-2 mx-auto md:mx-0 /md:grid /grid-cols-1 justify-around px-4 [&>*]:grow /overflow-mask /border-b-4 /border-orange-500 /h-fit /h-72 pt-8 pb-12 relative text-sm'>
-                            
-                            {/* <div className='absolute hidden sm:block -left-8 top-1/2 -translate-y-1/2 -translate-x-1/2 text-black dark:text-white [&>*]:scale-[3]'>
-                                               <FaLongArrowAltLeft />
-                            </div>
+  return (
+    <div className='overflow-mask overflow-hidden'>
+      {/* v4 Note: 'slide-animation-mobile' and 'overflow-mask' are assumed custom CSS.
+          v4 handles child selectors natively with '*:'.
+      */}
+      <article className='slide-animation-mobile skills-carousel flex justify-around px-4 pt-8 pb-12 relative text-sm mx-auto md:mx-0 sm:*:scale-[1] /sm:*:*:*:*:svg:scale-[2] *:grow'>
         
-                            <div className='absolute hidden sm:block -right-8 top-1/2 -translate-y-1/2 translate-x-1/2 text-black dark:text-white [&>*]:scale-[3]'>
-                                              <FaLongArrowAltRight />
-                            </div>
-                  */}
-                            
-                            <Skillset>
-                            {/* <section className='grid grid-cols-3 items-center [&>div>svg]:scale-[3] /[&>div>svg]:mx-auto /[&>div>svg]:mt-4  [&>*]:relative [&>*]:flex [&>*]:flex-col [&>*]:justify-center'> */}
-                                <Skill col='1' scale={2} bg_color="transparent" text_color="#ff9800" hover_bg_color='#ff9800' index={4} center={4}>
-                                  {/* <p>HTML</p> */}
-                                  <FaHtml5></FaHtml5>
-                                  HTML
+        <Skillset>
+          {/* HTML SKILL */}
+          <Skill col='1' scale={1} bg_color="transparent" text_color="#ff9800" hover_bg_color='#ff9800' index={4} center={4}>
 
-                                  <div className='flex w-full  gap-2 relative [&>*]:grow text-center [&>*>*]:mx-auto'>
-                                          <div className='text-yellow-500'><FaStar /></div>
-                                          <div className='text-yellow-500'><FaStar /></div>
-                                          <div className='text-yellow-500'><FaStarHalfAlt /></div>
-                                  </div>
+            <div className='text-7xl!'> 
+              <FaHtml5 />
+            </div>
 
-                                  {/* <section className='gap-2 hidden -left-[50%] justify-center -bottom-[30%] whitespace-nowrap w-[992px]'>
-                                    <p>Semantic HTML ⭐⭐</p>
-                                    <p>HTML Structuring ⭐⭐⭐</p>
-                                    <p>HTML Accessibility ⭐⭐</p>
+            HTML
+            {/* v4 Note: Nested arbitrary variants like [&>*>*] still work, 
+                but using the '*' variant is cleaner.
+            */}
+            <div className='flex w-full relative *:grow text-center *:[&_svg]:mx-auto *:[&_svg]:scale-[1]'>
+              <div className='text-yellow-500'><FaStar /></div>
+              <div className='text-yellow-500'><FaStar /></div>
+              <div className='text-yellow-500'><FaStarHalfAlt /></div>
+            </div>
+          </Skill>
 
-                                    <p></p>
-                                  </section> */}
-                                </Skill>
-                                
-                                <Skill col='1' scale={2}  bg_color="transparent" text_color="#2196f3" index={3} center={4}>
-                                  {/* <p>CSS</p> */}
-                                  <FaCss3Alt></FaCss3Alt>
-                                  CSS
+          {/* CSS SKILL */}
+          <Skill col='1' scale={1} bg_color="transparent" text_color="#2196f3" index={3} center={4}>
+            
+            <div className='text-7xl!'> 
+              <FaCss3Alt />
+            </div>
 
-                                  <div className='flex w-full  gap-2 relative [&>*]:grow text-center [&>*>*]:mx-auto'>
-                                          <div className='text-yellow-500'><FaStar /></div>
-                                          <div className='text-yellow-500'><FaStar /></div>
-                                          <div className='text-yellow-500'><FaStarHalfAlt /></div>
-                                  </div>
 
-                                  {/* <section className='gap-2 hidden -left-[50%] justify-center -bottom-[30%] whitespace-nowrap w-[992px]'>
-                                    <p>Semantic HTML ⭐⭐</p>
-                                    <p>HTML Structuring ⭐⭐⭐</p>
-                                    <p>HTML Accessibility ⭐⭐</p>
+            CSS
+            <div className='flex w-full relative *:grow text-center *:[&_svg]:mx-auto *:[&_svg]:scale-[1]'>
+              <div className='text-yellow-500'><FaStar /></div>
+              <div className='text-yellow-500'><FaStar /></div>
+              <div className='text-yellow-500'><FaStarHalfAlt /></div>
+            </div>
+          </Skill>
 
-                                    <p></p>
-                                  </section> */}
-                                </Skill>
-        
-        
-                                <Skill col='1' scale={2}  bg_color="transparent" text_color="black" dark_text_color='white' index={2} center={4}>
-        
-                                      {/* <p>JS</p> */}
-                                      <IoLogoJavascript></IoLogoJavascript>
-                                      JavaScript
+          {/* JS SKILL */}
+          <Skill col='1' scale={1} bg_color="transparent" text_color="black" dark_text_color='white' index={2} center={4}>
 
-                                        <div className='flex w-full  gap-2 relative [&>*]:grow text-center [&>*>*]:mx-auto'>
-                                          <div className='text-yellow-500'><FaStar /></div>
-                                          <div className='text-yellow-500'><FaStar /></div>
-                                          <div className='text-yellow-500'><FaStar /></div>
-                                        </div>
-                                </Skill>
-        
-                            {/* </section> */}
-        
-                                {/* <div class="scale-[2] [&>*]:scale-[2]"></div> */}
-                            {/* <section className='grid grid-cols-2 items-center [&>div>svg]:scale-[3] /[&>div>svg]:mx-auto /[&>div>svg]:mt-4  [&>*]:relative [&>*]:flex [&>*]:flex-col [&>*]:justify-center '> */}
-                                <Skill col='1' scale={2} bg_color="transparent" text_color="#8892bf" index={1} center={4}>
-                                  {/* <p>PHP</p> */}
-                                  <FaPhp></FaPhp>
-                                  PHP
+            <div className='text-7xl!'> 
+              <IoLogoJavascript />
+            </div>
 
-                                  <div className='flex w-full  gap-2 relative [&>*]:grow text-center [&>*>*]:mx-auto'>
-                                          <div className='text-yellow-500'><FaStar /></div>
-                                          <div className='text-yellow-500'><FaStar /></div>
-                                          <div className='text-yellow-500'><FaStarHalfAlt /></div>
-                                        </div>
-                                </Skill>
-        
-                                <Skill col='1' scale={2} bg_color="transparent" text_color="#F05340" index={0} center={4}>
-                                  {/* <p>Laravel</p> */}
-                                  <FaLaravel></FaLaravel>
-                                  Laravel
+            JavaScript
+            <div className='flex w-full relative *:grow text-center *:[&_svg]:mx-auto *:[&_svg]:scale-[1]'>
+              <div className='text-yellow-500'><FaStar /></div>
+              <div className='text-yellow-500'><FaStar /></div>
+              <div className='text-yellow-500'><FaStar /></div>
+            </div>
+          </Skill>
 
-                                  <div className='flex w-full  gap-2 relative [&>*]:grow text-center [&>*>*]:mx-auto'>
-                                          <div className='text-yellow-500'><FaStar /></div>
-                                          <div className='text-yellow-500'><FaStar /></div>
-                                          <div className='text-yellow-500'><FaStarHalfAlt /></div>
-                                        </div>
-                                </Skill>
-        
-                            {/* </section> */}
-        
-                          {/* <section className='grid grid-cols-3 items-center [&>div>svg]:scale-[3] /[&>div>svg]:mx-auto /[&>div]:m-4 /[&>div>svg]:mt-4  [&>*]:relative [&>*]:flex [&>*]:flex-col [&>*]:justify-center'> */}
-                                <Skill col='1' scale={2} bg_color="transparent" text_color="#61DBFB" index={1} center={4}>
-                                  {/* <p>React</p> */}
-                                  <FaReact></FaReact>
-                                  React
+          {/* PHP SKILL */}
+          <Skill col='1' scale={1} bg_color="transparent" text_color="#8892bf" index={1} center={4}>
+            
+            <div className='text-7xl!'> 
+              <FaPhp />
+            </div>
 
-                                  <div className='flex w-full  gap-2 relative [&>*]:grow text-center [&>*>*]:mx-auto'>
-                                          <div className='text-yellow-500'><FaStar /></div>
-                                          <div className='text-yellow-500'><FaStar /></div>
-                                          <div className='text-yellow-500'><FaRegStar /></div>
-                                  </div>
-                                </Skill>
-        
-                                <Skill col='1' scale={2} bg_color="transparent" text_color="black" index={2} center={4}>
-                                  {/* <p>NextJS</p> */}
-                                <TbBrandNextjs></TbBrandNextjs>
-                                Next.js
+            PHP
+            <div className='flex w-full relative *:grow text-center *:[&_svg]:mx-auto *:[&_svg]:scale-[1]'>
+              <div className='text-yellow-500'><FaStar /></div>
+              <div className='text-yellow-500'><FaStar /></div>
+              <div className='text-yellow-500'><FaStarHalfAlt /></div>
+            </div>
+          </Skill>
 
-                                <div className='flex w-full  gap-2 relative [&>*]:grow text-center [&>*>*]:mx-auto'>
-                                          <div className='text-yellow-500'><FaStar /></div>
-                                          <div className='text-yellow-500'><FaStar /></div>
-                                          <div className='text-yellow-500'><FaRegStar /></div>
-                                  </div>
-                                </Skill>
-                       
-        
-                                <Skill col='1' scale={2} bg_color="transparent" text_color="black" index={3} center={4}>
-                                {/* <p>SQL</p> */}
-                                  <FaDatabase></FaDatabase>
-                                  SQL
+          {/* LARAVEL SKILL */}
+          <Skill col='1' scale={1} bg_color="transparent" text_color="#F05340" index={0} center={4}>
 
-                                  <div className='flex w-full  gap-2 relative [&>*]:grow text-center [&>*>*]:mx-auto'>
-                                          <div className='text-yellow-500'><FaStar /></div>
-                                          <div className='text-yellow-500'><FaStar /></div>
-                                          <div className='text-yellow-500'><FaRegStar /></div>
-                                  </div>
-                                </Skill>
-        
-                                <Skill col='1' scale={2} bg_color="transparent" text_color="#34b27b" index={4} center={4}>
-                                {/* <p>SQL</p> */}
-                                  <SiSupabase></SiSupabase>
-                                  Supabase
+            <div className='text-7xl!'> 
+              <FaLaravel />
+            </div>
 
-                                  <div className='flex w-full justify-center  gap-2 relative [&>*]:grow text-center [&>*>*]:mx-auto'>
-                                          <div className='text-yellow-500'><FaStar /></div>
-                                          <div className='text-yellow-500'><FaStar /></div>
-                                          <div className='text-yellow-500'><FaRegStar /></div>
-                                  </div>
-                                </Skill>
-                            {/* </section> */}
 
-                            
-                           </Skillset>
+            Laravel
+            <div className='flex w-full relative *:grow text-center *:[&_svg]:mx-auto *:[&_svg]:scale-[1]'>
+              <div className='text-yellow-500'><FaStar /></div>
+              <div className='text-yellow-500'><FaStar /></div>
+              <div className='text-yellow-500'><FaStarHalfAlt /></div>
+            </div>
+          </Skill>
 
-             
-        
-                    </article>
-        </div>
-        
-    )
+          {/* REACT SKILL */}
+          <Skill col='1' scale={1} bg_color="transparent" text_color="#61DBFB" index={1} center={4}>
+
+            <div className='text-7xl!'> 
+              <FaReact />
+            </div>
+
+
+            React
+            <div className='flex w-full relative *:grow text-center *:[&_svg]:mx-auto *:[&_svg]:scale-[1]'>
+              <div className='text-yellow-500'><FaStar /></div>
+              <div className='text-yellow-500'><FaStar /></div>
+              <div className='text-yellow-500'><FaRegStar /></div>
+            </div>
+          </Skill>
+
+          {/* NEXTJS SKILL */}
+          <Skill col='1' scale={1} bg_color="transparent" text_color="black" index={2} center={4}>
+
+            <div className='text-7xl!'> 
+              <TbBrandNextjs />
+            </div>
+
+
+            Next.js
+            <div className='flex w-full relative *:grow text-center *:[&_svg]:mx-auto *:[&_svg]:scale-[1]'>
+              <div className='text-yellow-500'><FaStar /></div>
+              <div className='text-yellow-500'><FaStar /></div>
+              <div className='text-yellow-500'><FaRegStar /></div>
+            </div>
+          </Skill>
+
+          {/* SQL SKILL */}
+          <Skill col='1' scale={1} bg_color="transparent" text_color="black" index={3} center={4}>
+
+            <div className='text-7xl!'> 
+              <FaDatabase />
+            </div>
+
+
+            SQL
+            <div className='flex w-full relative *:grow text-center *:[&_svg]:mx-auto'>
+              <div className='text-yellow-500'><FaStar /></div>
+              <div className='text-yellow-500'><FaStar /></div>
+              <div className='text-yellow-500'><FaRegStar /></div>
+            </div>
+          </Skill>
+
+          {/* SUPABASE SKILL */}
+          <Skill col='1' scale={1} bg_color="transparent" text_color="#34b27b" index={4} center={4}>
+
+            <div className='text-7xl!'> 
+              <SiSupabase />
+            </div>
+
+
+            Supabase
+            <div className='flex w-full justify-center relative *:grow text-center *:[&_svg]:mx-auto'>
+              <div className='text-yellow-500'><FaStar /></div>
+              <div className='text-yellow-500'><FaStar /></div>
+              <div className='text-yellow-500'><FaRegStar /></div>
+            </div>
+          </Skill>
+        </Skillset>
+      </article>
+    </div>
+  );
 }

@@ -1,4 +1,4 @@
-import { createFont, variableFont } from '@next/font';
+import { createFont, variableFont } from "next/font";
 
 const OpenDyslexic = createFont({
     src: '/public/fonts/OpenDyslexic-Regular.otf', // Path to your font file
