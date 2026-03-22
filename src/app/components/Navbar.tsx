@@ -35,7 +35,7 @@ export default function NavBar() {
   // router.refresh();
 
   return (
-    <header className={`grid grid-cols-2 justify-between relative sticky from-white dark:from-onyx ${showMobileNav ? `bg-gradient-to-b from-[90%]` : `bg-gradient-to-b from-[33%]`} to-transparent top-0 bg-inherit z-50 py-2`}>
+    <header className={`grid grid-cols-2 justify-between relative sticky from-white dark:from-onyx ${showMobileNav ? `bg-gradient-to-b from-[90%]` : `bg-gradient-to-b from-[33%]`} to-transparent top-0 bg-inherit z-50 py-2 max-w-7xl mx-auto`}>
 
       
     <Link className='flex flex-col justify-center [&>*]:leading-[1.1rem] grow' href={'/'}>

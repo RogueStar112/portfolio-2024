@@ -36,7 +36,7 @@ export default function RootLayout({
       <body className={`${montserrat.className} !dark:font-sans !dark:font-white /max-w-5xl /mx-auto blur-none bg-transparent dark:bg-onyx [&>*]:dark:bg-onyx dark:duration-500 relative z-[999]`}>
         <div className='absolute inset-0 h-full w-full bg-transparent bg-[radial-gradient(#cccccc_1px,transparent_1px)] dark:bg-[radial-gradient(#000000_1px,transparent_1px)] [background-size:36px_36px] select-none z-0'></div>
         
-        <div className='max-w-5xl mx-auto'>
+        <div className='/max-w-5xl mx-auto relative'>
           <Providers>
             {children}
             <Analytics />

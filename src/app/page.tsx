@@ -51,7 +51,7 @@ import { motion } from "motion/react"
 import DM_MOTTO from '../../public/./images/DM_MOTTO_TC_V2.svg'
 import DM_MOTTO_DARK from '../../public/images/DM_MOTTO_TC_V2_WHITE.svg';
 
-import DM_HERO from '../../public/./images/DM_HERO_26112024_SHADED.png'
+import DM_HERO from '../../public/./images/DM_21032026.jpg'
 import DM_ABOUT from '../../public/./images/DM_ABOUT_1.jpg'
 
 import { track } from '@vercel/analytics';
@@ -88,7 +88,24 @@ export default async function Home() {
 
 
   return (
-    <div className='p-4 bg-transparent dark:bg-transparent h-full dark:text-mint-cream mx-auto text-current max-w-7xl relative'>
+
+    <div>
+
+      <div className='hidden sm:block sm:absolute left-6 top-[64rem]'>
+
+            <Image className='w-full h-full' src={'/images/london_portal.gif'} width="512" height="512" alt="My face"/>
+      
+      </div>
+
+      <div className='hidden sm:block sm:absolute right-6 top-[128rem]'>
+
+            <Image className='w-full h-full invert' src={'/images/london_portal.gif'} width="512" height="512" alt="My face"/>
+      
+      </div>
+
+
+
+    <div className='p-4 bg-transparent dark:bg-transparent h-full dark:text-mint-cream mx-auto text-current /max-w-7xl relative'>
 
        
           
@@ -99,15 +116,16 @@ export default async function Home() {
   
 
 
-        <main className='dark:bg-onyx transition-500'>
+        <main className='dark:bg-transparent transition-500'>
 
           {/* <h2 className={`${eb_garamond.className} text-2xl`}>Web Developer - Lifestyle Enthusiast</h2> */}
           <div>
 
           </div>
 
-          <div className='flex flex-col justify-between text-center /py-4'>
+          <div className='flex flex-col justify-between text-center /py-4 relative'>
 
+            <div className='max-w-7xl mx-auto'>
             {/* <div className='object-cover bg-repeat-x w-full h-[16px]' style={{backgroundImage: `url('${patternSmallOne.src}')`}}/>          */}
 
             <article className='/overflow-hidden relative'>
@@ -115,9 +133,9 @@ export default async function Home() {
               <article className='overflow-hidden relative'>
 
                 <div className='relative'> 
-                  <section className='h-[620px] md:h-fit'>
+                  <section className='relative'>
 
-                  <Image className='/hidden object-cover object-[39%_75%] sm:object-[50%_50%] brightness-[0.8] sm:brightness-[0.7] sm:object-cover h-full sm:h-fit absolute sm:static z-0 sm:block overflow-mask' src={'/images/DM_HERO_26122025.jpg'} width="1920" height="512" alt="My face"/>
+                  <Image className='w-full h-full' src={'/images/DM_21032026_II.png'} width="1920" height="512" alt="My face"/>
                   {/* <Image className='object-cover object-center h-inherit w-[512px]' src={`/images/DM_TRANSPARENT_II.PNG`} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt='My portrait'></Image> */}
                     
                   
@@ -238,7 +256,7 @@ export default async function Home() {
             {projects_JSON.map((project: any, index: number) => {
               
               return (
-                <div key={index} className='max-w-7xl /mx-auto grid grid-cols-3 grid-flow-row md:grid-flow-col rounded-lg /md:max-h-[281px] my-4 gap-4 md:gap-4'>
+                <div key={index} className='/max-w-7xl /mx-auto grid grid-cols-3 grid-flow-row md:grid-flow-col rounded-lg /md:max-h-[281px] my-4 gap-4 md:gap-4'>
 
                     <div className="col-span-3 md:col-span-1 md:row-span-3 gap-24 ...">
                       
@@ -327,13 +345,15 @@ export default async function Home() {
             </div>
 
           </div>
-
+          
+          </div>
           
         </main>
 
         <Footer />
 
-
+        
+    </div>
     </div>
   )
 }

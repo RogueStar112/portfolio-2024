@@ -132,6 +132,11 @@ body {
   transform: scale(var(--scale));
 }
 
+body {
+  @apply bg-white text-stone-900 dark:bg-onyx dark:text-stone-200;
+}
+
+
 @media (width <= 40rem) { 
 
   @keyframes mobileslide {

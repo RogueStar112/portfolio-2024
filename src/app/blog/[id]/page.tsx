@@ -36,55 +36,6 @@ let path = require('path');
 const montserrat = Montserrat({ weight: ['300', '500', '700', '800', '900'], style: ['normal', 'italic'], subsets: ['latin'] });
 const eb_garamond = EB_Garamond({weight: ['500', '600'], style: ['normal'], subsets: ['latin']});
 
-// const textParser = (str: string) => {
-//   const regex = /<q>(.*?)<a>(.*?)<\/a><\/q>/g;
-//   const parts = str.split(regex);
-
-//   return parts.map((part, index) => {
-//     if (index % 2 === 1) {
-//       return <Quote key={index}>{part}</Quote>;
-//     }
-//     return part;
-//   });
-// };
-
-// const textParser = (str: string) => {
-//   const regex = /<q>(.*?)<a>(.*?)<\/a><\/q>/g;
-//   const parts = [];
-//   let match;
-
-//   // Using regex.exec() to find all matches in the string
-//   while ((match = regex.exec(str)) !== null) {
-//     parts.push(match);
-//   }
-
-//   // Construct the resulting array of React elements and strings
-//   const result = [];
-//   let lastIndex = 0;
-
-//   parts.forEach((part, index) => {
-//     const [fullMatch, quote, author] = part;
-//     const matchIndex = part.index;
-
-//     // Push the text before the current match
-//     if (lastIndex < matchIndex) {
-//       result.push(str.substring(lastIndex, matchIndex));
-//     }
-
-//     // Push the Quote component with the parsed quote and author
-//     result.push(<Quote key={index} author={author}>{quote}</Quote>);
-
-//     // Update the last index to be the end of the current match
-//     lastIndex = matchIndex + fullMatch.length;
-//   });
-
-//   // Push the remaining text after the last match
-//   if (lastIndex < str.length) {
-//     result.push(str.substring(lastIndex));
-//   }
-
-//   return result;
-// };
 
 const textParser = (str: string) => {
   const regex = /<q>(.*?)<a>(.*?)<\/a><\/q>|<t>(.*?)<\/t>/g;
@@ -158,7 +109,7 @@ export default async function BlogPost(props: { params: Promise<{ id: string }> 
   }
 
   return (
-    <div className='p-4 bg-white dark:bg-onyx h-full dark:text-mint-cream mx-auto text-current max-w-5xl'>
+    <div className='p-4 bg-white dark:bg-onyx h-full dark:text-mint-cream mx-auto /text-current max-w-5xl'>
 
         <Navbar />
 
@@ -193,7 +144,7 @@ export default async function BlogPost(props: { params: Promise<{ id: string }> 
                             
                                 <h2 className='text-blue-500 dark:text-orange-500 text-3xl md:text-4xl font-extrabold text-center md:text-left whitespace-normal' style={{fontVariant: "small-caps"}}>{blog.title}</h2>
 
-                                  <p className='text-stone-500 text-center md:text-left'>Published on {blog.dateTime_created}</p>
+                                  <p className='text-stone-500 dark:text-stone-400 text-center md:text-left'>Published on {blog.dateTime_created}</p>
 
 
                       
