@@ -91,13 +91,13 @@ export default async function Home() {
 
     <div>
 
-      <div className='hidden sm:block sm:absolute left-6 top-256'>
+      <div className='hidden sm:block sm:absolute left-6 top-256 z-9999 cursor-pointer'>
 
             <Image className='w-full h-full' src={'/images/london_portal.gif'} width="512" height="512" alt="My face"/>
       
       </div>
 
-      <div className='hidden sm:block sm:absolute right-6 top-512'>
+      <div className='hidden sm:block sm:absolute right-6 top-512 z-9999 cursor-pointer'>
 
             <Image className='w-full h-full invert' src={'/images/london_portal.gif'} width="512" height="512" alt="My face"/>
       
@@ -135,7 +135,7 @@ export default async function Home() {
                 <div className='relative flex flex-col'> 
     
 
-                  <Image className='w-full h-full object-cover' src={'/images/DM_22032026.png'} width="1920" height="512" alt="My face"/>
+                  <Image className='w-full h-full object-cover p-1 sm:p-0 overflow-mask' src={'/images/DM_22032026.png'} width="1920" height="512" alt="My face"/>
                   {/* <Image className='object-cover object-center h-inherit w-[512px]' src={`/images/DM_TRANSPARENT_II.PNG`} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" alt='My portrait'></Image> */}
                     
                   
@@ -171,7 +171,7 @@ export default async function Home() {
             
             <h2 className='m-4 text-right text-4xl font-extrabold'>PROJECTS.</h2> */}
             
-            <h2 id='about' className='overflow-mask dark:text-white /dark:text-black p-4 text-right text-4xl font-extrabold border-b-4 border-emerald-500 bg-linear-to-r dark:from-onyx from-transparent dark:to-emerald-500 to-emerald-500 from-70% to-100%'>ABOUT.</h2>
+            <h2 id='about' className='overflow-mask dark:text-white /dark:text-black p-4 text-center sm:text-right text-4xl font-extrabold border-b-4 border-emerald-500 bg-linear-to-r dark:from-onyx from-transparent dark:to-emerald-500 to-emerald-500 from-70% to-100%'>ABOUT.</h2>
               
             {/* <Image className=' mx-auto mt-6 dark:hidden' src={DM_MOTTO} alt='From slinging spreadsheets to wrangling websites' />
 
@@ -189,9 +189,9 @@ export default async function Home() {
               </div>
             
             <div className='flex flex-col'>
-             <Image className='mx-auto w-full max-w-md h-auto dark:hidden' src={DM_MOTTO} alt='From slinging spreadsheets to wrangling websites' />
+             <Image className='mx-auto w-full /max-w-md h-auto dark:hidden' src={DM_MOTTO} alt='From slinging spreadsheets to wrangling websites' />
 
-              <Image className=' mx-auto hidden dark:block' src={DM_MOTTO_DARK} alt='From slinging spreadsheets to wrangling websites' />
+              <Image className=' mx-auto w-full hidden dark:block' src={DM_MOTTO_DARK} alt='From slinging spreadsheets to wrangling websites' />
             <p className='mt-4 text-justify'>Name&apos;s Demie. I&apos;m 26. As the motto suggests, my web development journey started through a budgeting spreadsheet. A colleague suggested to turn it into a website, and hence, in 2020, I tapped into the world of HTML.<br></br><br></br>
 
             I hail from the stormy capital of 🇵🇭 Manila, Philippines. In my birth year of 1999, the computer was in its early stages. Thus, I was exposed to technology at a very young age. It was later on in my 20s that I then realized, this webdev stuff could become more than just a hobby.

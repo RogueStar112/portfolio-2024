@@ -1,6 +1,7 @@
 'use client'
 
 import Link from "next/link"
+import Image from "next/image"
 
 import { FaGithub } from "react-icons/fa"
 import { FaLinkedin } from "react-icons/fa"
@@ -26,9 +27,15 @@ export default function GreetingMessage() {
   return (
     <section className='md:absolute bottom-0 left-4 md:right-0 /mr-4  sm:h-full text-white md:text-white dark:text-white flex flex-col items-center md:items-end justify-center /md:justify-end /mt-12 '>
       <div className="h-fit w-full sm:w-fit md:absolute bottom-0 sm:h-full sm:flex sm:flex-col sm:justify-center sm:items-center p-4 sm:p-0 sm:pr-24 bg-linear-to-b to-blue-800 sm:bg-linear-to-r from-transparent sm:from-transparent sm:to-green-800 sm:from-0% sm:to-100%">
-                        <motion.p className='text-center text-3xl md:text-4xl font-extrabold' initial={{y: -50, opacity: 0}} animate={{ y: 0, opacity: 1, transition: { duration: 0.6, ease: "easeInOut" }  }}>GREETINGS.</motion.p>
-                        <motion.p className={`${eb_garamond.className} font-initial text-center`} initial={{opacity: 0}} animate={{ opacity: 1, transition: { duration: 0.6, ease: "easeInOut" }  }}>Web Developer | Lifestyle Enthusiast</motion.p>
-                        <motion.p className={`${eb_garamond.className} font-initial text-center`} initial={{opacity: 0}} animate={{ opacity: 1, transition: { duration: 0.6, ease: "easeInOut" }  }}>📍 United Kingdom</motion.p>
+                        <motion.div className="text-center text-3xl md:text-4xl font-extrabold text-yellow-500 italic bg-gradient-to-r from-transparent via-blue-800 sm:via-pink-500 from-50% via-90% to-transparent p-2" initial={{y: -50, opacity: 0}} animate={{ y: 0, opacity: 1, transition: { duration: 0.6, ease: "easeInOut" }  }}>
+                    
+                        <div className="relative">
+                          <span className="relative z-1 opacity-90 text-white text-left">GREETINGS.</span>
+                              <Image src={'/images/LAKE_DISTRICT.jpg'} className="[mask-image:url('/images/Mask_Greetings_Decoration_IV.png')] [mask-size:contain] [mask-repeat:no-repeat] [mask-position:center] absolute z-0 -top-[260%] left-1/4 sm:left-0  object-cover" width={256} height={64} alt={'Greetings decoration'}></Image>
+                        </div>
+                        </motion.div>
+                        <motion.p className={`${eb_garamond.className} font-initial text-center relative z-9999`} initial={{opacity: 0}} animate={{ opacity: 1, transition: { duration: 0.6, ease: "easeInOut" }  }}>Web Developer | Lifestyle Enthusiast</motion.p>
+                        <motion.p className={`${eb_garamond.className} font-initial text-center relative z-9999`} initial={{opacity: 0}} animate={{ opacity: 1, transition: { duration: 0.6, ease: "easeInOut" }  }}>📍 United Kingdom</motion.p>
 
 
                         <div className='flex-col w-full'>
