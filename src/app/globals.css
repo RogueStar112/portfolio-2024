@@ -54,12 +54,12 @@ body {
 
 }
 
-/* @font-face {
+@font-face {
   font-family: 'OpenDyslexic';
   font-weight: 400;
   font-display: optional;
   src: local('OpenDyslexicFont'), url('/public/fonts/OpenDyslexic-Regular.otf') format('otf');
-} */
+}
 
 html .dark-dys {
   color-scheme: dark;
@@ -78,7 +78,7 @@ html .light-dys {
 
 .dark-dys > * {
   transition: all 0.5s ease-in-out;
-  font-family: '__opendyslexic_d8b60a', 'Arial' !important;
+  font-family: 'OpenDyslexic', 'Arial' !important;
   background-color: #444444;
   color: white;
   color-scheme: dark;
@@ -93,7 +93,7 @@ html .light-dys {
 
 .light-dys > * {
   transition: all 0.5s ease-in-out;
-  font-family: '__opendyslexic_d8b60a', 'Arial' !important;
+  font-family: 'OpenDyslexic', 'Arial' !important;
   background-color: white;
   color-scheme: light;
 }
