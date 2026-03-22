@@ -25,13 +25,13 @@ export default function GreetingMessage() {
   // router.refresh();
 
   return (
-    <section className='md:absolute bottom-0 left-4 md:right-0 /mr-4  sm:h-full text-white md:text-white dark:text-white flex flex-col items-center md:items-end justify-center /md:justify-end /mt-12 '>
-      <div className="h-fit w-full sm:w-fit md:absolute bottom-0 sm:h-full sm:flex sm:flex-col sm:justify-center sm:items-center p-4 sm:p-0 sm:pr-24 bg-linear-to-b to-blue-800 sm:bg-linear-to-r from-transparent sm:from-transparent sm:to-green-800 sm:from-0% sm:to-100%">
-                        <motion.div className="text-center text-3xl md:text-4xl font-extrabold text-yellow-500 italic bg-gradient-to-r from-transparent via-blue-800 sm:via-pink-500 from-50% via-90% to-transparent p-2" initial={{y: -50, opacity: 0}} animate={{ y: 0, opacity: 1, transition: { duration: 0.6, ease: "easeInOut" }  }}>
+    <section className='/md:absolute bottom-0 left-4 md:right-0 /mr-4  sm:h-full text-white md:text-white dark:text-white flex flex-col items-start /md:items-end justify-start /md:justify-end /mt-12 '>
+      <div className="h-fit w-full /sm:w-fit /md:absolute bottom-0 sm:h-full sm:flex sm:flex-col sm:justify-center sm:items-center p-4 sm:p-0 /sm:pr-24 bg-linear-to-b to-blue-800 sm:bg-linear-to-r from-transparent sm:from-transparent sm:to-blue-800">
+                        <motion.div className="w-full sm:text-left sm:px-32 text-center text-3xl md:text-4xl font-extrabold text-yellow-500 italic  bg-gradient-to-r from-transparent via-blue-800 to-blue-800" initial={{y: -50, opacity: 0}} animate={{ y: 0, opacity: 1, transition: { duration: 0.6, ease: "easeInOut" }  }}>
                     
                         <div className="relative">
-                          <span className="relative z-1 opacity-90 text-white text-left">GREETINGS.</span>
-                              <Image src={'/images/LAKE_DISTRICT.jpg'} className="[mask-image:url('/images/Mask_Greetings_Decoration_IV.png')] [mask-size:contain] [mask-repeat:no-repeat] [mask-position:center] absolute z-0 -top-[260%] left-1/4 sm:left-0  object-cover" width={256} height={64} alt={'Greetings decoration'}></Image>
+                          <span className="relative z-1 opacity-90 text-white text-left sm:text-7xl text-3xl">GREETINGS.</span>
+                              <Image src={'/images/LAKE_DISTRICT.jpg'} className="[mask-image:url('/images/Mask_Greetings_Decoration_IV.png')] [mask-size:contain] [mask-repeat:no-repeat] [mask-position:center] absolute z-0 -top-[260%] /left-1/4 sm:right-0 object-cover" width={512} height={256} alt={'Greetings decoration'}></Image>
                         </div>
                         </motion.div>
                         <motion.p className={`${eb_garamond.className} font-initial text-center relative z-9999`} initial={{opacity: 0}} animate={{ opacity: 1, transition: { duration: 0.6, ease: "easeInOut" }  }}>Web Developer | Lifestyle Enthusiast</motion.p>
@@ -39,7 +39,7 @@ export default function GreetingMessage() {
 
 
                         <div className='flex-col w-full'>
-                        <motion.p className={`${eb_garamond.className} font-initial`} initial={{x: 250, opacity: 0}} animate={{x: 0, opacity: 1, transition: { duration: 1.2, ease: "easeInOut" }  }}>_____________________________________</motion.p>
+                        {/* <motion.p className={`${eb_garamond.className} font-initial`} initial={{x: 250, opacity: 0}} animate={{x: 0, opacity: 1, transition: { duration: 1.2, ease: "easeInOut" }  }}>_____________________________________</motion.p> */}
                         <motion.section id='socials' className='flex justify-around m-4' initial={{opacity: 0}} animate={{opacity: 1, transition: { duration: 1.2, ease: "easeInOut" }  }}>
 
                                   <div className='flex gap-8 *:*:scale-[2] /[&>*]:[&>*]:text-neutral-500' aria-label='socials'>

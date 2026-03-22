@@ -1,7 +1,22 @@
 [
+
 {
 
     "id": 1,
+    "name": "Calorie Curiosity",
+    "description": "Nutrition guessing game",
+    "date": "Feb 2026",
+    "tech_stack": ["Next.js", "React"], 
+    "soft_stack": ["Games", "Side Project", "PC/Mobile"],
+    "url": "https://calorie-curiosity.vercel.app/",
+    "github_url": "https://github.com/RogueStar112/CalorieCuriosity/tree/main",
+    "img_src": "/images/CalorieCuriosityImg.png",
+    "is_featured": true
+},
+
+{
+
+    "id": 2,
     "name": "MyNutrition",
     "description": "Track calories and so much more, to keep you healthy.",
     "date": "Nov 2025 | WIP",
@@ -9,13 +24,13 @@
     "soft_stack": ["Lifestyle", "Key Project"],
     "url": "https://mynutrition-dm.com/",
     "github_url": "https://github.com/RogueStar112/MyNutrition",
-    "img_src": "/images/MyNutritionLogo20062025_0941_Orange.png",
-    "is_featured": true
+    "img_src": "/images/MyNutritionLogo20062025_0941.png",
+    "is_featured": false
 },
 
 {
 
-"id": 2,
+"id": 3,
 "name": "Hatch",
 "description": "A collaborative AI app allowing users to collaborate on personal projects and interests.",
 "date": "Sep 2025 | WIP",
@@ -24,12 +39,12 @@
 "url": "https://hack-ed-2025.vercel.app/",
 "github_url": "https://github.com/RogueStar112/HackEd-2025",
 "img_src": "/images/hatch_transparent.png",
-"is_featured": true
+"is_featured": false
 },
 
 {
 
-"id": 3,
+"id": 4,
 "name": "The Euphoria Hub",
 "description": "A social platform with a unique focus on personality. Coming Soon",
 "date": "TBA 2024/2025",
@@ -43,7 +58,7 @@
 
 {
 
-  "id": 4,
+  "id": 5,
   "name": "MyBudget",
   "description": "Manage and categorize your finances easily.",
   "date": "WIP",
@@ -58,7 +73,7 @@
 
 {
 
-"id": 5,
+"id": 6,
 "name": "Mood Canvas",
 "description": "Rate and describe how you feel, as much as you need to here.",
 "date": "30/09/2023",
@@ -71,7 +86,7 @@
 
 {
 
-  "id": 6,
+  "id": 7,
   "name": "Pizza Game",
   "description": "Drag and drop them pizzas, on your way to culinary success.",
   "date": "Early 2022",
@@ -85,7 +100,7 @@
 
 {
 
-  "id": 7,
+  "id": 8,
   "name": "ToDo App",
   "description": "Assign tasks, get stuff done.",
   "date": "Early 2022",

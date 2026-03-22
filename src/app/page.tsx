@@ -132,7 +132,7 @@ export default async function Home() {
 
               <article className='overflow-hidden relative'>
 
-                <div className='relative flex flex-col'> 
+                <div className='relative flex /sm:flex-col sm:flex-col flex-col'> 
     
 
                   <Image className='w-full h-full object-cover p-1 sm:p-0 overflow-mask' src={'/images/DM_22032026.png'} width="1920" height="512" alt="My face"/>
@@ -200,7 +200,7 @@ export default async function Home() {
             </div>
             </div>
 
-            <h2 id='skills' className='overflow-mask dark:text-white /dark:text-black p-4 mt-2 text-right text-4xl font-extrabold border-b-4 border-orange-500 dark:from-transparent bg-linear-to-r from-transparent dark:to-orange-500 to-orange-500 from-70% to-100%'>SKILLS.</h2>
+            <h2 id='skills' className='overflow-mask dark:text-white /dark:text-black p-4 mt-2 text-left sm:text-left text-4xl font-extrabold border-b-4 border-orange-500 dark:from-transparent bg-linear-to-l from-transparent dark:to-orange-500 to-orange-500 from-70% to-100%'>SKILLS.</h2>
 
             <SkillCollection />
             
