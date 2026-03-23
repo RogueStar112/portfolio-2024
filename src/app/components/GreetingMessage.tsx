@@ -47,17 +47,17 @@ export default function GreetingMessage() {
 
                         <motion.p className="w-full h-full text-5xl px-32 font-extrabold hidden sm:block" initial={{opacity: 0}} animate={{ opacity: 1, transition: { duration: 0.6, ease: "easeInOut" }  }}>I'm Demie.</motion.p>
 
-                        <div className='flex-col w-full items-end'>
+                        <div className='flex-col w-full items-end *:*:w-full'>
                         {/* <motion.p className={`${eb_garamond.className} font-initial`} initial={{x: 250, opacity: 0}} animate={{x: 0, opacity: 1, transition: { duration: 1.2, ease: "easeInOut" }  }}>_____________________________________</motion.p> */}
                         <motion.section id='socials' className='flex justify-end p-8' initial={{opacity: 0}} animate={{opacity: 1, transition: { duration: 1.2, ease: "easeInOut" }  }}>
 
-                                  <div className='flex gap-8 *:*:scale-[2] /[&>*]:[&>*]:text-neutral-500' aria-label='socials'>
-                          <Link target="_blank" className="text-white sm:text-neutral-500 dark:*:text-white md:text-white md:hover:*:text-yellow-500 md:dark:hover:*:text-yellow-500 *:duration-150 svg:mb-4!" href={'https://github.com/RogueStar112'} onClick={() => {track('Visited GitHub')}}>
+                                  <div className='flex gap-8 *:*:scale-[2] /[&>*]:[&>*]:text-neutral-500 relative z-9999 justify-center sm:justify-end' aria-label='socials'>
+                          <Link target="_blank" className="text-white sm:text-neutral-500 dark:*:text-white md:text-white md:hover:*:text-yellow-500 md:dark:hover:*:text-yellow-500 *:duration-150 svg:mb-4! *:w-full *:mb-1" href={'https://github.com/RogueStar112'} onClick={() => {track('Visited GitHub')}}>
                                 <FaGithub /><span>GitHub</span>
                           </Link>
-                          <Link target="_blank" className="text-white sm:text-neutral-500 dark:*:text-white md:text-white md:hover:*:text-yellow-500 md:dark:hover:*:text-yellow-500 *:duration-150" href={'https://www.linkedin.com/in/demie-mistica-049779296/'} onClick={() => {track('Visited LinkedIn')}}><FaLinkedin /><span>LinkedIn</span></Link>
-                          <Link target="_blank" className="text-white sm:text-neutral-500 dark:*:text-white md:text-white md:hover:*:text-yellow-500 md:dark:hover:*:text-yellow-500 *:duration-150 hover:[&>span]:block" onClick={() => {track('Downloaded CV')}} href={'https://www.canva.com/design/DAG8m0yu9BI/VDXnfNxUI_ANYofS-EG4Tg/edit?utm_content=DAG8m0yu9BI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton'}><PiReadCvLogo /><span>CV</span></Link>
-                          <Link target="_blank" className="text-white sm:text-neutral-500 dark:*:text-white md:text-white md:hover:*:text-yellow-500 md:dark:hover:*:text-yellow-500 *:duration-150 hover:[&>span]:block" onClick={() => {track('Downloaded CV')}} href={'mailto:mistica.demie@gmail.com'}><MdOutlineEmail /><span>Email</span></Link>
+                          <Link target="_blank" className="text-white sm:text-neutral-500 dark:*:text-white md:text-white md:hover:*:text-yellow-500 md:dark:hover:*:text-yellow-500 *:duration-150 *:w-full *:mb-1" href={'https://www.linkedin.com/in/demie-mistica-049779296/'} onClick={() => {track('Visited LinkedIn')}}><FaLinkedin /><span>LinkedIn</span></Link>
+                          <Link target="_blank" className="text-white sm:text-neutral-500 dark:*:text-white md:text-white md:hover:*:text-yellow-500 md:dark:hover:*:text-yellow-500 *:duration-150 hover:[&>span]:block *:w-full *:mb-1" onClick={() => {track('Downloaded CV')}} href={'https://www.canva.com/design/DAG8m0yu9BI/VDXnfNxUI_ANYofS-EG4Tg/edit?utm_content=DAG8m0yu9BI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton'}><PiReadCvLogo /><span>CV</span></Link>
+                          <Link target="_blank" className="text-white sm:text-neutral-500 dark:*:text-white md:text-white md:hover:*:text-yellow-500 md:dark:hover:*:text-yellow-500 *:duration-150 hover:[&>span]:block *:w-full *:mb-1" onClick={() => {track('Downloaded CV')}} href={'mailto:mistica.demie@gmail.com'}><MdOutlineEmail /><span>Email</span></Link>
                           
                         </div>
 
