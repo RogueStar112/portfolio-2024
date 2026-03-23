@@ -32,7 +32,7 @@ export default function GreetingMessage() {
                     
                         <div className="relative">
 
-                          <span className="relative z-1 opacity-90 text-white text-left sm:text-7xl text-3xl">GREETINGS.</span>
+                          <span className="relative z-1 opacity-90 text-white text-left sm:text-7xl text-3xl">Hello!</span>
                               <Image src={'/images/LAKE_DISTRICT.jpg'} className="[mask-image:url('/images/Mask_Greetings_Decoration_IV.png')] [mask-size:contain] [mask-repeat:no-repeat] [mask-position:center] absolute z-0 -top-[260%] sm:-top-[266%] sm:rotate-[5] /left-1/4 sm:right-16 object-cover" width={512} height={256} alt={'Greetings decoration'}></Image>
                         </div>
                         </motion.div>
