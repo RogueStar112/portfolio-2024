@@ -41,11 +41,11 @@ export default function GreetingMessage() {
                         <motion.p className={`${eb_garamond.className} font-initial text-center sm:text-right relative z-9999`} initial={{opacity: 0}} animate={{ opacity: 1, transition: { duration: 0.6, ease: "easeInOut" }  }}>Web Developer</motion.p>
                         <motion.p className={`${eb_garamond.className} font-initial text-center sm:text-right relative z-9999`} initial={{opacity: 0}} animate={{ opacity: 1, transition: { duration: 0.6, ease: "easeInOut" }  }}>📍 United Kingdom</motion.p>
                         
-                        <Image className="absolute -top-[400%] mask-image:url('/images/TYF_1.JPG')  [mask-size:contain] [mask-repeat:no-repeat] [mask-position:center] -rotate-14" src={'/images/svg/united-kingdom.svg'} width={512} height={512} />
+                        <Image className="absolute hidden sm:block -top-[400%] -rotate-14" src={'/images/svg/united-kingdom.svg'} alt="United Kingdom Map" width={512} height={512} />
                         </div>
                         
 
-                        <div className="w-full h-full text-5xl px-32 font-extrabold hidden sm:block">I'm Demie.</div>
+                        <motion.p className="w-full h-full text-5xl px-32 font-extrabold hidden sm:block" initial={{opacity: 0}} animate={{ opacity: 1, transition: { duration: 0.6, ease: "easeInOut" }  }}>I'm Demie.</motion.p>
 
                         <div className='flex-col w-full items-end'>
                         {/* <motion.p className={`${eb_garamond.className} font-initial`} initial={{x: 250, opacity: 0}} animate={{x: 0, opacity: 1, transition: { duration: 1.2, ease: "easeInOut" }  }}>_____________________________________</motion.p> */}
