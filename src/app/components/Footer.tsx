@@ -9,7 +9,7 @@ let yearUpdate = new Date().getFullYear();
 
 export default function Footer() {
     return (
-        <footer className='border-t-2 mt-4 p-4 border-neutral-500 flex justify-between w-full'>
+        <footer className='border-t-2 mt-4 p-4 border-neutral-500 flex justify-between w-full max-w-7xl mx-auto'>
 
             <p>&copy; {yearUpdate}</p>
             

@@ -175,3 +175,9 @@ body {
   }
 
 }
+
+svg {
+  width: 100%;
+  /* If using as a background */
+  background-size: 100% 100%; 
+}
