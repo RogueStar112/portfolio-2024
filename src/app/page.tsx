@@ -91,13 +91,13 @@ export default async function Home() {
 
     <div>
 
-      <div className='hidden sm:block sm:absolute left-6 top-256 z-9999 cursor-pointer'>
+      <div className='hidden /sm:block sm:absolute left-6 top-256 z-9999 cursor-pointer'>
 
             <Image className='w-full h-full' src={'/images/london_portal.gif'} width="512" height="512" alt="My face"/>
       
       </div>
 
-      <div className='hidden sm:block sm:absolute right-6 top-512 z-9999 cursor-pointer'>
+      <div className='hidden /sm:block sm:absolute right-6 top-512 z-9999 cursor-pointer'>
 
             <Image className='w-full h-full invert' src={'/images/london_portal.gif'} width="512" height="512" alt="My face"/>
       
